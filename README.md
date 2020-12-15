@@ -15,7 +15,7 @@ OpenSiv3D for Web brings you to developing WebGL application with C/C++!
 
 ## Download
 
-{% include button.html url="/download" text="Download OpenSiv3D for Web" %}
+{% include button.html url="download" text="Download OpenSiv3D for Web" %}
 
 ## Gallary
 

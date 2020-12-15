@@ -38,8 +38,8 @@ msgstr "OpenSiv3D for Web は WebGL アプリケーションを C/C++ で開発�
 msgid "## Download"
 msgstr "## ダウンロード"
 
-msgid "{% include button.html url=\"/download\" text=\"Download OpenSiv3D for Web\" %}"
-msgstr "{% include button.html url=\"/download\" text=\"OpenSiv3D for Web をダウンロード\" %}"
+msgid "{% include button.html url=\"download\" text=\"Download OpenSiv3D for Web\" %}"
+msgstr "{% include button.html url=\"download\" text=\"OpenSiv3D for Web をダウンロード\" %}"
 
 msgid "## Gallary"
 msgstr "## ギャラリー"

@@ -15,7 +15,7 @@ OpenSiv3D for Web は WebGL アプリケーションを C/C++ で開発するた
 
 ## ダウンロード
 
-{% include button.html url="/download" text="OpenSiv3D for Web をダウンロード" %}
+{% include button.html url="download" text="OpenSiv3D for Web をダウンロード" %}
 
 ## ギャラリー
 
