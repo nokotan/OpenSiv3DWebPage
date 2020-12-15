@@ -13,13 +13,3 @@ meta-title: Home
 ![demo.gif](https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/demo.gif)
 
 OpenSiv3D for Web brings you to developing WebGL application with C/C++!
-
-## Installation & Building WebGL Application
-
-Full installation guides are found in "[WebGL game development with OpenSiv3D for Web (VSCode on Windows)](https://qiita.com/nokotan/items/7fdb71b39901132b4014)"
-
-## Links
-
-- [Sample Application Gallary](https://siv3d-apps.kamenokosoft.com)
-- [Building OpenSiv3D for Web](https://github.com/nokotan/OpenSiv3D/wiki/Build-OpenSiv3D-for-Web)
-- [Implementetion Status](https://github.com/nokotan/OpenSiv3D/wiki/Implementation-Status)
