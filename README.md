@@ -5,6 +5,7 @@
 layout: default
 title: OpenSiv3D for Web
 meta-title: Home
+permalink: /index
 css: assets/css/gallary.css
 ---
 

@@ -4,6 +4,7 @@
 
 layout: default
 title: Implementation Status
+permalink: /status
 meta-title: Status
 ---
 

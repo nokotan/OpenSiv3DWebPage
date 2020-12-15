@@ -4,6 +4,7 @@
 
 layout: default
 title: Building Apps
+permalink: /building
 ---
 
 ## Overview

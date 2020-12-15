@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gallary
+permalink: /gallary
 css: assets/css/gallary.css
 ---
 
