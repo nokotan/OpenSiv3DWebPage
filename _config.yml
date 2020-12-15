@@ -21,9 +21,15 @@
 title: OpenSiv3D for Web
 email: kamenokonokotan@gmail.com
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: kamenoko_dev
-github_username:  nokotan
+url: "https://siv3d.kamenokosoft.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+twitter:
+  username: kamenoko_dev
+  card: summary
+github:
+  username: nokotan
+
+description: OpenSiv3D for Web brings you to developing WebGL application with C/C++!
 
 # Build settings
 
@@ -46,3 +52,6 @@ github_username:  nokotan
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+plugins:
+  - jekyll-seo-tag
