@@ -22,3 +22,8 @@
   url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/ShineOfLife/ShineOfLife.html
   image: "#"
   description: Osaka Bampaku Character.
+
+- title: KDTree
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/KDTree/Siv3DTest.html
+  image: "#"
+  description: KDTree
