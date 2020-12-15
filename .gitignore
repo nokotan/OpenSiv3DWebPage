@@ -4,3 +4,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+_po/*.po
+_po/**/*.edit.po
+_po/**/*.pot
+_po/**/*.time_stamp

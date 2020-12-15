@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Gallary
-permalink: /gallary
+title: ギャラリー
+meta-title: Gallary
+permalink: /ja/gallary
 css: /assets/css/gallary.css
 ---
 
