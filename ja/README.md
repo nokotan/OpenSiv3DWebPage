@@ -19,7 +19,7 @@ OpenSiv3D for Web は WebGL アプリケーションを C/C++ で開発するた
 
 ## ギャラリー
 
-{% include gallary.html list=site.data.gamelist %}
+{% include gallary.html list=site.data.ja.gamelist %}
 
 ## 最新版ビルドの状態
 

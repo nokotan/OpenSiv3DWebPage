@@ -24,4 +24,4 @@ msgstr ""
 "---"
 
 msgid "{% include gallary.html list=site.data.gamelist %}"
-msgstr ""
+msgstr "{% include gallary.html list=site.data.ja.gamelist %}"
