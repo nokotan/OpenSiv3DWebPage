@@ -1,0 +1,17 @@
+- title: Home
+  url: index
+
+- title: Gallary
+  url: gallary
+
+- title: Building Apps
+  url: building
+  new-group: true
+
+- title: Status
+  url: status
+
+- title: GitHub
+  url: https://github.com/nokotan/OpenSiv3D
+  new-group: true
+  icon: /assets/img/GitHub-Mark-32px.png

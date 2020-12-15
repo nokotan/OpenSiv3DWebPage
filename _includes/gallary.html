@@ -1,0 +1,10 @@
+<div class="pure-g grid">
+  {% for game in include.list %}
+  <div class="pure-u-1 pure-u-md-1-4 box">
+    <img src="{{ game.image }}">
+    <h3>{{ game.title }}</h3>
+    <p>{{ game.description }}</p>
+    <a class="button" href="{{ game.url }}" target="_blank" rel="noopener noreferrer">Play!</a>
+  </div>
+  {% endfor %}
+</div>
