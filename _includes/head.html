@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="{{ page.css }}">
   {% endif %}
 
-  {% if page.title %}
+  {% if page.title and page.title != site.title %}
   <title>{{ page.title }} - {{ site.title }}</title>
   {% else %}
   <title>{{ site.title }}</title>

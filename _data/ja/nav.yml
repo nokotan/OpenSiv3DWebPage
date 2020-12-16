@@ -1,17 +1,17 @@
-- title: Home
+- title: ホーム
   url: index
 
-- title: Download
+- title: ダウンロード
   url: download
 
-- title: Gallary
+- title: ギャラリー
   url: gallary
 
-- title: Building Apps
+- title: はじめての WebGL アプリ
   url: building
   new-group: true
 
-- title: Status
+- title: 実装状況
   url: status
 
 - title: GitHub

@@ -13,9 +13,15 @@ css: /assets/css/gallary.css
 
 OpenSiv3D for Web brings you to developing WebGL application with C/C++!
 
-## Download
+## Getting Started
 
 {% include button.html url="download" text="Download OpenSiv3D for Web" %}
+
+You can try OpenSiv3D for Web without any local installation.
+
+{% include outline-button.html url="//webassembly-studio.kamenokosoft.com" text="Try on WebAssembly Studio" %}
+
+![Siv3DonWebAssemblyStudio.jpeg](/assets/img/Siv3DonWebAssemblyStudio.jpeg)
 
 ## Gallary
 

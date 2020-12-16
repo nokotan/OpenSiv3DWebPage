@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ja/default
 title: ダウンロード
 meta-title: Download
 permalink: /ja/download

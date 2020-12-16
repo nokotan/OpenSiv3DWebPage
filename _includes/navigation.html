@@ -1,4 +1,4 @@
-<a href="#menu" id="menuLink" class="menu-link">
+<a href="javascript:void;" id="menuLink" class="menu-link">
   <!-- Hamburger icon -->
   <span></span>
 </a>
@@ -8,7 +8,7 @@
     <a class="pure-menu-heading" href="/">{{ site.title }}</a>
 
     <ul class="pure-menu-list">
-      {% for item in site.data.nav %}
+      {% for item in include.nav %}
       {% capture item-style %}
       pure-menu-item
 

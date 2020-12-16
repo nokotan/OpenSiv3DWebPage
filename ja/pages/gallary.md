@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ja/default
 title: ギャラリー
 meta-title: Gallary
 permalink: /ja/gallary
