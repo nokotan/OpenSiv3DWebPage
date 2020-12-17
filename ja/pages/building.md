@@ -3,65 +3,69 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: ja/default
-title: Building Apps
+title: はじめての WebGL アプリ
 permalink: /ja/building
 ---
 
-## Overview
+## 概要
 
-This article has following explanations to develop WebGL application with **"OpenSiv3D for Web."**
+この記事では、OpenSiv3D Web版を使った WebGL アプリの開発をするために、次の手順を説明していきます。
 
-- Install Prerequisites (Python, emscripten)
-- Download "Sample Program for OpenSiv3D for Web"
-- Build and Run Sample Program
+- [OpenSiv3D Web版に必要なライブラリ (Python, emscripten) をインストールする](#emscripten-をインストールする)
+- [OpenSiv3D Web版 Visual Studio Code サンプルプログラム実行用パッケージをダウンロードする](#opensiv3d-web版-visual-studio-codeサンプルプログラム実行用パッケージをダウンロードする)
+- [OpenSiv3D Web版のサンプルコードをビルドし、ブラウザで開く](#ビルドとデバッグ実行)
 
-This is English translation; original article is ["OpenSiv3D Web版を使ってブラウザで動くゲームを作る (VSCode版, Windows),"](https://qiita.com/nokotan/items/8fc8a3c0837ac2f532f4) written in Japanese.
+English version is available in [Qiita - WebGL game development with OpenSiv3D for Web (VSCode on Windows)](https://qiita.com/nokotan/items/7fdb71b39901132b4014).
 
-## Tested Develop Environment
+## 動作検証環境
 
 - Windows 10 Education (Version 10.0.17763.1098)
 - Visual Studio Code 1.47.3
 - emscripten 1.40.1
 
-## Install Prerequisites (Python, emscripten)
+## emscripten をインストールする
 
-We can use **"emscripten SDK (emsdk)"** in order to install emscripten to your develop environment. **Python must be installed** to use commands included in **"emscripten SDK (emsdk)"**, which is written in Python script.
+emscripten をインストールするのに、emscripten SDK (emsdk) を使います。
+emscripten SDK (emsdk) 自体は python スクリプトで書かれています。
+そのため、emscripten SDK (emsdk) を使うために python をインストールする必要があります。
 
-### Install Python
+### python のインストール
 
-Follow instructions in [Using Python on Windows - Installation steps](https://docs.python.org/3/using/windows.html#installation-steps)[^custom-python].
+<https://www.python.jp/install/windows/install_py3.html> に、Python のインストール方法が書かれています。
+遷移先のサイトの指示に従って、Python をインストールしてください。[^custom-python]
 
-[^custom-python]: Enable `pip` and `Add python into PATH` if you want to customize python instalation
+[^custom-python]: python のインストールをカスタマイズする際、`pip をインストールする`と`環境変数に python のパスに追加する`設定を有効にしてください。
 
-![スクリーンショット 2020-09-20 13.46.49.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/4d64cf59-fc85-eeee-b118-a34946b7abb1.png)
+![PythonInstall1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/19fd629e-4652-999e-c53e-9213a288049a.png)
 
-### Download emscripten SDK (emsdk)
+### emscripten SDK (emsdk) のダウンロード
 
-Follow link to [GitHub - emscripten-core/emsdk](https://github.com/emscripten-core/emsdk/), then Click `Code` button in green and `Download ZIP` button in this order[^emsdk-git].
+[emsdk github](https://github.com/emscripten-core/emsdk/archive/master.zip)に移動し、緑色の `Code` ボタン、`Download ZIP` ボタンを順に押してください。[^emsdk-git]
+すると、リポジトリの内容が .zip ファイルでダウンロードされるので、適当なフォルダに展開してください。
 
-[^emsdk-git]: You can use `git clone https://github.com/emscripten-core/emsdk.git` instead of downloading zip, if git is available in your environment.
+[^emsdk-git]: git をインストールしている環境であれば、`git clone https://github.com/emscripten-core/emsdk.git`でダウンロードすることができます。
 
 ![InstallEMSDK1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/4b923473-ecf0-0266-950e-e5a8044ec60f.png)
 
-### Install Emscripten
+### emscripten のインストール
 
-Open administrator command prompt[^admin-cmd], change directory to the folder you have downloaded emsdk, and run these commands:
+管理者権限でコマンドプロンプトを開き[^admin-cmd]、emscripten SDK (emsdk) をダウンロードしたディレクトリに移動し、次のコマンドを実行します。
 
-[^admin-cmd]: Press [Windows]+[X], and select PowerShell (Administrator)
+[^admin-cmd]: [Windowsキー]+[X] でメニューを開き、PowerShell (管理者) をクリックしてください。
 
 ```bat
 emsdk install latest
 emsdk activate latest --global
 ```
 
-`emsdk install latest` will install emscripten and its dependencies (clang, node.js, java) to your develop environment.
-`emsdk activate latest --global` will perform setup for these tools.
+`emsdk install latest` で、emscripten 本体と emscripten で使われる clang、node.js、javaがインストールされます。
+`emsdk activate latest --global` で、インストールしたツールセットのセットアップが行われます。
 
-## Set Up Visual Studio Code
+## Visual Studio Code のセットアップ
 
-### Install Extensions
+### 拡張機能のインストール
 
-Open "Extension Tab" in Visual Studio Code, search and install these extensions: 
+Visual Studio Code の左側の拡張機能タブから、次の名前で検索し、インストールしてください。 
 
 - C/C++ VSCode Extension
 - Debugger for Chrome
@@ -69,27 +73,30 @@ Open "Extension Tab" in Visual Studio Code, search and install these extensions:
 
 ![VSCodeExt1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/bf97ad48-9626-4898-d671-48b740ddaecc.png)
 
-## Open "Sample Program for OpenSiv3D for Web" on Visual Studio Code
+## OpenSiv3D Web版 Visual Studio Codeサンプルプログラム実行用パッケージを Visual Studio Code で開く
 
-### Download "Sample Program for OpenSiv3D for Web"
+### OpenSiv3D Web版 Visual Studio Codeサンプルプログラム実行用パッケージをダウンロードする
 
-Follow link to [GitHub - nokotan/OpenSiv3DForWeb-VSCode](https://github.com/nokotan/OpenSiv3DForWeb-VSCode), then Click `Code` button in green and `Download ZIP` button in this order.
+[サンプルプログラム実行用パッケージのリポジトリ](https://github.com/nokotan/OpenSiv3DForWeb-VSCode) に移動し、緑色の `Code` ボタン、`Download ZIP` ボタンを順に押してください。
+すると、リポジトリの内容が .zip ファイルでダウンロードされるので、適当なフォルダに展開してください。
 
 ![InstallSiv3DWebVSCode.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/3c6d1c31-e6ff-0fb4-a00c-0086a2fafd12.png)
 
-### Open "Sample Program for OpenSiv3D for Web" on Visual Studio Code
+### OpenSiv3D Web版 Visual Studio Codeサンプルプログラム実行用パッケージを Visual Studio Codeで開く
 
-Launch Visual Studio Code, open folder-selecting dialog[^open-dialog], and select the folder that includes "Sample Program for OpenSiv3D for Web" you have extracted.
+Visual Studio Code を起動して、[ファイル] > [フォルダを開く...] でフォルダを開くためのダイアログを表示します。
 
-[^open-dialog]: Click `File` > `Open Folder ...`
+ここで、先ほど展開した OpenSiv3D Web版 Visual Studio Codeサンプルプログラム実行用パッケージが含まれるフォルダを選んでください。
+
+[^open-dialog]: `File`をクリックし、`Open Folder ...`を選択します。
 
   ![VSCodeOpenFolder.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/385e8dfe-3f3a-431f-a8ed-63e2d491723c.png)
 
-## Writing source code
+## ソースコードを書く
 
-With "OpenSiv3D for Web," you can use the features which is supported in OpenSiv3D  for Linux.
+OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専用の関数を除く) が使用できます。
 
-**You should have a browser handle JavaScript events**, or the browser hangs up because of infinite loop. Therefore, **make a function that includes logics that should be processed regularly**, and **register the function as a callback** which is called at the start of an animation frame.
+ただし、イベント処理のために定期的にブラウザに制御を戻す必要があります。そのため、**メインループ部分を関数に切り出し**、その関数を**フレーム開始時に呼ばれるコールバック関数として登録**する必要があります。
 
 ```c++:Main.cpp
 
@@ -108,56 +115,56 @@ void SetMainLoop(std::function<void()> mainLoop)
 
 void Main()
 {
-	// Set background color to aqua blue
+	// 背景を水色にする
 	Scene::SetBackground(ColorF(0.8, 0.9, 1.0));
 	
-	// Create font which size is 60
+	// 大きさ 60 のフォントを用意
 	const Font font(60);
 	
-	// Create cat texture
+	// 猫のテクスチャを用意
 	const Texture cat(Emoji(U"🐈"));
 	
-	// Cat position
+	// 猫の座標
 	Vec2 catPos(640, 450);
 
 	SetMainLoop([&]()
 	{
 		System::Update();
 
-		// Draw text at the center of the shown window
+		// テキストを画面の中心に描く
 		font(U"Hello, Siv3D!🐣").drawAt(Scene::Center(), Palette::Black);
 		
-		// Draw a cat animating its size
+		// 大きさをアニメーションさせて猫を表示する
 		cat.resized(100 + Periodic::Sine0_1(1s) * 20).drawAt(catPos);
 		
-		// Draw a transparent red circle that follows the cursor
+		// マウスカーソルに追従する半透明の赤い円を描く
 		Circle(Cursor::Pos(), 40).draw(ColorF(1, 0, 0, 0.5));
 		
-		// if key 'A' is pressed down
+		// [A] キーが押されたら
 		if (KeyA.down())
 		{
-			// Add 'Hello!' to debug draw
+			// Hello とデバッグ表示する
 			Print << U"Hello!";
 		}
 		
-		// if the button is pressed down
+		// ボタンが押されたら
 		if (SimpleGUI::Button(U"Move the cat", Vec2(600, 20)))
 		{
-			// Move a cat to random position within the window
+			// 猫の座標を画面内のランダムな位置に移動する
 			catPos = RandomVec2(Scene::Rect());
 		}
 	});
 }
 ```
 
-## Building and Debugging
+## ビルドとデバッグ実行
 
-To build sample program:
+ビルドは、次の方法があります。
 
-- Press [Ctrl]+[Shift]+[B]
-- Press [Ctrl]+[Shift]+[P], Select "Run Task ...", then Select `Build: Debug (or Release)`
+- [Ctrl]+[Shift]+[B] を押す
+- Ctrl(Cmd)+Shift+P でタスクの実行を選んで, `Build: Debug (or Release)` を選ぶ
 
-To debug sample program (both will launch local server and open browser):
+また、デバッグ実行は、次の方法があります。いずれも、ローカルサーバを立ち上げた上でブラウザが開きます。
 
-- Press [Ctrl]+[Shift]+[P], Select "Run Task ...", then Select `Run Local Server and Open Browser`
-- Start debugging in debugging tab (requires browser extension)
+- Ctrl(Cmd)+Shift+P でタスクの実行を選んで, `Run Local Server and Open Browser` を選ぶ
+- 左側のデバッグタブからデバッグを開始する (拡張機能をインストールしている場合
