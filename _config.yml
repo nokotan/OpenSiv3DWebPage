@@ -60,6 +60,7 @@ exclude:
   - CNAME
   - Ralefile
   - README.md
+  - ja/README.md
 
 plugins:
   - jekyll-seo-tag
