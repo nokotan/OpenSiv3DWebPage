@@ -2,9 +2,9 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: default
+layout: ja/default
 title: OpenSiv3D for Web
-permalink: /index
+permalink: /ja/index
 css: /assets/css/gallary.css
 ---
 

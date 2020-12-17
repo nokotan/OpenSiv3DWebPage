@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+  {% include layout/head.html %}
 
   <body>
     <div id="layout">
-      {% include navigation.html nav=site.data.ja.nav %}
+      {% include layout/navigation.html nav=site.data.ja.nav %}
       <main>     
-        {% include article.html %} 
-        {% include footer.html %}    
+        {% include layout/article.html %} 
+        {% include layout/footer.html %}    
       </main>
     </div>
   </body>
