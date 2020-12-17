@@ -5,7 +5,6 @@
 layout: ja/default
 title: 実装状況
 permalink: /ja/status
-meta-title: Status
 ---
 
 **[プロジェクト:機能](https://github.com/nokotan/OpenSiv3D/projects/1) も確認してください。**

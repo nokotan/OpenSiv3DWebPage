@@ -1,33 +1,34 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+# OpenSiv3D for Web Project Site
 
-layout: default
-title: OpenSiv3D for Web
-meta-title: Home
-permalink: /index
-css: /assets/css/gallary.css
----
+The project site is running on <https://siv3d.kamenokosoft.com>
 
-![demo.gif](https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/demo.gif)
+## Building Site
 
-OpenSiv3D for Web brings you to developing WebGL application with C/C++!
+This site uses [**jekyll**](https://jekyllrb.com) and [**jekyll-task-i18n**](https://github.com/ruby-gettext/jekyll-task-i18n).
 
-## Getting Started
+- [jekyll Installation Guild](https://jekyllrb.com/docs/)
+- [jekyll-task-i18n](https://github.com/ruby-gettext/jekyll-task-i18n)
 
-{% include button.html url="download" text="Download OpenSiv3D for Web" %}
+### Installing Gem Dependencies
 
-You can try OpenSiv3D for Web without any local installation.
+```sh
+% gem install bundler
+% bundle install
+```
 
-{% include outline-button.html url="//webassembly-studio.kamenokosoft.com" text="Try on WebAssembly Studio" %}
+### Create Translation Patch
 
-![Siv3DonWebAssemblyStudio.jpeg](/assets/img/Siv3DonWebAssemblyStudio.jpeg)
+```sh
+# Generate translation patch files
+% rake
+# Then, edit _po/**/*.edit.po
+# Command `rake` after editing *.edit.po will apply translation patch
+% rake
+```
 
-## Gallary
+### Generate Pages
 
-{% include gallary.html list=site.data.gamelist %}
-
-## CI Status
-
-- Stable Branch (v0.4.3): ![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/workflows/C/C++%20CI%20for%20Web/badge.svg)
-- Develop Branch (v0.4.3): ![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/workflows/C/C++%20CI%20for%20Web/badge.svg?branch=web_develop)
+```sh
+% jekyll build
+# or, `jekyll serve` will launch local server
+```

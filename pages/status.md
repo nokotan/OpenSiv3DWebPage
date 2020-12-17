@@ -5,7 +5,6 @@
 layout: default
 title: Implementation Status
 permalink: /status
-meta-title: Status
 ---
 
 **Also Check [Project:Features](https://github.com/nokotan/OpenSiv3D/projects/1)**

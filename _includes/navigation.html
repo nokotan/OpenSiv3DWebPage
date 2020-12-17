@@ -3,6 +3,8 @@
   <span></span>
 </a>
 
+{% assign pageUrl = page.url | split: "/" | last %}
+
 <div id="menu">
   <div class="pure-menu">
     <a class="pure-menu-heading" href="/">{{ site.title }}</a>
@@ -16,7 +18,7 @@
         menu-item-divided
       {% endif %}
 
-      {% if page.title == item.title or page.meta-title == item.title %}
+      {% if item.url == pageUrl %}
         pure-menu-selected
       {% endif %}
       {% endcapture %}

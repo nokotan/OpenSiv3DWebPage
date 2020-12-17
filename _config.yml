@@ -29,7 +29,10 @@ twitter:
 github:
   username: nokotan
 
-language: ja
+language:
+  - en
+  - ja
+
 description: OpenSiv3D for Web brings you to developing WebGL application with C/C++!
 
 # Build settings
@@ -56,6 +59,7 @@ exclude:
 #   - vendor/ruby/
   - CNAME
   - Ralefile
+  - README.md
 
 plugins:
   - jekyll-seo-tag

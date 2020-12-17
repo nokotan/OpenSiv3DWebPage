@@ -1,33 +1,34 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+# OpenSiv3D for Web プロジェクトサイト
 
-layout: ja/default
-title: OpenSiv3D for Web
-meta-title: Home
-permalink: /ja/index
-css: /assets/css/gallary.css
----
+プロジェクトサイトは <https://siv3d.kamenokosoft.com> で運用中です。
 
-![demo.gif](https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/demo.gif)
+## プロジェクトサイトのビルド
 
-OpenSiv3D for Web は WebGL アプリケーションを C/C++ で開発するためのライブラリです。
+このサイトでは [**jekyll**](https://jekyllrb.com) と [**jekyll-task-i18n**](https://github.com/ruby-gettext/jekyll-task-i18n) を使っています。
 
-## はじめる
+- [jekyll インストールガイド](https://jekyllrb.com/docs/)
+- [jekyll-task-i18n インストールガイド](https://github.com/ruby-gettext/jekyll-task-i18n)
 
-{% include button.html url="download" text="OpenSiv3D for Web をダウンロード" %}
+### 依存関係の解決
 
-OpenSiv3D for Web をブラウザ上で試すこともできます。
+```sh
+% gem install bundler
+% bundle install
+```
 
-{% include outline-button.html url="//webassembly-studio.kamenokosoft.com" text="WebAssembly Studio 上で試す" %}
+### 翻訳パッチの作成
 
-![Siv3DonWebAssemblyStudio.jpeg](/assets/img/Siv3DonWebAssemblyStudio.jpeg)
+```sh
+# Generate translation patch files
+% rake
+# Then, edit _po/**/*.edit.po
+# Command `rake` after editing *.edit.po will apply translation patch
+% rake
+```
 
-## ギャラリー
+### プロジェクトサイトの生成
 
-{% include gallary.html list=site.data.ja.gamelist %}
-
-## 最新版ビルドの状態
-
-- 安定版ブランチ (v0.4.3): ![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/workflows/C/C++%20CI%20for%20Web/badge.svg)
-- 開発版ブランチ (v0.4.3): ![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/workflows/C/C++%20CI%20for%20Web/badge.svg?branch=web_develop)
+```sh
+% jekyll build
+# or, `jekyll serve` will launch local server
+```
