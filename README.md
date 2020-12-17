@@ -4,10 +4,12 @@ The project site is running on <https://siv3d.kamenokosoft.com>
 
 ## Building Site
 
-This site uses [**jekyll**](https://jekyllrb.com) and [**jekyll-task-i18n**](https://github.com/ruby-gettext/jekyll-task-i18n).
+[**jekyll**](https://jekyllrb.com) and [**jekyll-task-i18n**](https://github.com/ruby-gettext/jekyll-task-i18n) are used as build infrastructure, [**milligram**](https://milligram.io) and [**Pure.css**](https://purecss.io) are used as CSS frameworks.
 
 - [jekyll Installation Guild](https://jekyllrb.com/docs/)
-- [jekyll-task-i18n](https://github.com/ruby-gettext/jekyll-task-i18n)
+- [jekyll-task-i18n GitHub](https://github.com/ruby-gettext/jekyll-task-i18n)
+- [milligram Project Page](https://milligram.io)
+- [Pure.css Project Page](https://purecss.io)
 
 ### Installing Gem Dependencies
 
