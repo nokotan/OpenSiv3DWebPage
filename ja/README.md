@@ -34,3 +34,24 @@
 % jekyll build
 # または、`jekyll serve` コマンドでローカルサーバを立ち上げます
 ```
+
+## ディレクトリ構造
+
+### \_data, \_layouts
+
+- `_data/[言語]` フォルダと `_layouts/[言語]` フォルダに、翻訳したデータファイルがあります。
+
+### \_includes
+
+- `_includes` フォルダに、HTML の構成要素があります。
+- このフォルダには、翻訳したファイルを配置しないでください。
+
+### \_po
+
+- `_po` フォルダに、翻訳パッチがあります。
+- 詳細は [jekyll-task-i18n GitHub リポジトリ](https://github.com/ruby-gettext/jekyll-task-i18n) を確認してください。
+
+### pages
+
+- `pages` フォルダに、主となる記事があります。
+- ナビゲーションメニューは、手動で更新しています。ナビゲーションメニューの内容の定義は `_data/ja/nav.yml` にあります。

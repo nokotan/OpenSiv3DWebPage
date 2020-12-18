@@ -34,3 +34,24 @@ The project site is running on <https://siv3d.kamenokosoft.com>
 % jekyll build
 # or, `jekyll serve` will launch local server
 ```
+
+## Directories Structure
+
+### \_data, \_layouts
+
+- Localized versions of data files are located in `_data/[lang]` or `_layouts/[lang]`.
+
+### \_includes
+
+- `_includes` folder contains html components.
+- It is not recommended in this repository to locate localization specific files.
+
+### \_po
+
+- Translation patches are included in `_po` folder.
+- For further information, check out [jekyll-task-i18n GitHub](https://github.com/ruby-gettext/jekyll-task-i18n).
+
+### pages
+
+- Main articles are placed in this folder.
+- Navigation menu is maintained by hand; Its contents definition are found in `_data/nav.yml`.

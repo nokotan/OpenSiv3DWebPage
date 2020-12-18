@@ -81,3 +81,48 @@ msgstr ""
 "% jekyll build\n"
 "# または、`jekyll serve` コマンドでローカルサーバを立ち上げます\n"
 "```"
+
+msgid "## Directories Structure"
+msgstr "## ディレクトリ構造"
+
+msgid "### \\_data, \\_layouts"
+msgstr ""
+
+msgid ""
+"- Localized versions of data files are located in `_data/[lang]` or `_layouts/"
+"[lang]`."
+msgstr "- `_data/[言語]` フォルダと `_layouts/[言語]` フォルダに、翻訳したデータファイルがあります。"
+
+msgid "### \\_includes"
+msgstr ""
+
+msgid ""
+"- `_includes` folder contains html components.\n"
+"- It is not recommended in this repository to locate localization specific fil"
+"es."
+msgstr ""
+"- `_includes` フォルダに、HTML の構成要素があります。\n"
+"- このフォルダには、翻訳したファイルを配置しないでください。"
+
+msgid "### \\_po"
+msgstr ""
+
+msgid ""
+"- Translation patches are included in `_po` folder.\n"
+"- For further information, check out [jekyll-task-i18n GitHub](https://github."
+"com/ruby-gettext/jekyll-task-i18n)."
+msgstr ""
+"- `_po` フォルダに、翻訳パッチがあります。\n"
+"- 詳細は [jekyll-task-i18n GitHub リポジトリ](https://github.com/ruby-gettext/jekyll-t"
+"ask-i18n) を確認してください。"
+
+msgid "### pages"
+msgstr ""
+
+msgid ""
+"- Main articles are placed in this folder.\n"
+"- Navigation menu is maintained by hand; Its contents definition are found in "
+"`_data/nav.yml`."
+msgstr ""
+"- `pages` フォルダに、主となる記事があります。\n"
+"- ナビゲーションメニューは、手動で更新しています。ナビゲーションメニューの内容の定義は `_data/ja/nav.yml` にあります。"
