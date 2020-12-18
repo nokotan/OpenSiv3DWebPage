@@ -10,6 +10,11 @@
 - title: Building Apps
   url: building
   new-group: true
+  children: 
+    - title: OverView
+      url: building#overview
+    - title: Tested Develop Environment
+      url: building#tested-develop-environment
 
 - title: Status
   url: status

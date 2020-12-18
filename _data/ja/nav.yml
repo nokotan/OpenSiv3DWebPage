@@ -10,6 +10,11 @@
 - title: はじめての WebGL アプリ
   url: building
   new-group: true
+  children: 
+    - title: 概要
+      url: building#概要
+    - title: 動作検証環境
+      url: building#動作検証環境
 
 - title: 実装状況
   url: status

@@ -206,3 +206,12 @@ Hides the menu at `48em`, but modify this based on your app's needs.
     transition: all 0.2s ease-out;
   }
 }
+
+.pure-menu-active > .pure-menu-children {
+  position: relative;
+  left: unset;
+}
+
+.pure-menu-has-children.pure-menu-active > .pure-menu-link:after {
+  content: "\25BE"
+}

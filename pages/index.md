@@ -6,9 +6,12 @@ layout: default
 title: OpenSiv3D for Web
 permalink: /index
 css: /assets/css/gallary.css
+postScript: 
+  - /assets/BasicSample/BasicSample.js
+  - /assets/js/playground.js
 ---
 
-![demo.gif](https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/demo.gif)
+{% include playground.html image="https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/demo.gif" name="BasicSample" %}
 
 OpenSiv3D for Web brings you to developing WebGL application with C/C++!
 

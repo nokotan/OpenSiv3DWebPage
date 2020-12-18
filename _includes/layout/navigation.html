@@ -11,22 +11,61 @@
 
     <ul class="pure-menu-list">
       {% for item in include.nav %}
-      {% capture item-style %}
-      pure-menu-item
+        {% if item.children %}
+          {% assign item-url = item.url | split: "#" | first %}
+          
+          {% capture item-style %}
+            pure-menu-item
+            pure-menu-has-children
+  
+            {% if item.new-group %}
+            menu-item-divided
+            {% endif %}
 
-      {% if item.new-group %}
-        menu-item-divided
-      {% endif %}
+            {% if item-url == pageUrl %}
+            pure-menu-active
+            {% endif %}
+          {% endcapture %}
 
-      {% if item.url == pageUrl %}
-        pure-menu-selected
-      {% endif %}
-      {% endcapture %}
-      <li class="{{ item-style }}">      
-        <a href="{{ item.url }}" class="pure-menu-link">
-          {{ item.title }}
-        </a>
-      </li>
+          <li class="{{ item-style }}">
+            <a href="#" class="pure-menu-link">
+              {{ item.title }}
+            </a>
+            <ul class="pure-menu-children">
+              {% for child in item.children %}
+                {% capture child-style %}
+                  pure-menu-item
+                  {% if child.new-group %}
+                    menu-item-divided
+                  {% endif %}
+                {% endcapture %}
+              <li class="{{ child-style }}">      
+                <a href="{{ child.url }}" class="pure-menu-link">
+                  {{ child.title }}
+                </a>
+              </li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% else %}
+          {% capture item-style %}
+            pure-menu-item
+
+            {% if item.new-group %}
+              menu-item-divided
+            {% endif %}
+
+            {% if item.url == pageUrl %}
+              pure-menu-selected
+            {% endif %}
+          {% endcapture %}
+
+          <li class="{{ item-style }}">      
+            <a href="{{ item.url }}" class="pure-menu-link">
+              {{ item.title }}
+            </a>
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </div>

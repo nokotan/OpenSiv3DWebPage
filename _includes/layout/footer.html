@@ -1,1 +1,8 @@
 <script src="/assets/js/ui.js"></script>
+<script src="/assets/js/menus.js"></script>
+
+{% if page.postScript %}
+{% for script in page.postScript %}
+<script src="{{ script }}"></script>
+{% endfor %}
+{% endif %}
