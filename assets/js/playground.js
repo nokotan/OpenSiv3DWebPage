@@ -10,8 +10,7 @@
             thumbnail.hidden = true;
 
             canvas.hidden = false;
-            console.log(canvas.dataset["src-object"]);
-            window[canvas.dataset["src-object"]]({ canvas });
+            window[canvas.dataset["object"]]({ canvas });
         });
     }
 })(window, document);
