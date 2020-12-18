@@ -5,7 +5,8 @@
 layout: default
 title: OpenSiv3D for Web
 permalink: /index
-css: /assets/css/gallary.css
+css: 
+  - /assets/css/gallary.css
 postScript: 
   - /assets/BasicSample/BasicSample.js
   - /assets/js/playground.js

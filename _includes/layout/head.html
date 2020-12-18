@@ -1,7 +1,5 @@
 <!-- CSS framework is supported by Milligram(https://milligram.io), Pure.css(https://purecss.io). -->
 <head>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
 
@@ -19,7 +17,9 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/menu.css">
   {% if page.css %}
-  <link rel="stylesheet" href="{{ page.css }}">
+  {% for css in page.css %}
+  <link rel="stylesheet" href="{{ css }}">
+  {% endfor %}
   {% endif %}
 
   {% if page.title and page.title != site.title %}
@@ -30,3 +30,5 @@
 
   {% seo title=false %}
 </head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
