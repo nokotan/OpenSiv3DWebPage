@@ -65,7 +65,7 @@ emsdk activate latest --global
 
 ### 拡張機能のインストール
 
-Visual Studio Code の左側の拡張機能タブから、次の名前で検索し、インストールしてください。 
+Visual Studio Code の左側の拡張機能タブから、次の名前で検索し、インストールしてください。
 
 - C/C++ VSCode Extension
 - Debugger for Chrome
@@ -99,61 +99,60 @@ OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専
 ただし、イベント処理のために定期的にブラウザに制御を戻す必要があります。そのため、**メインループ部分を関数に切り出し**、その関数を**フレーム開始時に呼ばれるコールバック関数として登録**する必要があります。
 
 ```c++:Main.cpp
-
 # include <Siv3D.hpp> // OpenSiv3D v0.4.3
 # include <emscripten.h>
 
 void RunMainLoop(void* arg)
 {
-	static_cast<const std::function<void()>*>(arg)->operator()();
+  static_cast<const std::function<void()>*>(arg)->operator()();
 }
 
 void SetMainLoop(std::function<void()> mainLoop)
 {
-	emscripten_set_main_loop_arg(RunMainLoop, reinterpret_cast<void*>(&mainLoop), 0, 1);
+  emscripten_set_main_loop_arg(RunMainLoop, reinterpret_cast<void*>(&mainLoop), 0, 1);
 }
 
 void Main()
 {
-	// 背景を水色にする
-	Scene::SetBackground(ColorF(0.8, 0.9, 1.0));
-	
-	// 大きさ 60 のフォントを用意
-	const Font font(60);
-	
-	// 猫のテクスチャを用意
-	const Texture cat(Emoji(U"🐈"));
-	
-	// 猫の座標
-	Vec2 catPos(640, 450);
+  // 背景を水色にする
+  Scene::SetBackground(ColorF(0.8, 0.9, 1.0));
+  
+  // 大きさ 60 のフォントを用意
+  const Font font(60);
+  
+  // 猫のテクスチャを用意
+  const Texture cat(Emoji(U"🐈"));
+  
+  // 猫の座標
+  Vec2 catPos(640, 450);
 
-	SetMainLoop([&]()
-	{
-		System::Update();
+  SetMainLoop([&]()
+  {
+    System::Update();
 
-		// テキストを画面の中心に描く
-		font(U"Hello, Siv3D!🐣").drawAt(Scene::Center(), Palette::Black);
-		
-		// 大きさをアニメーションさせて猫を表示する
-		cat.resized(100 + Periodic::Sine0_1(1s) * 20).drawAt(catPos);
-		
-		// マウスカーソルに追従する半透明の赤い円を描く
-		Circle(Cursor::Pos(), 40).draw(ColorF(1, 0, 0, 0.5));
-		
-		// [A] キーが押されたら
-		if (KeyA.down())
-		{
-			// Hello とデバッグ表示する
-			Print << U"Hello!";
-		}
-		
-		// ボタンが押されたら
-		if (SimpleGUI::Button(U"Move the cat", Vec2(600, 20)))
-		{
-			// 猫の座標を画面内のランダムな位置に移動する
-			catPos = RandomVec2(Scene::Rect());
-		}
-	});
+    // テキストを画面の中心に描く
+    font(U"Hello, Siv3D!🐣").drawAt(Scene::Center(), Palette::Black);
+    
+    // 大きさをアニメーションさせて猫を表示する
+    cat.resized(100 + Periodic::Sine0_1(1s) * 20).drawAt(catPos);
+    
+    // マウスカーソルに追従する半透明の赤い円を描く
+    Circle(Cursor::Pos(), 40).draw(ColorF(1, 0, 0, 0.5));
+    
+    // [A] キーが押されたら
+    if (KeyA.down())
+    {
+      // Hello とデバッグ表示する
+      Print << U"Hello!";
+    }
+    
+    // ボタンが押されたら
+    if (SimpleGUI::Button(U"Move the cat", Vec2(600, 20)))
+    {
+      // 猫の座標を画面内のランダムな位置に移動する
+      catPos = RandomVec2(Scene::Rect());
+    }
+  });
 }
 ```
 

@@ -12,8 +12,6 @@
     <ul class="pure-menu-list">
       {% for item in include.nav %}
         {% if item.children %}
-          {% assign item-url = item.url | split: "#" | first %}
-          
           {% capture item-style %}
             pure-menu-item
             pure-menu-has-children
@@ -22,7 +20,7 @@
             menu-item-divided
             {% endif %}
 
-            {% if item-url == pageUrl %}
+            {% if page.url contains item.url %}
             pure-menu-active
             {% endif %}
           {% endcapture %}
@@ -37,6 +35,10 @@
                   pure-menu-item
                   {% if child.new-group %}
                     menu-item-divided
+                  {% endif %}
+
+                  {% if child.url == page.url %}
+                    pure-menu-selected
                   {% endif %}
                 {% endcapture %}
               <li class="{{ child-style }}">      
@@ -55,7 +57,7 @@
               menu-item-divided
             {% endif %}
 
-            {% if item.url == pageUrl %}
+            {% if item.url == page.url %}
               pure-menu-selected
             {% endif %}
           {% endcapture %}

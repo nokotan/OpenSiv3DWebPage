@@ -48,18 +48,18 @@ msgstr "OpenSiv3D for Web は WebGL アプリケーションを C/C++ で開発�
 msgid "## Getting Started"
 msgstr "## はじめる"
 
-msgid "{% include button.html url=\"download\" text=\"Download OpenSiv3D for Web\" %}"
-msgstr "{% include button.html url=\"download\" text=\"OpenSiv3D for Web をダウンロード\" %}"
-
-msgid "You can try OpenSiv3D for Web without any local installation."
-msgstr "OpenSiv3D for Web をブラウザ上で試すこともできます。"
-
 msgid ""
+"{% include button.html url=\"building/get-opensiv3d-web\" text=\"Download OpenSiv"
+"3D for Web\" %}\n"
+"Or,\n"
 "{% include outline-button.html url=\"//webassembly-studio.kamenokosoft.com\" tex"
-"t=\"Try on WebAssembly Studio\" %}"
+"t=\"Try OpenSiv3D for Web on Browser\" %}"
 msgstr ""
+"{% include button.html url=\"building/get-opensiv3d-web\" text=\"OpenSiv3D for We"
+"b をダウンロード\" %}\n"
+"または\n"
 "{% include outline-button.html url=\"//webassembly-studio.kamenokosoft.com\" tex"
-"t=\"WebAssembly Studio 上で試す\" %}"
+"t=\"ブラウザ上で OpenSiv3D for Web を試す\" %}"
 
 msgid ""
 "```cpp\n"

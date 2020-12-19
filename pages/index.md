@@ -19,11 +19,9 @@ OpenSiv3D for Web brings you to developing WebGL application with C/C++!
 
 ## Getting Started
 
-{% include button.html url="download" text="Download OpenSiv3D for Web" %}
-
-You can try OpenSiv3D for Web without any local installation.
-
-{% include outline-button.html url="//webassembly-studio.kamenokosoft.com" text="Try on WebAssembly Studio" %}
+{% include button.html url="building/get-opensiv3d-web" text="Download OpenSiv3D for Web" %}
+Or,
+{% include outline-button.html url="//webassembly-studio.kamenokosoft.com" text="Try OpenSiv3D for Web on Browser" %}
 
 ```cpp
 # include <Siv3D.hpp> // OpenSiv3D v0.4.3

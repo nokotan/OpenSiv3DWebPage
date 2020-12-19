@@ -1,23 +1,27 @@
 - title: ホーム
-  url: index
+  url: /ja/index
 
 - title: ダウンロード
-  url: download
+  url: /ja/download
 
 - title: ギャラリー
-  url: gallary
+  url: /ja/gallary
 
 - title: はじめての WebGL アプリ
-  url: building
+  url: /ja/building
   new-group: true
   children: 
-    - title: 概要
-      url: building#概要
-    - title: 動作検証環境
-      url: building#動作検証環境
+    - title: はじめる
+      url: /ja/building/get-opensiv3d-web
+    - title: Emscripten をダウンロードする
+      url: /ja/building/get-emscripten
+    - title: Visual Studio Code のセットアップ
+      url: /ja/building/setup-vscode
+    - title: はじめてのコード
+      url: /ja/building/writing-code
 
 - title: 実装状況
-  url: status
+  url: /ja/status
 
 - title: GitHub
   url: https://github.com/nokotan/OpenSiv3D
