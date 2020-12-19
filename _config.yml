@@ -46,6 +46,16 @@ description: OpenSiv3D for Web brings you to developing WebGL application with C
 # their entries' file path in the `include:` list.
 #
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+  - scope:
+      path: "ja"
+    values:
+      layout: "ja/default"
+
 exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/

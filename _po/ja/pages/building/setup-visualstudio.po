@@ -15,7 +15,6 @@ msgid ""
 msgstr ""
 
 msgid ""
-"layout: default\n"
 "title: Setup Visual Studio\n"
 "permalink: /building/setup-visualstudio\n"
 "---"
