@@ -207,6 +207,12 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   }
 }
 
+.menu-bottom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
 /*
 CSS overrides
 */
