@@ -1,4 +1,4 @@
-<a href="javascript:void;" id="menuLink" class="menu-link">
+<a href="javascript:void 0;" id="menuLink" class="menu-link">
   <!-- Hamburger icon -->
   <span></span>
 </a>
@@ -17,11 +17,11 @@
             pure-menu-has-children
   
             {% if item.new-group %}
-            menu-item-divided
+              menu-item-divided
             {% endif %}
 
             {% if page.url contains item.url %}
-            pure-menu-active
+              pure-menu-active
             {% endif %}
           {% endcapture %}
 
@@ -76,12 +76,21 @@
         <a href="#" class="pure-menu-link">Language</a>
 
         <ul class="pure-menu-children">
+          {% for lang in site.data.languages %}
+          {% if page.language == lang.name %}
           <li class="pure-menu-item">
-            <a href="/index" class="pure-menu-link">English</a>
+            <a href="javascript:void 0;" class="pure-menu-link pure-menu-selected">{{ lang.friendlyName }}</a>
           </li>
+          {% elsif page.language == "en" %}
           <li class="pure-menu-item">
-            <a href="/ja/index" class="pure-menu-link">日本語</a>
-          </li>
+            <a href="/{{ lang.name }}{{ page.url }}" class="pure-menu-link">{{ lang.friendlyName }}</a>
+          </li>        
+          {% else %}
+          <li class="pure-menu-item">
+            <a href="{{ page.url | split: '/' | shift | shift | join: '/' | prepend: '/' }}" class="pure-menu-link">{{ lang.friendlyName }}</a>
+          </li>       
+          {% endif %}
+          {% endfor %}
         </ul>
       </li>
       <li class="pure-menu-item">

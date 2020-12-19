@@ -1,0 +1,4 @@
+- name: "en"
+  friendlyName: "English"
+- name: "ja"
+  friendlyName: "日本語"
