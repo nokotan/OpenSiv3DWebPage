@@ -16,12 +16,12 @@
   height: 100%;
 
   color: transparent;
-  font-size: 3rem;
   transition: all 0.2s ease-out;
 }
 
 .playground-overlay:hover {
   color: white;
+  border-color: white;
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -30,6 +30,19 @@
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
+}
+
+.playground-overlay-text.button.button-outline {
+  color: inherit;
+  border-color: inherit;
+
+  font-size: 1.2rem;
+}
+
+.playground-overlay-text.button.button-outline:hover {
+  color: gray;
+  border-color: inherit;
+  background: white;
 }
 
 .playground-progress-frame {
