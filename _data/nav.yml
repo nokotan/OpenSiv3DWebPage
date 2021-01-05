@@ -11,8 +11,6 @@
   url: /building
   new-group: true
   children: 
-    - title: Getting Started
-      url: /building/get-opensiv3d-web
     - title: Install Emscripten
       url: /building/get-emscripten
     - title: Setup Visual Studio Code

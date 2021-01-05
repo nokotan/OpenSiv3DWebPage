@@ -10,9 +10,7 @@
 - title: はじめての WebGL アプリ
   url: /ja/building
   new-group: true
-  children: 
-    - title: はじめる
-      url: /ja/building/get-opensiv3d-web
+  children:
     - title: Emscripten をダウンロードする
       url: /ja/building/get-emscripten
     - title: Visual Studio Code のセットアップ

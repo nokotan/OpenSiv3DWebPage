@@ -7,12 +7,23 @@ permalink: /download
 
 ### Windows
 
+{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.3-web/OpenSiv3D.0.4.3.Web.exe" text="Download OpenSiv3D for Web Installer" %}
+{% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.3-web/OpenSiv3D-wasm.zip" text="Download OpenSiv3D for Web.zip" %}
+
+### macOS, Linux
+
+{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.3-web/OpenSiv3D-wasm.tgz" text="Download OpenSiv3D for Web.tgz" %}
+
+### Other Versions
+
+#### Windows
+
 | | emscripten upstream (wasm backend) | emscripten fastcomp (asm.js backend) |
 | :--: | :--: | :--: |
 | Installer version | [OpenSiv3D for Web Installer](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.3-web/OpenSiv3D.0.4.3.Web.exe) (36.99MB) | [OpenSiv3D for Web Installer](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.3-web/OpenSiv3D.0.4.3.Web-asmjs.exe) (64.65MB) |
 | zip version | [OpenSiv3D-wasm.zip](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.3-web/OpenSiv3D-wasm.zip) (41.9MB) |  [OpenSiv3D-asmjs](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.3-web/OpenSiv3D-asmjs.zip) (82.5MB) |
 
-### Linux, macOS
+#### macOS, Linux
 
 | | emscripten upstream (wasm backend) | emscripten fastcomp (asm.js backend) |
 | :--: | :--: | :--: |
@@ -24,4 +35,4 @@ Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)
 
 ## Next Step
 
-Check out [Building WebGL Apps Details](/building)!
+Check out [Install emscripten](building/get-emscripten)!
