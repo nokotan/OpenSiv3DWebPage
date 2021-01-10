@@ -236,3 +236,9 @@ msgstr ""
 "    \"group\": \"build\"\n"
 "}\n"
 "```"
+
+msgid "## Next Step"
+msgstr "## 次の一歩"
+
+msgid "Check out [Writing First Code](writing-code)!"
+msgstr ""

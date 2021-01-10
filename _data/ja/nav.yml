@@ -17,6 +17,8 @@
       url: /ja/building/setup-vscode
     - title: はじめてのコード
       url: /ja/building/writing-code
+    - title: Web 固有の注意点
+      url: /ja/building/web-specific-notes
 
 - title: 実装状況
   url: /ja/status

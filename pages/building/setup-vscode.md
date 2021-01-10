@@ -118,3 +118,7 @@ Open "Extension Tab" in Visual Studio Code, search and install these extensions:
     "group": "build"
 }
 ```
+
+## Next Step
+
+Check out [Writing First Code](writing-code)!

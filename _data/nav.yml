@@ -17,6 +17,8 @@
       url: /building/setup-vscode
     - title: Writing First Code
       url: /building/writing-code
+    - title: Web Specific Notes
+      url: /building/web-specific-notes
 
 - title: Status
   url: /status

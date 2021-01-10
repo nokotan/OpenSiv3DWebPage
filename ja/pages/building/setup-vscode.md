@@ -118,3 +118,7 @@ Visual Studio Code の左側の拡張機能タブから、次の名前で検索�
     "group": "build"
 }
 ```
+
+## 次の一歩
+
+Check out [Writing First Code](writing-code)!
