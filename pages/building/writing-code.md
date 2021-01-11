@@ -8,7 +8,7 @@ permalink: /building/writing-code
 
 Good first OpenSiv3D app samples are found in [OpenSiv3D Official Project Site](https://siv3d.github.io/sample/game/).
 
-```c++:Main.cpp
+```cpp
 # include <Siv3D.hpp> // OpenSiv3D v0.4.3
 # include <emscripten.h>
 

@@ -8,7 +8,7 @@ permalink: /ja/building/writing-code
 
 OpenSiv3D のサンプルアプリケーションは、[OpenSiv3D 公式サイト](https://siv3d.github.io/sample/game/) にあります。
 
-```c++:Main.cpp
+```cpp
 # include <Siv3D.hpp> // OpenSiv3D v0.4.3
 # include <emscripten.h>
 

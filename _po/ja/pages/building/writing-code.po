@@ -31,7 +31,7 @@ msgstr ""
 "/) にあります。"
 
 msgid ""
-"```c++:Main.cpp\n"
+"```cpp\n"
 "# include <Siv3D.hpp> // OpenSiv3D v0.4.3\n"
 "# include <emscripten.h>"
 msgstr ""
