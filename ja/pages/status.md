@@ -44,10 +44,10 @@ permalink: /ja/status
 
 | フォーマット名 | 状態 | 備考 |
 | :--: | :--: | :--: |
-| Wave | ❔ | |
+| Wave | ✅  | |
 | MP3 | ❌ | |
-| AAC | ❌ | |
-| Ogg | ❔ | |
+| AAC | 🚧 | |
+| Ogg | ✅  | |
 
 ## 入力デバイス
 
@@ -63,7 +63,7 @@ permalink: /ja/status
 | 機能名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | Web カメラ | ✅ | 固定解像度のみ対応 (640x480) |
-| マイク | ❌ | |
+| マイク | 🚧 | |
 | CPU 機能検出 | 🚫 | |
 | 電源状態 | 🚫 | [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API) という非推奨の API に依存 |
 
@@ -73,7 +73,7 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | メモリ上のファイル ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | 再読み込み時に全てのファイルが消去されます。 (OpenSiv3D for Web の拡張機能) |
 | [インデックスされたファイル](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ | |
-| ダイアログ | ❌ | |
+| ダイアログ | 🚧 | |
 | ドラッグドロップ | ❌ | |
 
 ## そのほか
@@ -82,7 +82,7 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | 通知 | ❌ | |
 | 音声読み上げ | ❌ | |
-| メッセージボックス | ✅ | `window.alert` または `window.confirm` を呼び出し |
+| メッセージボックス | 🚧 | `window.alert` または `window.confirm` を呼び出し |
 | クリップボード | ❌ | |
 | 通信機能 | ❌ | |
 | Siv3D スクリプト | ✅ | |

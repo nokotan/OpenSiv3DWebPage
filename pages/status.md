@@ -44,10 +44,10 @@ permalink: /status
 
 | Format Name | Status | Remarks |
 | :--: | :--: | :--: |
-| Wave | ❔ | |
+| Wave | ✅  | |
 | MP3 | ❌ | |
-| AAC | ❌ | |
-| Ogg | ❔ | |
+| AAC | 🚧 | |
+| Ogg | ✅  | |
 
 ## Input Devices
 
@@ -63,7 +63,7 @@ permalink: /status
 | Feature Name | Status | Remarks |
 | :--: | :--: | :--: |
 | WebCamera | ✅ | Restricts: Fixed Resolution (640x480) |
-| Microphone | ❌ | |
+| Microphone | 🚧 | |
 | CPU Feature Detection | 🚫 | |
 | Power-Status | 🚫 | Depends Deprecated API: [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API)|
 
@@ -73,7 +73,7 @@ permalink: /status
 | :--: | :--: | :--: |
 | On-Memory Files ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | Restricts: Flushed All Files on Reload (Web Extension) |
 | [Indexed DataBase](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ | |
-| File Dialogs | ❌ | |
+| File Dialogs | 🚧 | |
 | File Drag & Drop | ❌ | |
 
 ## Misc
@@ -82,7 +82,7 @@ permalink: /status
 | :--: | :--: | :--: |
 | Notification | ❌ | |
 | Text-To-Speech | ❌ | |
-| MessageBox | ✅ | Just Calls `window.alert` or `window.confirm` |
+| MessageBox | 🚧 | Just Calls `window.alert` or `window.confirm` |
 | ClipBoard | ❌ | |
 | Network | ❌ | |
 | Siv3D Scripts | ✅ | |
