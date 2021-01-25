@@ -27,3 +27,33 @@
   url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/KDTree/Siv3DTest.html
   image: "#"
   description: KDTree
+
+- title: ブロック崩し
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/BreakOut/BreakOut.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/breakout.gif?raw=true
+  description: シンプルなブロック崩し
+
+- title: 絵文字タワー
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/BreakOut/BreakOut.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/breakout.gif?raw=true
+  description: バトルはできません
+
+- title: ライフゲーム
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/LifeGame/LifeGame.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/game-of-life-editor.gif?raw=true
+  description: 一時期流行ったとか
+
+- title: 数つなぎ
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/NumberChain/NumberChain.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/number-chain.mp4?raw=true
+  description: かめは14コンボが限界
+
+- title: 縦スクロールシューティング
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Shooter/Shooter.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/shooter.mp4?raw=true
+  description: 縦スクロールシューティング
+
+- title: SketchToPolygon
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/SketchToPolygon/SketchToPolygon.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/sketch-to-polygon.gif?raw=true
+  description: スケッチをポリゴンで表現

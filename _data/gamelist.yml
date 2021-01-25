@@ -27,3 +27,33 @@
   url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/KDTree/Siv3DTest.html
   image: "#"
   description: KDTree
+
+- title: BreakOut
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/BreakOut/BreakOut.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/breakout.gif?raw=true
+  description: Simple BreakOut Game
+
+- title: EmojiTower
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/BreakOut/BreakOut.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/breakout.gif?raw=true
+  description: Emoji Stacking with 2D Physics
+
+- title: GameOfLife
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/LifeGame/LifeGame.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/game-of-life-editor.gif?raw=true
+  description: Game Of Life
+
+- title: NumberChain
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/NumberChain/NumberChain.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/number-chain.mp4?raw=true
+  description: Chain Game
+
+- title: Shooter
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Shooter/Shooter.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/shooter.mp4?raw=true
+  description: Vertical Scroll Shooting
+
+- title: SketchToPolygon
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/SketchToPolygon/SketchToPolygon.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/sketch-to-polygon.gif?raw=true
+  description: Your Sketch will be converted into Polygons
