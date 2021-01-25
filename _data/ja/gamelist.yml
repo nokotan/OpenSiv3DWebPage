@@ -34,8 +34,8 @@
   description: シンプルなブロック崩し
 
 - title: 絵文字タワー
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/BreakOut/BreakOut.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/breakout.gif?raw=true
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/EmojiTower/EmojiTower.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/emoji-tower.mp4?raw=true
   description: バトルはできません
 
 - title: ライフゲーム
