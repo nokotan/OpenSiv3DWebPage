@@ -13,6 +13,8 @@
   children:
     - title: Emscripten をダウンロードする
       url: /ja/building/get-emscripten
+    - title: Visual Studio のセットアップ
+      url: /ja/building/setup-visualstudio
     - title: Visual Studio Code のセットアップ
       url: /ja/building/setup-vscode
     - title: はじめてのコード

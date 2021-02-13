@@ -13,6 +13,8 @@
   children: 
     - title: Install Emscripten
       url: /building/get-emscripten
+    - title: Setup Visual Studio
+      url: /building/setup-visualstudio
     - title: Setup Visual Studio Code
       url: /building/setup-vscode
     - title: Writing First Code

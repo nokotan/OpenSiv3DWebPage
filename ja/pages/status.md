@@ -36,7 +36,7 @@ permalink: /ja/status
 | 組み込みフォント | ✅ | |
 | 絵文字 | ✅ | |
 | システムフォント | 🚫 | |
-| Web フォント | ❌ | (OpenSiv3D for Web の拡張機能) |
+
 
 ## サウンド
 
@@ -44,10 +44,10 @@ permalink: /ja/status
 
 | フォーマット名 | 状態 | 備考 |
 | :--: | :--: | :--: |
-| Wave | ✅  | |
-| MP3 | ❌ | |
-| AAC | 🚧 | |
-| Ogg | ✅  | |
+| Wave | ✅ | |
+| MP3 | ✅ | `s3d::Platform::WebAudioProcessing::DecodeAudioFromFile` を使ってください |
+| AAC | ✅ | `s3d::Platform::WebAudioProcessing::DecodeAudioFromFile` を使ってください。手動ビルドで有効にできます。 |
+| Ogg | ✅ | |
 
 ## 入力デバイス
 
@@ -55,8 +55,11 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | キーボード | ✅ | |
 | マウス | ✅ | |
-| タッチ入力 | 🚧 | マウス入力をエミュレートします |
-| ゲームコントローラ | ❌ | |
+| マルチタッチ | ✅ | マウス入力のエミュレーションとして機能 |
+| ゲームコントローラ | ✅ | POV 入力は使用できません |
+| XInput | 🚫 | |
+| JoyCon | ❌ | |
+| ProCon | ❌ | |
 
 ## ハードウェアの機能
 
@@ -74,15 +77,23 @@ permalink: /ja/status
 | メモリ上のファイル ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | 再読み込み時に全てのファイルが消去されます。 (OpenSiv3D for Web の拡張機能) |
 | [インデックスされたファイル](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ | |
 | ダイアログ | 🚧 | |
-| ドラッグドロップ | ❌ | |
+| ドラッグドロップ | ✅ | |
+
+## テキスト入出力
+
+| 機能名 | 状態 | 備考 |
+| :--: | :--: | :--: |
+| テクスト入力基本サポート | ✅ | |
+| IME 基本サポート | ❌ | `HTMLInputElement` と同期 |
+| IME 入力候補 | 🚫 | |
+| テキスト読み上げ | ❌ | |
 
 ## そのほか
 
 | 機能名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | 通知 | ❌ | |
-| 音声読み上げ | ❌ | |
-| メッセージボックス | 🚧 | `window.alert` または `window.confirm` を呼び出し |
-| クリップボード | ❌ | |
-| 通信機能 | ❌ | |
-| Siv3D スクリプト | ✅ | |
+| メッセージボックス | ✅ | `window.alert` または `window.confirm` を呼び出し |
+| クリップボード | ❌ | テキストのコピー及び貼り付けのみ対応 |
+| Network | ❌ | **WebSocket** に依存、P2P 通信は利用不可 |
+| Siv3D Scripts | ✅ | |
