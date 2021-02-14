@@ -55,6 +55,8 @@ defaults:
       description: OpenSiv3D for Web は C++17/20 で WebGL アプリを開発するためのライブラリです
       sitemap: false
 
+alternative-languages: [ "ja" ]
+
 exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/
@@ -73,4 +75,4 @@ exclude:
 
 plugins:
   - jekyll-seo-tag
-  - jekyll-sitemap
+#  - jekyll-sitemap
