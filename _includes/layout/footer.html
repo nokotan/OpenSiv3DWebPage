@@ -1,10 +1,10 @@
 <script src="/assets/js/ui.js"></script>
 <script src="/assets/js/menu.js"></script>
 
-{% if page.postScript %}
-{% for script in page.postScript %}
+{%- if page.postScript %}
+{%- for script in page.postScript %}
 <script src="{{ script }}"></script>
-{% endfor %}
-{% endif %}
+{%- endfor %}
+{%- endif %}
 
 <link rel="stylesheet" href="/assets/css/syntax-highlight.css">

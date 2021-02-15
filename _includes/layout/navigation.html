@@ -3,72 +3,72 @@
   <span></span>
 </a>
 
-{% assign pageUrl = page.url | split: "/" | last %}
+{%- assign pageUrl = page.url | split: "/" | last %}
 
 <div id="menu">
   <div class="pure-menu">
     <a class="pure-menu-heading" href="/">{{ site.title }}</a>
 
     <ul class="pure-menu-list">
-      {% for item in include.nav %}
-        {% if item.children %}
-          {% capture item-style %}
+      {%- for item in include.nav %}
+        {%- if item.children %}
+          {%- capture item-style -%}
             pure-menu-item
             pure-menu-has-children
   
-            {% if item.new-group %}
+            {%- if item.new-group %}
+            menu-item-divided
+            {%- endif %}
+
+            {%- if page.url contains item.url %}
+            pure-menu-active
+            {%- endif %}
+          {%- endcapture %}
+
+      <li class="{{ item-style }}">
+        <a href="#" class="pure-menu-link">
+          {{ item.title }}
+        </a>
+        <ul class="pure-menu-children">
+          {%- for child in item.children %}
+            {%- capture child-style -%}
+              pure-menu-item
+              {%- if child.new-group %}
               menu-item-divided
-            {% endif %}
+              {%- endif %}
 
-            {% if page.url contains item.url %}
-              pure-menu-active
-            {% endif %}
-          {% endcapture %}
-
-          <li class="{{ item-style }}">
-            <a href="#" class="pure-menu-link">
-              {{ item.title }}
+              {%- if child.url == page.url %}
+              pure-menu-selected
+              {%- endif %}
+            {%- endcapture %}
+          <li class="{{ child-style }}">      
+            <a href="{{ child.url }}" class="pure-menu-link">
+              {{ child.title }}
             </a>
-            <ul class="pure-menu-children">
-              {% for child in item.children %}
-                {% capture child-style %}
-                  pure-menu-item
-                  {% if child.new-group %}
-                    menu-item-divided
-                  {% endif %}
-
-                  {% if child.url == page.url %}
-                    pure-menu-selected
-                  {% endif %}
-                {% endcapture %}
-              <li class="{{ child-style }}">      
-                <a href="{{ child.url }}" class="pure-menu-link">
-                  {{ child.title }}
-                </a>
-              </li>
-              {% endfor %}
-            </ul>
           </li>
-        {% else %}
-          {% capture item-style %}
+          {%- endfor %}
+        </ul>
+      </li>
+        {%- else %}
+          {%- capture item-style -%}
             pure-menu-item
 
-            {% if item.new-group %}
+            {%- if item.new-group %}
               menu-item-divided
-            {% endif %}
+            {%- endif %}
 
-            {% if item.url == page.url %}
+            {%- if item.url == page.url %}
               pure-menu-selected
-            {% endif %}
-          {% endcapture %}
+            {%- endif %}
+          {%- endcapture %}
 
-          <li class="{{ item-style }}">      
-            <a href="{{ item.url }}" class="pure-menu-link">
-              {{ item.title }}
-            </a>
-          </li>
-        {% endif %}
-      {% endfor %}
+      <li class="{{ item-style }}">      
+        <a href="{{ item.url }}" class="pure-menu-link">
+          {{ item.title }}
+        </a>
+      </li>
+        {%- endif %}
+      {%- endfor %}
     </ul>
 
     <ul class="menu-bottom pure-menu-list">
@@ -76,21 +76,21 @@
         <a href="#" class="pure-menu-link">Language</a>
 
         <ul class="pure-menu-children">
-          {% for lang in site.data.languages %}
-          {% if page.language == lang.name %}
+          {%- for lang in site.data.languages %}
+          {%- if page.language == lang.name %}
           <li class="pure-menu-item">
             <a href="javascript:void 0;" class="pure-menu-link pure-menu-selected">{{ lang.friendlyName }}</a>
           </li>
-          {% elsif page.language == "en" %}
+          {%- elsif page.language == "en" %}
           <li class="pure-menu-item">
             <a href="/{{ lang.name }}{{ page.url }}" class="pure-menu-link">{{ lang.friendlyName }}</a>
           </li>        
-          {% else %}
+          {%- else %}
           <li class="pure-menu-item">
             <a href="{{ page.url | split: '/' | shift | shift | join: '/' | prepend: '/' }}" class="pure-menu-link">{{ lang.friendlyName }}</a>
           </li>       
-          {% endif %}
-          {% endfor %}
+          {%- endif %}
+          {%- endfor %}
         </ul>
       </li>
       <li class="pure-menu-item">

@@ -16,17 +16,17 @@
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel="stylesheet" href="/assets/css/menu.css">
-  {% if page.css %}
-  {% for css in page.css %}
+  {%- if page.css %}
+  {%- for css in page.css %}
   <link rel="stylesheet" href="{{ css }}">
-  {% endfor %}
-  {% endif %}
+  {%- endfor %}
+  {%- endif %}
 
-  {% if page.title and page.title != site.title %}
+  {%- if page.title and page.title != site.title %}
   <title>{{ page.title }} - {{ site.title }}</title>
-  {% else %}
+  {%- else %}
   <title>{{ site.title }}</title>
-  {% endif %}
+  {%- endif %}
 
   {% seo title=false %}
 </head>
