@@ -12,7 +12,7 @@ OpenSiv3D Web版では、OpenSiv3D デスクトップ版と同じように while
 
 そのため、**メインループ部分を関数に切り出し**、その関数をフレーム開始時に呼ばれる**コールバック関数として登録する**必要があります。
 
-```cpp:
+```cpp
 # include <Siv3D.hpp>
 
 # if SIV3D_PLATFORM(WEB)

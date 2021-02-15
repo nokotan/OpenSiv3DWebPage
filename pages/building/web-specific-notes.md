@@ -12,7 +12,7 @@ permalink: /building/web-specific-notes
 Therefore, **make a function that includes logics that should be processed regularly**,
 and **register the function as a callback** which is called at the start of an animation frame.
 
-```cpp:
+```cpp
 # include <Siv3D.hpp>
 
 # if SIV3D_PLATFORM(WEB)
