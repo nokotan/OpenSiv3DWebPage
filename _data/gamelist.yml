@@ -26,7 +26,7 @@
 - title: KDTree
   url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/KDTree/Siv3DTest.html
   image: "#"
-  description: KDTree
+  description: (v0.6) KDTree
 
 - title: BreakOut
   url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/BreakOut/BreakOut.html
@@ -57,3 +57,13 @@
   url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/SketchToPolygon/SketchToPolygon.html
   image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/sketch-to-polygon.gif?raw=true
   description: Your Sketch will be converted into Polygons
+
+- title: Homography
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Homography/Siv3DTest.html
+  image: "#"
+  description: (v0.6) Homography Transformation
+
+- title: GrabCut
+  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/GrabCut/Siv3DTest.html
+  image: "#"
+  description: (v0.6) GrabCut
