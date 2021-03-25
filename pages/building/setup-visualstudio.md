@@ -28,11 +28,15 @@ This Installer will configure following settings in your develop environment.
 
 ## Creating Project
 
-In the Visual Studio 2019 Start Window, click [Create New Project], and select **OpenSiv3D(0.4.3)Web** Project Template.
+Launch Visual Studio, click `Create New Project` in the Visual Studio starting window,
+and the list of selecting project templates will be shown.
 
-![Siv3DWebProjectMake2.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/1e68903d-203f-06cb-dd2d-dc4e941b35a9.png)
+Then, select `OpenSiv3D(0.4.3)Web` project template.
 
-Make sure that Project Configuration (surrounded in Red rectangle) should be **Emscripten**.
+![Siv3DWebProjectMake1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/825bb82c-823f-8f7d-48da-a472a7c55a59.png)
+
+After determining the project name, the text editor of the source code `Main.cpp` will be shown.
+Switch the project platform configuration to `Emscripten` (surrounded by the red rectangle in the following figure)
 
 ![Siv3DWebProjectMake2.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/1e68903d-203f-06cb-dd2d-dc4e941b35a9.png)
 

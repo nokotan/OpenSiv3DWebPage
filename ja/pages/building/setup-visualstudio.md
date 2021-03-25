@@ -20,15 +20,19 @@ Visual Studio が emscripten に付随する emcc を使ってコンパイルを
 
 OpenSiv3D Web版のインストーラは [nokotan/OpenSiv3D releases](https://github.com/nokotan/OpenSiv3D/releases/) からダウンロードできます。OpenSiv3D Web版のインストーラは次の処理を行います。
 
-- OpenSiv3D Web版のバイナリの配置- プロジェクトテンプレートの登録- 環境変数の登録 (OpenSiv3D Web版の配置場所)
+- OpenSiv3D Web版のバイナリの配置
+- プロジェクトテンプレートの登録
+- 環境変数の登録 (OpenSiv3D Web版の配置場所)
 
 ## プロジェクトを作成する
 
-Visual Studio 2019 のスタート画面から、[新しいプロジェクトの作成] をクリックすると、以下のようなプロジェクトテンプレートを選択する画面が出てきます。そこで、OpenSiv3D(0.4.3)Web を選択してください。
+Visual Studio 2019 のスタート画面から、[新しいプロジェクトの作成] をクリックすると、以下のようなプロジェクトテンプレートを選択する画面が出てきます。
 
-![Siv3DWebProjectMake2.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/1e68903d-203f-06cb-dd2d-dc4e941b35a9.png)
+そこで、OpenSiv3D(0.4.3)Web を選択してください。
 
-プロジェクト名を決めると、以下のようなソースファイルの編集画面が出てきます。このとき、構成 (赤枠で囲んだところ) を `Emscripten` に切り替えてください。
+![Siv3DWebProjectMake1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/825bb82c-823f-8f7d-48da-a472a7c55a59.png)
+
+プロジェクト名を決めると、以下のようなソースファイルの編集画面が出てきます。このとき、構成 (赤枠で囲んだところ) を Emscripten に切り替えてください。
 
 ![Siv3DWebProjectMake2.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/1e68903d-203f-06cb-dd2d-dc4e941b35a9.png)
 
