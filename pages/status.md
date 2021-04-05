@@ -24,10 +24,11 @@ permalink: /status
 
 | Format Name | Status | Remarks |
 | :--: | :--: | :--: |
-| Bitmap | ❔ | |
+| Bitmap | ✅ | |
 | PNG | ✅ | |
 | Jpeg | ✅ | Also supports **libturbojpeg** |
-| GIF | ❌ | |
+| GIF | ✅ | |
+| WebP | ✅ | |
 
 ### Fonts
 
@@ -35,7 +36,7 @@ permalink: /status
 | :--: | :--: | :--: |
 | Embedded Font | ✅ | |
 | Emoji | ✅ | |
-| System Fonts | 🚫 | |
+| System Fonts | ❌ | |
 
 ## Audio
 
@@ -65,7 +66,7 @@ permalink: /status
 | Feature Name | Status | Remarks |
 | :--: | :--: | :--: |
 | WebCamera | ✅ | Restricts: Fixed Resolution (640x480) |
-| Microphone | 🚧 | |
+| Microphone | 🚧 | Broken emscripten's OpenAL Support |
 | CPU Feature Detection | 🚫 | |
 | Power-Status | 🚫 | Depends Deprecated API: [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API)|
 
@@ -75,7 +76,7 @@ permalink: /status
 | :--: | :--: | :--: |
 | On-Memory Files ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | Restricts: Flushed All Files on Reload (Web Extension) |
 | [Indexed DataBase](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ | |
-| File Dialogs | 🚧 | |
+| File Dialogs | ✅ | Use functions in namespace `s3d::Platform::Web::Dialog` |
 | File Drag & Drop | ✅ | |
 
 ## Text Input/Output
@@ -83,7 +84,7 @@ permalink: /status
 | Feature Name | Status | Remarks |
 | :--: | :--: | :--: |
 | Text Input Basic Support | ✅ | |
-| IME Basic Support | ❌ | Uses Synchronization with `HTMLInputElement` |
+| IME Basic Support | ✅ | Uses Synchronization with `HTMLInputElement` |
 | IME Candidate | 🚫 | |
 | Text-To-Speech | ❌ | |
 
@@ -93,6 +94,8 @@ permalink: /status
 | :--: | :--: | :--: |
 | Notification | ❌ | |
 | MessageBox | ✅ | Just Calls `window.alert` or `window.confirm` |
-| ClipBoard | ❌ | Only Support Copy or Paste Texts |
+| ClipBoard | ✅ | Only Support Copy or Paste Texts; Use GetText in namespace `s3d::Platform::Web::Clipboard` instead of `Clipboard::GetText` |
 | Network | ❌ | Depends on **WebSocket**, which not supports P2P communication. |
 | Siv3D Scripts | ✅ | |
+| ChildProcess | ❌ | |
+| NLP | ❌ | Depends ChildProcess Support |

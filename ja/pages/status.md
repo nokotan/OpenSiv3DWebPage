@@ -24,10 +24,11 @@ permalink: /ja/status
 
 | フォーマット名 | 状態 | 備考 |
 | :--: | :--: | :--: |
-| Bitmap | ❔ | |
+| Bitmap | ✅ | |
 | PNG | ✅ | |
 | Jpeg | ✅ | **libturbojpeg** もサポート |
-| GIF | ❌ | |
+| GIF | ✅ | |
+| WebP | ✅ | |
 
 ### フォント
 
@@ -35,7 +36,7 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | 組み込みフォント | ✅ | |
 | 絵文字 | ✅ | |
-| システムフォント | 🚫 | |
+| システムフォント | ❌ | |
 
 
 ## サウンド
@@ -66,7 +67,7 @@ permalink: /ja/status
 | 機能名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | Web カメラ | ✅ | 固定解像度のみ対応 (640x480) |
-| マイク | 🚧 | |
+| マイク | 🚧 | emscripten の OpenAL 実装に問題あり |
 | CPU 機能検出 | 🚫 | |
 | 電源状態 | 🚫 | [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API) という非推奨の API に依存 |
 
@@ -76,7 +77,7 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | メモリ上のファイル ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | 再読み込み時に全てのファイルが消去されます。 (OpenSiv3D for Web の拡張機能) |
 | [インデックスされたファイル](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ | |
-| ダイアログ | 🚧 | |
+| ダイアログ | ✅ | `s3d::Platform::Web::Dialog` 名前関数の関数を使用のこと |
 | ドラッグドロップ | ✅ | |
 
 ## テキスト入出力
@@ -84,7 +85,7 @@ permalink: /ja/status
 | 機能名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | テクスト入力基本サポート | ✅ | |
-| IME 基本サポート | ❌ | `HTMLInputElement` と同期 |
+| IME 基本サポート | ✅ | `HTMLInputElement` と同期 |
 | IME 入力候補 | 🚫 | |
 | テキスト読み上げ | ❌ | |
 
@@ -94,6 +95,8 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | 通知 | ❌ | |
 | メッセージボックス | ✅ | `window.alert` または `window.confirm` を呼び出し |
-| クリップボード | ❌ | テキストのコピー及び貼り付けのみ対応 |
+| クリップボード | ✅ | テキストのコピー及び貼り付けのみ対応 |
 | Network | ❌ | **WebSocket** に依存、P2P 通信は利用不可 |
 | Siv3D Scripts | ✅ | |
+| 子プロセス | ❌ | |
+| NLP | ❌ | 子プロセスサポートに依存 |
