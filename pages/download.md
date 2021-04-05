@@ -33,6 +33,37 @@ permalink: /download
 
 Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)
 
+## Change Logs
+
+### v0.4.3.5
+
+* Add Supported Images Formats: **webp**, **gif**
+* Add System Cursor Style Support
+* IME Experimental Support
+* Clipboard Experimental Support
+
+### v0.4.3.4
+
+* Add Supported Audio Formats: **mp3**, **aac**
+* File Dialog Support
+* File Drag & Drop Support
+* MessageBox Support
+* GamePad Support
+* Microphone Experimental Support
+
+### v0.4.3.3
+
+* Add Supported Images Formats: **jpeg**
+* emscripten Fastcomp Build Support
+
+### v0.4.3.2
+
+* ManagedScript Support
+
+### v0.4.3.0
+
+* Initial Release
+
 ## Next Step
 
 Check out [Install emscripten](building/get-emscripten)!

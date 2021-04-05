@@ -8,8 +8,8 @@ permalink: /ja/download
 
 ### Windows
 
-{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D.0.4.3.Web.exe" text="Download OpenSiv3D for Web Installer" %}
-{% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-wasm.zip" text="Download OpenSiv3D for Web.zip" %}
+{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D.0.4.3.Web.exe" text="OpenSiv3D for Web インストーラをダウンロード" %}
+{% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-wasm.zip" text="OpenSiv3D for Web.zip をダウンロード" %}
 
 ### macOS, Linux
 
@@ -33,6 +33,37 @@ permalink: /ja/download
 ## 過去のバージョン
 
 [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) からダウンロードできます。
+
+## 変更履歴
+
+### v0.4.3.5
+
+* サポートされる画像フォーマットの追加: **webp**, **gif**
+* システムカーソルスタイルのサポート
+* IME の試験的サポート
+* クリップボードの試験的サポート
+
+### v0.4.3.4
+
+* サポートされる音声フォーマットの追加: **mp3**, **aac**
+* ファイルダイアログのサポート
+* ファイルドラッグドロップのサポート
+* メッセージボックスのサポート
+* ゲームパッドのサポート
+* マイクの試験的サポート
+
+### v0.4.3.3
+
+* サポートされる画像フォーマットの追加: **jpeg**
+* emscripten asm.js バックエンドでのビルドサポート
+
+### v0.4.3.2
+
+* Siv3D スクリプトのサポート
+
+### v0.4.3.0
+
+* 初期リリース
 
 ## 次の一歩
 
