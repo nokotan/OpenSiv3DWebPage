@@ -103,6 +103,12 @@ msgstr "## 過去のバージョン"
 msgid "Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)"
 msgstr "[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) からダウンロードできます。"
 
+msgid "## Next Step"
+msgstr "## 次の一歩"
+
+msgid "Check out [Install emscripten](building/get-emscripten)!"
+msgstr "[emscripten をインストールする](building/get-emscripten) に進んでください。"
+
 msgid "## Change Logs"
 msgstr "## 変更履歴"
 
@@ -159,9 +165,3 @@ msgstr ""
 
 msgid "* Initial Release"
 msgstr "* 初期リリース"
-
-msgid "## Next Step"
-msgstr "## 次の一歩"
-
-msgid "Check out [Install emscripten](building/get-emscripten)!"
-msgstr "[emscripten をインストールする](building/get-emscripten) に進んでください。"

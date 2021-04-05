@@ -34,6 +34,10 @@ permalink: /ja/download
 
 [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) からダウンロードできます。
 
+## 次の一歩
+
+[emscripten をインストールする](building/get-emscripten) に進んでください。
+
 ## 変更履歴
 
 ### v0.4.3.5
@@ -64,7 +68,3 @@ permalink: /ja/download
 ### v0.4.3.0
 
 * 初期リリース
-
-## 次の一歩
-
-[emscripten をインストールする](building/get-emscripten) に進んでください。

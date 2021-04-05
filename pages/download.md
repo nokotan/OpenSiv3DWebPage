@@ -33,6 +33,10 @@ permalink: /download
 
 Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)
 
+## Next Step
+
+Check out [Install emscripten](building/get-emscripten)!
+
 ## Change Logs
 
 ### v0.4.3.5
@@ -63,7 +67,3 @@ Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)
 ### v0.4.3.0
 
 * Initial Release
-
-## Next Step
-
-Check out [Install emscripten](building/get-emscripten)!
