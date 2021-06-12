@@ -5,7 +5,12 @@
   url: /ja/download
 
 - title: ギャラリー
-  url: /ja/gallary
+  url: /gallary
+  children: 
+    - title: ギャラリー
+      url: /gallary/gallary
+    - title: ギャラリー (v0.6)
+      url: /gallary/gallary_v6
 
 - title: はじめての WebGL アプリ
   url: /ja/building

@@ -1,69 +1,94 @@
 - title: 基本のサンプル
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/BasicSample/BasicSample.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/BasicSample/BasicSample.html
   image: https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/demo.gif
   description: いつものやつ
 
 - title: ピンボール
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Pinball/Pinball.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Pinball/Pinball.html
   image: https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/game-pinball.gif
   description: 超エキサイティン！
 
 - title: ピアノ
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Piano/Piano.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Piano/Piano.html
   image: https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/app-piano.gif
   description: オンラインピアノキーボード
 
+- title: ブロック崩し
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/BreakOut/BreakOut.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/breakout.gif?raw=true
+  description: シンプルなブロック崩し
+
+- title: ライフゲーム
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/LifeGame/LifeGame.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/game-of-life-editor.gif?raw=true
+  description: 一時期流行ったとか
+
+- title: 絵文字タワー
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/EmojiTower/EmojiTower.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/emoji-tower.mp4?raw=true
+  description: バトルはできません
+
+- title: 縦スクロールシューティング
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Shooter/Shooter.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/shooter.mp4?raw=true
+  description: 縦スクロールシューティング
+
+- title: 15パズル
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/FifteenPuzzle/FifteenPuzzle.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/15puzzle.mp4?raw=true
+  description: 15パズル
+
+- title: 数つなぎ
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/NumberChain/NumberChain.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/number-chain.mp4?raw=true
+  description: かめは14コンボが限界
+
+- title: タイピング
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Typing/Typing.html
+  image: "#"
+  description: タイピング
+
+- title: 万華鏡スケッチ
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/KaleidoScope/KaleidoScope.html
+  image: "https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/app-kaleidoscope-paint.gif"
+  description: 万華鏡スケッチ
+
+- title: ポリゴン変換
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/SketchToPolygon/SketchToPolygon.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/sketch-to-polygon.gif?raw=true
+  description: 任意のスケッチがポリゴンに変換されます
+
+- title: 音声プレーヤ
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/AudioPlayer/AudioPlayer.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/audio-player.mp4?raw=true
+  description: 音声プレーヤ
+
+- title: ポリゴン変換
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/ImageToPolygon/ImageToPolygon.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/image-to-polygon.mp4?raw=true
+  description: 画像がポリゴンに変換されます
+
+- title: スケッチ
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Sketch/Sketch.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/sketch.gif?raw=true
+  description: スケッチ
+
+- title: アニメキャラクタの顔認識
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/FaceDetection/FaceDetection.html
+  image: "#"
+  description: アニメキャラクタの顔認識
+
+- title: Siv3D スクリプト
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Script/Script.html
+  image: "#"
+  description: スクリプト
+
 - title: ウェブカメラ
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/WebCamera/WebCamera.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/WebCamera/WebCamera.html
   image: "#"
   description: OpenSiv3D for Web では Web カメラも扱えます
  
 - title: いのちの輝き
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/ShineOfLife/ShineOfLife.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/ShineOfLife/ShineOfLife.html
   image: "#"
   description: 大阪万博のあれ
-
-- title: KDTree
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/KDTree/Siv3DTest.html
-  image: "#"
-  description: (v0.6) KDTree
-
-- title: ブロック崩し
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/BreakOut/BreakOut.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/breakout.gif?raw=true
-  description: シンプルなブロック崩し
-
-- title: 絵文字タワー
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/EmojiTower/EmojiTower.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/emoji-tower.mp4?raw=true
-  description: バトルはできません
-
-- title: ライフゲーム
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/LifeGame/LifeGame.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/game-of-life-editor.gif?raw=true
-  description: 一時期流行ったとか
-
-- title: 数つなぎ
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/NumberChain/NumberChain.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/number-chain.mp4?raw=true
-  description: かめは14コンボが限界
-
-- title: 縦スクロールシューティング
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Shooter/Shooter.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/shooter.mp4?raw=true
-  description: 縦スクロールシューティング
-
-- title: SketchToPolygon
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/SketchToPolygon/SketchToPolygon.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/sketch-to-polygon.gif?raw=true
-  description: スケッチをポリゴンで表現
-
-- title: ホモグラフィ変換
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Homography/Siv3DTest.html
-  image: "#"
-  description: (v0.6) グリッドに画像をなめらかに補完
-
-- title: GrabCut
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/GrabCut/Siv3DTest.html
-  image: "#"
-  description: (v0.6) 前景と背景の分離

@@ -24,17 +24,6 @@ OpenSiv3D for Web は WebGL アプリケーションを C/C++ で開発するた
 
 ```cpp
 # include <Siv3D.hpp> // OpenSiv3D v0.4.3
-# include <emscripten.h>
-
-void RunMainLoop(void* arg)
-{
-  static_cast<const std::function<void()>*>(arg)->operator()();
-}
-
-void SetMainLoop(std::function<void()> mainLoop)
-{
-  emscripten_set_main_loop_arg(RunMainLoop, reinterpret_cast<void*>(&mainLoop), 0, 1);
-}
 
 void Main()
 {
@@ -44,7 +33,7 @@ void Main()
   
   Vec2 catPos(640, 450);
 
-  SetMainLoop([&]()
+  Platform::Web::System::SetMainLoop([&]()
   {
     System::Update();
 

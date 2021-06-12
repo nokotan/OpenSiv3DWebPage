@@ -12,16 +12,6 @@ OpenSiv3D のサンプルアプリケーションは、[OpenSiv3D 公式サイ�
 # include <Siv3D.hpp> // OpenSiv3D v0.4.3
 # include <emscripten.h>
 
-void RunMainLoop(void* arg)
-{
-  static_cast<const std::function<void()>*>(arg)->operator()();
-}
-
-void SetMainLoop(std::function<void()> mainLoop)
-{
-  emscripten_set_main_loop_arg(RunMainLoop, reinterpret_cast<void*>(&mainLoop), 0, 1);
-}
-
 void Main()
 {
   // 背景を水色にする
@@ -36,7 +26,7 @@ void Main()
   // 猫の座標
   Vec2 catPos(640, 450);
 
-  SetMainLoop([&]()
+  Platform::Web::System::SetMainLoop([&]()
   {
     System::Update();
 

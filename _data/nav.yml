@@ -6,6 +6,11 @@
 
 - title: Gallary
   url: /gallary
+  children: 
+    - title: Gallary
+      url: /gallary/gallary
+    - title: Gallary (v0.6)
+      url: /gallary/gallary_v6
 
 - title: Building First Apps
   url: /building

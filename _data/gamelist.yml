@@ -1,69 +1,94 @@
 - title: Basic Sample
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/BasicSample/BasicSample.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/BasicSample/BasicSample.html
   image: https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/demo.gif
   description: Ordinal Siv3D Basic Sample!
 
 - title: Pinball
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Pinball/Pinball.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Pinball/Pinball.html
   image: https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/game-pinball.gif
   description: Exciting PinBall Game!!!
 
 - title: Piano
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Piano/Piano.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Piano/Piano.html
   image: https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/app-piano.gif
   description: Online Tiny Piano Keyboard.
 
+- title: BreakOut
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/BreakOut/BreakOut.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/breakout.gif?raw=true
+  description: Simple BreakOut Game
+
+- title: GameOfLife
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/LifeGame/LifeGame.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/game-of-life-editor.gif?raw=true
+  description: Game Of Life
+
+- title: EmojiTower
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/EmojiTower/EmojiTower.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/emoji-tower.mp4?raw=true
+  description: Emoji Stacking with 2D Physics
+
+- title: Shooter
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Shooter/Shooter.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/shooter.mp4?raw=true
+  description: Vertical Scroll Shooting
+
+- title: Fifteen Puzzle
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/FifteenPuzzle/FifteenPuzzle.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/15puzzle.mp4?raw=true
+  description: Fifteen Puzzle
+
+- title: NumberChain
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/NumberChain/NumberChain.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/number-chain.mp4?raw=true
+  description: Chain Game
+
+- title: Typing
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Typing/Typing.html
+  image: "#"
+  description: Typing
+
+- title: Kaleido Scope Sketch
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/KaleidoScope/KaleidoScope.html
+  image: "https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/app-kaleidoscope-paint.gif"
+  description: Kaleido Scope Sketch
+
+- title: SketchToPolygon
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/SketchToPolygon/SketchToPolygon.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/sketch-to-polygon.gif?raw=true
+  description: Your Sketch will be converted into Polygons
+
+- title: Audio Player
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/AudioPlayer/AudioPlayer.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/audio-player.mp4?raw=true
+  description: Audio Player
+
+- title: Image to Polygon
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/ImageToPolygon/ImageToPolygon.html
+  video: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/image-to-polygon.mp4?raw=true
+  description: Image to Polygon
+
+- title: Sketch
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Sketch/Sketch.html
+  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/sketch.gif?raw=true
+  description: Sketch
+
+- title: Face Detection of Anime Character
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/FaceDetection/FaceDetection.html
+  image: "#"
+  description: Face Detection of Anime Character
+
+- title: Siv3D Script
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/Script/Script.html
+  image: "#"
+  description: Script
+
 - title: WebCamera
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/WebCamera/WebCamera.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/WebCamera/WebCamera.html
   image: "#"
   description: Camera also works on Siv3D.
 
 - title: ShineOfLife
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/ShineOfLife/ShineOfLife.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/ShineOfLife/ShineOfLife.html
   image: "#"
   description: Osaka Bampaku Character.
-
-- title: KDTree
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/KDTree/Siv3DTest.html
-  image: "#"
-  description: (v0.6) KDTree
-
-- title: BreakOut
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/BreakOut/BreakOut.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/breakout.gif?raw=true
-  description: Simple BreakOut Game
-
-- title: EmojiTower
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/EmojiTower/EmojiTower.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/emoji-tower.mp4?raw=true
-  description: Emoji Stacking with 2D Physics
-
-- title: GameOfLife
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/LifeGame/LifeGame.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/game-of-life-editor.gif?raw=true
-  description: Game Of Life
-
-- title: NumberChain
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/NumberChain/NumberChain.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/number-chain.mp4?raw=true
-  description: Chain Game
-
-- title: Shooter
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Shooter/Shooter.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/game/shooter.mp4?raw=true
-  description: Vertical Scroll Shooting
-
-- title: SketchToPolygon
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/SketchToPolygon/SketchToPolygon.html
-  image: https://github.com/Siv3D/siv3d.docs.images/blob/master/sample/app/sketch-to-polygon.gif?raw=true
-  description: Your Sketch will be converted into Polygons
-
-- title: Homography
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/Homography/Siv3DTest.html
-  image: "#"
-  description: (v0.6) Homography Transformation
-
-- title: GrabCut
-  url: https://nokotan.github.io/OpenSiv3DForHTML5Samples/GrabCut/Siv3DTest.html
-  image: "#"
-  description: (v0.6) GrabCut
