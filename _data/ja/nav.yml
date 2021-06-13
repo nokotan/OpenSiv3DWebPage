@@ -26,12 +26,13 @@
   url: /ja/status
 
 - title: OpenSiv3D v0.6
+  url: /ja/v0.6
   new-group: true
   children: 
-    - title: ギャラリー
-      url: /v0.6/gallary/
-    - title: 実装状況
-      url: /v0.6/status
+    - title: ギャラリー (v0.6)
+      url: /ja/v0.6/gallary
+    - title: 実装状況 (v0.6)
+      url: /ja/v0.6/status
 
 - title: GitHub
   url: https://github.com/nokotan/OpenSiv3D

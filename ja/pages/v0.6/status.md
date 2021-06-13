@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-title: 実装状況
+title: 実装状況 (v0.6)
 permalink: /ja/v0.6/status
 ---
 
@@ -104,9 +104,10 @@ permalink: /ja/v0.6/status
 | フォーマット名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | Wave | ✅ | |
-| MP3 | ✅ | `s3d::Platform::WebAudioProcessing::DecodeAudioFromFile` を使ってください 手動ビルドで有効にできます。 |
-| AAC | ✅ | `s3d::Platform::WebAudioProcessing::DecodeAudioFromFile` を使ってください。手動ビルドで有効にできます。 |
-| Ogg | ✅ | || Opus | ✅ | |
+| MP3 | ✅ | `s3d::Platform::Web::AudioDecoder::DecodeAudioFromFile` を使ってください 手動ビルドで有効にできます。 |
+| AAC | ✅ | `s3d::Platform::Web::AudioDecoder::DecodeAudioFromFile` を使ってください。手動ビルドで有効にできます。 |
+| Ogg | ✅ | |
+| Opus | ✅ | |
 
 ## 入力デバイス
 

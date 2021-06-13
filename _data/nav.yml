@@ -26,11 +26,12 @@
   url: /status
 
 - title: OpenSiv3D v0.6
+  url: /v0.6
   new-group: true
   children: 
-    - title: Gallary
-      url: /v0.6/gallary/
-    - title: Status
+    - title: Gallary (v0.6)
+      url: /v0.6/gallary
+    - title: Status (v0.6)
       url: /v0.6/status
 
 - title: GitHub
