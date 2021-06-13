@@ -6,11 +6,6 @@
 
 - title: Gallary
   url: /gallary
-  children: 
-    - title: Gallary
-      url: /gallary/gallary
-    - title: Gallary (v0.6)
-      url: /gallary/gallary_v6
 
 - title: Building First Apps
   url: /building
@@ -29,6 +24,14 @@
 
 - title: Status
   url: /status
+
+- title: OpenSiv3D v0.6
+  new-group: true
+  children: 
+    - title: Gallary
+      url: /v0.6/gallary/
+    - title: Status
+      url: /v0.6/status
 
 - title: GitHub
   url: https://github.com/nokotan/OpenSiv3D
