@@ -21,6 +21,10 @@
       url: /ja/building/writing-code
     - title: Web 固有の注意点
       url: /ja/building/web-specific-notes
+    - title: デバッグと実行 (Visual Studio)
+      url: /ja/building/running-code-with-visualstudio
+    - title: デバッグと実行 (VSCode)
+      url: /ja/building/running-code-with-vscode
 
 - title: 実装状況
   url: /ja/status

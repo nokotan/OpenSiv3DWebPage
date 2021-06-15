@@ -130,3 +130,12 @@ msgstr ""
 "  });\n"
 "}\n"
 "```"
+
+msgid "## Next Step"
+msgstr "## 次の一歩"
+
+msgid ""
+"Check out [Running and Debugging First Code (Visual Studio)](running-code-with"
+"-visualstudio) or [Running and Debugging First Code (VSCode)](running-code-wit"
+"h-vscode)!"
+msgstr ""

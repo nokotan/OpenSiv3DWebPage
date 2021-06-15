@@ -16,108 +16,18 @@ Open "Extension Tab" in Visual Studio Code, search and install these extensions:
 
 ![VSCodeExt1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/bf97ad48-9626-4898-d671-48b740ddaecc.png)
 
-## Setting up Intellisense
+## Create Project from Template
 
-### Sample Configulation
+Follow link to [GitHub - nokotan/OpenSiv3DForWeb-VSCode](https://github.com/nokotan/OpenSiv3DForWeb-VSCode),
+then Click `Code` button in green and `Download ZIP` button in this order.
 
-```json
-{
-    "name": "Emscripten",
-    "includePath": [
-        "${workspaceFolder}/**",
-        "${workspaceFolder}/OpenSiv3D/include",
-        "${workspaceFolder}/OpenSiv3D/include/ThirdParty",
-        "${env:EMSDK}/upstream/emscripten/system/include",
-        "${env:EMSDK}/upstream/emscripten/system/include/libc",
-        "${env:EMSDK}/upstream/emscripten/system/include/libcxx"
-    ],
-    "defines": [
-        "_DEBUG",
-        "EMSCRIPTEN",
-        "__EMSCRIPTEN__"
-    ],
-    "cStandard": "c11",
-    "cppStandard": "c++17",
-    "intelliSenseMode": "clang-x86"
-}
-```
+![InstallSiv3DWebVSCode.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/3c6d1c31-e6ff-0fb4-a00c-0086a2fafd12.png)
 
-## Setting up Build Task
+Launch Visual Studio Code, open folder-selecting dialog[^open-dialog], and select the folder that includes "Sample Program for OpenSiv3D for Web" you have extracted.
 
-### Compile Task Sample
+[^open-dialog]: Click `File` > `Open Folder ...`
 
-```json
-{
-    "type": "shell",
-    "label": "Build: Compile (Debug)",
-    "command": "em++",
-    "args": [
-        // Input
-        "Main.cpp", 
-
-        // Output
-        "-c", "-o", "Main.o",
-
-        // Compiler Flags
-        "-O0", "-std=c++17", "-g4",
-
-        // Include Directory
-        "-IOpenSiv3D/include",  
-        "-IOpenSiv3D/include/ThirdParty",  
-
-        // em++ Specific Configurations
-    ],
-    "group": "build"
-}
-```
-
-### Link Task Sample
-
-```json
-{
-    "type": "shell",
-    "label": "Build: Link (Debug)",
-    "command": "em++",
-    "args": 
-    [
-        // Input
-        "Main.o",
-
-        // Output
-        "-o", "index.html",
-
-        // Compiler Flags
-        "-O0", "-std=c++17", "-g",
-
-        // Library Directory
-        "-LOpenSiv3D/lib",
-        "-LOpenSiv3D/lib/freetype",
-        "-LOpenSiv3D/lib/harfbuzz",
-        "-LOpenSiv3D/lib/opencv",
-
-        // Dependent Libraries
-        "-lfreetype",
-        "-lharfbuzz",
-        "-lopencv_core", "-lopencv_imgproc", "-lopencv_objdetect", "-lopencv_photo",
-        "-lSiv3D",
-
-        // em++ Specific Configurations
-        "--emrun",
-        "-s", "FULL_ES3=1",
-        "-s", "USE_GLFW=3",
-        "-s", "USE_LIBPNG=1",
-        "-s", "USE_OGG=1",
-        "-s", "USE_VORBIS=1",
-        "-s", "ALLOW_MEMORY_GROWTH=1",
-        "-s", "ERROR_ON_UNDEFINED_SYMBOLS=0",
-
-        // Packaging Configurations
-        "--preload-file", "OpenSiv3D/resources@/resources",
-        "--js-library", "OpenSiv3D/lib/Siv3D.js",
-    ],
-    "group": "build"
-}
-```
+![VSCodeOpenFolder.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/385e8dfe-3f3a-431f-a8ed-63e2d491723c.png)
 
 ## Next Step
 

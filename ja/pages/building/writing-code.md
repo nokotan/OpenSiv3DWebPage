@@ -55,3 +55,7 @@ void Main()
   });
 }
 ```
+
+## 次の一歩
+
+Check out [Running and Debugging First Code (Visual Studio)](running-code-with-visualstudio) or [Running and Debugging First Code (VSCode)](running-code-with-vscode)!

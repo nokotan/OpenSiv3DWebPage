@@ -21,6 +21,10 @@
       url: /building/writing-code
     - title: Web Specific Notes
       url: /building/web-specific-notes
+    - title: Running and Debugging (Visual Studio)
+      url: /building/running-code-with-visualstudio
+    - title: Running and Debugging (VSCode)
+      url: /building/running-code-with-vscode
 
 - title: Status
   url: /status
