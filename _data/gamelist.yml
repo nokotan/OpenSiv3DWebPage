@@ -84,7 +84,7 @@
   description: Script
 
 - title: WebCamera
-  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/WebCamera/WebCamera.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/WebCam/WebCam.html
   image: "#"
   description: Camera also works on Siv3D.
 

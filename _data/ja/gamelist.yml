@@ -84,7 +84,7 @@
   description: スクリプト
 
 - title: ウェブカメラ
-  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/WebCamera/WebCamera.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.4Samples/WebCam/WebCam.html
   image: "#"
   description: OpenSiv3D for Web では Web カメラも扱えます
  
