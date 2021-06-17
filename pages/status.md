@@ -13,6 +13,7 @@ permalink: /status
 | Marks | Explanations |
 | :--: | :--: |
 | ✅ | Implemented & Supported |
+| ⚠️ | Implemented, maybe Broken or Feature Limited |
 | 🚧 | Implementing |
 | ❔ | Unknown |
 | ❌ | Currently Not Implemented (will be Implemented in Feature Releases) |
@@ -66,7 +67,7 @@ permalink: /status
 | Feature Name | Status | Remarks |
 | :--: | :--: | :--: |
 | WebCamera | ✅ | Restricts: Fixed Resolution (640x480) |
-| Microphone | 🚧 | Broken emscripten's OpenAL Support |
+| Microphone | ⚠️ | Broken emscripten's OpenAL Support |
 | CPU Feature Detection | 🚫 | |
 | Power-Status | 🚫 | Depends Deprecated API: [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API)|
 
@@ -86,13 +87,13 @@ permalink: /status
 | Text Input Basic Support | ✅ | |
 | IME Basic Support | ✅ | Uses Synchronization with `HTMLInputElement` |
 | IME Candidate | 🚫 | |
-| Text-To-Speech | ❌ | |
+| Text-To-Speech | 🚧 | Chrome: not working, Edge: cannot Query Language List |
 
 ## Misc
 
 | Feature Name | Status | Remarks |
 | :--: | :--: | :--: |
-| Notification | ❌ | |
+| Notification | 🚧 | |
 | MessageBox | ✅ | Just Calls `window.alert` or `window.confirm` |
 | ClipBoard | ✅ | Only Support Copy or Paste Texts; Use GetText in namespace `s3d::Platform::Web::Clipboard` instead of `Clipboard::GetText` |
 | Network | ❌ | Depends on **WebSocket**, which not supports P2P communication. |

@@ -13,6 +13,7 @@ permalink: /ja/status
 | バッジ | 説明 |
 | :--: | :--: |
 | ✅ | 実装完了 |
+| ⚠️ | 仮実装, 機能しない部分や予期しない挙動をとる部分あり |
 | 🚧 | 実装中 |
 | ❔ | 不明 |
 | ❌ | 未実装 (将来のリリースで実装される予定) |
@@ -67,7 +68,7 @@ permalink: /ja/status
 | 機能名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | Web カメラ | ✅ | 固定解像度のみ対応 (640x480) |
-| マイク | 🚧 | emscripten の OpenAL 実装に問題あり |
+| マイク | ⚠️ | emscripten の OpenAL 実装に問題あり |
 | CPU 機能検出 | 🚫 | |
 | 電源状態 | 🚫 | [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API) という非推奨の API に依存 |
 
@@ -87,13 +88,13 @@ permalink: /ja/status
 | テクスト入力基本サポート | ✅ | |
 | IME 基本サポート | ✅ | `HTMLInputElement` と同期 |
 | IME 入力候補 | 🚫 | |
-| テキスト読み上げ | ❌ | |
+| テキスト読み上げ | 🚧 | Chrome: 機能しません, Edge: 言語リストを取得できません |
 
 ## そのほか
 
 | 機能名 | 状態 | 備考 |
 | :--: | :--: | :--: |
-| 通知 | ❌ | |
+| 通知 | 🚧 | |
 | メッセージボックス | ✅ | `window.alert` または `window.confirm` を呼び出し |
 | クリップボード | ✅ | テキストのコピー及び貼り付けのみ対応 |
 | Network | ❌ | **WebSocket** に依存、P2P 通信は利用不可 |
