@@ -44,4 +44,4 @@ emsdk activate 2.0.4:upstream --global
 
 ## 次の一歩
 
-[Visual Studio Code をセットアップする](setup-vscode) に進んでください。
+[Visual Studio Code をセットアップする](setup-vscode) または [Visual Studio をセットアップする](setup-visualstudio) に進んでください。

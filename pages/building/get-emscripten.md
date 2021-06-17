@@ -40,4 +40,4 @@ emsdk activate 2.0.4:upstream --global
 
 ## Next Step
 
-Check out [Setup Visual Studio Code](setup-vscode)!
+Check out [Setup Visual Studio Code](setup-vscode) or [Setup Visual Studio](setup-visualstudio)!
