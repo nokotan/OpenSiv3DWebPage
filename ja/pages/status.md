@@ -47,8 +47,8 @@ permalink: /ja/status
 | フォーマット名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | Wave | ✅ | |
-| MP3 | ✅ | `s3d::Platform::WebAudioProcessing::DecodeAudioFromFile` を使ってください |
-| AAC | ✅ | `s3d::Platform::WebAudioProcessing::DecodeAudioFromFile` を使ってください。手動ビルドで有効にできます。 |
+| MP3 | ✅ | [`s3d::Platform::WebAudioProcessing::DecodeAudioFromFile`](building/web-specific-notes#音声ファイルのデコード) を使ってください |
+| AAC | ✅ | [`s3d::Platform::WebAudioProcessing::DecodeAudioFromFile`](building/web-specific-notes#音声ファイルのデコード) を使ってください。手動ビルドで有効にできます。 |
 | Ogg | ✅ | |
 
 ## 入力デバイス
@@ -78,7 +78,7 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | メモリ上のファイル ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | 再読み込み時に全てのファイルが消去されます。 (OpenSiv3D for Web の拡張機能) |
 | [インデックスされたファイル](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ | |
-| ダイアログ | ✅ | `s3d::Platform::Web::Dialog` 名前関数の関数を使用のこと |
+| ダイアログ | ✅ | [`s3d::Platform::Web::Dialog`](building/web-specific-notes#ファイルを開くダイアログ) 名前関数の関数を使用のこと |
 | ドラッグドロップ | ✅ | |
 
 ## テキスト入出力
@@ -96,7 +96,7 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | 通知 | 🚧 | |
 | メッセージボックス | ✅ | `window.alert` または `window.confirm` を呼び出し |
-| クリップボード | ✅ | テキストのコピー及び貼り付けのみ対応 |
+| クリップボード | ✅ | テキストのコピー及び貼り付けのみ対応。[`s3d::Platform::Web::Clipboard`](building/web-specific-notes#クリップボード) を利用すること |
 | Network | ❌ | **WebSocket** に依存、P2P 通信は利用不可 |
 | Siv3D Scripts | ✅ | |
 | 子プロセス | ❌ | |
