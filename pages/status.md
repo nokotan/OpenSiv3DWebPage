@@ -46,8 +46,8 @@ permalink: /status
 | Format Name | Status | Remarks |
 | :--: | :--: | :--: |
 | Wave | ✅ | |
-| MP3 | ✅ | Use [`s3d::Platform::WebAudioProcessing::DecodeAudioFromFile`](building/web-specific-notes#Audio%20Decoding). |
-| AAC | ✅ | Use [`s3d::Platform::WebAudioProcessing::DecodeAudioFromFile`](building/web-specific-notes#Audio%20Decoding). Can be enabled by building manually |
+| MP3 | ✅ | Use [`s3d::Platform::WebAudioProcessing::DecodeAudioFromFile`](building/web-specific-notes#audio-decoding). |
+| AAC | ✅ | Use [`s3d::Platform::WebAudioProcessing::DecodeAudioFromFile`](building/web-specific-notes#audio-decoding). Can be enabled by building manually |
 | Ogg | ✅ | |
 
 ## Input Devices
@@ -77,7 +77,7 @@ permalink: /status
 | :--: | :--: | :--: |
 | On-Memory Files ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | Restricts: Flushed All Files on Reload (Web Extension) |
 | [Indexed DataBase](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ | |
-| File Dialogs | ✅ | Use functions in namespace [`s3d::Platform::Web::Dialog`](building/web-specific-notes#File%20Open%20Dialog) |
+| File Dialogs | ✅ | Use functions in namespace [`s3d::Platform::Web::Dialog`](building/web-specific-notes#file-open-dialog) |
 | File Drag & Drop | ✅ | |
 
 ## Text Input/Output
@@ -95,7 +95,7 @@ permalink: /status
 | :--: | :--: | :--: |
 | Notification | 🚧 | |
 | MessageBox | ✅ | Just Calls `window.alert` or `window.confirm` |
-| ClipBoard | ✅ | Only Support Copy or Paste Texts; Use GetText in namespace [`s3d::Platform::Web::Clipboard`](building/web-specific-notes#Clipboard) instead of `Clipboard::GetText` |
+| ClipBoard | ✅ | Only Support Copy or Paste Texts; Use GetText in namespace [`s3d::Platform::Web::Clipboard`](building/web-specific-notes#clipboard) instead of `Clipboard::GetText` |
 | Network | ❌ | Depends on **WebSocket**, which not supports P2P communication. |
 | Siv3D Scripts | ✅ | |
 | ChildProcess | ❌ | |
