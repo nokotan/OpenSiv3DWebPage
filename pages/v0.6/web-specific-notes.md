@@ -44,7 +44,7 @@ For details, check out [Implementation Status](/status)
 ### Audio Decoding
 
 Decoding .mp3 and .aac with Audio constructor is not supported.
-Use `s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` that returns `std::future<Audio>`.
+Use `s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` that returns `AsyncTask<Audio>`.
 
 ```cpp
   // 
@@ -52,19 +52,19 @@ Use `s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` that returns `st
   //
   // Audio audio { "/example/test.mp3" };
   Audio audio;
-  std::future<Audio> audio_future = s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile("/example/test.mp3");
+  AsyncTask<Audio> audioTask = s3d::Platforms::Web::AudioDecoder::DecodeFromFile("/example/test.mp3");
 
   // check if audio decoding has been finished
-  if (audio_future.valid() && audio_future.wait_for(0s) == std::future_status::ready)
+  if (audioTask.isReady())
   {
-    audio = audio_future.get();
+    audio = audioTask.get();
   }
 ```
 
 ### File Open Dialog
 
 `s3d::Dialog::Open**` will always return empty object.
-Use `s3d::Platforms::Web::Dialog::Open**` that returns `std::future<**>`.
+Use `s3d::Platforms::Web::Dialog::Open**` that returns `AsyncTask<**>`.
 
 ```cpp
   // 
@@ -72,12 +72,12 @@ Use `s3d::Platforms::Web::Dialog::Open**` that returns `std::future<**>`.
   //
   // Audio audio = Dialog::OpenAudio();
   Audio audio;
-  std::future<Audio> audio_future = s3d::Platforms::Web::Dialog::OpenAudio();
+  AsyncTask<Audio> audioTask = s3d::Platforms::Web::Dialog::OpenAudio();
 
   // check if user has been selected file and decoding audio is finished
-  if (audio_future.valid() && audio_future.wait_for(0s) == std::future_status::ready)
+  if (audioTask.isReady())
   {
-    audio = audio_future.get();
+    audio = audioTask.get();
   }
 ```
 
@@ -91,7 +91,7 @@ which means that you cannot query users which file format they want to download.
 Only test copying and pasting are supported.
 (and in FireFox, this feature is disallowed.)
 
-Use `s3d::Platforms::Web::Clipboard::GetText` that returns `std::future<String>`.
+Use `s3d::Platforms::Web::Clipboard::GetText` that returns `AsyncTask<String>`.
 (You can use `s3d::Clipboard::SetText` in ordinal way.)
 
 ```cpp
@@ -104,14 +104,14 @@ Use `s3d::Platforms::Web::Clipboard::GetText` that returns `std::future<String>`
   // {
   //
   // }
-  future<String> text_future;
+  AsyncTask<String> textTask;
   String text;
 
-  text_future = Platforms::Web::Clipboard::GetText();
+  textTask = Platforms::Web::Clipboard::GetText();
 
   // check if text has been pasted from clipboard
-  if (text_future.valid() && text_future.wait_for(0s) == std::future_status::ready)
+  if (textTask.isReady())
   {
-    text = text_future.get();
+    text = textTask.get();
   }
 ```

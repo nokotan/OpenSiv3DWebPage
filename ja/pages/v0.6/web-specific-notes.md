@@ -44,7 +44,7 @@ OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専
 ### 音声ファイルのデコード
 
 Audio コンストラクタを使った .mp3 と .aac ファイルのデコードはサポートされていません。
-`std::future<Audio>` を返す `s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` を使ってください。
+`std::future<Audio>` を返す `s3d::Platforms::Web::AudioDecoder::DecodeFromFile` を使ってください。
 
 ```cpp
   // 
@@ -52,19 +52,19 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
   //
   // Audio audio { "/example/test.mp3" };
   Audio audio;
-  std::future<Audio> audio_future = s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile("/example/test.mp3");
+  AsyncTask<Audio> audioTask = s3d::Platforms::Web::AudioDecoder::DecodeFromFile("/example/test.mp3");
 
   // デコードが終わったかチェック
-  if (audio_future.valid() && audio_future.wait_for(0s) == std::future_status::ready)
+  if (audioTask.isReady())
   {
-    audio = audio_future.get();
+    audio = audioTask.get();
   }
 ```
 
 ### ファイルを開くダイアログ
 
-`s3d::Dialog::Open**` は常に空のオブジェクトを返します。
-`std::future<**>` を返す `s3d::Platforms::Web::Dialog::Open**` を使ってください。
+`s3d::Dialog::Open**` will always return empty object.
+Use `s3d::Platforms::Web::Dialog::Open**` that returns `AsyncTask<**>`.
 
 ```cpp
   // 
@@ -72,12 +72,12 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
   //
   // Audio audio = Dialog::OpenAudio();
   Audio audio;
-  std::future<Audio> audio_future = s3d::Platforms::Web::Dialog::OpenAudio();
+  AsyncTask<Audio> audioTask = s3d::Platforms::Web::Dialog::OpenAudio();
 
   // ユーザーがファイルを選択し、デコードが終わったかチェック
-  if (audio_future.valid() && audio_future.wait_for(0s) == std::future_status::ready)
+  if (audioTask.isReady())
   {
-    audio = audio_future.get();
+    audio = audioTask.get();
   }
 ```
 
@@ -91,8 +91,8 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
 テキストのコピーと貼り付けのみサポートされています。
 (そして、FireFox ではこの機能は無効化されています。)
 
-`std::future<String>` を返す `s3d::Platforms::Web::Clipboard::GetText` を使ってください。
-(`s3d::Clipboard::SetText` は通常通り使えます。)
+Use `s3d::Platforms::Web::Clipboard::GetText` that returns `AsyncTask<String>`.
+(You can use `s3d::Clipboard::SetText` in ordinal way.)
 
 ```cpp
   // 
@@ -104,14 +104,14 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
   // {
   //
   // }
-  future<String> text_future;
+  AsyncTask<String> textTask;
   String text;
 
-  text_future = Platforms::Web::Clipboard::GetText();
+  textTask = Platforms::Web::Clipboard::GetText();
 
   // テキストが貼り付けられたか問い合わせる
-  if (text_future.valid() && text_future.wait_for(0s) == std::future_status::ready)
+  if (textTask.isReady())
   {
-    text = text_future.get();
+    text = textTask.get();
   }
 ```
