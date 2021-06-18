@@ -60,5 +60,13 @@ void Main()
 
 ## CI Status
 
-- Stable Branch (v0.4.3): ![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/workflows/C/C++%20CI%20for%20Web/badge.svg)
-- Develop Branch (v0.4.3): ![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/workflows/C/C++%20CI%20for%20Web/badge.svg?branch=web_develop)
+### OpenSiv3D for Web v0.4.3
+
+- Stable Branch: [![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml/badge.svg?branch=web)](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml)
+- Develop Branch: [![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml/badge.svg?branch=web_develop)](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml)
+
+### OpenSiv3D for Web v0.6
+
+- Stable Branch (Siv3D/OpenSiv3D.git): [![C/C++ CI for Web](https://github.com/Siv3D/OpenSiv3D/actions/workflows/ccpp_web.yml/badge.svg?branch=v6_master)](https://github.com/Siv3D/OpenSiv3D/actions/workflows/ccpp_web.yml)
+- Develop Branch (nokotan/OpenSiv3D.git): [![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp_web.yml/badge.svg?branch=v6_web_develop)](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp_web.yml)
+- Develop Branch (Siv3D/OpenSiv3D.git): [![C/C++ CI for Web](https://github.com/Siv3D/OpenSiv3D/actions/workflows/ccpp_web.yml/badge.svg?branch=v6_winmac_develop)](https://github.com/Siv3D/OpenSiv3D/actions/workflows/ccpp_web.yml)
