@@ -37,6 +37,8 @@
       url: /ja/v0.6/gallary
     - title: 実装状況 (v0.6)
       url: /ja/v0.6/status
+    - title: Web 固有の注意点 (v0.6)
+      url: /ja/v0.6/web-specific-notes
 
 - title: GitHub
   url: https://github.com/nokotan/OpenSiv3D
