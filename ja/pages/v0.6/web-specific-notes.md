@@ -44,7 +44,7 @@ OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専
 ### 音声ファイルのデコード
 
 Audio コンストラクタを使った .mp3 と .aac ファイルのデコードはサポートされていません。
-`std::future<Audio>` を返す `s3d::Platforms::Web::AudioDecoder::DecodeFromFile` を使ってください。
+`AsyncTask<Audio>` を返す `s3d::Platforms::Web::AudioDecoder::DecodeFromFile` を使ってください。
 
 ```cpp
   // 
@@ -63,8 +63,8 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
 
 ### ファイルを開くダイアログ
 
-`s3d::Dialog::Open**` will always return empty object.
-Use `s3d::Platforms::Web::Dialog::Open**` that returns `AsyncTask<**>`.
+`s3d::Dialog::Open**` は常に空のオブジェクトを返します。
+`AsyncTask<**>` を返す `s3d::Platforms::Web::Dialog::Open**` を使ってください。
 
 ```cpp
   // 
@@ -91,8 +91,8 @@ Use `s3d::Platforms::Web::Dialog::Open**` that returns `AsyncTask<**>`.
 テキストのコピーと貼り付けのみサポートされています。
 (そして、FireFox ではこの機能は無効化されています。)
 
-Use `s3d::Platforms::Web::Clipboard::GetText` that returns `AsyncTask<String>`.
-(You can use `s3d::Clipboard::SetText` in ordinal way.)
+`AsyncTask<String>` を返す `s3d::Platforms::Web::Clipboard::GetText` を使ってください。
+(`s3d::Clipboard::SetText` は通常通り使えます。)
 
 ```cpp
   // 
