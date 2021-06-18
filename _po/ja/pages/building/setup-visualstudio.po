@@ -75,6 +75,18 @@ msgstr ""
 "- プロジェクトテンプレートの登録\n"
 "- 環境変数の登録 (OpenSiv3D Web版の配置場所)"
 
+msgid ""
+"Smart Screen may prevents launching The OpenSiv3D for Web Installer, click \\[d"
+"etail\\] and \\[run\\] button will be shown."
+msgstr "次の画面が出て、インストーラーが起動できない時は、\\[詳細情報\\] を押すと \\[実行\\] ボタンが表示されます。"
+
+msgid ""
+"![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.p"
+"ng)\n"
+"![SmartScreen2](/assets/img/building/setup-visualstudio/smart-screen-guard-2.p"
+"ng)"
+msgstr ""
+
 msgid "## Creating Project"
 msgstr "## プロジェクトを作成する"
 

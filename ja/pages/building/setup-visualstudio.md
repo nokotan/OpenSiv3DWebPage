@@ -24,6 +24,11 @@ OpenSiv3D Web版のインストーラは [nokotan/OpenSiv3D releases](https://gi
 - プロジェクトテンプレートの登録
 - 環境変数の登録 (OpenSiv3D Web版の配置場所)
 
+次の画面が出て、インストーラーが起動できない時は、\[詳細情報\] を押すと \[実行\] ボタンが表示されます。
+
+![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
+![SmartScreen2](/assets/img/building/setup-visualstudio/smart-screen-guard-2.png)
+
 ## プロジェクトを作成する
 
 Visual Studio 2019 のスタート画面から、[新しいプロジェクトの作成] をクリックすると、以下のようなプロジェクトテンプレートを選択する画面が出てきます。

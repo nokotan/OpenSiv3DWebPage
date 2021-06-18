@@ -26,6 +26,11 @@ This Installer will configure following settings in your develop environment.
 - Registration of OpenSiv3D for Web Project Template.
 - Registration Environment Variable of the Placement Path
 
+Smart Screen may prevents launching The OpenSiv3D for Web Installer, click \[detail\] and \[run\] button will be shown.
+
+![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
+![SmartScreen2](/assets/img/building/setup-visualstudio/smart-screen-guard-2.png)
+
 ## Creating Project
 
 Launch Visual Studio, click `Create New Project` in the Visual Studio starting window,
