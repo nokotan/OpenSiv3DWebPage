@@ -22,5 +22,12 @@ msgstr ""
 "  - /assets/css/gallary.css\n"
 "---"
 
+msgid ""
+"Source codes of these samples are available at [nokotan/OpenSiv3DForWebv0.4Sam"
+"ples](https://github.com/nokotan/OpenSiv3DForWebv0.4Samples/tree/main/src)."
+msgstr ""
+"これらのサンプルアプリのソースコードは [nokotan/OpenSiv3DForWebv0.4Samples](https://github.com/no"
+"kotan/OpenSiv3DForWebv0.4Samples/tree/main/src) において公開しています。"
+
 msgid "{% include gallary.html list=site.data.gamelist %}"
 msgstr "{% include gallary.html list=site.data.ja.gamelist %}"
