@@ -13,9 +13,9 @@ Install **Emscripten.ProjectType Visual Studio Extension** so that Visual Studio
 Download the .vsix Package from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscriptenproj1).
 You can also install this Extension via **Extensions Manager** (found in [Tools] > [Extensions...]), with searching for `Emscripten.ProjectType`
 
-![VSExtMgr0.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/9ca223a1-60ef-1987-764a-cc2bb71f17a8.png)
+![VSExtMgr0.png](/assets/img/building/setup-visualstudio/setup-vs-ext-1.png)
 
-![VSExtMgr1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/a4f195e2-2128-dd6f-7265-5da4464eb7f4.png)
+![VSExtMgr1.png](/assets/img/building/setup-visualstudio/setup-vs-ext-2.png)
 
 ## Download OpenSiv3D for Web
 
@@ -43,7 +43,7 @@ Then, select `OpenSiv3D(0.4.3)Web` project template.
 After determining the project name, the text editor of the source code `Main.cpp` will be shown.
 Switch the project platform configuration to `Emscripten` (surrounded by the red rectangle in the following figure)
 
-![Siv3DWebProjectMake2.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/1e68903d-203f-06cb-dd2d-dc4e941b35a9.png)
+![Siv3DWebProjectMake2.png](/assets/img/building/setup-visualstudio/setup-vs-platform.png)
 
 ## Registration emscripten Toolchain
 

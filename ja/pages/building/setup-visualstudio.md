@@ -12,9 +12,9 @@ Visual Studio が emscripten に付随する emcc を使ってコンパイルを
 
 [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscriptenproj1) からダウンロードできる .vsix パッケージから拡張機能をインストールしてください。または、Visual Studio において、[ツール] > [拡張機能と更新プログラム] から拡張機能マネージャを開いて、そこで Emscripten.ProjectType を検索しても、この拡張機能をインストールすることができます。
 
-![VSExtMgr0.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/9ca223a1-60ef-1987-764a-cc2bb71f17a8.png)
+![VSExtMgr0.png](/assets/img/building/setup-visualstudio/setup-vs-ext-1.png)
 
-![VSExtMgr1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/a4f195e2-2128-dd6f-7265-5da4464eb7f4.png)
+![VSExtMgr1.png](/assets/img/building/setup-visualstudio/setup-vs-ext-2.png)
 
 ## OpenSiv3D Web版をダウンロードする
 
@@ -39,7 +39,7 @@ Visual Studio 2019 のスタート画面から、[新しいプロジェクトの
 
 プロジェクト名を決めると、以下のようなソースファイルの編集画面が出てきます。このとき、構成 (赤枠で囲んだところ) を Emscripten に切り替えてください。
 
-![Siv3DWebProjectMake2.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/1e68903d-203f-06cb-dd2d-dc4e941b35a9.png)
+![Siv3DWebProjectMake2.png](/assets/img/building/setup-visualstudio/setup-vs-platform.png)
 
 ## emscripten ツールチェインの登録
 

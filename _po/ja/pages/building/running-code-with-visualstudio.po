@@ -35,6 +35,11 @@ msgstr ""
 "作成した OpenSiv3D for Web のプロジェクトはすでに、ビルド、ローカルサーバの立ち上げができるように構成されています。\n"
 "[|> Windows ローカルデバッガ \\] をクリックすると、プロジェクトがビルドされ、ローカルサーバとブラウザが立ち上げられます。"
 
+msgid ""
+"![SmartScreen2](/assets/img/building/running-code-with-visualstudio/run-on-vs-"
+"1.png)"
+msgstr ""
+
 msgid "## Debugging"
 msgstr "## デバッグ"
 

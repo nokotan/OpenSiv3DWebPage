@@ -11,6 +11,8 @@ permalink: /ja/building/running-code-with-visualstudio
 作成した OpenSiv3D for Web のプロジェクトはすでに、ビルド、ローカルサーバの立ち上げができるように構成されています。
 [|> Windows ローカルデバッガ \] をクリックすると、プロジェクトがビルドされ、ローカルサーバとブラウザが立ち上げられます。
 
+![SmartScreen2](/assets/img/building/running-code-with-visualstudio/run-on-vs-1.png)
+
 ## デバッグ
 
 Visual Studio では、デバッグ中のブレークポイントと変数ウォッチが利用できません。

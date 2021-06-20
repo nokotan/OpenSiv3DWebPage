@@ -45,14 +45,10 @@ msgstr ""
 "は、Visual Studio において、[ツール] > [拡張機能と更新プログラム] から拡張機能マネージャを開いて、そこで Emscripten.Pro"
 "jectType を検索しても、この拡張機能をインストールすることができます。"
 
-msgid ""
-"![VSExtMgr0.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/1"
-"58514/9ca223a1-60ef-1987-764a-cc2bb71f17a8.png)"
+msgid "![VSExtMgr0.png](/assets/img/building/setup-visualstudio/setup-vs-ext-1.png)"
 msgstr ""
 
-msgid ""
-"![VSExtMgr1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/1"
-"58514/a4f195e2-2128-dd6f-7265-5da4464eb7f4.png)"
+msgid "![VSExtMgr1.png](/assets/img/building/setup-visualstudio/setup-vs-ext-2.png)"
 msgstr ""
 
 msgid "## Download OpenSiv3D for Web"
@@ -116,8 +112,8 @@ msgstr ""
 "ださい。"
 
 msgid ""
-"![Siv3DWebProjectMake2.png](https://qiita-image-store.s3.ap-northeast-1.amazon"
-"aws.com/0/158514/1e68903d-203f-06cb-dd2d-dc4e941b35a9.png)"
+"![Siv3DWebProjectMake2.png](/assets/img/building/setup-visualstudio/setup-vs-p"
+"latform.png)"
 msgstr ""
 
 msgid "## Registration emscripten Toolchain"

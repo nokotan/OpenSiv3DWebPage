@@ -20,6 +20,15 @@ Visual Studio Code の左側の拡張機能タブから、次の名前で検索�
 
 [サンプルプログラム実行用パッケージのリポジトリ](https://github.com/nokotan/OpenSiv3DForWeb-VSCode) に移動し、緑色の `Code` ボタン、`Download ZIP` ボタンを順に押してください。
 
+このテンプレートは、次の部分の構成が行われています。
+
+- インテリセンス構成
+  - インクルードディレクトリ
+  - マクロ定義
+- ビルドタスク、デバッグタスクの定義
+
+テンプレートのダウンロードが終わったら、任意のフォルダに展開してください。
+
 ![InstallSiv3DWebVSCode.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/3c6d1c31-e6ff-0fb4-a00c-0086a2fafd12.png)
 
 Visual Studio Code を起動して、[ファイル] > [フォルダを開く...] でフォルダを開くためのダイアログを表示します。

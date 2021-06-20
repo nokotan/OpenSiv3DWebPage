@@ -26,17 +26,17 @@ Follow link to [GitHub - emscripten-core/emsdk](https://github.com/emscripten-co
 
 ## Install Emscripten
 
-Open administrator command prompt[^admin-cmd], change directory to the folder you have downloaded emsdk, and run these commands:
+Open command prompt[^admin-cmd], change directory to the folder you have downloaded emsdk, and run these commands:
 
-[^admin-cmd]: Press [Windows]+[X], and select PowerShell (Administrator)
+[^admin-cmd]: Press [Windows]+[X], and select PowerShell
 
 ```bat
 emsdk install 2.0.4:upstream
-emsdk activate 2.0.4:upstream --global
+emsdk activate 2.0.4:upstream --permanent
 ```
 
 `emsdk install 2.0.4:upstream` will install emscripten and its dependencies (clang, node.js, java) to your develop environment.
-`emsdk activate 2.0.4:upstream --global` will perform setup for these tools.
+`emsdk activate 2.0.4:upstream --permanent` will perform setup for these tools.
 
 ## Next Step
 

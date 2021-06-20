@@ -30,17 +30,17 @@ emscripten SDK (emsdk) 自体は python スクリプトで書かれています�
 
 ## Emscripten をインストールする
 
-管理者権限でコマンドプロンプトを開き[^admin-cmd]、emscripten SDK (emsdk) をダウンロードしたディレクトリに移動し、次のコマンドを実行します。
+コマンドプロンプトを開き[^admin-cmd]、emscripten SDK (emsdk) をダウンロードしたディレクトリに移動し、次のコマンドを実行します。
 
-[^admin-cmd]: [Windowsキー]+[X] でメニューを開き、PowerShell (管理者) をクリックしてください。
+[^admin-cmd]: [Windowsキー]+[X] でメニューを開き、PowerShellをクリックしてください。
 
 ```bat
 emsdk install 2.0.4:upstream
-emsdk activate 2.0.4:upstream --global
+emsdk activate 2.0.4:upstream --permanent
 ```
 
 `emsdk install 2.0.4:upstream` で、emscripten 本体と emscripten で使われる clang、node.js、javaがインストールされます。
-`emsdk activate 2.0.4:upstream --global` で、インストールしたツールセットのセットアップが行われます。
+`emsdk activate 2.0.4:upstream --permanent` で、インストールしたツールセットのセットアップが行われます。
 
 ## 次の一歩
 

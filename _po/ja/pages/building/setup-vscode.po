@@ -53,6 +53,23 @@ msgstr ""
 "[サンプルプログラム実行用パッケージのリポジトリ](https://github.com/nokotan/OpenSiv3DForWeb-VSCode) に"
 "移動し、緑色の `Code` ボタン、`Download ZIP` ボタンを順に押してください。"
 
+msgid "This template is configured and ready to use .."
+msgstr "このテンプレートは、次の部分の構成が行われています。"
+
+msgid ""
+"- Intellisense Configurations\n"
+"  - Include Directories\n"
+"  - Macro Definitions\n"
+"- Build & Debug Task Definitions"
+msgstr ""
+"- インテリセンス構成\n"
+"  - インクルードディレクトリ\n"
+"  - マクロ定義\n"
+"- ビルドタスク、デバッグタスクの定義"
+
+msgid "Completed downloading this template, extract zip into a folder."
+msgstr "テンプレートのダウンロードが終わったら、任意のフォルダに展開してください。"
+
 msgid ""
 "![InstallSiv3DWebVSCode.png](https://qiita-image-store.s3.ap-northeast-1.amazo"
 "naws.com/0/158514/3c6d1c31-e6ff-0fb4-a00c-0086a2fafd12.png)"
