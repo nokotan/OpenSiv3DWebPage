@@ -26,9 +26,11 @@ Follow link to [GitHub - emscripten-core/emsdk](https://github.com/emscripten-co
 
 ## Install Emscripten
 
-Open command prompt[^admin-cmd], change directory to the folder you have downloaded emsdk, and run these commands:
+Open Explorer, and move directory to the folder you have downloaded emsdk, then type `cmd` into the address bar.
 
-[^admin-cmd]: Press [Windows]+[X], and select PowerShell
+![launch-cmd](/assets/img/building/get-emscripten/launch-cmd.png)
+
+After launching command prompt, type these commands:
 
 ```bat
 emsdk install 2.0.4:upstream

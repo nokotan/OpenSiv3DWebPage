@@ -85,14 +85,17 @@ msgid "## Install Emscripten"
 msgstr "## Emscripten をインストールする"
 
 msgid ""
-"Open command prompt[^admin-cmd], change directory to the folder you have downl"
-"oaded emsdk, and run these commands:"
+"Open Explorer, and move directory to the folder you have downloaded emsdk, the"
+"n type `cmd` into the address bar."
 msgstr ""
-"コマンドプロンプトを開き[^admin-cmd]、emscripten SDK (emsdk) をダウンロードしたディレクトリに移動し、次のコマンドを実行し"
-"ます。"
+"エクスプローラを開き、emscripten SDK (emsdk) をダウンロードしたディレクトリに移動し、アドレスバーに `cmd` と入力して、コマンド"
+"プロンプトを開きます。"
 
-msgid "[^admin-cmd]: Press [Windows]+[X], and select PowerShell"
-msgstr "[^admin-cmd]: [Windowsキー]+[X] でメニューを開き、PowerShellをクリックしてください。"
+msgid "![launch-cmd](/assets/img/building/get-emscripten/launch-cmd.png)"
+msgstr ""
+
+msgid "After launching command prompt, type these commands:"
+msgstr "コマンドプロンプトを開いたら、次のコマンドを実行します。"
 
 msgid ""
 "```bat\n"

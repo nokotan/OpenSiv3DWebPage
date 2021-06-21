@@ -28,7 +28,7 @@ permalink: /ja/v0.6/status
 
 ### Windows
 
-| Browser | Supported | Remarks |
+| ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
 | Internet Explorer 11 | 🚫 | **WebGL2**, **WebAssembly** のサポートがありません |
 | Google Chrome | ✅ | |
@@ -38,7 +38,7 @@ permalink: /ja/v0.6/status
 
 ### macOS
 
-| Browser | Supported | Remarks |
+| ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
 | Safari | ⚠️ | 実験的機能 **WebGL2** のフラグを有効化する必要があります |
 | Google Chrome | ✅ | |
@@ -46,14 +46,14 @@ permalink: /ja/v0.6/status
 
 ### Linux
 
-| Browser | Supported | Remarks |
+| ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
 | Google Chrome | ❔ | |
 | Mozilla Firefox | ❔ | `Clipboard::ReadText` が機能しません |
 
 ### Android
 
-| Browser | Supported | Remarks |
+| ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
 | Android Browser | ❔ | |
 | Google Chrome | ✅ | |
@@ -62,7 +62,7 @@ permalink: /ja/v0.6/status
 
 ### iOS
 
-| Browser | Supported | Remarks |
+| ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
 | Safari | ⚠️ | 実験的機能 **WebGL2** のフラグを有効化する必要があります |
 | Google Chrome | ❔ | |
@@ -82,7 +82,7 @@ permalink: /ja/v0.6/status
 
 ### 動画フォーマット
 
-| Format Name | Status | Remarks |
+| フォーマット名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | AVI | ⚠️ | ブラウザの動画処理に依存 |
 | MP4 | ⚠️ | ブラウザの動画処理に依存 |

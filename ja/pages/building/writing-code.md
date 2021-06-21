@@ -58,4 +58,4 @@ void Main()
 
 ## 次の一歩
 
-Check out [Running and Debugging First Code (Visual Studio)](running-code-with-visualstudio) or [Running and Debugging First Code (VSCode)](running-code-with-vscode)!
+[実行とデバッグ (Visual Studio)](running-code-with-visualstudio) または [実行とデバッグ (VSCode)](running-code-with-vscode) に進んでください。
