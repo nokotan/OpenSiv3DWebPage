@@ -40,7 +40,7 @@ permalink: /ja/v0.6/status
 
 | ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
-| Safari | ⚠️ | 実験的機能 **WebGL2** のフラグを有効化する必要があります |
+| Safari | ⚠️ | Safari 14.0, macOS BigSur のみサポート。実験的機能 **WebGL2** のフラグを有効化する必要があります |
 | Google Chrome | ✅ | |
 | Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
 

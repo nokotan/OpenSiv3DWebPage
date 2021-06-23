@@ -19,6 +19,54 @@ permalink: /status
 | ❌ | Currently Not Implemented (will be Implemented in Feature Releases) |
 | 🚫 | Will Not Implemented |
 
+## Browser Support
+
+Useful Links
+
+- [Can I use: WebGL2](https://caniuse.com/webgl2)
+- [WebAssembly Roadmap](https://webassembly.org/roadmap/)
+
+### Windows
+
+| Browser | Supported | Remarks |
+| :--: | :--: | :--: |
+| Internet Explorer 11 | 🚫 | missing **WebGL2**, **WebAssembly** support |
+| Google Chrome | ✅ | |
+| Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
+| Microsoft Edge | ✅ | |
+| Opera | ❔ | |
+
+### macOS
+
+| Browser | Supported | Remarks |
+| :--: | :--: | :--: |
+| Safari | ⚠️ | works on Safari 14.0, macOS BigSur; requires experimental **WebGL2** support |
+| Google Chrome | ✅ | |
+| Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
+
+### Linux
+
+| Browser | Supported | Remarks |
+| :--: | :--: | :--: |
+| Google Chrome | ❔ | |
+| Mozilla Firefox | ❔ | `Clipboard::ReadText` does not work |
+
+### Android
+
+| Browser | Supported | Remarks |
+| :--: | :--: | :--: |
+| Android Browser | ❔ | |
+| Google Chrome | ✅ | |
+| Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
+| Opera Mobile | ❔ | |
+
+### iOS
+
+| Browser | Supported | Remarks |
+| :--: | :--: | :--: |
+| Safari | ⚠️ | requires experimental **WebGL2** support |
+| Google Chrome | ❔ | |
+
 ## Graphics
 
 ### Image File Formats

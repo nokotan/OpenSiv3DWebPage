@@ -19,6 +19,54 @@ permalink: /ja/status
 | ❌ | 未実装 (将来のリリースで実装される予定) |
 | 🚫 | 実装予定がありません |
 
+## ブラウザ別サポート状況
+
+お役立ちリンク
+
+- [Can I use: WebGL2 (en)](https://caniuse.com/webgl2)
+- [WebAssembly Roadmap (en)](https://webassembly.org/roadmap/)
+
+### Windows
+
+| ブラウザ名 | サポート状況 | 備考 |
+| :--: | :--: | :--: |
+| Internet Explorer 11 | 🚫 | **WebGL2**, **WebAssembly** のサポートがありません |
+| Google Chrome | ✅ | |
+| Mozilla Firefox | ✅ | `Clipboard::ReadText` が機能しません |
+| Microsoft Edge | ✅ | |
+| Opera | ❔ | |
+
+### macOS
+
+| ブラウザ名 | サポート状況 | 備考 |
+| :--: | :--: | :--: |
+| Safari | ⚠️ | Safari 14.0, macOS BigSur のみサポート。実験的機能 **WebGL2** のフラグを有効化する必要があります |
+| Google Chrome | ✅ | |
+| Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
+
+### Linux
+
+| ブラウザ名 | サポート状況 | 備考 |
+| :--: | :--: | :--: |
+| Google Chrome | ❔ | |
+| Mozilla Firefox | ❔ | `Clipboard::ReadText` が機能しません |
+
+### Android
+
+| ブラウザ名 | サポート状況 | 備考 |
+| :--: | :--: | :--: |
+| Android Browser | ❔ | |
+| Google Chrome | ✅ | |
+| Mozilla Firefox | ✅ | `Clipboard::ReadText` が機能しません |
+| Opera Mobile | ❔ | |
+
+### iOS
+
+| ブラウザ名 | サポート状況 | 備考 |
+| :--: | :--: | :--: |
+| Safari | ⚠️ | 実験的機能 **WebGL2** のフラグを有効化する必要があります |
+| Google Chrome | ❔ | |
+
 ## グラフィック
 
 ### 画像ファイルフォーマット

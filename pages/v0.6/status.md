@@ -40,7 +40,7 @@ Useful Links
 
 | Browser | Supported | Remarks |
 | :--: | :--: | :--: |
-| Safari | ⚠️ | requires experimental **WebGL2** support |
+| Safari | ⚠️ | works on Safari 14.0, macOS BigSur; requires experimental **WebGL2** support |
 | Google Chrome | ✅ | |
 | Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
 
