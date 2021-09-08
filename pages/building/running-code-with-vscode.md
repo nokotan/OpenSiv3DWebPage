@@ -6,7 +6,7 @@ title: Running and Debugging (VSCode)
 permalink: /building/running-code-with-vscode
 ---
 
-## Building and Debugging
+## Building
 
 To build sample program:
 
@@ -16,12 +16,31 @@ To build sample program:
 ![vscode-run-task](/assets/img/building/running-code-with-vscode/vscode-run-task.png)
 ![vscode-run-task-2](/assets/img/building/running-code-with-vscode/vscode-run-task-2.png)
 
-To debug sample program (both will launch local server and open browser):
+## Running Project without Debugging on VSCode
 
-- Press [Ctrl]+[Shift]+[P], Select "Run Task ...", then Select `Run Local Server and Open Browser`
+Press [Ctrl]+[Shift]+[P], Select "Run Task ...", then Select `Run Local Server and Open Browser`
 
 ![vscode-run-task-3](/assets/img/building/running-code-with-vscode/vscode-run-task-3.png)
 
-- Start debugging in debugging tab (requires browser extension)
+With **Chrome DWARF Debugging**, you will be able to use variables watching in Chrome development tools.
+Follow the instructions in [Debugging WebAssembly with modern tools](https://developer.chrome.com/blog/wasm-debugging-2020/).
+
+## Running Project with Debugging on VSCode
+
+Debugging on VSCode is supported on Chrome, FireFox.
+
+### Chrome
+
+Select `Launch Chrome against localhost` in the Run & Debug tab, and press `▶️`.
 
 ![start-debugging](/assets/img/building/running-code-with-vscode/start-debugging.png)
+
+Required extension is embedded in VSCode, only source maps of WebAssembly is supported.
+
+If you want to use source maps and variables dump, using extension `WebAssembly on Chrome Debugger` is recommended.
+
+### FireFox
+
+Install extension `Debugger for Firefox`.
+
+After installation, select `Launch FireFox against localhost` in the Run & Debug tab, and press `▶️`.

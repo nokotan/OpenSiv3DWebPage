@@ -23,8 +23,8 @@ msgstr ""
 "permalink: /ja/building/running-code-with-vscode\n"
 "---"
 
-msgid "## Building and Debugging"
-msgstr "## ビルドと実行"
+msgid "## Building"
+msgstr "## ビルド"
 
 msgid "To build sample program:"
 msgstr "ビルドは、次の方法があります。"
@@ -44,23 +44,65 @@ msgid ""
 "task-2.png)"
 msgstr ""
 
-msgid "To debug sample program (both will launch local server and open browser):"
-msgstr "また、デバッグ実行は、次の方法があります。いずれも、ローカルサーバを立ち上げた上でブラウザが開きます。"
+msgid "## Running Project without Debugging on VSCode"
+msgstr "## VScode でのデバッグなしでプロジェクトを実行する"
 
 msgid ""
-"- Press [Ctrl]+[Shift]+[P], Select \"Run Task ...\", then Select `Run Local Serv"
-"er and Open Browser`"
-msgstr "- Ctrl(Cmd)+Shift+P でタスクの実行を選んで, `Run Local Server and Open Browser` を選ぶ"
+"Press [Ctrl]+[Shift]+[P], Select \"Run Task ...\", then Select `Run Local Server"
+" and Open Browser`"
+msgstr "Ctrl(Cmd)+Shift+P でタスクの実行を選んで, `Run Local Server and Open Browser` を選びます。"
 
 msgid ""
 "![vscode-run-task-3](/assets/img/building/running-code-with-vscode/vscode-run-"
 "task-3.png)"
 msgstr ""
 
-msgid "- Start debugging in debugging tab (requires browser extension)"
-msgstr "- 左側のデバッグタブからデバッグを開始する (拡張機能をインストールしている場合)"
+msgid ""
+"With **Chrome DWARF Debugging**, you will be able to use variables watching in"
+" Chrome development tools.\n"
+"Follow the instructions in [Debugging WebAssembly with modern tools](https://d"
+"eveloper.chrome.com/blog/wasm-debugging-2020/)."
+msgstr ""
+"Chrome DWARF 支援を使って、Chrome の開発ツール上で変数ウォッチを利用することができます。\n"
+"詳しくは、[Debugging WebAssembly with modern tools (英語のページ)](https://developer.chro"
+"me.com/blog/wasm-debugging-2020/)を参照してください。"
+
+msgid "## Running Project with Debugging on VSCode"
+msgstr "## プロジェクトを実行し、VScode でデバッグする"
+
+msgid "Debugging on VSCode is supported on Chrome, FireFox."
+msgstr "VScode でのデバッグは、Chrome と FireFox でのみ有効です。"
+
+msgid "### Chrome"
+msgstr ""
+
+msgid ""
+"Select `Launch Chrome against localhost` in the Run & Debug tab, and press `▶️"
+"`."
+msgstr "実行とデバッグ タブで `Launch Chrome against localhost` を選択して、`▶️` を押します。"
 
 msgid ""
 "![start-debugging](/assets/img/building/running-code-with-vscode/start-debuggi"
 "ng.png)"
 msgstr ""
+
+msgid ""
+"Required extension is embedded in VSCode, only source maps of WebAssembly is s"
+"upported."
+msgstr "必要な拡張機能は、VSCode に組み込まれていますが、ソースマップのみ有効です。"
+
+msgid ""
+"If you want to use source maps and variables dump, using extension `WebAssembl"
+"y on Chrome Debugger` is recommended."
+msgstr "ソースマップと変数ダンプの両方が必要な場合は、拡張機能 `WebAssembly on Chrome Debugger`を使用することをお勧めします。"
+
+msgid "### FireFox"
+msgstr ""
+
+msgid "Install extension `Debugger for Firefox`."
+msgstr "拡張機能 `Debugger for Firefox` をインストールします。"
+
+msgid ""
+"After installation, select `Launch FireFox against localhost` in the Run & Deb"
+"ug tab, and press `▶️`."
+msgstr "インストール後、実行とデバッグ タブで `Launch FireFox against localhost` を選択して、`▶️` を押します。"
