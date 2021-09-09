@@ -1,6 +1,6 @@
 ---
 title: Gallary
-permalink: /gallary
+permalink: /v0.4.3/gallary
 css: 
   - /assets/css/gallary.css
 ---

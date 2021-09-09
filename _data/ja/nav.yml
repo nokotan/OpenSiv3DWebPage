@@ -40,6 +40,19 @@
     - title: Web 固有の注意点 (v0.6)
       url: /ja/v0.6/web-specific-notes
 
+- title: OpenSiv3D v0.4.3
+  url: /ja/v0.4.3
+  new-group: true
+  children: 
+    - title: ギャラリー (v0.4.3)
+      url: /ja/v0.4.3/gallary
+    - title: ダウンロード (v0.4.3)
+      url: /ja/v0.4.3/download
+    - title: 実装状況 (v0.4.3)
+      url: /ja/v0.4.3/status
+    - title: Web 固有の注意点 (v0.4.3)
+      url: /ja/v0.4.3/web-specific-notes
+
 - title: GitHub
   url: https://github.com/nokotan/OpenSiv3D
   new-group: true

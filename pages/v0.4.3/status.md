@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: Implementation Status
-permalink: /status
+permalink: /v0.4.3/status
 ---
 
 **Also Check [Project:Features](https://github.com/nokotan/OpenSiv3D/projects/1)**

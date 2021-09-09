@@ -1,6 +1,6 @@
 ---
 title: Download
-permalink: /download
+permalink: /v0.4.3/download
 ---
 
 ## Latest Version
