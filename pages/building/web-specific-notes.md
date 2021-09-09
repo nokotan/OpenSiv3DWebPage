@@ -2,8 +2,8 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-title: Web Specific Notes (v0.6)
-permalink: /v0.6/web-specific-notes
+title: Web Specific Notes
+permalink: /building/web-specific-notes
 ---
 
 ## GameLoop Design

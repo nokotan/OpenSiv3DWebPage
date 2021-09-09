@@ -77,7 +77,16 @@ permalink: /ja/status
 | PNG | ✅ | |
 | Jpeg | ✅ | **libturbojpeg** もサポート |
 | GIF | ✅ | |
+| TIFF | ✅ | |
 | WebP | ✅ | |
+
+### 動画フォーマット
+
+| フォーマット名 | 状態 | 備考 |
+| :--: | :--: | :--: |
+| AVI | ⚠️ | ブラウザの動画処理に依存 |
+| MP4 | ⚠️ | ブラウザの動画処理に依存 |
+| Ogv | ⚠️ | ブラウザの動画処理に依存 |
 
 ### フォント
 
@@ -95,9 +104,10 @@ permalink: /ja/status
 | フォーマット名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | Wave | ✅ | |
-| MP3 | ✅ | [`s3d::Platform::WebAudioProcessing::DecodeAudioFromFile`](building/web-specific-notes#音声ファイルのデコード) を使ってください |
-| AAC | ✅ | [`s3d::Platform::WebAudioProcessing::DecodeAudioFromFile`](building/web-specific-notes#音声ファイルのデコード) を使ってください。手動ビルドで有効にできます。 |
+| MP3 | ✅ | `s3d::Platform::Web::AudioDecoder::DecodeAudioFromFile` を使ってください 手動ビルドで有効にできます。 |
+| AAC | ✅ | `s3d::Platform::Web::AudioDecoder::DecodeAudioFromFile` を使ってください。手動ビルドで有効にできます。 |
 | Ogg | ✅ | |
+| Opus | ✅ | |
 
 ## 入力デバイス
 
@@ -116,7 +126,7 @@ permalink: /ja/status
 | 機能名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | Web カメラ | ✅ | 固定解像度のみ対応 (640x480) |
-| マイク | ⚠️ | emscripten の OpenAL 実装に問題あり |
+| マイク | ❔ | |
 | CPU 機能検出 | 🚫 | |
 | 電源状態 | 🚫 | [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API) という非推奨の API に依存 |
 
@@ -126,7 +136,7 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | メモリ上のファイル ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | 再読み込み時に全てのファイルが消去されます。 (OpenSiv3D for Web の拡張機能) |
 | [インデックスされたファイル](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ | |
-| ダイアログ | ✅ | [`s3d::Platform::Web::Dialog`](building/web-specific-notes#ファイルを開くダイアログ) 名前関数の関数を使用のこと |
+| ダイアログ | ✅ | `s3d::Platform::Web::Dialog` 名前関数の関数を使用のこと |
 | ドラッグドロップ | ✅ | |
 
 ## テキスト入出力
@@ -136,16 +146,16 @@ permalink: /ja/status
 | テクスト入力基本サポート | ✅ | |
 | IME 基本サポート | ✅ | `HTMLInputElement` と同期 |
 | IME 入力候補 | 🚫 | |
-| テキスト読み上げ | 🚧 | Chrome: 機能しません, Edge: 言語リストを取得できません |
+| テキスト読み上げ | ⚠️ | Chrome: 機能しません, Edge: 言語リストを取得できません |
 
 ## そのほか
 
 | 機能名 | 状態 | 備考 |
 | :--: | :--: | :--: |
-| 通知 | 🚧 | |
+| 通知 | ✅ | |
 | メッセージボックス | ✅ | `window.alert` または `window.confirm` を呼び出し |
-| クリップボード | ✅ | テキストのコピー及び貼り付けのみ対応。[`s3d::Platform::Web::Clipboard`](building/web-specific-notes#クリップボード) を利用すること |
+| クリップボード | ⚠️ | テキストのコピー及び貼り付けのみ対応 |
 | Network | ❌ | **WebSocket** に依存、P2P 通信は利用不可 |
-| Siv3D Scripts | ✅ | |
+| Siv3D Scripts | ❌ | |
 | 子プロセス | ❌ | |
 | NLP | ❌ | 子プロセスサポートに依存 |

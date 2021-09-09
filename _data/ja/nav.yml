@@ -29,17 +29,6 @@
 - title: 実装状況
   url: /ja/status
 
-- title: OpenSiv3D v0.6
-  url: /ja/v0.6
-  new-group: true
-  children: 
-    - title: ギャラリー (v0.6)
-      url: /ja/v0.6/gallary
-    - title: 実装状況 (v0.6)
-      url: /ja/v0.6/status
-    - title: Web 固有の注意点 (v0.6)
-      url: /ja/v0.6/web-specific-notes
-
 - title: OpenSiv3D v0.4.3
   url: /ja/v0.4.3
   new-group: true

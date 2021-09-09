@@ -8,27 +8,27 @@ permalink: /ja/download
 
 ### Windows
 
-{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D.0.4.3.Web.exe" text="OpenSiv3D for Web インストーラをダウンロード" %}
-{% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-wasm.zip" text="OpenSiv3D for Web.zip をダウンロード" %}
+{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.0b0/OpenSiv3D-Installer-wasm.exe" text="OpenSiv3D for Web インストーラをダウンロード" %}
+{% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.0b0/OpenSiv3D-wasm.zip" text="OpenSiv3D for Web.zip をダウンロード" %}
 
 ### macOS, Linux
 
-{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-wasm.tgz" text="OpenSiv3D for Web.tgz をダウンロード" %}
+{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.0b0/OpenSiv3D-wasm.tgz" text="OpenSiv3D for Web.tgz をダウンロード" %}
 
 ### ほかのバージョン
 
 #### Windows
 
-| | emscripten:2.0.4-upstream | emscripten:1.39.13-fastcomp |
+| | emscripten 2.0.22 | emscripten 2.0.22 (simd) |
 | :--: | :--: | :--: |
-| インストーラ | [OpenSiv3D for Web インストーラ](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D.0.4.3.Web.exe) (36.99MB) | [OpenSiv3D for Web インストーラ](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.3-web/OpenSiv3D.0.4.3.Web-asmjs.exe) (64.65MB) |
-| Zip 圧縮 | [OpenSiv3D-wasm.zip](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-wasm.zip) (41.9MB) |  [OpenSiv3D-asmjs](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-asmjs.zip) (82.5MB) |
+| インストーラ | [OpenSiv3D for Web インストーラ](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.0b0/OpenSiv3D-Installer-wasm.exe) (69.7MB) | [OpenSiv3D for Web インストーラ](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.0b0/OpenSiv3D-Installer-wasm-simd.exe) (69.8MB) |
+| Zip 圧縮 | [OpenSiv3D-wasm.zip](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.0b0/OpenSiv3D-wasm.zip) (75.8MB) |  [OpenSiv3D-wasm-simd.zip](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.0b0/OpenSiv3D-wasm-simd.zip) (83.4MB) |
 
 #### macOS, Linux
 
-| | emscripten:2.0.4-upstream | emscripten:1.39.13-fastcomp |
+| | emscripten 2.0.22 | emscripten 2.0.22 (simd) |
 | :--: | :--: | :--: |
-| tgz 圧縮 | [OpenSiv3D-wasm.tgz](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-wasm.tgz) (41.6MB) | [OpenSiv3D-asmjs.tgz](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-asmjs.tgz) (82.3MB) |
+| tgz 圧縮 | [OpenSiv3D-wasm.tgz](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.0b0/OpenSiv3D-wasm.tgz) (74.9MB) | [OpenSiv3D-wasm-simd.tgz](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.0b0/OpenSiv3D-wasm-simd.tgz) (75.0MB) |
 
 ## 過去のバージョン
 
@@ -40,31 +40,6 @@ permalink: /ja/download
 
 ## 変更履歴
 
-### v0.4.3.5
-
-* サポートされる画像フォーマットの追加: **webp**, **gif**
-* システムカーソルスタイルのサポート
-* IME の試験的サポート
-* クリップボードの試験的サポート
-
-### v0.4.3.4
-
-* サポートされる音声フォーマットの追加: **mp3**, **aac**
-* ファイルダイアログのサポート
-* ファイルドラッグドロップのサポート
-* メッセージボックスのサポート
-* ゲームパッドのサポート
-* マイクの試験的サポート
-
-### v0.4.3.3
-
-* サポートされる画像フォーマットの追加: **jpeg**
-* emscripten asm.js バックエンドでのビルドサポート
-
-### v0.4.3.2
-
-* Siv3D スクリプトのサポート
-
-### v0.4.3.0
+### v0.6.0b0
 
 * 初期リリース

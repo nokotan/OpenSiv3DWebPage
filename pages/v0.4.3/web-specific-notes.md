@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: Web Specific Notes
-permalink: /building/web-specific-notes
+permalink: /v0.4.3/web-specific-notes
 ---
 
 ## GameLoop Design

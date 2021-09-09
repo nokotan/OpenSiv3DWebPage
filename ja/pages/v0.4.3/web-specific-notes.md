@@ -2,8 +2,8 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-title: Web 固有の注意点
-permalink: /ja/building/web-specific-notes
+title: Web Specific Notes
+permalink: /v0.4.3/web-specific-notes
 ---
 
 ## ゲームループの設計
@@ -44,7 +44,7 @@ OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専
 ### 音声ファイルのデコード
 
 Audio コンストラクタを使った .mp3 と .aac ファイルのデコードはサポートされていません。
-`AsyncTask<Audio>` を返す `s3d::Platforms::Web::AudioDecoder::DecodeFromFile` を使ってください。
+`std::future<Audio>` を返す `s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` を使ってください。
 
 ```cpp
   // 
@@ -52,19 +52,19 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
   //
   // Audio audio { "/example/test.mp3" };
   Audio audio;
-  AsyncTask<Audio> audioTask = s3d::Platforms::Web::AudioDecoder::DecodeFromFile("/example/test.mp3");
+  std::future<Audio> audio_future = s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile("/example/test.mp3");
 
   // デコードが終わったかチェック
-  if (audioTask.isReady())
+  if (audio_future.valid() && audio_future.wait_for(0s) == std::future_status::ready)
   {
-    audio = audioTask.get();
+    audio = audio_future.get();
   }
 ```
 
 ### ファイルを開くダイアログ
 
 `s3d::Dialog::Open**` は常に空のオブジェクトを返します。
-`AsyncTask<**>` を返す `s3d::Platforms::Web::Dialog::Open**` を使ってください。
+`std::future<**>` を返す `s3d::Platforms::Web::Dialog::Open**` を使ってください。
 
 ```cpp
   // 
@@ -72,12 +72,12 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
   //
   // Audio audio = Dialog::OpenAudio();
   Audio audio;
-  AsyncTask<Audio> audioTask = s3d::Platforms::Web::Dialog::OpenAudio();
+  std::future<Audio> audio_future = s3d::Platforms::Web::Dialog::OpenAudio();
 
   // ユーザーがファイルを選択し、デコードが終わったかチェック
-  if (audioTask.isReady())
+  if (audio_future.valid() && audio_future.wait_for(0s) == std::future_status::ready)
   {
-    audio = audioTask.get();
+    audio = audio_future.get();
   }
 ```
 
@@ -91,7 +91,7 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
 テキストのコピーと貼り付けのみサポートされています。
 (そして、FireFox ではこの機能は無効化されています。)
 
-`AsyncTask<String>` を返す `s3d::Platforms::Web::Clipboard::GetText` を使ってください。
+`std::future<String>` を返す `s3d::Platforms::Web::Clipboard::GetText` を使ってください。
 (`s3d::Clipboard::SetText` は通常通り使えます。)
 
 ```cpp
@@ -104,14 +104,14 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
   // {
   //
   // }
-  AsyncTask<String> textTask;
+  future<String> text_future;
   String text;
 
-  textTask = Platforms::Web::Clipboard::GetText();
+  text_future = Platforms::Web::Clipboard::GetText();
 
   // テキストが貼り付けられたか問い合わせる
-  if (textTask.isReady())
+  if (text_future.valid() && text_future.wait_for(0s) == std::future_status::ready)
   {
-    text = textTask.get();
+    text = text_future.get();
   }
 ```
