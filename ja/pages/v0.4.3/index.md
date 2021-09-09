@@ -64,9 +64,3 @@ void Main()
 
 - 安定版ブランチ: [![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml/badge.svg?branch=web)](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml)
 - 開発版ブランチ: [![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml/badge.svg?branch=web_develop)](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml)
-
-### OpenSiv3D for Web v0.6
-
-- 安定版ブランチ (Siv3D/OpenSiv3D.git): [![C/C++ CI for Web](https://github.com/Siv3D/OpenSiv3D/actions/workflows/ccpp_web.yml/badge.svg?branch=v6_master)](https://github.com/Siv3D/OpenSiv3D/actions/workflows/ccpp_web.yml)
-- 開発版ブランチ (nokotan/OpenSiv3D.git): [![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp_web.yml/badge.svg?branch=v6_web_develop)](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp_web.yml)
-- 開発版ブランチ (Siv3D/OpenSiv3D.git): [![C/C++ CI for Web](https://github.com/Siv3D/OpenSiv3D/actions/workflows/ccpp_web.yml/badge.svg?branch=v6_winmac_develop)](https://github.com/Siv3D/OpenSiv3D/actions/workflows/ccpp_web.yml)

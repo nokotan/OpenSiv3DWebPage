@@ -7,48 +7,74 @@ permalink: /ja/index
 css: 
   - /assets/css/playground.css
   - /assets/css/gallary.css
-postScript: 
-  - /assets/BasicSample/BasicSample.js
-  - /assets/js/playground.js
 ---
 
-{% include playground.html image="https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/demo.gif" name="BasicSample" %}
+![play ground alternative](https://raw.githubusercontent.com/Siv3D/File/master/v6/screenshot/hello-siv3d.gif)
 
 OpenSiv3D for Web は WebGL アプリケーションを C/C++ で開発するためのライブラリです。
 
 ## はじめる
 
-{% include button.html url="download" text="OpenSiv3D for Web をダウンロード" %}
-または
-{% include outline-button.html url="//webassembly-studio.kamenokosoft.com" text="ブラウザ上で OpenSiv3D for Web を試す" %}
+{% include button.html url="download" text="Download OpenSiv3D for Web" %}
 
 ```cpp
-# include <Siv3D.hpp> // OpenSiv3D v0.4.3
+# include <Siv3D.hpp>
 
 void Main()
 {
-  Scene::SetBackground(ColorF(0.8, 0.9, 1.0));
-  const Font font(60);
-  const Texture cat(Emoji(U"🐈"));
+  // 背景を水色にする
+  Scene::SetBackground(ColorF{ 0.8, 0.9, 1.0 });
+
+  // 通常のフォントを作成
+  const Font font{ 60 };
   
-  Vec2 catPos(640, 450);
+  // 絵文字用フォントを作成
+  const Font emojiFont{ 60, Typeface::ColorEmoji };
+  
+  // `font` が絵文字用フォントも使えるようにする
+  font.addFallback(emojiFont);
+
+  // 画像ファイルからテクスチャを作成
+  const Texture texture{ U"example/windmill.png" };
+
+  // 絵文字からテクスチャを作成
+  const Texture emoji{ U"🐈"_emoji };
+
+  // 絵文字を描画する座標
+  Vec2 emojiPos{ 300, 150 };
+
+  // テキストを画面にデバッグ出力
+  Print << U"Push [A] key";
+
 
   Platform::Web::System::SetMainLoop([&]()
   {
-    System::Update();
-
-    font(U"Hello, Siv3D!🐣").drawAt(Scene::Center(), Palette::Black);
-    cat.resized(100 + Periodic::Sine0_1(1s) * 20).drawAt(catPos);
-    Circle(Cursor::Pos(), 40).draw(ColorF(1, 0, 0, 0.5));
+    System::Update()
     
+    // テクスチャを描く
+    texture.draw(200, 200);
+
+    // テキストを画面の中心に描く
+    font(U"Hello, Siv3D!🚀").drawAt(Scene::Center(), Palette::Black);
+
+    // サイズをアニメーションさせて絵文字を描く
+    emoji.resized(100 + Periodic::Sine0_1(1s) * 20).drawAt(emojiPos);
+
+    // マウスカーソルに追随する半透明な円を描く
+    Circle{ Cursor::Pos(), 40 }.draw(ColorF{ 1, 0, 0, 0.5 });
+
+    // もし [A] キーが押されたら
     if (KeyA.down())
     {
-      Print << U"Hello!";
+      // 選択肢からランダムに選ばれたメッセージをデバッグ表示
+      Print << Sample({ U"Hello!", U"こんにちは", U"你好", U"안녕하세요?" });
     }
-    
-    if (SimpleGUI::Button(U"Move the cat", Vec2(600, 20)))
+
+    // もし [Button] が押されたら
+    if (SimpleGUI::Button(U"Button", Vec2{ 640, 40 }))
     {
-      catPos = RandomVec2(Scene::Rect());
+      // 画面内のランダムな場所に座標を移動
+      emojiPos = RandomVec2(Scene::Rect());
     }
   });
 }
@@ -56,16 +82,9 @@ void Main()
 
 ## ギャラリー
 
-{% include gallary.html list=site.data.ja.gamelist %}
+{% include gallary.html list=site.data.ja.gamelist_v6 %}
 
 ## 最新版ビルドの状態
-
-### OpenSiv3D for Web v0.4.3
-
-- 安定版ブランチ: [![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml/badge.svg?branch=web)](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml)
-- 開発版ブランチ: [![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml/badge.svg?branch=web_develop)](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp.yml)
-
-### OpenSiv3D for Web v0.6
 
 - 安定版ブランチ (Siv3D/OpenSiv3D.git): [![C/C++ CI for Web](https://github.com/Siv3D/OpenSiv3D/actions/workflows/ccpp_web.yml/badge.svg?branch=v6_master)](https://github.com/Siv3D/OpenSiv3D/actions/workflows/ccpp_web.yml)
 - 開発版ブランチ (nokotan/OpenSiv3D.git): [![C/C++ CI for Web](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp_web.yml/badge.svg?branch=v6_web_develop)](https://github.com/nokotan/OpenSiv3D/actions/workflows/ccpp_web.yml)
