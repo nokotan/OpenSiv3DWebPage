@@ -33,6 +33,8 @@
   url: /ja/v0.4.3
   new-group: true
   children: 
+    - title: ホーム (v0.4.3)
+      url: /ja/v0.4.3/index
     - title: ギャラリー (v0.4.3)
       url: /ja/v0.4.3/gallary
     - title: ダウンロード (v0.4.3)
