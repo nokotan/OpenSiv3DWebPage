@@ -10,9 +10,9 @@ permalink: /ja/building/setup-vscode
 
 Visual Studio Code の左側の拡張機能タブから、次の名前で検索し、インストールしてください。
 
-- C/C++ VSCode Extension
-- Debugger for Chrome
-- Debugger for Firefox
+- C/C++ VSCode 拡張
+- Debugger for Firefox (任意)
+- WebAssembly on Chrome Debugger (任意)
 
 ![VSCodeExt1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/bf97ad48-9626-4898-d671-48b740ddaecc.png)
 

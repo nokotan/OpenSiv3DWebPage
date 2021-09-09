@@ -33,9 +33,12 @@ msgstr "Visual Studio Code の左側の拡張機能タブから、次の名前�
 
 msgid ""
 "- C/C++ VSCode Extension\n"
-"- Debugger for Chrome\n"
-"- Debugger for Firefox"
+"- Debugger for Firefox (Optional)\n"
+"- WebAssembly on Chrome Debugger (Optional)"
 msgstr ""
+"- C/C++ VSCode 拡張\n"
+"- Debugger for Firefox (任意)\n"
+"- WebAssembly on Chrome Debugger (任意)"
 
 msgid ""
 "![VSCodeExt1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/"

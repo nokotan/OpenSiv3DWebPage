@@ -11,7 +11,7 @@ css:
 
 ![play ground alternative](https://raw.githubusercontent.com/Siv3D/File/master/v6/screenshot/hello-siv3d.gif)
 
-OpenSiv3D for Web brings you to developing WebGL application with C/C++!
+OpenSiv3D for Web brings you to developing interactive WebGL applications with C++20!
 
 ## Getting Started
 
@@ -45,7 +45,6 @@ void Main()
 
   // Print a text
   Print << U"Push [A] key";
-
 
   Platform::Web::System::SetMainLoop([&]()
   {

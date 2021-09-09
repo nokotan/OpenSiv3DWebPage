@@ -41,6 +41,4 @@ VScode でのデバッグは、Chrome と FireFox でのみ有効です。
 
 ### FireFox
 
-拡張機能 `Debugger for Firefox` をインストールします。
-
-インストール後、実行とデバッグ タブで `Launch FireFox against localhost` を選択して、`▶️` を押します。
+実行とデバッグ タブで `Launch Chrome against localhost` を選択して、`▶️` を押します。

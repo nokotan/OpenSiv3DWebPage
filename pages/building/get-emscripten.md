@@ -33,12 +33,12 @@ Open Explorer, and move directory to the folder you have downloaded emsdk, then 
 After launching command prompt, type these commands:
 
 ```bat
-emsdk install 2.0.4-upstream
-emsdk activate 2.0.4-upstream --permanent
+emsdk install 2.0.22-upstream
+emsdk activate 2.0.22-upstream --permanent
 ```
 
-`emsdk install 2.0.4-upstream` will install emscripten and its dependencies (clang, node.js, java) to your develop environment.
-`emsdk activate 2.0.4-upstream --permanent` will perform setup for these tools.
+`emsdk install 2.0.22-upstream` will install emscripten and its dependencies (clang, node.js, java) to your develop environment.
+`emsdk activate 2.0.22-upstream --permanent` will perform setup for these tools.
 
 ## Next Step
 

@@ -11,6 +11,8 @@
   url: /ja/building
   new-group: true
   children:
+    - title: 概要
+      url: /ja/building/overview
     - title: Emscripten をダウンロードする
       url: /ja/building/get-emscripten
     - title: Visual Studio のセットアップ

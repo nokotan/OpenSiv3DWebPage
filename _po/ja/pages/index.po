@@ -34,8 +34,10 @@ msgid ""
 "/v6/screenshot/hello-siv3d.gif)"
 msgstr ""
 
-msgid "OpenSiv3D for Web brings you to developing WebGL application with C/C++!"
-msgstr "OpenSiv3D for Web は WebGL アプリケーションを C/C++ で開発するためのライブラリです。"
+msgid ""
+"OpenSiv3D for Web brings you to developing interactive WebGL applications with"
+" C++20!"
+msgstr "OpenSiv3D for Web はインタラクティブな WebGL アプリケーションを C++20 で開発するためのライブラリです。"
 
 msgid "## Getting Started"
 msgstr "## はじめる"

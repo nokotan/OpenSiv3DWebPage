@@ -35,12 +35,10 @@ Select `Launch Chrome against localhost` in the Run & Debug tab, and press `▶�
 
 ![start-debugging](/assets/img/building/running-code-with-vscode/start-debugging.png)
 
-Required extension is embedded in VSCode, only source maps of WebAssembly is supported.
+Required extension is embedded in VSCode, but only source maps of WebAssembly is supported.
 
-If you want to use source maps and variables dump, using extension `WebAssembly on Chrome Debugger` is recommended.
+If you want to use source maps and variables dump, use extension `WebAssembly on Chrome Debugger`.
 
 ### FireFox
 
-Install extension `Debugger for Firefox`.
-
-After installation, select `Launch FireFox against localhost` in the Run & Debug tab, and press `▶️`.
+Select `Launch FireFox against localhost` in the Run & Debug tab, and press `▶️`.

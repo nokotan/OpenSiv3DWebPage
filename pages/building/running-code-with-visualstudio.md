@@ -9,7 +9,7 @@ permalink: /building/running-code-with-visualstudio
 ## Running Code
 
 The OpenSiv3D for Web project is already configured to build, launch a local server.
-Just clicking \[|> Run \] will trigger building project, launch a local server and a browser.
+Just clicking \[|> Windows Local Debugger \] will trigger building project, launch a local server and a browser.
 
 ![SmartScreen2](/assets/img/building/running-code-with-visualstudio/run-on-vs-1.png)
 
