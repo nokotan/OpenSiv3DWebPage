@@ -125,7 +125,7 @@ Useful Links
 | Feature Name | Status | Remarks |
 | :--: | :--: | :--: |
 | WebCamera | ✅ | |
-| Microphone | ❔ | |
+| Microphone | ⚠️ | |
 | CPU Feature Detection | 🚫 | |
 | Power-Status | 🚫 | Depends on Deprecated API: [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API)|
 
@@ -136,7 +136,7 @@ Useful Links
 | On-Memory Files ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | Restricts: Flushed All Files on Reload (Web Extension) |
 | [Indexed DataBase](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ | |
 | File Dialogs | ✅ | Use functions in namespace `s3d::Platform::Web::Dialog` |
-| File Drag & Drop | ✅ | |
+| File Drag & Drop | ⚠️ | |
 
 ## Text Input/Output
 
@@ -155,6 +155,6 @@ Useful Links
 | MessageBox | ✅ | Just Calls `window.alert` or `window.confirm` |
 | ClipBoard | ⚠️ | Only Support Copy or Paste Texts; Use GetText in namespace `s3d::Platform::Web::Clipboard` instead of `Clipboard::GetText` |
 | Network | ❌ | Depends on **WebSocket**, which not supports P2P communication. |
-| Siv3D Scripts | ❌ | |
+| Siv3D Scripts | ✅  | |
 | ChildProcess | ❌ | |
 | NLP | ❌ | Depends ChildProcess Support |
