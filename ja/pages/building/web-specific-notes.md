@@ -115,3 +115,33 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
     text = textTask.get();
   }
 ```
+
+### 通信
+
+外部 WebSocket サーバへの接続のみサポートされています。
+保護されたページ (URL が `https://` で始まる Web ページ) では、保護された WebSocket サーバにのみ接続可能です。
+
+```cpp
+  const IPv4Address ip = IPv4Address::Localhost();
+  constexpr uint16 port = 50000;
+
+  TCPClient client;
+
+  client.connect(ip, port);
+
+  Point serverPlayerPos{ 0, 0 };
+  const Point clientPlayerPos = Cursor::Pos();
+  
+  // 送信
+  client.send(clientPlayerPos);
+
+  //
+  // Web 版では `client.read` を呼び出す無限ループはサポートされません。
+  // ブラウザがフリーズしてしまいます。
+  //
+  // while (client.read(serverPlayerPos));
+  //
+
+  // 受信
+  client.read(serverPlayerPos);
+```

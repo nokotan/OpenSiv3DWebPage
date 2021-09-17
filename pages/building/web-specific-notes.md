@@ -115,3 +115,33 @@ Use `s3d::Platforms::Web::Clipboard::GetText` that returns `AsyncTask<String>`.
     text = textTask.get();
   }
 ```
+
+### Network
+
+Only connecting to external websocket server is supported.
+Make sure to use secured websocket server in secured (https://) pages.
+
+```cpp
+  const IPv4Address ip = IPv4Address::Localhost();
+  constexpr uint16 port = 50000;
+
+  TCPClient client;
+
+  client.connect(ip, port);
+
+  Point serverPlayerPos{ 0, 0 };
+  const Point clientPlayerPos = Cursor::Pos();
+  
+  // send
+  client.send(clientPlayerPos);
+
+  //
+  // Not Supported that polling with `client.read`.
+  // Polling will freeze the browser. 
+  //
+  // while (client.read(serverPlayerPos));
+  //
+
+  // recv
+  client.read(serverPlayerPos);
+```
