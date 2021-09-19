@@ -145,3 +145,36 @@ Make sure to use secured websocket server in secured (https://) pages.
   // recv
   client.read(serverPlayerPos);
 ```
+
+### Multi-Threading
+
+### Unsupported Texture Format
+
+In mobile browsers, generating textures of format `TextureFormat::R32_Float` will be failed due to the mobile hardware limitation.
+Consider using `TextureFormat::R16G16_Float` formatted textures instead.
+
+### Features that Requires User Actions
+
+Some features are required to use on user actions.
+
+* Dialog::\*
+* ClipBoard::ReadText, SetText
+* Window::SetFullscreen
+* VideoReader (on Safari)
+* System::LaunchBrowser
+
+```cpp
+//
+// will enter fullscreen on first user action after invoking `Window::SetFullscreen`
+// Window::SetFullscreen(true);
+//
+
+if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
+{
+  //
+  // SimpleGUI::Button()` will be true on user `click` actions,
+  // invocation of `Window::SetFullscreen` will work expectedly.
+  //
+  Window::SetFullscreen(true);
+}
+```

@@ -145,3 +145,35 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
   // 受信
   client.read(serverPlayerPos);
 ```
+
+### マルチスレッド
+
+### サポートされないテクスチャフォーマット
+
+モバイル環境では、ハードウェアの制約上、フォーマットが `TextureFormat::R32_Float` のテクスチャを生成することができません。
+代わりに、フォーマットが `TextureFormat::R16G16_Float` のテクスチャを使用してください。
+
+### ユーザーアクションが必要な機能
+
+以下の機能は、ユーザーアクションと同時に使用する必要があります。
+
+* Dialog::\*
+* ClipBoard::ReadText, SetText
+* Window::SetFullscreen
+* VideoReader (on Safari)
+* System::LaunchBrowser
+
+//
+// `Window::SetFullscreen` の呼び出した後の、最初のユーザー操作があった時にフルスクリーンになります。
+// Window::SetFullscreen(true);
+//
+
+if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
+{
+  //
+  // SimpleGUI::Button()` はユーザーのクリック操作によって true を返すので、
+  // `Window::SetFullscreen` の呼び出しは期待通りのタイミングで動作します。
+  //
+  Window::SetFullscreen(true);
+}
+```

@@ -53,11 +53,11 @@ permalink: /ja/status
 
 ### Android
 
-| Browser | Supported | Remarks |
+| ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
 | Android Browser | ❔ | |
 | Google Chrome | 🚧 | |
-| Mozilla Firefox | 🚧 | `Clipboard::ReadText` does not work |
+| Mozilla Firefox | 🚧 | `Clipboard::ReadText` が機能しません |
 | Opera Mobile | ❔ | |
 
 ### iOS
