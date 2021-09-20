@@ -163,6 +163,7 @@ Audio コンストラクタを使った .mp3 と .aac ファイルのデコー�
 * VideoReader (on Safari)
 * System::LaunchBrowser
 
+```cpp
 //
 // `Window::SetFullscreen` の呼び出した後の、最初のユーザー操作があった時にフルスクリーンになります。
 // Window::SetFullscreen(true);
