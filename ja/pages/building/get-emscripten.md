@@ -13,7 +13,7 @@ emscripten SDK (emsdk) 自体は python スクリプトで書かれています�
 ## Python をインストールする
 
 <https://www.python.jp/install/windows/install_py3.html> に、Python のインストール方法が書かれています。
-遷移先のサイトの指示に従って、Python をインストールしてください。[^custom-python]
+遷移先のサイトの指示に従って、Python をインストールしてください。[^custom-python]インストールする際には、`Add python into PATH`(Python を環境変数 PATH に登録する) にチェックマークをつけることを忘れないでください。
 
 [^custom-python]: python のインストールをカスタマイズする際、`pip をインストールする`と`環境変数に python のパスに追加する`設定を有効にしてください。
 

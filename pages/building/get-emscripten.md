@@ -10,7 +10,7 @@ We can use **"emscripten SDK (emsdk)"** in order to install emscripten to your d
 
 ## Install Python
 
-Follow instructions in [Using Python on Windows - Installation steps](https://docs.python.org/3/using/windows.html#installation-steps)[^custom-python].
+Follow instructions in [Using Python on Windows - Installation steps](https://docs.python.org/3/using/windows.html#installation-steps)[^custom-python]. When installing, make sure that `Add python into PATH` is checked.
 
 [^custom-python]: Enable `pip` and `Add python into PATH` if you want to customize python instalation
 
