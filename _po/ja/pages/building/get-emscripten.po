@@ -67,7 +67,7 @@ msgid ""
 "core/emsdk/), then Click `Code` button in green and `Download ZIP` button in t"
 "his order[^emsdk-git]."
 msgstr ""
-"[emsdk github](https://github.com/emscripten-core/emsdk/archive/master.zip)に移動"
+"[GitHub - emscripten-core/emsdk](https://github.com/emscripten-core/emsdk/)に移動"
 "し、緑色の `Code` ボタン、`Download ZIP` ボタンを順に押してください。[^emsdk-git]\n"
 "すると、リポジトリの内容が .zip ファイルでダウンロードされるので、適当なフォルダに展開してください。"
 

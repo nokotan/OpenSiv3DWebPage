@@ -21,7 +21,7 @@ emscripten SDK (emsdk) 自体は python スクリプトで書かれています�
 
 ## Emscripten SDK (emsdk) をダウンロードする
 
-[emsdk github](https://github.com/emscripten-core/emsdk/archive/master.zip)に移動し、緑色の `Code` ボタン、`Download ZIP` ボタンを順に押してください。[^emsdk-git]
+[GitHub - emscripten-core/emsdk](https://github.com/emscripten-core/emsdk/)に移動し、緑色の `Code` ボタン、`Download ZIP` ボタンを順に押してください。[^emsdk-git]
 すると、リポジトリの内容が .zip ファイルでダウンロードされるので、適当なフォルダに展開してください。
 
 [^emsdk-git]: git をインストールしている環境であれば、`git clone https://github.com/emscripten-core/emsdk.git`でダウンロードすることができます。
