@@ -11,6 +11,8 @@ css:
 
 ![play ground alternative](https://raw.githubusercontent.com/Siv3D/File/master/v6/screenshot/hello-siv3d.gif)
 
+<iframe width=640px height=510px allow="fullscreen" src="https://siv3d-v6-apps.kamenokosoft.com/Main/Main.html"></iframe>
+
 OpenSiv3D for Web brings you to developing interactive WebGL applications with C++20!
 
 ## Getting Started
