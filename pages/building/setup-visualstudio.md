@@ -8,10 +8,10 @@ permalink: /building/setup-visualstudio
 
 ## Install Extension
 
-Install Visual Studio Extension **Emscripten Build Support** so that Visual Studio can handle the compilation of WebGL application with EMCC (Emscripten Compiler Front-End)
+Install Visual Studio Extension **Emscripten Extension Pack for Visual Studio** so that Visual Studio can handle the compilation of WebGL application with EMCC (Emscripten Compiler Front-End)
 
-Download the .vsix Package from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscriptenproj1).
-You can also install this Extension via **Extensions Manager** (found in [Tools] > [Extensions...]), with searching for `Emscripten Build Support`
+Download the .vsix Package from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-extensions).
+You can also install this Extension via **Extensions Manager** (found in [Tools] > [Extensions...]), with searching for `Emscripten Extension Pack for Visual Studio`
 
 ![VSExtMgr0.png](/assets/img/building/setup-visualstudio/setup-vs-ext-1.png)
 

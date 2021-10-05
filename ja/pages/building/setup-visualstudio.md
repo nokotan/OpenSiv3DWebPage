@@ -8,9 +8,9 @@ permalink: /ja/building/setup-visualstudio
 
 ## emscripten 用のプロジェクトテンプレートをインストールする
 
-Visual Studio が emscripten に付随する emcc を使ってコンパイルを行うようにするために、**Emscripten Build Support** Visual Studio 機能拡張をインストールします。
+Visual Studio が emscripten に付随する emcc を使ってコンパイルを行うようにするために、**Emscripten Extension Pack for Visual Studio** Visual Studio 機能拡張をインストールします。
 
-[Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscriptenproj1) からダウンロードできる .vsix パッケージを開いて、拡張機能をインストールしてください。または、Visual Studio において、[ツール] > [拡張機能と更新プログラム] から拡張機能マネージャを開いて、そこで `Emscripten Build Support` と検索しても、この拡張機能をインストールすることができます。
+[Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-extensions) からダウンロードできる .vsix パッケージを開いて、拡張機能をインストールしてください。または、Visual Studio において、[ツール] > [拡張機能と更新プログラム] から拡張機能マネージャを開いて、そこで `Emscripten Extension Pack for Visual Studio` と検索しても、この拡張機能をインストールすることができます。
 
 ![VSExtMgr0.png](/assets/img/building/setup-visualstudio/setup-vs-ext-1.png)
 

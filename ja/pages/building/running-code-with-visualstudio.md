@@ -8,16 +8,14 @@ permalink: /ja/building/running-code-with-visualstudio
 
 ## コードの実行
 
-作成した OpenSiv3D for Web のプロジェクトはすでに、ビルド、ローカルサーバの立ち上げができるように構成されています。
-[|> Windows ローカルデバッガ \] をクリックすると、プロジェクトがビルドされ、ローカルサーバとブラウザが立ち上げられます。
+The OpenSiv3D for Web project is already configured to build, launch a local server.
+Just clicking \[|> WebAssembly Debugger \] will trigger building project, launch a local server and a browser.
 
 ![SmartScreen2](/assets/img/building/running-code-with-visualstudio/run-on-vs-1.png)
 
 ## デバッグ
 
-Visual Studio では、デバッグ中のブレークポイントと変数ウォッチが利用できません。
+**Emscripten Debugger for Visual Studio** 拡張機能のおかげで、デスクトップ向けのアプリ開発と同様に、デバッグ実行中にブレークポイントと変数ダンプが利用可能です。
 
-その代わり、ブラウザの開発ツール上でブレークポイントを設置することができます。
-
-Chrome DWARF 支援を使って、Chrome の開発ツール上で変数ウォッチを利用することができます。
+ブラウザの開発ツール上でもブレークポイントを設置することができます。Chrome DWARF 支援を使って、Chrome の開発ツール上で変数ウォッチを利用することができます。
 詳しくは、[Debugging WebAssembly with modern tools (英語のページ)](https://developer.chrome.com/blog/wasm-debugging-2020/)を参照してください。
