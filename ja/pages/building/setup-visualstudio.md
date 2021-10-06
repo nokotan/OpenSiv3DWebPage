@@ -10,11 +10,22 @@ permalink: /ja/building/setup-visualstudio
 
 Visual Studio が emscripten に付随する emcc を使ってコンパイルを行うようにするために、**Emscripten Extension Pack for Visual Studio** Visual Studio 機能拡張をインストールします。
 
-[Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-extensions) からダウンロードできる .vsix パッケージを開いて、拡張機能をインストールしてください。または、Visual Studio において、[ツール] > [拡張機能と更新プログラム] から拡張機能マネージャを開いて、そこで `Emscripten Extension Pack for Visual Studio` と検索しても、この拡張機能をインストールすることができます。
+[Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-extensions) から .vsix パッケージをダウンロードします[^install-via-extension-manager]。
 
-![VSExtMgr0.png](/assets/img/building/setup-visualstudio/setup-vs-ext-1.png)
+![VisualStudioExtensionInstaller0_ja.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller0_ja.png)
 
-![VSExtMgr1.png](/assets/img/building/setup-visualstudio/setup-vs-ext-2.png)
+ダウンロードした .vsix パッケージを実行します。すると、インストールする拡張機能を尋ねるウィンドウが出てくるので、すべてのチェックボックスにチェックがついた状態で**Modify** と書かれたボタンをクリックします。
+
+![VisualStudioExtensionInstaller1_ja.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller1_ja.png)
+
+**Emscripten Debugger for Visual Studio** と **Emscripten Build Support** のインストールが成功していることを確認して、**Close** と書かれたボタンをクリックします。
+
+![VisualStudioExtensionInstaller2_ja.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller2_ja.png)
+
+[^install-via-extension-manager]: Visual Studio において、[ツール] > [拡張機能と更新プログラム] から拡張機能マネージャを開いて、そこで `Emscripten Extension Pack for Visual Studio` と検索しても、この拡張機能をインストールすることができます。
+
+    ![setup-vs-ext-1.png](/assets/img/building/setup-visualstudio/setup-vs-ext-1.png)
+    ![VisualStudioExtensionManager0.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionManager0.png)
 
 ## OpenSiv3D Web版をダウンロードする
 
@@ -30,13 +41,35 @@ OpenSiv3D for Web のインストーラは次の処理を行います。
 ![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
 ![SmartScreen2](/assets/img/building/setup-visualstudio/smart-screen-guard-2.png)
 
+セットアップに使用する言語を選択する画面では、そのまま **OK** をクリックします。
+
+![OpenSiv3DforWebInstaller0_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller0_ja.png)
+
+インストール先を指定する画面では、そのまま **次へ** をクリックします。なお、インストールされる先のフォルダを変更しても構いません。
+
+![OpenSiv3DforWebInstaller1_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller1_ja.png)
+
+インストール準備完了の画面では、**インストール** をクリックします。
+
+![OpenSiv3DforWebInstaller2_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller2_ja.png)
+
+セットアップが完了したら、次の画面が出てくるので、**完了** をクリックして、インストーラを閉じます。
+
+![OpenSiv3DforWebInstaller4_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller4_ja.png)
+
 ## プロジェクトを作成する
 
 Visual Studio 2019 のスタート画面から、[新しいプロジェクトの作成] をクリックすると、以下のようなプロジェクトテンプレートを選択する画面が出てきます。
 
-それから、プロジェクトテンプレート `OpenSiv3D(0.6.0)Web` を選択します。
+![VisualStudio0.png](/assets/img/building/setup-visualstudio/VisualStudio0.png)
 
-![Siv3DWebProjectMake1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/825bb82c-823f-8f7d-48da-a472a7c55a59.png)
+`OpenSiv3D(0.6.0)Web` という名前のテンプレートを選択し、**次へ** をクリックします。
+
+![VisualStudio1.png](/assets/img/building/setup-visualstudio/VisualStudio1.png)
+
+プロジェクト名を自由に決めて、**作成** をクリックします。
+
+![VisualStudio2.png](/assets/img/building/setup-visualstudio/VisualStudio2.png)
 
 プロジェクト名を決めると、以下のようなソースファイルの編集画面が出てきます。このとき、構成 (赤枠で囲んだところ) を Emscripten に切り替えてください。
 

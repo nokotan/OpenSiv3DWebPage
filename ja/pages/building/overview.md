@@ -8,11 +8,11 @@ permalink: /ja/building/overview
 
 ## コンパイラ
 
-OpenSiv3D for Web は、そのコンパイルインフラストラクチャとして [**emscripten**](https://emscripten.org) を使用します。
+OpenSiv3D for Web では、そのコンパイルインフラストラクチャとして [**emscripten**](https://emscripten.org) を使用します。
 
-[wasi-sdk](https://github.com/WebAssembly/wasi-sdk) や [cheerp](https://leaningtech.com/cheerp/) は OpenSiv3D for Web を使った WebGL アプリケーションの作成に使うことはできません。
+Emscripten のセットアップガイドは [Emscripten をインストールする](/ja/building/get-emscripten) にあります。
 
-emscripten のセットアップは [Emscripten をインストールする](/ja/building/get-emscripten) を参照してください。
+なお、[wasi-sdk](https://github.com/WebAssembly/wasi-sdk) や [cheerp](https://leaningtech.com/cheerp/) は OpenSiv3D for Web を使った WebGL アプリケーションの作成に使うことはできません。
 
 ## 使用できる開発環境
 

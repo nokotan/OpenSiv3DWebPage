@@ -10,9 +10,9 @@ permalink: /building/overview
 
 OpenSiv3D for Web uses [**emscripten**](https://emscripten.org) as its compiler backend.
 
-Building OpenSiv3D for Web apps on [wasi-sdk](https://github.com/WebAssembly/wasi-sdk) or [cheerp](https://leaningtech.com/cheerp/) is not supported.
-
 Brief emscripten installation guide is available at the [Install Emscripten](/building/get-emscripten) page.
+
+Building OpenSiv3D for Web apps on [wasi-sdk](https://github.com/WebAssembly/wasi-sdk) or [cheerp](https://leaningtech.com/cheerp/) is not supported.
 
 ## Available Develop Environment
 
