@@ -8,8 +8,8 @@ permalink: /ja/building/running-code-with-visualstudio
 
 ## コードの実行
 
-The OpenSiv3D for Web project is already configured to build, launch a local server.
-Just clicking \[|> WebAssembly Debugger \] will trigger building project, launch a local server and a browser.
+作成した OpenSiv3D for Web のプロジェクトはすでに、ビルド、ローカルサーバの立ち上げができるように構成されています。
+[|> WebAssembly Debugger \] をクリックすると、プロジェクトがビルドされ、ローカルサーバとブラウザが立ち上げられます。
 
 ![SmartScreen2](/assets/img/building/running-code-with-visualstudio/run-on-vs-1.png)
 

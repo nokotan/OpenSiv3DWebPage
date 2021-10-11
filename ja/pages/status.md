@@ -62,9 +62,9 @@ permalink: /ja/status
 
 ### iOS
 
-| Browser | Supported | Remarks |
+| ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
-| Safari | 🚧 | requires experimental **WebGL2** support |
+| Safari | 🚧 | 実験的機能 **WebGL2** のフラグを有効化する必要があります |
 | Google Chrome | ❔ | |
 
 ## グラフィック
@@ -104,8 +104,8 @@ permalink: /ja/status
 | フォーマット名 | 状態 | 備考 |
 | :--: | :--: | :--: |
 | Wave | ✅ | |
-| MP3 | ✅ | `s3d::Platform::Web::AudioDecoder::DecodeAudioFromFile` を使ってください 手動ビルドで有効にできます。 |
-| AAC | ✅ | `s3d::Platform::Web::AudioDecoder::DecodeAudioFromFile` を使ってください。手動ビルドで有効にできます。 |
+| MP3 | ✅ | |
+| AAC | ✅ | |
 | Ogg | ✅ | |
 | Opus | ✅ | |
 
@@ -136,7 +136,7 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | メモリ上のファイル ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | 再読み込み時に全てのファイルが消去されます。 (OpenSiv3D for Web の拡張機能) |
 | [インデックスされたファイル](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ | |
-| ダイアログ | ✅ | `s3d::Platform::Web::Dialog` 名前関数の関数を使用のこと |
+| ダイアログ | ✅ | `s3d::Platform::Web::Dialog` 名前関数の関数も利用可能 |
 | ドラッグドロップ | 🚧 | |
 
 ## テキスト入出力
@@ -154,7 +154,7 @@ permalink: /ja/status
 | :--: | :--: | :--: |
 | 通知 | ✅ | |
 | メッセージボックス | ✅ | `window.alert` または `window.confirm` を呼び出し |
-| クリップボード | ⚠️ | テキストのコピー及び貼り付けのみ対応 |
+| クリップボード | ⚠️ | テキストのコピー及び貼り付けのみ対応; `s3d::Platform::Web::Clipboard` も利用可能 |
 | Network | 🚧 | **WebSocket** に依存、P2P 通信は利用不可 |
 | Siv3D Scripts | ✅ | |
 | 子プロセス | ❌ | |
