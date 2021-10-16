@@ -40,7 +40,7 @@ Useful Links
 
 | Browser | Supported | Remarks |
 | :--: | :--: | :--: |
-| Safari | ⚠️ | works on Safari 14.0, macOS BigSur; requires experimental **WebGL2** support |
+| Safari | ⚠️ | works on Safari 14.0, macOS BigSur; WebAssembly SIMD is not available |
 | Google Chrome | ✅ | |
 | Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
 
@@ -64,7 +64,7 @@ Useful Links
 
 | Browser | Supported | Remarks |
 | :--: | :--: | :--: |
-| Safari | 🚧 | requires experimental **WebGL2** support |
+| Safari | 🚧 | WebAssembly SIMD is not available |
 | Google Chrome | ❔ | |
 
 ## Graphics
