@@ -48,10 +48,8 @@ void Main()
   // テキストを画面にデバッグ出力
   Print << U"Push [A] key";
 
-  Platform::Web::System::SetMainLoop([&]()
+  while (System::Update())
   {
-    System::Update()
-    
     // テクスチャを描く
     texture.draw(200, 200);
 
@@ -77,7 +75,7 @@ void Main()
       // 画面内のランダムな場所に座標を移動
       emojiPos = RandomVec2(Scene::Rect());
     }
-  });
+  }
 }
 ```
 
