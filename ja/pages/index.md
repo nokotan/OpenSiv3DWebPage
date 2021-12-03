@@ -11,13 +11,13 @@ css:
 
 ![play ground alternative](https://raw.githubusercontent.com/Siv3D/File/master/v6/screenshot/hello-siv3d.gif)
 
-<iframe width=640px height=510px allow="fullscreen" src="https://siv3d-v6-apps.kamenokosoft.com/Main/Main.html"></iframe>
-
 OpenSiv3D for Web はインタラクティブな WebGL アプリケーションを C++20 で開発するためのライブラリです。
 
 ## はじめる
 
 {% include button.html url="download" text="OpenSiv3D for Web をダウンロード" %}
+
+<iframe width=640px height=510px allow="fullscreen" src="https://siv3d-v6-apps.kamenokosoft.com/Main/Main.html"></iframe>
 
 ```cpp
 # include <Siv3D.hpp>

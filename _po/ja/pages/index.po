@@ -35,11 +35,6 @@ msgid ""
 msgstr ""
 
 msgid ""
-"<iframe width=640px height=510px allow=\"fullscreen\" src=\"https://siv3d-v6-apps"
-".kamenokosoft.com/Main/Main.html\"></iframe>"
-msgstr ""
-
-msgid ""
 "OpenSiv3D for Web brings you to developing interactive WebGL applications with"
 " C++20!"
 msgstr "OpenSiv3D for Web はインタラクティブな WebGL アプリケーションを C++20 で開発するためのライブラリです。"
@@ -49,6 +44,11 @@ msgstr "## はじめる"
 
 msgid "{% include button.html url=\"download\" text=\"Download OpenSiv3D for Web\" %}"
 msgstr "{% include button.html url=\"download\" text=\"OpenSiv3D for Web をダウンロード\" %}"
+
+msgid ""
+"<iframe width=640px height=510px allow=\"fullscreen\" src=\"https://siv3d-v6-apps"
+".kamenokosoft.com/Main/Main.html\"></iframe>"
+msgstr ""
 
 msgid ""
 "```cpp\n"
