@@ -48,7 +48,7 @@ msgid "## Getting Started"
 msgstr "## はじめる"
 
 msgid "{% include button.html url=\"download\" text=\"Download OpenSiv3D for Web\" %}"
-msgstr ""
+msgstr "{% include button.html url=\"download\" text=\"OpenSiv3D for Web をダウンロード\" %}"
 
 msgid ""
 "```cpp\n"

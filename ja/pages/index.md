@@ -17,7 +17,7 @@ OpenSiv3D for Web はインタラクティブな WebGL アプリケーション�
 
 ## はじめる
 
-{% include button.html url="download" text="Download OpenSiv3D for Web" %}
+{% include button.html url="download" text="OpenSiv3D for Web をダウンロード" %}
 
 ```cpp
 # include <Siv3D.hpp>

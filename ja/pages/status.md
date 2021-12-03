@@ -40,7 +40,7 @@ permalink: /ja/status
 
 | ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
-| Safari | ⚠️ | Safari 14.0, macOS BigSur のみサポート。WebAssembly SIMD は利用不可能ですがあります |
+| Safari | ⚠️ | Safari 14.0, macOS BigSur のみサポート。WebAssembly SIMD は利用不可能です |
 | Google Chrome | ✅ | |
 | Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
 
