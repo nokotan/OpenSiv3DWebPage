@@ -8,8 +8,8 @@ permalink: /ja/download
 
 ### Windows
 
-{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.3/OpenSiv3D-Installer-wasm.exe" text="Download OpenSiv3D for Web Installer" %}
-{% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.3/OpenSiv3D-wasm.zip" text="Download OpenSiv3D for Web.zip" %}
+{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.3/OpenSiv3D-Installer-wasm.exe" text="OpenSiv3D for Web インストーラをダウンロード" %}
+{% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.3/OpenSiv3D-wasm.zip" text="OpenSiv3D for Web.zip をダウンロード" %}
 
 ### macOS, Linux
 
@@ -19,9 +19,9 @@ permalink: /ja/download
 
 #### Windows
 
-| | emscripten 2.0.22 | emscripten 2.0.22 (simd) |
+| | emscripten 2.0.22 |
 | :--: | :--: |
-| インストーラ | [OpenSiv3D for Web インストーラ](https://github.com/nokotan/OpenSiv3D/releases/download/v0.63/OpenSiv3D-Installer-wasm.exe) (134MB) |
+| インストーラ | [OpenSiv3D for Web インストーラ](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.3/OpenSiv3D-Installer-wasm.exe) (134MB) |
 | Zip 圧縮 | [OpenSiv3D-wasm.zip](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.3/OpenSiv3D-wasm.zip) (78.0MB) |
 
 #### macOS, Linux

@@ -9,12 +9,12 @@
   description: GeoJson
 
 - title: GrabCut
-  url: https://nokotan.github.io/OpenSiv3DForWebv0.6Samples/GrabCut/Siv3DTest.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.6Samples/GrabCut/GrabCut.html
   image: "#"
   description: GrabCut
 
 - title: KDTree
-  url: https://nokotan.github.io/OpenSiv3DForWebv0.6Samples/KDTree/Siv3DTest.html
+  url: https://nokotan.github.io/OpenSiv3DForWebv0.6Samples/KDTree/KDTree.html
   image: "#"
   description: KDTree
 
