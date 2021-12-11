@@ -2,8 +2,8 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-title: Web Specific Notes
-permalink: /v0.4.3/web-specific-notes
+title: Web 固有の注意点
+permalink: /ja/v0.4.3/web-specific-notes
 ---
 
 ## ゲームループの設計

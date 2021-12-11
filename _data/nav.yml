@@ -14,6 +14,8 @@
     - title: Overview
       url: /building/overview
     - title: Install Emscripten
+      url: /building/install-emscripten
+    - title: Install Emscripten (Manually)
       url: /building/get-emscripten
     - title: Setup Visual Studio
       url: /building/setup-visualstudio

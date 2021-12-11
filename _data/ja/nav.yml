@@ -13,7 +13,9 @@
   children:
     - title: 概要
       url: /ja/building/overview
-    - title: Emscripten をダウンロードする
+    - title: Emscripten をインストールする
+      url: /ja/building/install-emscripten
+    - title: Emscripten をインストールする (手動)
       url: /ja/building/get-emscripten
     - title: Visual Studio のセットアップ
       url: /ja/building/setup-visualstudio
