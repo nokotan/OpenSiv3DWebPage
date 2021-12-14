@@ -19,12 +19,14 @@ This Installer will download following tools in your develop environment.
 
 Click `Emscripten.exe` in the assets list to download.
 
+![EmscriptenInstallerInGitHub](/assets/img/building/install-emscripten/emscripten-installer-github.png)
+
 ## Launch Emscripten Installer
 
 Smart Screen may prevents launching Emscripten 2.0.22 Installer, click \[detail\] and \[run\] button will be shown.
 
 ![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
-![SmartScreen2](/assets/img/building/setup-visualstudio/smart-screen-guard-2.png)
+![SmartScreen2](/assets/img/building/install-emscripten/smart-screen-guard-again.png)
 
 Click the **OK** button in the window that selecting the language used during setup.
 
@@ -32,17 +34,17 @@ Click the **OK** button in the window that selecting the language used during se
 
 Select the destination folder as you like where assets are installed in, and click the **Next** button.
 
-![OpenSiv3DforWebInstaller1_en.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller1_en.png)
+![OpenSiv3DforWebInstaller1_en.png](/assets/img/building/install-emscripten/emscripten-installer-1-en.png)
 
 Click the **Install** button in the window that confirms the installation options.
 
-![OpenSiv3DforWebInstaller2_en.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller2_en.png)
+![OpenSiv3DforWebInstaller2_en.png](/assets/img/building/install-emscripten/emscripten-installer-2-en.png)
 
 Installing Emscripten will take 15~60 minutes, please be patient.
 
 The window will be shown when the installation has been completed, and click the **Finish** button to terminate the installation process.
 
-![OpenSiv3DforWebInstaller4_en.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller4_en.png)
+![OpenSiv3DforWebInstaller4_en.png](/assets/img/building/install-emscripten/emscripten-installer-3-en.png)
 
 ## Next Step
 

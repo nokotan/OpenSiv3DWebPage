@@ -30,6 +30,15 @@
     - title: Running and Debugging (VSCode)
       url: /building/running-code-with-vscode
 
+- title: Publishing First Apps
+  url: /publishing
+  new-group: true
+  children: 
+    - title: Optimize Assets Size
+      url: /publishing/optimize-asset-size
+    - title: Publish Your WebGL Apps
+      url: /publishing/publish-your-webapp
+
 - title: Status
   url: /status
 

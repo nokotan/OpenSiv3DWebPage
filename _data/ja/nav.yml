@@ -30,6 +30,15 @@
     - title: デバッグと実行 (VSCode)
       url: /ja/building/running-code-with-vscode
 
+- title: WebGL アプリの公開
+  url: /ja/publishing
+  new-group: true
+  children: 
+    - title: ビルドサイズの縮小
+      url: /ja/publishing/optimize-asset-size
+    - title: WebGL アプリの公開
+      url: /ja/publishing/publish-your-webapp
+
 - title: 実装状況
   url: /ja/status
 

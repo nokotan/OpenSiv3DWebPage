@@ -14,28 +14,13 @@ permalink: /download
 
 {% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.3/OpenSiv3D-wasm.tgz" text="Download OpenSiv3D for Web.tgz" %}
 
-### Other Versions
-
-#### Windows
-
-| | emscripten 2.0.22 |
-| :--: | :--: |
-| Installer version | [OpenSiv3D for Web Installer](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.3/OpenSiv3D-Installer-wasm.exe) (134MB) |
-| zip version | [OpenSiv3D-wasm.zip](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.3/OpenSiv3D-wasm.zip) (78.0MB) |
-
-#### macOS, Linux
-
-| | emscripten 2.0.22 |
-| :--: | :--: | :--: |
-| tgz version | [OpenSiv3D-wasm.tgz](https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.3/OpenSiv3D-wasm.tgz) (77.0MB) |
-
-## Older Versions
+### Older Versions
 
 Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)
 
 ## Next Step
 
-Check out [Install emscripten](building/get-emscripten)!
+Check out [Install emscripten (for Windows)](building/install-emscripten) or [Install emscripten (for macOS, Linux)](building/get-emscripten)!
 
 ## Change Logs
 
