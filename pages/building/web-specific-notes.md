@@ -131,7 +131,7 @@ Some features, such as AudioDecoding or Clipboard, blocks the main loop for seve
 
 ### Audio Decoding
 
-`s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` returns `AsyncTask<Audio>`.
+`s3d::Platform::Web::AudioProcessing::DecodeAudioFromFile` returns `AsyncTask<Wave>`.
 
 ```cpp
   // 
@@ -139,12 +139,12 @@ Some features, such as AudioDecoding or Clipboard, blocks the main loop for seve
   //
   // Audio audio { "/example/test.mp3" };
   Audio audio;
-  AsyncTask<Audio> audioTask = s3d::Platforms::Web::AudioDecoder::DecodeFromFile("/example/test.mp3");
+  AsyncTask<Wave> audioTask = s3d::Platform::Web::AudioDecoder::DecodeFromFile(U"/example/test.mp3");
 
   // check if audio decoding has been finished
   if (audioTask.isReady())
   {
-    audio = audioTask.get();
+    audio = Audio{ audioTask.get() };
   }
 ```
 

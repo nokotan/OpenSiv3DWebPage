@@ -131,7 +131,7 @@ AudioDecoding やクリップボードなどの、一部の機能は、数秒の
 
 ### 音声ファイルのデコード
 
-`s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` が `AsyncTask<Audio>` を返します。
+`s3d::Platform::Web::AudioProcessing::DecodeAudioFromFile` が `AsyncTask<Wave>` を返します。
 
 ```cpp
   // 
@@ -139,12 +139,12 @@ AudioDecoding やクリップボードなどの、一部の機能は、数秒の
   //
   // Audio audio { "/example/test.mp3" };
   Audio audio;
-  AsyncTask<Audio> audioTask = s3d::Platforms::Web::AudioDecoder::DecodeFromFile("/example/test.mp3");
+  AsyncTask<Wave> audioTask = s3d::Platform::Web::AudioDecoder::DecodeFromFile(U"/example/test.mp3");
 
   // デコードが終わったかチェック
   if (audioTask.isReady())
   {
-    audio = audioTask.get();
+    audio = Audio{ audioTask.get() };
   }
 ```
 
