@@ -40,6 +40,11 @@ msgid ""
 "r/doc/images/demo.gif\" name=\"BasicSample\" %}"
 msgstr ""
 
+msgid ""
+"OpenSiv3D for Web brings you to developing interactive WebGL application with "
+"C++17!"
+msgstr "OpenSiv3D for Web はインタラクティブな WebGL アプリケーションを C++17 で開発するためのライブラリです。"
+
 msgid "## Getting Started"
 msgstr "## はじめる"
 

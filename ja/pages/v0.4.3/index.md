@@ -14,7 +14,7 @@ postScript:
 
 {% include playground.html image="https://github.com/Siv3D/OpenSiv3D/raw/master/doc/images/demo.gif" name="BasicSample" %}
 
-OpenSiv3D for Web brings you to developing interactive WebGL application with C++17!
+OpenSiv3D for Web はインタラクティブな WebGL アプリケーションを C++17 で開発するためのライブラリです。
 
 ## はじめる
 

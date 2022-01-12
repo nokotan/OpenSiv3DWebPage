@@ -6,42 +6,36 @@ title: Install Emscripten
 permalink: /vscode/install-emscripten
 ---
 
-## Download Emscripten Installer
+We can use **"emscripten SDK (emsdk)"** in order to install emscripten to your develop environment. **Python must be installed** to use commands included in **"emscripten SDK (emsdk)"**, which is written in Python script.
 
-Emscripten 2.0.22 Installer for Windows is available at [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest).
+## Install Python
 
-This Installer will download following tools in your develop environment.
+Follow instructions in [Using Python on Windows - Installation steps](https://docs.python.org/3/using/windows.html#installation-steps)[^custom-python]. When installing, make sure that `Add python into PATH` is checked.
 
-- Emscripten 2.0.22
-- Clang Compiler Front End
-- Node
-- Python
+[^custom-python]: Enable `pip` and `Add python into PATH` if you want to customize python instalation
 
-Click `Emscripten.exe` in the assets list to download.
+![スクリーンショット 2020-09-20 13.46.49.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/4d64cf59-fc85-eeee-b118-a34946b7abb1.png)
 
-![EmscriptenInstallerInGitHub](/assets/img/building/install-emscripten/emscripten-installer-github.png)
+## Download emscripten SDK (emsdk)
 
-## Launch Emscripten Installer
+Follow link to [GitHub - emscripten-core/emsdk](https://github.com/emscripten-core/emsdk/), then Click `Code` button in green and `Download ZIP` button in this order[^emsdk-git].
 
-Smart Screen may prevents launching Emscripten 2.0.22 Installer, click \[detail\] and \[run\] button will be shown.
+[^emsdk-git]: You can use `git clone https://github.com/emscripten-core/emsdk.git` instead of downloading zip, if git is available in your environment.
 
-![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
-![SmartScreen2](/assets/img/building/install-emscripten/smart-screen-guard-again.png)
+![InstallEMSDK1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/4b923473-ecf0-0266-950e-e5a8044ec60f.png)
 
-Click the **OK** button in the window that selecting the language used during setup.
+## Install Emscripten
 
-![OpenSiv3DforWebInstaller0_en.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller0_en.png)
+Open Explorer, and move directory to the folder you have downloaded emsdk, then type `cmd` into the address bar.
 
-Select the destination folder as you like where assets are installed in, and click the **Next** button.
+![launch-cmd](/assets/img/building/get-emscripten/launch-cmd.png)
 
-![OpenSiv3DforWebInstaller1_en.png](/assets/img/building/install-emscripten/emscripten-installer-1-en.png)
+After launching command prompt, type these commands:
 
-Click the **Install** button in the window that confirms the installation options.
+```bat
+emsdk install 2.0.22-upstream
+emsdk activate 2.0.22-upstream --permanent
+```
 
-![OpenSiv3DforWebInstaller2_en.png](/assets/img/building/install-emscripten/emscripten-installer-2-en.png)
-
-Installing Emscripten will take 15~60 minutes, please be patient.
-
-The window will be shown when the installation has been completed, and click the **Finish** button to terminate the installation process.
-
-![OpenSiv3DforWebInstaller4_en.png](/assets/img/building/install-emscripten/emscripten-installer-3-en.png)
+`emsdk install 2.0.22-upstream` will install emscripten and its dependencies (clang, node.js, java) to your develop environment.
+`emsdk activate 2.0.22-upstream --permanent` will perform setup for these tools.

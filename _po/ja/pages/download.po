@@ -41,21 +41,32 @@ msgstr ""
 msgid "### macOS, Linux"
 msgstr ""
 
+msgid ""
+"{% include button.html url=\"//github.com/nokotan/OpenSiv3D/releases/download/v"
+"0.6.3r1/OpenSiv3D-wasm.tgz\" text=\"Download OpenSiv3D for Web.tgz\" %}"
+msgstr ""
+"{% include button.html url=\"//github.com/nokotan/OpenSiv3D/releases/download/v"
+"0.6.3r1/OpenSiv3D-wasm.tgz\" text=\"OpenSiv3D for Web.tgz をダウンロード\" %}"
+
 msgid "### Older Versions"
 msgstr "### 過去のバージョン"
 
 msgid "Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)"
 msgstr "[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) からダウンロードできます。"
 
-msgid "## Next Step"
-msgstr "## 次の一歩"
+msgid "## Available Develop Environment"
+msgstr "## 使用できる開発環境"
 
 msgid ""
-"Check out [Install emscripten (for Windows)](building/install-emscripten) or ["
-"Install emscripten (for macOS, Linux)](building/get-emscripten)!"
+"These develop environment are recommended while creating WebGL applications wi"
+"th OpenSiv3D for Web.\n"
+"Please follow the link to the setup guide of your develop environment."
 msgstr ""
-"[emscripten をインストールする (Windows 向け)](building/install-emscripten) または [emscript"
-"en をダウンロードする (macOS, Linux 向け)](building/get-emscripten) に進んでください。"
+"OpenSiv3D for Web を使った WebGL アプリケーションの作成に当たって、次の開発環境が利用可能です。\n"
+"使用する開発環境のリンクをクリックして、開発環境のセットアップガイドを参照します。"
+
+msgid "{% include table.html %}"
+msgstr ""
 
 msgid "## Change Logs"
 msgstr "## 変更履歴"

@@ -18,9 +18,12 @@ permalink: /download
 
 Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)
 
-## Next Step
+## Available Develop Environment
 
-Check out [Install emscripten (for Windows)](building/install-emscripten) or [Install emscripten (for macOS, Linux)](building/get-emscripten)!
+These develop environment are recommended while creating WebGL applications with OpenSiv3D for Web.
+Please follow the link to the setup guide of your develop environment.
+
+{% include table.html %}
 
 ## Change Logs
 
