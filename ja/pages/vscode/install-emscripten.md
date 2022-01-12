@@ -6,42 +6,40 @@ title: Emscripten をインストールする (手動)
 permalink: /ja/vscode/install-emscripten
 ---
 
-## Emscripten インストーラをダウンロードする
+emscripten をインストールするのに、emscripten SDK (emsdk) を使います。
+emscripten SDK (emsdk) 自体は python スクリプトで書かれています。
+そのため、emscripten SDK (emsdk) を使うために python をインストールする必要があります。
 
-Windows 向け Emscripten 2.0.22 インストーラが [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest) からダウンロードできます。
+## Python をインストールする
 
-インストーラは次のツールをお使いの開発環境にダウンロードします。
+<https://www.python.jp/install/windows/install_py3.html> に、Python のインストール方法が書かれています。
+遷移先のサイトの指示に従って、Python をインストールしてください。[^custom-python]インストールする際には、`Add python into PATH`(Python を環境変数 PATH に登録する) にチェックマークをつけることを忘れないでください。
 
-- Emscripten 2.0.22
-- Clang Compiler Front End
-- Node
-- Python
+[^custom-python]: python のインストールをカスタマイズする際、`pip をインストールする`と`環境変数に python のパスに追加する`設定を有効にしてください。
 
-Assets リスト中の `Emscripten.exe` をクリックしてダウンロードします。
+![PythonInstall1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/19fd629e-4652-999e-c53e-9213a288049a.png)
 
-![EmscriptenInstallerInGitHub](/assets/img/building/install-emscripten/emscripten-installer-github.png)
+## Emscripten SDK (emsdk) をダウンロードする
 
-## Emscripten インストーラを起動する
+[GitHub - emscripten-core/emsdk](https://github.com/emscripten-core/emsdk/)に移動し、緑色の `Code` ボタン、`Download ZIP` ボタンを順に押してください。[^emsdk-git]
+すると、リポジトリの内容が .zip ファイルでダウンロードされるので、適当なフォルダに展開してください。
 
-次の画面が出て、インストーラーが起動できない時は、\[詳細情報\] を押すと \[実行\] ボタンが表示されます。
+[^emsdk-git]: git をインストールしている環境であれば、`git clone https://github.com/emscripten-core/emsdk.git`でダウンロードすることができます。
 
-![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
-![SmartScreen2](/assets/img/building/install-emscripten/smart-screen-guard-again.png)
+![InstallEMSDK1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/4b923473-ecf0-0266-950e-e5a8044ec60f.png)
 
-セットアップに使用する言語を選択する画面では、そのまま **OK** をクリックします。
+## Emscripten をインストールする
 
-![OpenSiv3DforWebInstaller0_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller0_ja.png)
+エクスプローラを開き、emscripten SDK (emsdk) をダウンロードしたディレクトリに移動し、アドレスバーに `cmd` と入力して、コマンドプロンプトを開きます。
 
-インストール先を指定する画面では、そのまま **次へ** をクリックします。なお、インストールされる先のフォルダを変更しても構いません。
+![launch-cmd](/assets/img/building/get-emscripten/launch-cmd.png)
 
-![OpenSiv3DforWebInstaller1_ja.png](/assets/img/building/install-emscripten/emscripten-installer-1-ja.png)
+コマンドプロンプトを開いたら、次のコマンドを実行します。
 
-インストール準備完了の画面では、**インストール** をクリックします。
+```bat
+emsdk install 2.0.22-upstream
+emsdk activate 2.0.22-upstream --permanent
+```
 
-![OpenSiv3DforWebInstaller2_ja.png](/assets/img/building/install-emscripten/emscripten-installer-2-ja.png)
-
-Emscripten のインストールには 15 分から 1 時間かかります。
-
-セットアップが完了したら、次の画面が出てくるので、**完了** をクリックして、インストーラを閉じます。
-
-![OpenSiv3DforWebInstaller4_ja.png](/assets/img/building/install-emscripten/emscripten-installer-3-ja.png)
+`emsdk install 2.0.22-upstream` で、emscripten 本体と emscripten で使われる clang、node.js、javaがインストールされます。
+`emsdk activate 2.0.22-upstream --permanent` で、インストールしたツールセットのセットアップが行われます。
