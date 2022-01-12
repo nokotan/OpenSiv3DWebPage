@@ -15,7 +15,10 @@ OpenSiv3D for Web brings you to developing interactive WebGL applications with C
 
 ## Getting Started
 
-{% include button.html url="download" text="Download OpenSiv3D for Web" %}
+These develop environment are recommended while creating WebGL applications with OpenSiv3D for Web.
+Please follow the link to the setup guide of your develop environment.
+
+{% include table.html %}
 
 <iframe width=640px height=510px allow="fullscreen" src="https://siv3d-v6-apps.kamenokosoft.com/Main/Main.html"></iframe>
 

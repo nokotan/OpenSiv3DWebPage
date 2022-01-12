@@ -54,20 +54,6 @@ msgstr "### 過去のバージョン"
 msgid "Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)"
 msgstr "[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) からダウンロードできます。"
 
-msgid "## Available Develop Environment"
-msgstr "## 使用できる開発環境"
-
-msgid ""
-"These develop environment are recommended while creating WebGL applications wi"
-"th OpenSiv3D for Web.\n"
-"Please follow the link to the setup guide of your develop environment."
-msgstr ""
-"OpenSiv3D for Web を使った WebGL アプリケーションの作成に当たって、次の開発環境が利用可能です。\n"
-"使用する開発環境のリンクをクリックして、開発環境のセットアップガイドを参照します。"
-
-msgid "{% include table.html %}"
-msgstr ""
-
 msgid "## Change Logs"
 msgstr "## 変更履歴"
 

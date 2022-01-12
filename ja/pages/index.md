@@ -15,7 +15,10 @@ OpenSiv3D for Web はインタラクティブな WebGL アプリケーション�
 
 ## はじめる
 
-{% include button.html url="download" text="OpenSiv3D for Web をダウンロード" %}
+OpenSiv3D for Web を使った WebGL アプリケーションの作成に当たって、次の開発環境が利用可能です。
+使用する開発環境のリンクをクリックして、開発環境のセットアップガイドを参照します。
+
+{% include table.html %}
 
 <iframe width=640px height=510px allow="fullscreen" src="https://siv3d-v6-apps.kamenokosoft.com/Main/Main.html"></iframe>
 

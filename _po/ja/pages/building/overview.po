@@ -23,6 +23,36 @@ msgstr ""
 "permalink: /ja/building/overview\n"
 "---"
 
+msgid "## Target"
+msgstr "## 対象読者"
+
+msgid "This setup guide is targeted who uses Visual Studio on Windows."
+msgstr "このセットアップガイドは、Windows 上で Visual Studio を開発環境としてお使いの方を対象にしています。"
+
+msgid ""
+"Please refer [setup guide for VSCode](/vscode/overview) if your OS is not Wind"
+"ows or you want to use VSCode as the develop environment."
+msgstr ""
+"お使いの OS が Windows でない場合、または、Visual Studio Code を開発環境としてお使いの方は、[Visual Studio C"
+"ode セットアップガイド](/ja/vscode/overview) を参照してください。"
+
+msgid "## Contents"
+msgstr "## 内容"
+
+msgid "This setup guide includes these contents."
+msgstr "このセットアップガイドは次の項目で構成されています。"
+
+msgid ""
+"- Emscripten installation with Windows installer\n"
+"- Installing Visual Studio extension for the projects with Emscripten\n"
+"- Installing OpenSiv3D for Web with Windows installer\n"
+"- Build and debug your projects on Visual Studio"
+msgstr ""
+"- Windows インストーラを使った Emscripten のインストール\n"
+"- Emscripten を Visual Studio で使えるようにするための、拡張機能のインストール\n"
+"- OpenSiv3D for Web のインストール\n"
+"- Visual Studio 上でのプロジェクトのビルドとデバッグ"
+
 msgid "## Compiler"
 msgstr "## コンパイラ"
 
@@ -32,15 +62,6 @@ msgid ""
 msgstr ""
 "OpenSiv3D for Web では、そのコンパイルインフラストラクチャとして [**emscripten**](https://emscripten."
 "org) を使用します。"
-
-msgid ""
-"Brief emscripten installation guide is available at the [Install Emscripten (f"
-"or Windows)](/building/install-emscripten) or [Install Emscripten (for macOS, "
-"Linux)](/building/install-emscripten) page."
-msgstr ""
-"Emscripten のセットアップガイドは [Emscripten をインストールする (Windows 向け)](/ja/building/instal"
-"l-emscripten) または [Emscripten をインストールする (macOS, Linux 向け)](/ja/building/get-em"
-"scripten) にあります。"
 
 msgid ""
 "Building OpenSiv3D for Web apps on [wasi-sdk](https://github.com/WebAssembly/w"

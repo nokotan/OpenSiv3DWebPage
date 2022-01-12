@@ -42,8 +42,16 @@ msgstr "OpenSiv3D for Web はインタラクティブな WebGL アプリケー�
 msgid "## Getting Started"
 msgstr "## はじめる"
 
-msgid "{% include button.html url=\"download\" text=\"Download OpenSiv3D for Web\" %}"
-msgstr "{% include button.html url=\"download\" text=\"OpenSiv3D for Web をダウンロード\" %}"
+msgid ""
+"These develop environment are recommended while creating WebGL applications wi"
+"th OpenSiv3D for Web.\n"
+"Please follow the link to the setup guide of your develop environment."
+msgstr ""
+"OpenSiv3D for Web を使った WebGL アプリケーションの作成に当たって、次の開発環境が利用可能です。\n"
+"使用する開発環境のリンクをクリックして、開発環境のセットアップガイドを参照します。"
+
+msgid "{% include table.html %}"
+msgstr ""
 
 msgid ""
 "<iframe width=640px height=510px allow=\"fullscreen\" src=\"https://siv3d-v6-apps"

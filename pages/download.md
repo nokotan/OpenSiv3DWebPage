@@ -18,13 +18,6 @@ permalink: /download
 
 Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)
 
-## Available Develop Environment
-
-These develop environment are recommended while creating WebGL applications with OpenSiv3D for Web.
-Please follow the link to the setup guide of your develop environment.
-
-{% include table.html %}
-
 ## Change Logs
 
 ### v0.6.0b0
