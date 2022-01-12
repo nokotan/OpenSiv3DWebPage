@@ -7,28 +7,33 @@
 - title: Gallary
   url: /gallary
 
-- title: Building First Apps
+- title: Building First Apps on Visual Studio
   url: /building
   new-group: true
   children: 
     - title: Overview
       url: /building/overview
     - title: Install Emscripten
-      url: /building/install-emscripten
-    - title: Install Emscripten (Manually)
       url: /building/get-emscripten
     - title: Setup Visual Studio
-      url: /building/setup-visualstudio
-    - title: Setup Visual Studio Code
-      url: /building/setup-vscode
-    - title: Writing First Code
-      url: /building/writing-code
-    - title: Web Specific Notes
-      url: /building/web-specific-notes
+      url: /building/setup-visualstudio 
     - title: Running and Debugging (Visual Studio)
       url: /building/running-code-with-visualstudio
+    - title: Web Specific Notes
+      url: /building/web-specific-notes
+
+- title: Building First Apps on VSCode
+  url: /vscode
+  new-group: true
+  children: 
+    - title: Overview
+      url: /vscode/overview
+    - title: Install Emscripten (Manually)
+      url: /vscode/install-emscripten
+    - title: Setup Visual Studio Code
+      url: /vscode/setup-vscode
     - title: Running and Debugging (VSCode)
-      url: /building/running-code-with-vscode
+      url: /vscode/running-code-with-vscode
 
 - title: Publishing First Apps
   url: /publishing

@@ -1,10 +1,60 @@
-<script src="/assets/js/ui.js"></script>
-<script src="/assets/js/menu.js"></script>
+{% assign parentIdx = 0 %}
+{% assign childIdx = 0 %}
+{% assign exitFlag = false %}
 
-{%- if page.postScript %}
-{%- for script in page.postScript %}
-<script src="{{ script }}"></script>
-{%- endfor %}
-{%- endif %}
+{% for item in include.nav %}
+  {% assign childIdx = 0 %}
+  {% if item.children %}
+    {% for child in item.children %}
+      {% if child.url == page.url %}
+        {% assign exitFlag = true %}
+        {% break %}
+      {% endif %}
+      {% assign childIdx = childIdx | minus: -1 %}
+    {% endfor %}
+  {% endif %}
+  {% if item.url == page.url or exitFlag %}
+    {% break %}
+  {% endif %}
+  {% assign parentIdx = parentIdx | minus: -1 %}
+{% endfor %}
 
-<link rel="stylesheet" href="/assets/css/syntax-highlight.css">
+{% assign parentObj = include.nav[parentIdx] %}
+
+<footer>
+
+{% if parentObj.children %}
+  {% assign childIdx = childIdx | minus: 1 %}
+  {% assign childObj = parentObj.children[childIdx] %}
+  <span style="text-align: left">
+    {% if childIdx >= 0 %}
+    <a class="button button-outline" href="{{ childObj.url }}">&lt; {{ childObj.title }}</a>
+    {% endif %}
+  </span>
+  <span style="text-align: center">{{ page.title }}</span>
+  {% assign childIdx = childIdx | minus: -2 %}
+  {% assign childObj = parentObj.children[childIdx] %}
+  <span style="text-align: right">
+    {% if childObj %}
+    <a class="button" href="{{ childObj.url }}">{{ childObj.title }} &gt;</a>
+    {% endif %}
+  </span>
+{% else %}
+  {% assign parentIdx = parentIdx | minus: 1 %}
+  {% assign parentObj = include.nav[parentIdx] %}
+  <span style="text-align: left">
+    {% if childIdx >= 0 %}
+    <a class="button button-outline" href="{{ parentObj.url }}">&lt; {{ parentObj.title }}</a>
+    {% endif %}
+  </span>
+  <span style="text-align: center">{{ page.title }}</span>
+  {% assign parentIdx = parentIdx | minus: -2 %}
+  {% assign parentObj = include.nav[parentIdx] %}
+  <span style="text-align: right">
+    {% if parentObj %}
+    <a class="button" href="{{ parentObj.url }}">{{ parentObj.title }} &gt;</a>
+    {% endif %}
+  </span>
+{% endif %}
+
+</footer>

@@ -18,12 +18,16 @@ OpenSiv3D Web版では、**ユーザのファイルシステムにアクセス�
 実行時に必要なファイルは、emscirpten の `--preload` オプションを使って、**ビルド時にあらかじめバンドルする必要**があります。
 バンドルされたファイルは、起動時に仮想ファイルシステムに読み込まれ、通常のファイルアクセス関数で読み書きができるようになります。
 
+<!-- TODO: detailed guides of each development environment -->
+
 ## ほかプラットフォームとの差異
 
 ### 通信
 
 外部 WebSocket サーバへの接続のみサポートされています。
 保護されたページ (URL が `https://` で始まる Web ページ) では、保護された WebSocket サーバにのみ接続可能です。
+
+<!-- TODO: asyncify allows busy loop -->
 
 ```cpp
   const IPv4Address ip = IPv4Address::Localhost();
@@ -132,6 +136,8 @@ AudioDecoding やクリップボードなどの、一部の機能は、数秒の
 ### 音声ファイルのデコード
 
 `s3d::Platform::Web::AudioProcessing::DecodeAudioFromFile` が `AsyncTask<Wave>` を返します。
+
+<!-- TODO: hungs with asyncify -->
 
 ```cpp
   // 

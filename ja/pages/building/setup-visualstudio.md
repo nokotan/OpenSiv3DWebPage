@@ -80,7 +80,3 @@ Visual Studio 2019 のスタート画面から、[新しいプロジェクトの
 [プロジェクト] > [プロパティ] から、プロジェクト設定を開きます。プロジェクト設定の、[全般] > [emscripten ツールチェイン] > [emscripten インストールディレクトリ] に、インストールした emscripten のフォルダ (emcc.bat ファイルが存在するフォルダ) へのパスを入力します。
 
 ![Siv3DWebProjectMake3.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/74993f9c-8ff4-e500-3521-8f0e7748a403.png)
-
-## 次の一歩
-
-[はじめてのコード](writing-code) に進んでください

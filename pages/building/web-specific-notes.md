@@ -18,12 +18,16 @@ Your WebGL apps **cannot access any files on users' file system**.
 Those files required on running your WebGL apps, **can be bundled on building** with emcc's `--preload` option.
 These bundled files are loaded into a virtual file system; then you can access these files on ordinal way.
 
+<!-- TODO: detailed guides of each development environment -->
+
 ## Features that Differs Other Platforms
 
 ### Network
 
 Only connecting to external websocket server is supported.
 Make sure to use secured websocket server in secured (https://) pages.
+
+<!-- TODO: asyncify allows busy loop -->
 
 ```cpp
   const IPv4Address ip = IPv4Address::Localhost();
@@ -132,6 +136,8 @@ Some features, such as AudioDecoding or Clipboard, blocks the main loop for seve
 ### Audio Decoding
 
 `s3d::Platform::Web::AudioProcessing::DecodeAudioFromFile` returns `AsyncTask<Wave>`.
+
+<!-- TODO: hungs with asyncify -->
 
 ```cpp
   // 

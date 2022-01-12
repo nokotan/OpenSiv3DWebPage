@@ -8,10 +8,12 @@
 {% include layout/navigation.html nav=site.data.nav %}
 
 <main>     
-{% include layout/article.html %}
-{% include layout/footer.html %}    
+{% include layout/article.html nav=site.data.nav %}
 </main>
 
 </div>
 </body>
+
+{% include layout/foot.html %} 
+
 </html>

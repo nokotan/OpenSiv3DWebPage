@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: Install Emscripten
-permalink: /building/install-emscripten
+permalink: /vscode/install-emscripten
 ---
 
 ## Download Emscripten Installer
@@ -45,7 +45,3 @@ Installing Emscripten will take 15~60 minutes, please be patient.
 The window will be shown when the installation has been completed, and click the **Finish** button to terminate the installation process.
 
 ![OpenSiv3DforWebInstaller4_en.png](/assets/img/building/install-emscripten/emscripten-installer-3-en.png)
-
-## Next Step
-
-Check out [Setup Visual Studio Code](setup-vscode) or [Setup Visual Studio](setup-visualstudio)!

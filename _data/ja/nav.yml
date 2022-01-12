@@ -7,28 +7,33 @@
 - title: ギャラリー
   url: /ja/gallary
 
-- title: はじめての WebGL アプリ
+- title: はじめての WebGL アプリ (Visual Studio)
   url: /ja/building
   new-group: true
   children:
     - title: 概要
       url: /ja/building/overview
     - title: Emscripten をインストールする
-      url: /ja/building/install-emscripten
-    - title: Emscripten をインストールする (手動)
       url: /ja/building/get-emscripten
     - title: Visual Studio のセットアップ
       url: /ja/building/setup-visualstudio
-    - title: Visual Studio Code のセットアップ
-      url: /ja/building/setup-vscode
-    - title: はじめてのコード
-      url: /ja/building/writing-code
-    - title: Web 固有の注意点
-      url: /ja/building/web-specific-notes
     - title: デバッグと実行 (Visual Studio)
       url: /ja/building/running-code-with-visualstudio
+    - title: Web 固有の注意点
+      url: /ja/building/web-specific-notes
+
+- title: はじめての WebGL アプリ (Visual Studio Code)
+  url: /ja/vscode
+  new-group: true
+  children:
+    - title: 概要
+      url: /ja/vscode/overview
+    - title: Emscripten をインストールする (手動)
+      url: /ja/vscode/install-emscripten
+    - title: Visual Studio Code のセットアップ
+      url: /ja/vscode/setup-vscode
     - title: デバッグと実行 (VSCode)
-      url: /ja/building/running-code-with-vscode
+      url: /ja/vscode/running-code-with-vscode
 
 - title: WebGL アプリの公開
   url: /ja/publishing

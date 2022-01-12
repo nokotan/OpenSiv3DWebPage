@@ -115,13 +115,3 @@ msgstr ""
 "`emsdk install 2.0.22-upstream` で、emscripten 本体と emscripten で使われる clang、node.j"
 "s、javaがインストールされます。\n"
 "`emsdk activate 2.0.22-upstream --permanent` で、インストールしたツールセットのセットアップが行われます。"
-
-msgid "## Next Step"
-msgstr "## 次の一歩"
-
-msgid ""
-"Check out [Setup Visual Studio Code](setup-vscode) or [Setup Visual Studio](se"
-"tup-visualstudio)!"
-msgstr ""
-"[Visual Studio Code をセットアップする](setup-vscode) または [Visual Studio をセットアップする](set"
-"up-visualstudio) に進んでください。"

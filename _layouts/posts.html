@@ -5,10 +5,11 @@
 <body>
 <div id="layout">
     
-{% include layout/navigation.html nav=site.data.ja.nav %}
+{% include layout/navigation.html nav=site.data.nav %}
 
 <main>     
-{% include layout/article.html nav=site.data.ja.nav %} 
+{% include layout/article.html %} 
+{% include layout/footer.html nav=site.data.nav %} 
 </main>
 
 </div>

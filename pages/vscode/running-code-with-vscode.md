@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: Running and Debugging (VSCode)
-permalink: /building/running-code-with-vscode
+permalink: /vscode/running-code-with-vscode
 ---
 
 ## Building

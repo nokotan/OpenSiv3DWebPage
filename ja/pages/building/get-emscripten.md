@@ -43,7 +43,3 @@ emsdk activate 2.0.22-upstream --permanent
 
 `emsdk install 2.0.22-upstream` で、emscripten 本体と emscripten で使われる clang、node.js、javaがインストールされます。
 `emsdk activate 2.0.22-upstream --permanent` で、インストールしたツールセットのセットアップが行われます。
-
-## 次の一歩
-
-[Visual Studio Code をセットアップする](setup-vscode) または [Visual Studio をセットアップする](setup-visualstudio) に進んでください。

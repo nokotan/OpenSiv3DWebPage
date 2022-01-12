@@ -82,7 +82,3 @@ Please don't forget to switch the project platform configuration to `Emscripten`
 Open the project configuration window, and fill `Emscripten Install Folder` (found in [General] > [emscripten toolchain] in Visual Studio 2017) in the project configuration with the folder that contains **emcc.bat**.
 
 ![Siv3DWebProjectMake3.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/74993f9c-8ff4-e500-3521-8f0e7748a403.png)
-
-## Next Step
-
-Check out [Writing First Code](writing-code)!

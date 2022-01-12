@@ -239,9 +239,3 @@ msgid ""
 "![Siv3DWebProjectMake3.png](https://qiita-image-store.s3.ap-northeast-1.amazon"
 "aws.com/0/158514/74993f9c-8ff4-e500-3521-8f0e7748a403.png)"
 msgstr ""
-
-msgid "## Next Step"
-msgstr "## 次の一歩"
-
-msgid "Check out [Writing First Code](writing-code)!"
-msgstr "[はじめてのコード](writing-code) に進んでください"

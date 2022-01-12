@@ -39,7 +39,3 @@ emsdk activate 2.0.22-upstream --permanent
 
 `emsdk install 2.0.22-upstream` will install emscripten and its dependencies (clang, node.js, java) to your develop environment.
 `emsdk activate 2.0.22-upstream --permanent` will perform setup for these tools.
-
-## Next Step
-
-Check out [Setup Visual Studio Code](setup-vscode) or [Setup Visual Studio](setup-visualstudio)!
