@@ -18,7 +18,17 @@ Your WebGL apps **cannot access any files on users' file system**.
 Those files required on running your WebGL apps, **can be bundled on building** with emcc's `--preload` option.
 These bundled files are loaded into a virtual file system; then you can access these files on ordinal way.
 
-<!-- TODO: detailed guides of each development environment -->
+### Visual Studio
+
+Open the project configuration window, and add preloaded file path into `Preloaded Files` (found in [Emscripten Linker] > [Input]) in the project configuration.
+
+![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
+
+### VSCode
+
+Open `.vscode/Link.Debug.rsp` or `.vscode/Link.Release.rsp` and add linker preloaded files option.
+
+![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
 
 ## Features that Differs Other Platforms
 

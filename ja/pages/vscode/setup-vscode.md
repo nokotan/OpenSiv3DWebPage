@@ -38,3 +38,5 @@ Visual Studio Code を起動して、[ファイル] > [フォルダを開く...]
 [^open-dialog]: Click `File` > `Open Folder ...`
 
 ![VSCodeOpenFolder.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/385e8dfe-3f3a-431f-a8ed-63e2d491723c.png)
+
+![OpenedProject](/assets/img/building/setup-vscode/opened-project-on-vscode.png)

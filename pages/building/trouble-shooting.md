@@ -7,7 +7,7 @@ permalink: /building/trouble-shooting
 
 ### UnicodeDecodeError
 
-#### Symptons
+#### Symptoms
 
 ```log
 UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
@@ -17,9 +17,21 @@ UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
 
 - Specify `PYTHONUTF8=1` in the environment variables.
 
+  1. Open **Windows Settings** and type **environment variables** into the search box.
+
+        ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
+
+  2. Environment Variable Window will be shown, click **New**.
+
+        ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
+
+  3. Edit User Environment Variable Window will be shown, type **PYTHON_UTF8** into Name, 1 into Value.
+
+        ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
+
 ### Build Failure of emscripten ports
 
-#### Symptons
+#### Symptoms
 
 ```log
 cache:INFO: generating port: libz.a... (this will be cached in "C:\...\cache\sysroot\lib\wasm32-emscripten\libz.a" for subsequent builds)
@@ -33,12 +45,12 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 #### Solutions
 
 - Extract zlib.zip (located in `%EMSDK%/upstream/emscripten/cache/ports`) into the same folder.
-  ![folder layout](https://camo.qiitausercontent.com/c92692163f156e6a5d5647c1866a350c81fac5d7/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3135383531342f63613539653636362d663234622d333565312d623166312d6635343165613136373933352e706e67)
+  ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)
 - Add `%EMSDK%/upstream/emscripten/cache` folder into the security check ingore list of your security software.
 
 ### Build Failure on .tlog creation
 
-#### Symptons
+#### Symptoms
 
 ```log
 ```
@@ -51,7 +63,7 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 
 ### Gamepad State is null
 
-#### Symptons
+#### Symptoms
 
 ```log
 Uncaught TypeError: GLFW.lastGamepadState is null

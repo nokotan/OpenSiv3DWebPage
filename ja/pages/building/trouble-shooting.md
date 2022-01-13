@@ -17,6 +17,18 @@ UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
 
 - 環境変数 `PYTHONUTF8=1` を設定する
 
+  1. 「Windows の設定」を開き、検索欄に「環境変数」と入力する。すると、「環境変数の編集」という検索結果が出るので、それをクリックする。
+
+        ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
+
+  2. 「環境変数」というタイトルのウィンドウが表示されるので、「新規(_N_)...」をクリックする。
+
+        ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
+
+  3. 「ユーザ環境変数の編集」というタイトルのウィンドウが表示されるので、変数名に「PYTHON_UTF8」(半角英字、小文字不可)と、変数値に「1」(半角数字)と入力する。
+
+        ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
+
 ### Emscripten ports に関するビルドエラー
 
 #### 症例
@@ -32,7 +44,8 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 
 #### 対処策
 
-- フォルダ `%EMSDK%/upstream/emscripten/cache/ports` をエクスプローラで開き、 zlib.zip をその場で展開する。  ![folder layout](https://camo.qiitausercontent.com/c92692163f156e6a5d5647c1866a350c81fac5d7/68747470733a2f2f71696974612d696d6167652d73746f72652e73332e61702d6e6f727468656173742d312e616d617a6f6e6177732e636f6d2f302f3135383531342f63613539653636362d663234622d333565312d623166312d6635343165613136373933352e706e67)
+- フォルダ `%EMSDK%/upstream/emscripten/cache/ports` をエクスプローラで開き、 zlib.zip をその場で展開する。
+  ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)
 - フォルダ `%EMSDK%/upstream/emscripten/cache` を、お使いのウイルス対策ソフトウェアのスキャン除外フォルダに追加する。
 
 ### .tlog 生成時のビルドエラー

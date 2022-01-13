@@ -34,6 +34,8 @@ emscripten SDK (emsdk) 自体は python スクリプトで書かれています�
 
 ![launch-cmd](/assets/img/building/get-emscripten/launch-cmd.png)
 
+![launched-cmd](/assets/img/building/get-emscripten/cmd.png)
+
 コマンドプロンプトを開いたら、次のコマンドを実行します。
 
 ```bat

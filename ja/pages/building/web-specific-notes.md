@@ -18,7 +18,17 @@ OpenSiv3D Web版では、**ユーザのファイルシステムにアクセス�
 実行時に必要なファイルは、emscirpten の `--preload` オプションを使って、**ビルド時にあらかじめバンドルする必要**があります。
 バンドルされたファイルは、起動時に仮想ファイルシステムに読み込まれ、通常のファイルアクセス関数で読み書きができるようになります。
 
-<!-- TODO: detailed guides of each development environment -->
+### Visual Studio
+
+[プロジェクト] > [プロパティ] から、プロジェクト設定を開きます。プロジェクト設定の、[Emscripten リンカ] > [入力] > [プリロードされるリソースファイル] に、仮想ファイルシステムに追加したいファイルまたはフォルダのパスを、`(パス)@(仮想ファイルシステム上でのフルパス)` の形式で追加します。
+
+![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
+
+### VSCode
+
+`.vscode/Link.Debug.rsp` または `.vscode/Link.Release.rsp` を開き、プリロードされるファイルまたはフォルダのパスを、`--preload-file (パス)@(仮想ファイルシステム上でのフルパス)`の形式で追記します。
+
+![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
 
 ## ほかプラットフォームとの差異
 

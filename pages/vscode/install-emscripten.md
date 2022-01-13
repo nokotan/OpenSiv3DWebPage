@@ -30,6 +30,8 @@ Open Explorer, and move directory to the folder you have downloaded emsdk, then 
 
 ![launch-cmd](/assets/img/building/get-emscripten/launch-cmd.png)
 
+![launched-cmd](/assets/img/building/get-emscripten/cmd.png)
+
 After launching command prompt, type these commands:
 
 ```bat
