@@ -26,7 +26,7 @@
           {%- endcapture %}
 
       <li class="{{ item-style }}">
-        <a href="#" class="pure-menu-link">
+        <a href="#" class="pure-menu-link">   
           {{ item.title }}
         </a>
         <ul class="pure-menu-children">
@@ -43,7 +43,12 @@
             {%- endcapture %}
           <li class="{{ child-style }}">      
             <a href="{{ child.url }}" class="pure-menu-link">
-              {{ child.title }}
+              {% if child.title %}
+                {{ child.title }}
+              {% else %}
+                {% assign itemPage = site.pages | where_exp: 'page', 'page.url == child.url' | first %}
+                {{ itemPage.title }}
+              {% endif %}
             </a>
           </li>
           {%- endfor %}
@@ -64,7 +69,12 @@
 
       <li class="{{ item-style }}">      
         <a href="{{ item.url }}" class="pure-menu-link">
-          {{ item.title }}
+          {% if item.title %}
+            {{ item.title }}
+          {% else %}
+            {% assign itemPage = site.pages | where_exp: 'page', 'page.url == item.url' | first %}
+            {{ itemPage.title }}
+          {% endif %}
         </a>
       </li>
         {%- endif %}

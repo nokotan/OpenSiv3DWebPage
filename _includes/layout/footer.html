@@ -28,7 +28,15 @@
   {% assign childObj = parentObj.children[childIdx] %}
   <span style="text-align: left">
     {% if childIdx >= 0 %}
-    <a class="button button-outline" href="{{ childObj.url }}">&lt; {{ childObj.title }}</a>
+    <a class="button button-outline" href="{{ childObj.url }}">
+      &lt; 
+      {% if childObj.title %}
+        {{ childObj.title }}
+      {% else %}
+        {% assign itemPage = site.pages | where_exp: 'page', 'page.url == childObj.url' | first %}
+        {{ itemPage.title }}
+      {% endif %} 
+    </a>
     {% endif %}
   </span>
   <span style="text-align: center">{{ page.title }}</span>
@@ -36,15 +44,31 @@
   {% assign childObj = parentObj.children[childIdx] %}
   <span style="text-align: right">
     {% if childObj %}
-    <a class="button" href="{{ childObj.url }}">{{ childObj.title }} &gt;</a>
+    <a class="button" href="{{ childObj.url }}">
+      {% if childObj.title %}
+        {{ childObj.title }}
+      {% else %}
+        {% assign itemPage = site.pages | where_exp: 'page', 'page.url == childObj.url' | first %}
+        {{ itemPage.title }}
+      {% endif %}
+      &gt;
+    </a>
     {% endif %}
   </span>
 {% else %}
   {% assign parentIdx = parentIdx | minus: 1 %}
   {% assign parentObj = include.nav[parentIdx] %}
   <span style="text-align: left">
-    {% if childIdx >= 0 %}
-    <a class="button button-outline" href="{{ parentObj.url }}">&lt; {{ parentObj.title }}</a>
+    {% if parentIdx >= 0 %}
+    <a class="button button-outline" href="{{ parentObj.url }}">
+      &lt; 
+      {% if parentObj.title %}
+        {{ parentObj.title }}
+      {% else %}
+        {% assign itemPage = site.pages | where_exp: 'page', 'page.url == parentObj.url' | first %}
+        {{ itemPage.title }}
+      {% endif %} 
+    </a>
     {% endif %}
   </span>
   <span style="text-align: center">{{ page.title }}</span>
@@ -52,7 +76,15 @@
   {% assign parentObj = include.nav[parentIdx] %}
   <span style="text-align: right">
     {% if parentObj %}
-    <a class="button" href="{{ parentObj.url }}">{{ parentObj.title }} &gt;</a>
+    <a class="button" href="{{ parentObj.url }}">
+      {% if parentObj.title %}
+        {{ parentObj.title }}
+      {% else %}
+        {% assign itemPage = site.pages | where_exp: 'page', 'page.url == parentObj.url' | first %}
+        {{ itemPage.title }}
+      {% endif %} 
+      &gt;
+    </a>
     {% endif %}
   </span>
 {% endif %}
