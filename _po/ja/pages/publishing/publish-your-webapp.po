@@ -34,7 +34,7 @@ msgstr ""
 "- (プロジェクト名).wasm\n"
 "- (プロジェクト名).data"
 
-msgid "![FolderImage](#)"
+msgid "![FolderImage](/assets/img/publishing/uploaded-files.png)"
 msgstr ""
 
 msgid ""

@@ -5,18 +5,19 @@
 
 - url: /ja/gallary
 
-- title: はじめての WebGL アプリ (Visual Studio)
+- title: はじめての WebGL (Visual Studio)
   url: /ja/building
   new-group: true
   children:
     - url: /ja/building/overview
     - url: /ja/building/get-emscripten
     - url: /ja/building/setup-visualstudio
+    - url: /ja/building/creating-project
     - url: /ja/building/running-code-with-visualstudio
     - url: /ja/building/trouble-shooting
     - url: /ja/building/web-specific-notes
 
-- title: はじめての WebGL アプリ (Visual Studio Code)
+- title: はじめての WebGL (Visual Studio Code)
   url: /ja/vscode
   new-group: true
   children:

@@ -10,7 +10,7 @@ WebGL アプリケーションを構成するファイルは、`Emscripten/Relea
 - (プロジェクト名).wasm
 - (プロジェクト名).data
 
-![FolderImage](#)
+![FolderImage](/assets/img/publishing/uploaded-files.png)
 
 これらのファイルを Web サーバに配置することで、WebGL アプリを公開することができます。
 

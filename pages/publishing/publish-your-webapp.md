@@ -10,7 +10,7 @@ The files of WebGL apps are emitted in the `Emscripten/Release` folder, containi
 - (AppName).wasm
 - (AppName).data
 
-![FolderImage](#)
+![FolderImage](/assets/img/publishing/uploaded-files.png)
 
 These files should be put into a Web Server in order to publish your WebGL apps.
 
