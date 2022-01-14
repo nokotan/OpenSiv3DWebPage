@@ -56,6 +56,10 @@ defaults:
     values:
       layout: "posts"
   - scope:
+      path: "pages/publishing"
+    values:
+      layout: "posts"
+  - scope:
       path: "ja/pages"
     values:
       layout: "ja/default"
@@ -68,6 +72,10 @@ defaults:
       layout: "ja/posts"
   - scope:
       path: "ja/pages/vscode"
+    values:
+      layout: "ja/posts"
+  - scope:
+      path: "ja/pages/publishing"
     values:
       layout: "ja/posts"
 
