@@ -30,33 +30,3 @@ Visual Studio が emscripten に付随する emcc を使ってコンパイルを
 
     ![setup-vs-ext-1.png](/assets/img/building/setup-visualstudio/setup-vs-ext-1.png)
     ![VisualStudioExtensionManager0.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionManager0.png)
-
-## OpenSiv3D Web版をダウンロードする
-
-OpenSiv3D for Web インストーラが、[ダウンロード](/ja/download) ページからダウンロードできます。
-OpenSiv3D for Web のインストーラは次の処理を行います。
-
-- OpenSiv3D for Web のバイナリの配置
-- プロジェクトテンプレートの登録
-- 環境変数の登録 (OpenSiv3D Web版の配置場所)
-
-次の画面が出て、インストーラーが起動できない時は、\[詳細情報\] を押すと \[実行\] ボタンが表示されます。
-
-![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
-![SmartScreen2](/assets/img/building/setup-visualstudio/smart-screen-guard-2.png)
-
-セットアップに使用する言語を選択する画面では、そのまま **OK** をクリックします。
-
-![OpenSiv3DforWebInstaller0_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller0_ja.png)
-
-インストール先を指定する画面では、そのまま **次へ** をクリックします。なお、インストールされる先のフォルダを変更しても構いません。
-
-![OpenSiv3DforWebInstaller1_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller1_ja.png)
-
-インストール準備完了の画面では、**インストール** をクリックします。
-
-![OpenSiv3DforWebInstaller2_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller2_ja.png)
-
-セットアップが完了したら、次の画面が出てくるので、**完了** をクリックして、インストーラを閉じます。
-
-![OpenSiv3DforWebInstaller4_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller4_ja.png)

@@ -12,6 +12,7 @@
     - url: /building/overview
     - url: /building/get-emscripten
     - url: /building/setup-visualstudio 
+    - url: /building/install-siv3d
     - url: /building/creating-project
     - url: /building/running-code-with-visualstudio
     - url: /building/trouble-shooting

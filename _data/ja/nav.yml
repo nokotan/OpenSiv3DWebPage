@@ -12,6 +12,7 @@
     - url: /ja/building/overview
     - url: /ja/building/get-emscripten
     - url: /ja/building/setup-visualstudio
+    - url: /ja/building/install-siv3d
     - url: /ja/building/creating-project
     - url: /ja/building/running-code-with-visualstudio
     - url: /ja/building/trouble-shooting
