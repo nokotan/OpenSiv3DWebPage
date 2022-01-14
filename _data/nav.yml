@@ -24,14 +24,15 @@
     - url: /vscode/overview
     - url: /vscode/install-emscripten
     - url: /vscode/setup-vscode
+    - url: /vscode/creating-project
     - url: /vscode/running-code-with-vscode
 
 - title: Publishing First Apps
   url: /publishing
   new-group: true
   children: 
-    - url: /publishing/optimize-asset-size
     - url: /publishing/publish-your-webapp
+    - url: /publishing/optimize-asset-size
 
 - url: /status
 
