@@ -3,6 +3,10 @@ title: うまくいかないときは (Visual Studio)
 permalink: /ja/building/trouble-shooting
 ---
 
+## もくじ
+
+{% include toc.html %}
+
 ## ビルドエラー
 
 ### UnicodeDecodeError
@@ -59,6 +63,18 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 
 - 再度プロジェクトをビルドする。
 
+### Undefined Symbol `__stack_chk_fail` という警告が出る
+
+#### 症例
+
+```log
+EMSCRIPTENLINK : warning: undefined symbol: __stack_chk_fail (referenced by top-level compiled C/C++ code)
+```
+
+#### 対処策
+
+- この警告は意図されたものです。(emscripten に `__stack_chk_fail` のサポートがありません。)
+
 ## 実行時エラー
 
 ### Gamepad State is null
@@ -72,3 +88,16 @@ Uncaught TypeError: GLFW.lastGamepadState is null
 #### 対処策
 
 - WebGL アプリをセキュアコンテキスト (https://) 上で配信する。
+
+### メッセージボックス [object XMLHttpRequestProgressEvent] が表示される
+
+#### 症例
+
+```log
+[object XMLHttpRequestProgressEvent]
+```
+
+#### 対処策
+
+- ローカルサーバ経由で、該当する HTML ファイルを開いてください
+  - HTML ファイルをダブルクリックして、WebGL アプリを起動しようとすると、このエラーが発生します。

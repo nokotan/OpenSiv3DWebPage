@@ -33,7 +33,7 @@
       {% if childObj.title %}
         {{ childObj.title }}
       {% else %}
-        {% assign itemPage = site.pages | where_exp: 'page', 'page.url == childObj.url' | first %}
+        {% assign itemPage = site.pages | where_exp: 'p', 'p.url == childObj.url' | first %}
         {{ itemPage.title }}
       {% endif %} 
     </a>
@@ -48,7 +48,7 @@
       {% if childObj.title %}
         {{ childObj.title }}
       {% else %}
-        {% assign itemPage = site.pages | where_exp: 'page', 'page.url == childObj.url' | first %}
+        {% assign itemPage = site.pages | where_exp: 'p', 'p.url == childObj.url' | first %}
         {{ itemPage.title }}
       {% endif %}
       &gt;
@@ -65,7 +65,7 @@
       {% if parentObj.title %}
         {{ parentObj.title }}
       {% else %}
-        {% assign itemPage = site.pages | where_exp: 'page', 'page.url == parentObj.url' | first %}
+        {% assign itemPage = site.pages | where_exp: 'p', 'p.url == parentObj.url' | first %}
         {{ itemPage.title }}
       {% endif %} 
     </a>
@@ -80,7 +80,7 @@
       {% if parentObj.title %}
         {{ parentObj.title }}
       {% else %}
-        {% assign itemPage = site.pages | where_exp: 'page', 'page.url == parentObj.url' | first %}
+        {% assign itemPage = site.pages | where_exp: 'p', 'p.url == parentObj.url' | first %}
         {{ itemPage.title }}
       {% endif %} 
       &gt;

@@ -46,7 +46,7 @@
               {% if child.title %}
                 {{ child.title }}
               {% else %}
-                {% assign itemPage = site.pages | where_exp: 'page', 'page.url == child.url' | first %}
+                {% assign itemPage = site.pages | where_exp: 'p', 'p.url == child.url' | first %}
                 {{ itemPage.title }}
               {% endif %}
             </a>
@@ -72,7 +72,7 @@
           {% if item.title %}
             {{ item.title }}
           {% else %}
-            {% assign itemPage = site.pages | where_exp: 'page', 'page.url == item.url' | first %}
+            {% assign itemPage = site.pages | where_exp: 'p', 'p.url == item.url' | first %}
             {{ itemPage.title }}
           {% endif %}
         </a>

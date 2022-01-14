@@ -1,0 +1,14 @@
+{%- capture newline %}
+{% endcapture -%}
+{%- assign paragraphTitles = page.content | split: newline | where_exp: 'i', 'i contains "##"' | shift -%}
+{%- for paragraphTitle in paragraphTitles -%}
+  {%- assign titleLevel = paragraphTitle | split: ' ' | first | size -%}
+  {%- case titleLevel -%}
+    {%- when 2 -%}
+      {%- assign title = paragraphTitle | slice: titleLevel, 100 %}
+  * [{{ title }}](#{{ title | slugify: "pretty" }})
+    {%- when 3 -%}
+      {%- assign title = paragraphTitle | slice: titleLevel, 100 %}
+    * [{{ title }}](#{{ title | slugify: "pretty" }})
+  {%- endcase -%}
+{%- endfor -%}

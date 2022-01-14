@@ -3,6 +3,10 @@ title: Trouble Shooting on Visual Studio
 permalink: /building/trouble-shooting
 ---
 
+## Table of Contents
+
+{% include toc.html %}
+
 ## Build Errors
 
 ### UnicodeDecodeError
@@ -59,6 +63,18 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 
 - Rebuild your project.
 
+### Warning Undefined Symbol `__stack_chk_fail`
+
+#### Symptoms
+
+```log
+EMSCRIPTENLINK : warning: undefined symbol: __stack_chk_fail (referenced by top-level compiled C/C++ code)
+```
+
+#### Solution
+
+- This warning is intended. (emscripten has no support for `__stack_chk_fail`)
+
 ## Runtime Error
 
 ### Gamepad State is null
@@ -72,3 +88,16 @@ Uncaught TypeError: GLFW.lastGamepadState is null
 #### Solution
 
 - Serve WebGL app in the secure context (https://)
+
+### Messagebox [object XMLHttpRequestProgressEvent] is shown
+
+#### Symptoms
+
+```log
+[object XMLHttpRequestProgressEvent]
+```
+
+#### Solution
+
+- Use local server
+  - Double-clicking html file will cause this unexpected behavior.

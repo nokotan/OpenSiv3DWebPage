@@ -18,6 +18,12 @@ msgstr ""
 "permalink: /ja/building/trouble-shooting\n"
 "---"
 
+msgid "## Table of Contents"
+msgstr "## もくじ"
+
+msgid "{% include toc.html %}"
+msgstr ""
+
 msgid "## Build Errors"
 msgstr "## ビルドエラー"
 
@@ -113,6 +119,19 @@ msgstr ""
 msgid "- Rebuild your project."
 msgstr "- 再度プロジェクトをビルドする。"
 
+msgid "### Warning Undefined Symbol `__stack_chk_fail`"
+msgstr "### Undefined Symbol `__stack_chk_fail` という警告が出る"
+
+msgid ""
+"```log\n"
+"EMSCRIPTENLINK : warning: undefined symbol: __stack_chk_fail (referenced by to"
+"p-level compiled C/C++ code)\n"
+"```"
+msgstr ""
+
+msgid "- This warning is intended. (emscripten has no support for `__stack_chk_fail`)"
+msgstr "- この警告は意図されたものです。(emscripten に `__stack_chk_fail` のサポートがありません。)"
+
 msgid "## Runtime Error"
 msgstr "## 実行時エラー"
 
@@ -127,3 +146,19 @@ msgstr ""
 
 msgid "- Serve WebGL app in the secure context (https://)"
 msgstr "- WebGL アプリをセキュアコンテキスト (https://) 上で配信する。"
+
+msgid "### Messagebox [object XMLHttpRequestProgressEvent] is shown"
+msgstr "### メッセージボックス [object XMLHttpRequestProgressEvent] が表示される"
+
+msgid ""
+"```log\n"
+"[object XMLHttpRequestProgressEvent]\n"
+"```"
+msgstr ""
+
+msgid ""
+"- Use local server\n"
+"  - Double-clicking html file will cause this unexpected behavior."
+msgstr ""
+"- ローカルサーバ経由で、該当する HTML ファイルを開いてください\n"
+"  - HTML ファイルをダブルクリックして、WebGL アプリを起動しようとすると、このエラーが発生します。"
