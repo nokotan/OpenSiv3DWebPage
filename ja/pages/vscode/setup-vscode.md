@@ -6,6 +6,10 @@ title: Visual Studio Code のセットアップ
 permalink: /ja/vscode/setup-vscode
 ---
 
+## Visual Studio Code のインストール
+
+[Visual Studio Codeのインストール](https://www.python.jp/python_vscode/windows/setup/install_vscode.html) の指示に従って、Visual Studio Code をインストールします。
+
 ## 拡張機能のインストール
 
 Visual Studio Code の左側の拡張機能タブから、次の名前で検索し、インストールしてください。

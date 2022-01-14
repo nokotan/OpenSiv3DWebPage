@@ -6,7 +6,11 @@ title: Visual Studio のセットアップ
 permalink: /ja/building/setup-visualstudio
 ---
 
-## emscripten 用のプロジェクトテンプレートをインストールする
+## Visual Studio のインストール
+
+[Visual Studio のインストール (Windows)](https://zenn.dev/reputeless/books/siv3d-documentation/viewer/requirements#3.1-visual-studio-のインストール-(windows)) の指示に従って、Visual Studio 2022 をインストールします。
+
+## Visual Studio 拡張機能のインストール
 
 Visual Studio が emscripten に付随する emcc を使ってコンパイルを行うようにするために、**Emscripten Extension Pack for Visual Studio** Visual Studio 機能拡張をインストールします。
 

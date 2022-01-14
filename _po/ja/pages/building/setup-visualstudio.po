@@ -23,8 +23,20 @@ msgstr ""
 "permalink: /ja/building/setup-visualstudio\n"
 "---"
 
-msgid "## Install Extension"
-msgstr "## emscripten 用のプロジェクトテンプレートをインストールする"
+msgid "## Install Visual Studio"
+msgstr "## Visual Studio のインストール"
+
+msgid ""
+"Follow instructions in [Installing Visual Studio (Windows)](https://zenn.dev/r"
+"eputeless/books/siv3d-documentation-en/viewer/requirements#3.1-installing-visu"
+"al-studio-(windows))."
+msgstr ""
+"[Visual Studio のインストール (Windows)](https://zenn.dev/reputeless/books/siv3d-docu"
+"mentation/viewer/requirements#3.1-visual-studio-のインストール-(windows)) の指示に従って、Vis"
+"ual Studio 2022 をインストールします。"
+
+msgid "## Install Visual Studio Extension"
+msgstr "## Visual Studio 拡張機能のインストール"
 
 msgid ""
 "Install Visual Studio Extension **Emscripten Extension Pack for Visual Studio*"

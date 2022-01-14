@@ -23,6 +23,16 @@ msgstr ""
 "permalink: /ja/vscode/setup-vscode\n"
 "---"
 
+msgid "## Install Visual Studio Code"
+msgstr "## Visual Studio Code のインストール"
+
+msgid ""
+"Follow instructions in [Visual Studio Codeのインストール](https://www.python.jp/pytho"
+"n_vscode/windows/setup/install_vscode.html)."
+msgstr ""
+"[Visual Studio Codeのインストール](https://www.python.jp/python_vscode/windows/setup/"
+"install_vscode.html) の指示に従って、Visual Studio Code をインストールします。"
+
 msgid "## Install Extensions"
 msgstr "## 拡張機能のインストール"
 

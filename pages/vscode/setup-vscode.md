@@ -6,6 +6,10 @@ title: Setup Visual Studio Code
 permalink: /vscode/setup-vscode
 ---
 
+## Install Visual Studio Code
+
+Follow instructions in [Visual Studio Codeのインストール](https://www.python.jp/python_vscode/windows/setup/install_vscode.html).
+
 ## Install Extensions
 
 Open "Extension Tab" in Visual Studio Code, search and install these extensions:

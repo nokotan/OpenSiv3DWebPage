@@ -6,7 +6,11 @@ title: Setup Visual Studio
 permalink: /building/setup-visualstudio
 ---
 
-## Install Extension
+## Install Visual Studio
+
+Follow instructions in [Installing Visual Studio (Windows)](https://zenn.dev/reputeless/books/siv3d-documentation-en/viewer/requirements#3.1-installing-visual-studio-(windows)).
+
+## Install Visual Studio Extension
 
 Install Visual Studio Extension **Emscripten Extension Pack for Visual Studio** so that Visual Studio can handle the compilation of WebGL application with EMCC (Emscripten Compiler Front-End)
 
