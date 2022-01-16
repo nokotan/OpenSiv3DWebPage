@@ -23,10 +23,11 @@ Assets リスト中の `Emscripten.exe` をクリックしてダウンロード�
 
 ## Emscripten インストーラを起動する
 
-次の画面が出て、インストーラーが起動できない時は、\[詳細情報\] を押すと \[実行\] ボタンが表示されます。
-
-![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
-![SmartScreen2](/assets/img/building/install-emscripten/smart-screen-guard-again.png)
+> 次の画面が出て、インストーラーが起動できない時は、\[詳細情報\] を押すと \[実行\] ボタンが表示されます。
+>
+> ![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
+> ![SmartScreen2](/assets/img/building/install-emscripten/smart-screen-guard-again.png)
+{:.info}
 
 セットアップに使用する言語を選択する画面では、そのまま **OK** をクリックします。
 

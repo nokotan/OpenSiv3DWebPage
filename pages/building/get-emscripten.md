@@ -23,10 +23,11 @@ Click `Emscripten.exe` in the assets list to download.
 
 ## Launch Emscripten Installer
 
-Smart Screen may prevents launching Emscripten 2.0.22 Installer, click \[detail\] and \[run\] button will be shown.
-
-![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
-![SmartScreen2](/assets/img/building/install-emscripten/smart-screen-guard-again.png)
+> Smart Screen may prevents launching Emscripten 2.0.22 Installer, click \[detail\] and \[run\] button will be shown.
+>
+> ![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
+> ![SmartScreen2](/assets/img/building/install-emscripten/smart-screen-guard-again.png)
+{:.info}
 
 Click the **OK** button in the window that selecting the language used during setup.
 

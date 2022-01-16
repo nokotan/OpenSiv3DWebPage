@@ -1,3 +1,45 @@
 article {
   padding: 1.8em;
 }
+
+blockquote.info {
+  border-color: #02b12c;
+  background-color: #dbffe3;
+}
+
+blockquote.info p:first-child::before {
+  content: "ℹ️";
+  padding-right: 0.5rem;
+}
+
+blockquote.info p:not(:first-child) {
+  padding-left: 2.5rem;
+}
+
+blockquote.warn {
+  border-color: #dfc200;
+  background-color: #fef4ad;
+}
+
+blockquote.warn p::before {
+  content: "⚠️";
+  padding-right: 0.5rem;
+}
+
+blockquote.warn p:not(:first-child) {
+  padding-left: 2.5rem;
+}
+
+blockquote.error {
+  border-color: #c90202;
+  background-color: #fccaca;
+}
+
+blockquote.error p::before {
+  content: "❌";
+  padding-right: 0.5rem;
+}
+
+blockquote.error p:not(:first-child) {
+  padding-left: 2.5rem;
+}
