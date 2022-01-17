@@ -10,13 +10,13 @@
         {% assign exitFlag = true %}
         {% break %}
       {% endif %}
-      {% assign childIdx = childIdx | minus: -1 %}
+      {% assign childIdx = childIdx | plus: 1 %}
     {% endfor %}
   {% endif %}
   {% if item.url == page.url or exitFlag %}
     {% break %}
   {% endif %}
-  {% assign parentIdx = parentIdx | minus: -1 %}
+  {% assign parentIdx = parentIdx | plus: 1 %}
 {% endfor %}
 
 {% assign parentObj = include.nav[parentIdx] %}
@@ -40,7 +40,7 @@
     {% endif %}
   </span>
   <span style="text-align: center">{{ page.title }}</span>
-  {% assign childIdx = childIdx | minus: -2 %}
+  {% assign childIdx = childIdx | plus: 2 %}
   {% assign childObj = parentObj.children[childIdx] %}
   <span style="text-align: right">
     {% if childObj %}
@@ -72,7 +72,7 @@
     {% endif %}
   </span>
   <span style="text-align: center">{{ page.title }}</span>
-  {% assign parentIdx = parentIdx | minus: -2 %}
+  {% assign parentIdx = parentIdx | plus: 2 %}
   {% assign parentObj = include.nav[parentIdx] %}
   <span style="text-align: right">
     {% if parentObj %}
