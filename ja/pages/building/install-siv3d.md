@@ -5,12 +5,19 @@ permalink: /ja/building/install-siv3d
 
 ## OpenSiv3D Web版をダウンロードする
 
-OpenSiv3D for Web インストーラが、[ダウンロード](/ja/download) ページからダウンロードできます。
+OpenSiv3D for Web インストーラを、[ダウンロード](/ja/download) ページからダウンロードします。
+
+<details markdown="block"><summary>OpenSiv3D for Web のインストーラが行う処理</summary>
+
 OpenSiv3D for Web のインストーラは次の処理を行います。
 
 - OpenSiv3D for Web のバイナリの配置
 - プロジェクトテンプレートの登録
 - 環境変数の登録 (OpenSiv3D Web版の配置場所)
+
+</details>
+
+インストーラのダウンロードが完了したら、インストーラをダブルクリックして起動します。
 
 > 次の画面が出て、インストーラーが起動できない時は、\[詳細情報\] を押すと \[実行\] ボタンが表示されます。
 >

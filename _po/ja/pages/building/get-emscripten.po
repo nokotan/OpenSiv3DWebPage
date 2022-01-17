@@ -33,6 +33,9 @@ msgstr ""
 "Windows 向け Emscripten 2.0.22 インストーラが [GitHub Releases](https://github.com/noko"
 "tan/EmscriptenInstaller/releases/latest) からダウンロードできます。"
 
+msgid "<details markdown=\"block\"><summary>What the installer will perform</summary>"
+msgstr "<details markdown=\"block\"><summary>OpenSiv3D for Web のインストーラが行う処理</summary>"
+
 msgid "This Installer will download following tools in your develop environment."
 msgstr "インストーラは次のツールをお使いの開発環境にダウンロードします。"
 
@@ -41,6 +44,9 @@ msgid ""
 "- Clang Compiler Front End\n"
 "- Node\n"
 "- Python"
+msgstr ""
+
+msgid "</details>"
 msgstr ""
 
 msgid "Click `Emscripten.exe` in the assets list to download."
@@ -55,6 +61,11 @@ msgstr ""
 
 msgid "## Launch Emscripten Installer"
 msgstr "## Emscripten インストーラを起動する"
+
+msgid ""
+"After downloading the installer, double-click the installer to execute install"
+"ation process."
+msgstr "インストーラのダウンロードが完了したら、インストーラをダブルクリックして起動します。"
 
 msgid ""
 "> Smart Screen may prevents launching Emscripten 2.0.22 Installer, click \\[det"

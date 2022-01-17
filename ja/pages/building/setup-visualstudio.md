@@ -18,7 +18,7 @@ Visual Studio が emscripten に付随する emcc を使ってコンパイルを
 
 ![VisualStudioExtensionInstaller0_ja.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller0_ja.png)
 
-ダウンロードした .vsix パッケージを実行します。すると、インストールする拡張機能を尋ねるウィンドウが出てくるので、すべてのチェックボックスにチェックがついた状態で**Modify** と書かれたボタンをクリックします。
+ダウンロードした .vsix パッケージをダブルクリックして実行します。すると、インストールする拡張機能を尋ねるウィンドウが出てくるので、すべてのチェックボックスにチェックがついた状態で **Modify** と書かれたボタンをクリックします。
 
 ![VisualStudioExtensionInstaller1_ja.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller1_ja.png)
 

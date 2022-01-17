@@ -10,6 +10,8 @@ permalink: /building/get-emscripten
 
 Emscripten 2.0.22 Installer for Windows is available at [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest).
 
+<details markdown="block"><summary>What the installer will perform</summary>
+
 This Installer will download following tools in your develop environment.
 
 - Emscripten 2.0.22
@@ -17,11 +19,15 @@ This Installer will download following tools in your develop environment.
 - Node
 - Python
 
+</details>
+
 Click `Emscripten.exe` in the assets list to download.
 
 ![EmscriptenInstallerInGitHub](/assets/img/building/install-emscripten/emscripten-installer-github.png)
 
 ## Launch Emscripten Installer
+
+After downloading the installer, double-click the installer to execute installation process.
 
 > Smart Screen may prevents launching Emscripten 2.0.22 Installer, click \[detail\] and \[run\] button will be shown.
 >

@@ -10,6 +10,8 @@ permalink: /ja/building/get-emscripten
 
 Windows 向け Emscripten 2.0.22 インストーラが [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest) からダウンロードできます。
 
+<details markdown="block"><summary>OpenSiv3D for Web のインストーラが行う処理</summary>
+
 インストーラは次のツールをお使いの開発環境にダウンロードします。
 
 - Emscripten 2.0.22
@@ -17,11 +19,15 @@ Windows 向け Emscripten 2.0.22 インストーラが [GitHub Releases](https:/
 - Node
 - Python
 
+</details>
+
 Assets リスト中の `Emscripten.exe` をクリックしてダウンロードします。
 
 ![EmscriptenInstallerInGitHub](/assets/img/building/install-emscripten/emscripten-installer-github.png)
 
 ## Emscripten インストーラを起動する
+
+インストーラのダウンロードが完了したら、インストーラをダブルクリックして起動します。
 
 > 次の画面が出て、インストーラーが起動できない時は、\[詳細情報\] を押すと \[実行\] ボタンが表示されます。
 >

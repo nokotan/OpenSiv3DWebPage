@@ -6,11 +6,18 @@ permalink: /building/install-siv3d
 ## Download OpenSiv3D for Web
 
 The OpenSiv3D for Web Installer is available in the [Download](/download) page.
+
+<details markdown="block"><summary>What the installer will perform</summary>
+
 This Installer will configure following settings in your develop environment.
 
 - Placement of OpenSiv3D for Web Headers and Static Libraries.
 - Registration of OpenSiv3D for Web Project Template.
 - Registration Environment Variable of the Placement Path
+
+</details>
+
+After downloading the installer, double-click the installer to execute installation process.
 
 > Smart Screen may prevents launching The OpenSiv3D for Web Installer, click \[detail\] and \[run\] button will be shown.
 >

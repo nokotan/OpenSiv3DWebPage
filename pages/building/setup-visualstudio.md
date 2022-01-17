@@ -18,7 +18,7 @@ Download the .vsix Package from [Visual Studio Market Place](https://marketplace
 
 ![VisualStudioExtensionInstaller0_en.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller0_en.png)
 
-Execute the downloaded .vsix package, and click the **Modify** button in the shown window that confirms installed features.
+Execute the downloaded .vsix package by double-clicking, and click the **Modify** button in the shown window that confirms installed features.
 
 ![VisualStudioExtensionInstaller1_en.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller1_en.png)
 
