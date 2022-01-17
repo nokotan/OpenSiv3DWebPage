@@ -5,7 +5,11 @@ permalink: /building/creating-project
 
 ## Creating Project
 
-Launch Visual Studio, click `Create New Project` in the Visual Studio starting window,
+Launch Visual Studio from Windows menu.
+
+![LaunchVisualStudio.png](/assets/img/building/creating-project/launch-vs.png)
+
+After launched, Click `Create New Project` in the Visual Studio starting window,
 and the list of available project templates will be shown.
 
 ![VisualStudio0.png](/assets/img/building/setup-visualstudio/VisualStudio0.png)

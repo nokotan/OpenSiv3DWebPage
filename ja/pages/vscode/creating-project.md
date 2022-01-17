@@ -3,9 +3,11 @@ title: プロジェクトの作成
 permalink: /ja/vscode/creating-project
 ---
 
-## テンプレートからプロジェクトを作成する
+## プロジェクトテンプレートをダウンロードする
 
 [サンプルプログラム実行用パッケージのリポジトリ](https://github.com/nokotan/OpenSiv3DForWeb-VSCode) に移動し、緑色の `Code` ボタン、`Download ZIP` ボタンを順に押してください。
+
+<details markdown="block"><summary>テンプレートに含まれている内容</summary>
 
 このテンプレートは、次の部分の構成が行われています。
 
@@ -14,9 +16,18 @@ permalink: /ja/vscode/creating-project
   - マクロ定義
 - ビルドタスク、デバッグタスクの定義
 
-テンプレートのダウンロードが終わったら、任意のフォルダに展開してください。
+</details>
 
 ![InstallSiv3DWebVSCode.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/158514/3c6d1c31-e6ff-0fb4-a00c-0086a2fafd12.png)
+
+ダウンロードが終わったら、Zip ファイルを右クリックして、**すべて展開(T)...** をクリックします。
+すると、圧縮 (ZIP 形式) フォルダーの展開という名前のウィンドウが表示されるので、**展開** をクリックします。
+
+![ExtractZip](/assets/img/building/trouble-shooting/unzip-all.png)
+
+![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)
+
+## テンプレートからプロジェクトを作成する
 
 Visual Studio Code を起動して、[ファイル] > [フォルダを開く...] でフォルダを開くためのダイアログを表示します。
 

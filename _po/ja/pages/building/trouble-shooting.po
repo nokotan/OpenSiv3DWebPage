@@ -45,18 +45,21 @@ msgstr "#### 対処策"
 msgid "- Specify `PYTHONUTF8=1` in the environment variables."
 msgstr "- 環境変数 `PYTHONUTF8=1` を設定する"
 
+msgid "  <details markdown=\"block\"><summary>Procedures</summary>"
+msgstr "  <details markdown=\"block\"><summary>手順</summary>"
+
 msgid ""
 "  1. Open **Windows Settings** and type **environment variables** into the sea"
 "rch box."
 msgstr "  1. 「Windows の設定」を開き、検索欄に「環境変数」と入力する。すると、「環境変数の編集」という検索結果が出るので、それをクリックする。"
 
-msgid "        ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)"
+msgid "      ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)"
 msgstr ""
 
 msgid "  2. Environment Variable Window will be shown, click **New**."
 msgstr "  2. 「環境変数」というタイトルのウィンドウが表示されるので、「新規(_N_)...」をクリックする。"
 
-msgid "        ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)"
+msgid "      ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)"
 msgstr ""
 
 msgid ""
@@ -66,7 +69,10 @@ msgstr ""
 "  3. 「ユーザ環境変数の編集」というタイトルのウィンドウが表示されるので、変数名に「PYTHON_UTF8」(半角英字、小文字不可)と、変数値に「1」("
 "半角数字)と入力する。"
 
-msgid "        ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)"
+msgid "      ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)"
+msgstr ""
+
+msgid "  </details>"
 msgstr ""
 
 msgid "### Build Failure of emscripten ports"
@@ -96,17 +102,38 @@ msgstr "#### 対処策"
 
 msgid ""
 "- Extract zlib.zip (located in `%EMSDK%/upstream/emscripten/cache/ports`) into"
-" the same folder.\n"
-"  ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)"
-"\n"
-"- Add `%EMSDK%/upstream/emscripten/cache` folder into the security check ingor"
-"e list of your security software."
+" the same folder."
 msgstr ""
 "- フォルダ `%EMSDK%/upstream/emscripten/cache/ports` をエクスプローラで開き、 zlib.zip をその場で展開"
 "する。\n"
-"  ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)"
-"\n"
-"- フォルダ `%EMSDK%/upstream/emscripten/cache` を、お使いのウイルス対策ソフトウェアのスキャン除外フォルダに追加する。"
+
+msgid ""
+"    ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.pn"
+"g)"
+msgstr ""
+
+msgid "    <details markdown=\"block\"><summary>Procedures</summary>"
+msgstr "    <details markdown=\"block\"><summary>手順</summary>"
+
+msgid "    1. Right-click the template zip package and click **Extract All...**."
+msgstr "    1. Zip ファイルを右クリックして、**すべて展開(T)...** をクリックします。"
+
+msgid "        ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all.png)"
+msgstr ""
+
+msgid "    2. A detailed extraction window will be shown, click **Extract**."
+msgstr "    2. 圧縮 (ZIP 形式) フォルダーの展開という名前のウィンドウが表示されるので、**展開** をクリックします。"
+
+msgid "        ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)"
+msgstr ""
+
+msgid "    </details>"
+msgstr ""
+
+msgid ""
+"- Add `%EMSDK%/upstream/emscripten/cache` folder into the security check ingor"
+"e list of your security software."
+msgstr "- フォルダ `%EMSDK%/upstream/emscripten/cache` を、お使いのウイルス対策ソフトウェアのスキャン除外フォルダに追加する。"
 
 msgid "### Build Failure on .tlog creation"
 msgstr "### .tlog 生成時のビルドエラー"

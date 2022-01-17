@@ -21,17 +21,21 @@ UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
 
 - Specify `PYTHONUTF8=1` in the environment variables.
 
+  <details markdown="block"><summary>Procedures</summary>
+
   1. Open **Windows Settings** and type **environment variables** into the search box.
 
-        ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
+      ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
 
   2. Environment Variable Window will be shown, click **New**.
 
-        ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
+      ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
 
   3. Edit User Environment Variable Window will be shown, type **PYTHON_UTF8** into Name, 1 into Value.
 
-        ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
+      ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
+
+  </details>
 
 ### Build Failure of emscripten ports
 
@@ -49,7 +53,21 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 #### Solutions
 
 - Extract zlib.zip (located in `%EMSDK%/upstream/emscripten/cache/ports`) into the same folder.
-  ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)
+
+    ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)
+
+    <details markdown="block"><summary>Procedures</summary>
+
+    1. Right-click the template zip package and click **Extract All...**.
+
+        ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all.png)
+
+    2. A detailed extraction window will be shown, click **Extract**.
+
+        ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)
+
+    </details>
+
 - Add `%EMSDK%/upstream/emscripten/cache` folder into the security check ingore list of your security software.
 
 ### Build Failure on .tlog creation

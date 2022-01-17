@@ -12,7 +12,11 @@ Follow instructions in [Visual Studio Codeのインストール](https://www.pyt
 
 ## Install Extensions
 
-Open "Extension Tab" in Visual Studio Code, search and install these extensions:
+Launch Visual Studio Code from Windows menu.
+
+![LaunchVisualStudio.png](/assets/img/building/creating-project/launch-vscode.png)
+
+After launched, open "Extension Tab" in left side, search and install these extensions:
 
 - C/C++ VSCode Extension
 - Debugger for Firefox (Optional)

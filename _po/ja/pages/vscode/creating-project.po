@@ -18,8 +18,8 @@ msgstr ""
 "permalink: /ja/vscode/creating-project\n"
 "---"
 
-msgid "## Create Project from Template"
-msgstr "## テンプレートからプロジェクトを作成する"
+msgid "## Download Project Template"
+msgstr "## プロジェクトテンプレートをダウンロードする"
 
 msgid ""
 "Follow link to [GitHub - nokotan/OpenSiv3DForWeb-VSCode](https://github.com/no"
@@ -28,6 +28,9 @@ msgid ""
 msgstr ""
 "[サンプルプログラム実行用パッケージのリポジトリ](https://github.com/nokotan/OpenSiv3DForWeb-VSCode) に"
 "移動し、緑色の `Code` ボタン、`Download ZIP` ボタンを順に押してください。"
+
+msgid "<details markdown=\"block\"><summary>About this template</summary>"
+msgstr "<details markdown=\"block\"><summary>テンプレートに含まれている内容</summary>"
 
 msgid "This template is configured and ready to use .."
 msgstr "このテンプレートは、次の部分の構成が行われています。"
@@ -43,13 +46,30 @@ msgstr ""
 "  - マクロ定義\n"
 "- ビルドタスク、デバッグタスクの定義"
 
-msgid "Completed downloading this template, extract zip into a folder."
-msgstr "テンプレートのダウンロードが終わったら、任意のフォルダに展開してください。"
+msgid "</details>"
+msgstr ""
 
 msgid ""
 "![InstallSiv3DWebVSCode.png](https://qiita-image-store.s3.ap-northeast-1.amazo"
 "naws.com/0/158514/3c6d1c31-e6ff-0fb4-a00c-0086a2fafd12.png)"
 msgstr ""
+
+msgid ""
+"After downloading, right-click the template zip package and click **Extract Al"
+"l...**.\n"
+"A detailed extraction window will be shown, click **Extract**."
+msgstr ""
+"ダウンロードが終わったら、Zip ファイルを右クリックして、**すべて展開(T)...** をクリックします。\n"
+"すると、圧縮 (ZIP 形式) フォルダーの展開という名前のウィンドウが表示されるので、**展開** をクリックします。"
+
+msgid "![ExtractZip](/assets/img/building/trouble-shooting/unzip-all.png)"
+msgstr ""
+
+msgid "![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)"
+msgstr ""
+
+msgid "## Create Project from Template"
+msgstr "## テンプレートからプロジェクトを作成する"
 
 msgid ""
 "Launch Visual Studio Code, open folder-selecting dialog[^open-dialog], and sel"

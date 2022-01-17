@@ -12,7 +12,13 @@ permalink: /ja/vscode/setup-vscode
 
 ## 拡張機能のインストール
 
-Visual Studio Code の左側の拡張機能タブから、次の名前で検索し、インストールしてください。
+左下の Windows ボタンをクリックして、Windows メニューを開きます。
+左側のアプリケーション一覧から **Visual Studio Code** を探してクリックし、Visual Studio Code を起動します。
+
+![LaunchVisualStudio.png](/assets/img/building/creating-project/launch-vscode.png)
+
+Visual Studio Code が起動したら、左側の拡張機能タブをクリックします。
+タブ上部の検索欄に次の名前を入力して拡張機能を検索し、インストールしてください。
 
 - C/C++ VSCode 拡張
 - Debugger for Firefox (任意)

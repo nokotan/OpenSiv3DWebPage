@@ -5,7 +5,12 @@ permalink: /ja/building/creating-project
 
 ## プロジェクトを作成する
 
-Visual Studio 2019 のスタート画面から、[新しいプロジェクトの作成] をクリックすると、以下のようなプロジェクトテンプレートを選択する画面が出てきます。
+左下の Windows ボタンをクリックして、Windows メニューを開きます。
+左側のアプリケーション一覧から **Visual Studio** を探してクリックし、Visual Studio を起動します。
+
+![LaunchVisualStudio.png](/assets/img/building/creating-project/launch-vs.png)
+
+Visual Studio を起動したら、 画像のようなスタート画面が表示されます。[新しいプロジェクトの作成] をクリックすると、以下のようなプロジェクトテンプレートを選択する画面が出てきます。
 
 ![VisualStudio0.png](/assets/img/building/setup-visualstudio/VisualStudio0.png)
 
