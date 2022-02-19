@@ -99,41 +99,6 @@ if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
 
 ## Features that can be Written Differently from Other Platforms
 
-### GameLoop
-
-With **emscripten Asyncify**, we can let a browser handle JavaScript events in the infinite game loop.
-
-```cpp
-# include <Siv3D.hpp>
-
-void Main()
-{
-  // initializations here...
-
-  while (System::Update())
-  {
-    // more tasks on each frames..
-  }
-}
-```
-
-Another strategy is to register the function as a callback with `s3d::Platform::Web::System::SetMainLoop`, which is called at the start of an animation frame.
-
-```cpp
-# include <Siv3D.hpp>
-
-void Main()
-{
-  // initializations here...
-
-  Platform::Web::System::SetMainLoop([&]()
-  {
-    System::Update();
-    // more tasks on each frames..
-  });
-}
-```
-
 ### File Save Dialog
 
 `s3d::Dialog::Save` will always return "/dev/save" pseudo device,

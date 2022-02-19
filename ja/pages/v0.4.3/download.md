@@ -4,6 +4,9 @@ meta-title: Download
 permalink: /ja//v0.4.3/download
 ---
 
+> このページは OpenSiv3D for Web v0.4.3 をご使用のユーザを対象としており、更新されていません。
+{:.warn}
+
 ## 最新版
 
 ### Windows

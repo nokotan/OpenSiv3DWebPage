@@ -19,6 +19,14 @@ msgstr ""
 "permalink: /ja//v0.4.3/download\n"
 "---"
 
+msgid ""
+"> This page is targeted who uses the previous version of OpenSiv3D for Web and"
+" no longer maintained.\n"
+"{:.warn}"
+msgstr ""
+"> このページは OpenSiv3D for Web v0.4.3 をご使用のユーザを対象としており、更新されていません。\n"
+"{:.warn}"
+
 msgid "## Latest Version"
 msgstr "## 最新版"
 

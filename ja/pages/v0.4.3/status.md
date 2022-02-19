@@ -6,6 +6,9 @@ title: 実装状況
 permalink: /ja/v0.4.3/status
 ---
 
+> このページは OpenSiv3D for Web v0.4.3 をご使用のユーザを対象としており、更新されていません。
+{:.warn}
+
 **[プロジェクト:機能](https://github.com/nokotan/OpenSiv3D/projects/1) も確認してください。**
 
 ### 状態バッジ

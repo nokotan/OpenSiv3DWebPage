@@ -3,6 +3,9 @@ title: Download
 permalink: /v0.4.3/download
 ---
 
+> This page is targeted who uses the previous version of OpenSiv3D for Web and no longer maintained.
+{:.warn}
+
 ## Latest Version
 
 ### Windows

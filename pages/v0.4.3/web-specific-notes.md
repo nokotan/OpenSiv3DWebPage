@@ -6,6 +6,9 @@ title: Web Specific Notes
 permalink: /v0.4.3/web-specific-notes
 ---
 
+> This page is targeted who uses the previous version of OpenSiv3D for Web and no longer maintained.
+{:.warn}
+
 ## GameLoop Design
 
 **Let a browser handle JavaScript events**, or the browser hangs up because of infinite loop.

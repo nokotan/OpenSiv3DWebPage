@@ -6,6 +6,9 @@ title: Implementation Status
 permalink: /v0.4.3/status
 ---
 
+> This page is targeted who uses the previous version of OpenSiv3D for Web and no longer maintained.
+{:.warn}
+
 **Also Check [Project:Features](https://github.com/nokotan/OpenSiv3D/projects/1)**
 
 ### Status Marks

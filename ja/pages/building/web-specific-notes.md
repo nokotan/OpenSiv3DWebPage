@@ -99,41 +99,6 @@ if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
 
 ## 他プラットフォームと異なる書き方ができる機能
 
-### ゲームループ
-
-**emscripten Asyncify** のおかげで、無限ループの中でもブラウザーが JavaScript イベントを処理できるようにできます。
-
-```cpp
-# include <Siv3D.hpp>
-
-void Main()
-{
-  // 初期化...
-
-  while (System::Update())
-  {
-    // 毎フレーム行う処理
-  }
-}
-```
-
-別の方法として、`s3d::Platform::Web::System::SetMainLoop` を使って、毎フレーム呼ばれる関数を登録することができます。
-
-```cpp
-# include <Siv3D.hpp>
-
-void Main()
-{
-  // 初期化...
-
-  Platform::Web::System::SetMainLoop([&]()
-  {
-    System::Update();
-    // フレームごとの処理..
-  });
-}
-```
-
 ### ファイルを保存するダイアログ
 
 `s3d::Dialog::Save` は常に仮想デバイス "/dev/save" を返します。
