@@ -54,6 +54,7 @@ permalink: /ja/status
 ### Android
 
 | デバイス名 | サポート状況  |
+| :--: | :--: |
 | Samsung Galaxy | ⚠️ Galaxy S9+ (2018, March) 以降 |
 | Google Pixel | ✅ |
 | Google Nexus | 🚫 |
@@ -70,6 +71,7 @@ permalink: /ja/status
 ### iOS
 
 | デバイス名 | サポート状況  |
+| :--: | :--: |
 | iPhone | ⚠️ iPhone8 以降, iOS 15 が必須 |
 | iPad | ⚠️ iOS 15 が必須 |
 

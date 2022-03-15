@@ -54,6 +54,7 @@ Useful Links
 ### Android
 
 | Device Name | Supported |
+| :--: | :--: |
 | Samsung Galaxy | ⚠️ Galaxy S9+ (2018, March) or later |
 | Google Pixel | ✅ |
 | Google Nexus | 🚫 |
@@ -70,6 +71,7 @@ Useful Links
 ### iOS
 
 | Device Name | Supported |
+| :--: | :--: |
 | iPhone | ⚠️ iPhone8 or later, requires iOS 15 |
 | iPad | ⚠️ requires iOS 15 |
 
