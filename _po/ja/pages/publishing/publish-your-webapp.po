@@ -42,8 +42,35 @@ msgid ""
 "s."
 msgstr "これらのファイルを Web サーバに配置することで、WebGL アプリを公開することができます。"
 
+msgid "### Limitations"
+msgstr "### 制限"
+
+msgid "- OpenSiv3D for Web is designed to work with secure context (https://)."
+msgstr "- OpenSiv3D for Web はセキュアコンテクスト上で動作するように設計されています"
+
 msgid "## GitHub Pages"
 msgstr ""
 
 msgid "Dedicated explaination is available in <https://prog-8.com/docs/github-pages>."
 msgstr "詳しくは <https://prog-8.com/docs/github-pages> を参照してください。"
+
+msgid ""
+"- GitHub Pages cannot be used for commecial use\n"
+"- Each uploaded files cannot exceed 50MB and `git-lfs` cannot be used"
+msgstr ""
+"- GitHub Pages は商用目的で利用することはできません\n"
+"- また、アップロードされるファイルは 50MB を超えてはならず、 `git-lfs` は使用できません"
+
+msgid "Please check following official pages."
+msgstr "次のリンクも併せて確認してください。"
+
+msgid ""
+"- [About GitHub Pages](https://docs.github.com/pages/getting-started-with-gith"
+"ub-pages/about-github-pages).\n"
+"- [About large files on GitHub](https://docs.github.com/repositories/working-w"
+"ith-files/managing-large-files/about-large-files-on-github)."
+msgstr ""
+"- [About GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-g"
+"ithub-pages/about-github-pages).\n"
+"- [About large files on GitHub](https://docs.github.com/ja/repositories/workin"
+"g-with-files/managing-large-files/about-large-files-on-github)."
