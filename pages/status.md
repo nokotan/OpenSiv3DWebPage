@@ -40,7 +40,7 @@ Useful Links
 
 | Browser | Supported | Remarks |
 | :--: | :--: | :--: |
-| Safari | ⚠️ | works on Safari 14.0, macOS BigSur; WebAssembly SIMD is not available |
+| Safari | ⚠️ | works on Safari 15.0 or later, macOS Monterey ; WebAssembly SIMD is not available |
 | Google Chrome | ✅ | |
 | Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
 
@@ -53,6 +53,13 @@ Useful Links
 
 ### Android
 
+| Device Name | Supported |
+| Samsung Galaxy | ⚠️ Galaxy S9+ (2018, March) or later |
+| Google Pixel | ✅ |
+| Google Nexus | 🚫 |
+| Sony Xperia | ❔ works on Xperia Z5 (2015, October) |
+| Sharp Aquos | ❔ |
+
 | Browser | Supported | Remarks |
 | :--: | :--: | :--: |
 | Android Browser | ❔ | |
@@ -61,6 +68,10 @@ Useful Links
 | Opera Mobile | ❔ | |
 
 ### iOS
+
+| Device Name | Supported |
+| iPhone | ⚠️ iPhone8 or later, requires iOS 15 |
+| iPad | ⚠️ requires iOS 15 |
 
 | Browser | Supported | Remarks |
 | :--: | :--: | :--: |

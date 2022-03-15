@@ -40,7 +40,7 @@ permalink: /ja/status
 
 | ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
-| Safari | ⚠️ | Safari 14.0, macOS BigSur のみサポート。WebAssembly SIMD は利用不可能です |
+| Safari | ⚠️ | Safari 15.0, macOS Monterey をサポート。WebAssembly SIMD は利用不可能です |
 | Google Chrome | ✅ | |
 | Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
 
@@ -53,6 +53,13 @@ permalink: /ja/status
 
 ### Android
 
+| デバイス名 | サポート状況  |
+| Samsung Galaxy | ⚠️ Galaxy S9+ (2018, March) 以降 |
+| Google Pixel | ✅ |
+| Google Nexus | 🚫 |
+| Sony Xperia | ❔ Xperia Z5 (2015, October) で動作確認 |
+| Sharp Aquos | ❔ |
+
 | ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
 | Android Browser | ❔ | |
@@ -61,6 +68,10 @@ permalink: /ja/status
 | Opera Mobile | ❔ | |
 
 ### iOS
+
+| デバイス名 | サポート状況  |
+| iPhone | ⚠️ iPhone8 以降, iOS 15 が必須 |
+| iPad | ⚠️ iOS 15 が必須 |
 
 | ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
