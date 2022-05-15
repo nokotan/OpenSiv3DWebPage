@@ -26,8 +26,8 @@ msgstr ""
 msgid "## Target"
 msgstr "## 対象読者"
 
-msgid "This setup guide is targeted who uses Visual Studio on Windows."
-msgstr "このセットアップガイドは、Windows 上で Visual Studio を開発環境としてお使いの方を対象にしています。"
+msgid "This setup guide is targeted who uses Visual Studio 2022 on Windows."
+msgstr "このセットアップガイドは、Windows 上で Visual Studio 2022 を開発環境としてお使いの方を対象にしています。"
 
 msgid ""
 "Please refer [setup guide for VSCode](/vscode/overview) if your OS is not Wind"

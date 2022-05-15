@@ -8,7 +8,7 @@ permalink: /building/overview
 
 ## Target
 
-This setup guide is targeted who uses Visual Studio on Windows.
+This setup guide is targeted who uses Visual Studio 2022 on Windows.
 
 Please refer [setup guide for VSCode](/vscode/overview) if your OS is not Windows or you want to use VSCode as the develop environment.
 

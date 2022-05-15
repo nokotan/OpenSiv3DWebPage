@@ -8,11 +8,11 @@ permalink: /ja/building/install-emscripten
 
 ## Emscripten インストーラをダウンロードする
 
-Windows 向け Emscripten 2.0.22 インストーラが [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest) からダウンロードできます。
+Windows 向け Emscripten 3.1.8 インストーラが [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest) からダウンロードできます。
 
 インストーラは次のツールをお使いの開発環境にダウンロードします。
 
-- Emscripten 2.0.22
+- Emscripten 3.1.8
 - Clang Compiler Front End
 - Node
 - Python
