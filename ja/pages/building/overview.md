@@ -8,7 +8,7 @@ permalink: /ja/building/overview
 
 ## 対象読者
 
-このセットアップガイドは、Windows 上で Visual Studio を開発環境としてお使いの方を対象にしています。
+このセットアップガイドは、Windows 上で Visual Studio 2022 を開発環境としてお使いの方を対象にしています。
 
 お使いの OS が Windows でない場合、または、Visual Studio Code を開発環境としてお使いの方は、[Visual Studio Code セットアップガイド](/ja/vscode/overview) を参照してください。
 
