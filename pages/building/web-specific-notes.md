@@ -30,6 +30,14 @@ Open `.vscode/Link.Debug.rsp` or `.vscode/Link.Release.rsp` and add linker prelo
 
 ![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
 
+## No Sounds before User Actions
+
+Some browser does not allow for WebGL apps to make any sounds before some user actions, such as typing keyboards, clicking, or tapping screen.
+
+## Cannot Switch to Fullscreen on iOS devices
+
+iOS devices have no fullscreen support.
+
 ## Features that Differs Other Platforms
 
 ### Network

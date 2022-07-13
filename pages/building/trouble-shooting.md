@@ -75,6 +75,7 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 #### Symptoms
 
 ```log
+1> FileTracker : error FTK1011: could not create the new file tracking log file: C:\..\..\(some file).tlog. The file exists.
 ```
 
 #### Solution
@@ -119,3 +120,16 @@ Uncaught TypeError: GLFW.lastGamepadState is null
 
 - Use local server
   - Double-clicking html file will cause this unexpected behavior.
+
+### Messagebox -1 is shown
+
+#### Symptoms
+
+```log
+-1
+```
+
+#### Solution
+
+- Use debug build
+  - Diagnostic messages are optimized out in Release builds.

@@ -76,6 +76,7 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 #### 症例
 
 ```log
+FileTracker : error FTK1011: 新しいファイル追跡ログ ファイルを作成できませんでした: C:\..\..\(何らかのファイル).tlog。ファイルがあります。
 ```
 
 #### 対処策
@@ -120,3 +121,16 @@ Uncaught TypeError: GLFW.lastGamepadState is null
 
 - ローカルサーバ経由で、該当する HTML ファイルを開いてください
   - HTML ファイルをダブルクリックして、WebGL アプリを起動しようとすると、このエラーが発生します。
+
+### メッセージボックス -1 が表示される
+
+#### 症例
+
+```log
+-1
+```
+
+#### 対処策
+
+- デバッグビルドを有効にしてください
+  - エラーメッセージはリリースビルドでは最適化によって省略されてしまいます。

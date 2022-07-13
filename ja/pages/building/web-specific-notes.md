@@ -30,6 +30,14 @@ OpenSiv3D Web版では、**ユーザのファイルシステムにアクセス�
 
 ![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
 
+## 最初のユーザアクションがあるまで音が鳴らない
+
+一部のブラウザにおいて、キーボードやマウス、タッチスクリーンの入力があるまで、WebGL アプリが音を出せないように制限をかける場合があります。
+
+## iPhone でフルスクリーンに移行できない
+
+iPhone はフルスクリーン表示の機能がありません。
+
 ## ほかプラットフォームとの差異
 
 ### 通信
