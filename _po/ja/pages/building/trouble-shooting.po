@@ -149,8 +149,12 @@ msgstr ""
 "tlog。ファイルがあります。\n"
 "```"
 
-msgid "- Rebuild your project."
-msgstr "- 再度プロジェクトをビルドする。"
+msgid ""
+"- Rebuild your project.\n"
+"  - This problems always occurs on the first time build."
+msgstr ""
+"- 再度プロジェクトをビルドする。\n"
+"  - この現象は1回目のビルドで必ず発生します。"
 
 msgid "### Warning Undefined Symbol `__stack_chk_fail`"
 msgstr "### Undefined Symbol `__stack_chk_fail` という警告が出る"
@@ -164,6 +168,19 @@ msgstr ""
 
 msgid "- This warning is intended. (emscripten has no support for `__stack_chk_fail`)"
 msgstr "- この警告は意図されたものです。(emscripten に `__stack_chk_fail` のサポートがありません。)"
+
+msgid "### Warning Asyncify Addlist Contained a Non-matching Pattern"
+msgstr "### Asyncify Addlist Contained a Non-matching Pattern という警告が出る"
+
+msgid ""
+"```log\n"
+"EMSCRIPTENLINK : warning : Asyncify addlist contained a non-matching pattern: "
+"s3d::Clipboard::GetText(\\*) (s3d::Clipboard::GetText\\28\\*\\29)\n"
+"```"
+msgstr ""
+
+msgid "- This warning is intended."
+msgstr "- この警告は意図されたものです。"
 
 msgid "## Runtime Error"
 msgstr "## 実行時エラー"

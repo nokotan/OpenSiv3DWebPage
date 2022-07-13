@@ -82,6 +82,7 @@ FileTracker : error FTK1011: 新しいファイル追跡ログ ファイルを�
 #### 対処策
 
 - 再度プロジェクトをビルドする。
+  - この現象は1回目のビルドで必ず発生します。
 
 ### Undefined Symbol `__stack_chk_fail` という警告が出る
 
@@ -94,6 +95,18 @@ EMSCRIPTENLINK : warning: undefined symbol: __stack_chk_fail (referenced by top-
 #### 対処策
 
 - この警告は意図されたものです。(emscripten に `__stack_chk_fail` のサポートがありません。)
+
+### Asyncify Addlist Contained a Non-matching Pattern という警告が出る
+
+#### 症例
+
+```log
+EMSCRIPTENLINK : warning : Asyncify addlist contained a non-matching pattern: s3d::Clipboard::GetText(\*) (s3d::Clipboard::GetText\28\*\29)
+```
+
+#### 対処策
+
+- この警告は意図されたものです。
 
 ## 実行時エラー
 

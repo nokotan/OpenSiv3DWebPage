@@ -81,6 +81,7 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 #### Solution
 
 - Rebuild your project.
+  - This problems always occurs on the first time build.
 
 ### Warning Undefined Symbol `__stack_chk_fail`
 
@@ -93,6 +94,18 @@ EMSCRIPTENLINK : warning: undefined symbol: __stack_chk_fail (referenced by top-
 #### Solution
 
 - This warning is intended. (emscripten has no support for `__stack_chk_fail`)
+
+### Warning Asyncify Addlist Contained a Non-matching Pattern
+
+#### Symptoms
+
+```log
+EMSCRIPTENLINK : warning : Asyncify addlist contained a non-matching pattern: s3d::Clipboard::GetText(\*) (s3d::Clipboard::GetText\28\*\29)
+```
+
+#### Solution
+
+- This warning is intended.
 
 ## Runtime Error
 
