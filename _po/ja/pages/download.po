@@ -57,8 +57,5 @@ msgstr "[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) から�
 msgid "## Change Logs"
 msgstr "## 変更履歴"
 
-msgid "### v0.6.0b0"
-msgstr ""
-
-msgid "* Initial Release"
-msgstr "* 初期リリース"
+msgid "Please refer [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)"
+msgstr "[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) を参照してください。"

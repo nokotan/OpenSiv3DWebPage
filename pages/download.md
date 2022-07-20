@@ -20,6 +20,4 @@ Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)
 
 ## Change Logs
 
-### v0.6.0b0
-
-* Initial Release
+Please refer [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)

@@ -81,16 +81,19 @@ msgid ""
 "-files-on-vscode.png)"
 msgstr ""
 
-msgid "## No Sounds before User Actions"
-msgstr "## 最初のユーザアクションがあるまで音が鳴らない"
+msgid "## Known Limitations"
+msgstr "## 既知の制約"
+
+msgid "### No Sounds before User Actions"
+msgstr "### 最初のユーザアクションがあるまで音が鳴らない"
 
 msgid ""
 "Some browser does not allow for WebGL apps to make any sounds before some user"
 " actions, such as typing keyboards, clicking, or tapping screen."
 msgstr "一部のブラウザにおいて、キーボードやマウス、タッチスクリーンの入力があるまで、WebGL アプリが音を出せないように制限をかける場合があります。"
 
-msgid "## Cannot Switch to Fullscreen on iOS devices"
-msgstr "## iPhone でフルスクリーンに移行できない"
+msgid "### Cannot Switch to Fullscreen on iOS devices"
+msgstr "### iPhone でフルスクリーンに移行できない"
 
 msgid "iOS devices have no fullscreen support."
 msgstr "iPhone はフルスクリーン表示の機能がありません。"

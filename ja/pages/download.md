@@ -21,6 +21,4 @@ permalink: /ja/download
 
 ## 変更履歴
 
-### v0.6.0b0
-
-* 初期リリース
+[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) を参照してください。
