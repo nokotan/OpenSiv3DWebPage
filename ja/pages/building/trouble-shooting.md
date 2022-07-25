@@ -9,6 +9,18 @@ permalink: /ja/building/trouble-shooting
 
 ## ビルドエラー
 
+### インテリセンス上のエラー
+
+#### 症例
+
+```log
+typeid を使用する前に <typeinfo> をインクルードする必要があります
+```
+
+#### 対処策
+
+emcc を使ったビルドが成功する限り、これらのエラーは無視できます。
+
 ### UnicodeDecodeError
 
 #### 症例

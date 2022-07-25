@@ -9,6 +9,18 @@ permalink: /building/trouble-shooting
 
 ## Build Errors
 
+### Errors on Intellisense
+
+#### Symptoms
+
+```log
+Include <typeinfo> before using typeid
+```
+
+#### Solution
+
+These errors can be ignored as long as the build with emcc is successful.
+
 ### UnicodeDecodeError
 
 #### Symptoms

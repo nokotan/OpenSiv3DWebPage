@@ -27,20 +27,35 @@ msgstr ""
 msgid "## Build Errors"
 msgstr "## ビルドエラー"
 
-msgid "### UnicodeDecodeError"
-msgstr ""
+msgid "### Errors on Intellisense"
+msgstr "### インテリセンス上のエラー"
 
 msgid "#### Symptoms"
 msgstr "#### 症例"
 
 msgid ""
 "```log\n"
-"UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080\n"
+"Include <typeinfo> before using typeid\n"
 "```"
 msgstr ""
+"```log\n"
+"typeid を使用する前に <typeinfo> をインクルードする必要があります\n"
+"```"
 
 msgid "#### Solution"
 msgstr "#### 対処策"
+
+msgid "These errors can be ignored as long as the build with emcc is successful."
+msgstr "emcc を使ったビルドが成功する限り、これらのエラーは無視できます。"
+
+msgid "### UnicodeDecodeError"
+msgstr ""
+
+msgid ""
+"```log\n"
+"UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080\n"
+"```"
+msgstr ""
 
 msgid "- Specify `PYTHONUTF8=1` in the environment variables."
 msgstr "- 環境変数 `PYTHONUTF8=1` を設定する"
