@@ -8,25 +8,36 @@ permalink: /ja/building/setup-visualstudio
 
 ## Visual Studio のインストール
 
-[Visual Studio のインストール (Windows)](https://zenn.dev/reputeless/books/siv3d-documentation/viewer/requirements#3.1-visual-studio-のインストール-(windows)) の指示に従って、Visual Studio 2022 をインストールします。
+Follow instructions in [Visual Studio Installation Procedure (written Visual Studio のインストール手順について in Japanese)](https://siv3d.github.io/download/windows/#11-system-requirements-for-development).
 
 ## Visual Studio 拡張機能のインストール
 
-Visual Studio が emscripten に付随する emcc を使ってコンパイルを行うようにするために、**Emscripten Extension Pack for Visual Studio** Visual Studio 機能拡張をインストールします。
+Visual Studio が emscripten に付随する emcc を使ってコンパイルを行うようにするために、 Visual Studio 機能拡張 **Emscripten Build Support for Visual Studio 2022** と、Visual Studio 機能拡張 **Emscripten Debugger for Visual Studio** をインストールします。
 
-[Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-extensions) から .vsix パッケージをダウンロードします[^install-via-extension-manager]。
+### Emscripten Build Support for Visual Studio 2022 のインストール
 
-![VisualStudioExtensionInstaller0_ja.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller0_ja.png)
+[Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-build-support) から .vsix パッケージをダウンロードします。
 
-ダウンロードした .vsix パッケージをダブルクリックして実行します。すると、インストールする拡張機能を尋ねるウィンドウが出てくるので、すべてのチェックボックスにチェックがついた状態で **Modify** と書かれたボタンをクリックします。
+![InstallBuildSupport1.png](/assets/img/building/setup-visualstudio/InstallBuildSupport1.png)
 
-![VisualStudioExtensionInstaller1_ja.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller1_ja.png)
+ダウンロードした .vsix パッケージをダブルクリックして実行します。すると、インストールする拡張機能を尋ねるウィンドウが出てくるので、**Install** と書かれたボタンをクリックします。
 
-**Emscripten Debugger for Visual Studio** と **Emscripten Build Support** のインストールが成功していることを確認して、**Close** と書かれたボタンをクリックします。
+![InstallBuildSupport2.png](/assets/img/building/setup-visualstudio/InstallBuildSupport2.png)
 
-![VisualStudioExtensionInstaller2_ja.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller2_ja.png)
+インストールが終わったら、次の画面が表示されます。インストーラを閉じてください。
 
-[^install-via-extension-manager]: Visual Studio において、[ツール] > [拡張機能と更新プログラム] から拡張機能マネージャを開いて、そこで `Emscripten Extension Pack for Visual Studio` と検索しても、この拡張機能をインストールすることができます。
+![InstallBuildSupport3.png](/assets/img/building/setup-visualstudio/InstallBuildSupport3.png)
 
-    ![setup-vs-ext-1.png](/assets/img/building/setup-visualstudio/setup-vs-ext-1.png)
-    ![VisualStudioExtensionManager0.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionManager0.png)
+### Emscripten Debugger for Visual Studio のインストール
+
+[Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-debugger) から .vsix パッケージをダウンロードします。
+
+![InstallDebugger1.png](/assets/img/building/setup-visualstudio/InstallDebugger1.png)
+
+ダウンロードした .vsix パッケージをダブルクリックして実行します。すると、インストールする拡張機能を尋ねるウィンドウが出てくるので、**Install** と書かれたボタンをクリックします。
+
+![InstallDebugger1.png](/assets/img/building/setup-visualstudio/InstallDebugger2.png)
+
+インストールが終わったら、次の画面が表示されます。インストーラを閉じてください。
+
+![InstallDebugger1.png](/assets/img/building/setup-visualstudio/InstallDebugger3.png)

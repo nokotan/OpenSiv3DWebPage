@@ -8,25 +8,36 @@ permalink: /building/setup-visualstudio
 
 ## Install Visual Studio
 
-Follow instructions in [Installing Visual Studio (Windows)](https://zenn.dev/reputeless/books/siv3d-documentation-en/viewer/requirements#3.1-installing-visual-studio-(windows)).
+Follow instructions in [Visual Studio Installation Procedure (written Visual Studio のインストール手順について in Japanese)](https://siv3d.github.io/download/windows/#11-system-requirements-for-development).
 
 ## Install Visual Studio Extension
 
-Install Visual Studio Extension **Emscripten Extension Pack for Visual Studio** so that Visual Studio can handle the compilation of WebGL application with EMCC (Emscripten Compiler Front-End)
+Install Visual Studio Extensions, **Emscripten Build Support for Visual Studio 2022** and **Emscripten Debugger for Visual Studio**, so that Visual Studio can handle the compilation of WebGL application with EMCC (Emscripten Compiler Front-End)
 
-Download the .vsix Package from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-extensions)[^install-via-extension-manager].
+### Install Emscripten Build Support for Visual Studio 2022
 
-![VisualStudioExtensionInstaller0_en.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller0_en.png)
+Download the .vsix Package from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-build-support).
 
-Execute the downloaded .vsix package by double-clicking, and click the **Modify** button in the shown window that confirms installed features.
+![InstallBuildSupport1.png](/assets/img/building/setup-visualstudio/InstallBuildSupport1.png)
 
-![VisualStudioExtensionInstaller1_en.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller1_en.png)
+Execute the downloaded .vsix package by double-clicking, and click the **Install** button in the shown window that confirms installed Visual Studio edition(s).
 
-Check that installation of **Emscripten Debugger for Visual Studio** and **Emscripten Build Support** has been completed, and click the **Close** button to finish setup.
+![InstallBuildSupport2.png](/assets/img/building/setup-visualstudio/InstallBuildSupport2.png)
 
-![VisualStudioExtensionInstaller2_en.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionInstaller2_en.png)
+After installation, following message will shown, then close the install window.
 
-[^install-via-extension-manager]: You can also install this Extension via **Extensions Manager** (found in [Tools] > [Extensions...]), with searching for `Emscripten Extension Pack for Visual Studio`.
+![InstallBuildSupport3.png](/assets/img/building/setup-visualstudio/InstallBuildSupport3.png)
 
-    ![setup-vs-ext-1.png](/assets/img/building/setup-visualstudio/setup-vs-ext-1.png)
-    ![VisualStudioExtensionManager0.png](/assets/img/building/setup-visualstudio/VisualStudioExtensionManager0.png)
+### Install Emscripten Debugger for Visual Studio
+
+Download the .vsix Package from [Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-debugger).
+
+![InstallDebugger1.png](/assets/img/building/setup-visualstudio/InstallDebugger1.png)
+
+Execute the downloaded .vsix package by double-clicking, and click the **Install** button in the shown window that confirms installed Visual Studio edition(s).
+
+![InstallDebugger1.png](/assets/img/building/setup-visualstudio/InstallDebugger2.png)
+
+After installation, following message will shown, then close the install window.
+
+![InstallDebugger1.png](/assets/img/building/setup-visualstudio/InstallDebugger3.png)

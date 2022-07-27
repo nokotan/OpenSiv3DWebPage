@@ -23,7 +23,7 @@ Windows 向け Emscripten 3.1.8 インストーラが [GitHub Releases](https://
 
 Assets リスト中の `Emscripten.exe` をクリックしてダウンロードします。
 
-![EmscriptenInstallerInGitHub](/assets/img/building/install-emscripten/emscripten-installer-github.png)
+![EmscriptenInstallerGitHub](/assets/img/building/install-emscripten/EmscriptenInstallerGitHub.png)
 
 ## Emscripten インストーラを起動する
 
@@ -31,24 +31,33 @@ Assets リスト中の `Emscripten.exe` をクリックしてダウンロード�
 
 > 次の画面が出て、インストーラーが起動できない時は、\[詳細情報\] を押すと \[実行\] ボタンが表示されます。
 >
-> ![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
+> ![SmartScreen1](/assets/img/building/install-siv3d/SmartScreenGuard1.png)
 > ![SmartScreen2](/assets/img/building/install-emscripten/smart-screen-guard-again.png)
 {:.info}
 
 セットアップに使用する言語を選択する画面では、そのまま **OK** をクリックします。
 
-![OpenSiv3DforWebInstaller0_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller0_ja.png)
+![EmscriptenInstaller1.png](/assets/img/building/install-emscripten/EmscriptenInstaller1.png)
 
 インストール先を指定する画面では、そのまま **次へ** をクリックします。なお、インストールされる先のフォルダを変更しても構いません。
 
-![OpenSiv3DforWebInstaller1_ja.png](/assets/img/building/install-emscripten/emscripten-installer-1-ja.png)
+![EmscriptenInstaller2.png](/assets/img/building/install-emscripten/EmscriptenInstaller2.png)
 
 インストール準備完了の画面では、**インストール** をクリックします。
 
-![OpenSiv3DforWebInstaller2_ja.png](/assets/img/building/install-emscripten/emscripten-installer-2-ja.png)
+![EmscriptenInstaller3.png](/assets/img/building/install-emscripten/EmscriptenInstaller3.png)
 
 Emscripten のインストールには 15 分から 1 時間かかります。
 
 セットアップが完了したら、次の画面が出てくるので、**完了** をクリックして、インストーラを閉じます。
 
-![OpenSiv3DforWebInstaller4_ja.png](/assets/img/building/install-emscripten/emscripten-installer-3-ja.png)
+![EmscriptenInstaller4.png](/assets/img/building/install-emscripten/EmscriptenInstaller4.png)
+
+>
+> インストーラを閉じた後、「Windows セキュリティが、Microsoft Defender ウイルス対策で脅威が見つかりました。、
+> または「`Emscripten.exe` はセキュリティ上の脅威です。」と報告する場合があります。
+> この報告は無視してください。
+>
+> ![EmscriptenInstaller5.png](/assets/img/building/install-emscripten/EmscriptenInstaller5.png)
+>
+{:.info}

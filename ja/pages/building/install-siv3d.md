@@ -21,22 +21,22 @@ OpenSiv3D for Web のインストーラは次の処理を行います。
 
 > 次の画面が出て、インストーラーが起動できない時は、\[詳細情報\] を押すと \[実行\] ボタンが表示されます。
 >
-> ![SmartScreen1](/assets/img/building/setup-visualstudio/smart-screen-guard-1.png)
-> ![SmartScreen2](/assets/img/building/setup-visualstudio/smart-screen-guard-2.png)
+> ![SmartScreen1](/assets/img/building/install-siv3d/SmartScreenGuard1.png)
+> ![SmartScreen2](/assets/img/building/install-siv3d/SmartScreenGuard2.png)
 {:.info}
 
 セットアップに使用する言語を選択する画面では、そのまま **OK** をクリックします。
 
-![OpenSiv3DforWebInstaller0_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller0_ja.png)
+![OpenSiv3DforWebInstaller0.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller0.png)
 
 インストール先を指定する画面では、そのまま **次へ** をクリックします。なお、インストールされる先のフォルダを変更しても構いません。
 
-![OpenSiv3DforWebInstaller1_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller1_ja.png)
+![OpenSiv3DforWebInstaller1.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller1.png)
 
 インストール準備完了の画面では、**インストール** をクリックします。
 
-![OpenSiv3DforWebInstaller2_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller2_ja.png)
+![OpenSiv3DforWebInstaller2.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller2.png)
 
 セットアップが完了したら、次の画面が出てくるので、**完了** をクリックして、インストーラを閉じます。
 
-![OpenSiv3DforWebInstaller4_ja.png](/assets/img/building/setup-visualstudio/OpenSiv3DforWebInstaller4_ja.png)
+![OpenSiv3DforWebInstaller3.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller3.png)
