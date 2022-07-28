@@ -22,6 +22,7 @@ Windows 向け Emscripten 3.1.8 インストーラが [GitHub Releases](https://
 </details>
 
 Assets リスト中の `Emscripten.exe` をクリックしてダウンロードします。
+お使いのネットワークによっては、ダウンロードに10分以上かかることがあります。
 
 ![EmscriptenInstallerGitHub](/assets/img/building/install-emscripten/EmscriptenInstallerGitHub.png)
 

@@ -21,7 +21,9 @@ This Installer will download following tools in your develop environment.
 
 </details>
 
-Click `Emscripten.exe` in the assets list to download.
+Click `EmscriptenOffline.exe` in the assets list to download.
+Downloading `EmscriptenOffline.exe` will take more than 10 minutes depending on your network environment.
+Please be patient.
 
 ![EmscriptenInstallerGitHub](/assets/img/building/install-emscripten/EmscriptenInstallerGitHub.png)
 
