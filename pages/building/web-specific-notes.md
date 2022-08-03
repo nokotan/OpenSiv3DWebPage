@@ -6,31 +6,35 @@ title: Web Specific Notes
 permalink: /building/web-specific-notes
 ---
 
-## Supported Features
+## Table of Contents
+
+{% include toc.html %}
+
+## Known Limitations
+
+### Supported Features
 
 With "OpenSiv3D for Web," you can use the almost features which is supported in OpenSiv3D for Linux.
 For details, check out [Implementation Status](/status)
 
-## File Systems
+### File Systems
 
 Your WebGL apps **cannot access any files on users' file system**.
 
 Those files required on running your WebGL apps, **can be bundled on building** with emcc's `--preload` option.
 These bundled files are loaded into a virtual file system; then you can access these files on ordinal way.
 
-### Visual Studio
+#### Visual Studio
 
 Open the project configuration window, and add preloaded file path into `Preloaded Files` (found in [Emscripten Linker] > [Input]) in the project configuration.
 
 ![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
 
-### VSCode
+#### VSCode
 
 Open `.vscode/Link.Debug.rsp` or `.vscode/Link.Release.rsp` and add linker preloaded files option.
 
 ![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
-
-## Known Limitations
 
 ### No Sounds before User Actions
 
@@ -76,6 +80,20 @@ Make sure to use secured websocket server in secured (https://) pages.
 
 ### Multi-Threading
 
+OpenSiv3D for Web is designed to be run single-threaded,
+so **AsyncTask** or **std::thread** will not work as you expected.
+
+```cpp
+  AsyncTask task
+  {
+    [&]
+    {
+      std::this_thread::sleep_for(10s);
+      Console << U"Done.";
+    }
+  }
+```
+
 ### Unsupported Texture Format
 
 In mobile browsers, generating textures of format `TextureFormat::R32_Float` will be failed due to the mobile hardware limitation.
@@ -114,11 +132,11 @@ if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
 `s3d::Dialog::Save` will always return "/dev/save" pseudo device,
 which means that you cannot query users which file format they want to download.
 
-## Features that uses AsyncTask
+### Features that uses AsyncTask
 
 Some features, such as AudioDecoding or Clipboard, blocks the main loop for several seconds.
 
-### Audio Decoding
+#### Audio Decoding
 
 `s3d::Platform::Web::AudioProcessing::DecodeAudioFromFile` returns `AsyncTask<Wave>`.
 
@@ -139,7 +157,7 @@ Some features, such as AudioDecoding or Clipboard, blocks the main loop for seve
   }
 ```
 
-### File Open Dialog
+#### File Open Dialog
 
 `s3d::Platforms::Web::Dialog::Open**` returns `AsyncTask<**>`.
 
@@ -158,7 +176,7 @@ Some features, such as AudioDecoding or Clipboard, blocks the main loop for seve
   }
 ```
 
-### Clipboard
+#### Clipboard
 
 Only test copying and pasting are supported.
 (and in FireFox, this feature is disallowed.)

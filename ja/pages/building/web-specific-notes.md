@@ -6,31 +6,35 @@ title: Web 固有の注意点
 permalink: /ja/building/web-specific-notes
 ---
 
-## サポートされる機能
+## もくじ
+
+{% include toc.html %}
+
+## 既知の制約
+
+### サポートされる機能
 
 OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専用の関数を除く) が使用できます。
 詳細は [実装状況](/ja/status) を確認してください。
 
-## ファイルシステム
+### ファイルシステム
 
 OpenSiv3D Web版では、**ユーザのファイルシステムにアクセスすることができません**。
 
 実行時に必要なファイルは、emscirpten の `--preload` オプションを使って、**ビルド時にあらかじめバンドルする必要**があります。
 バンドルされたファイルは、起動時に仮想ファイルシステムに読み込まれ、通常のファイルアクセス関数で読み書きができるようになります。
 
-### Visual Studio
+#### Visual Studio
 
 [プロジェクト] > [プロパティ] から、プロジェクト設定を開きます。プロジェクト設定の、[Emscripten リンカ] > [入力] > [プリロードされるリソースファイル] に、仮想ファイルシステムに追加したいファイルまたはフォルダのパスを、`(パス)@(仮想ファイルシステム上でのフルパス)` の形式で追加します。
 
 ![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
 
-### VSCode
+#### VSCode
 
 `.vscode/Link.Debug.rsp` または `.vscode/Link.Release.rsp` を開き、プリロードされるファイルまたはフォルダのパスを、`--preload-file (パス)@(仮想ファイルシステム上でのフルパス)`の形式で追記します。
 
 ![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
-
-## 既知の制約
 
 ### 最初のユーザアクションがあるまで音が鳴らない
 
@@ -76,6 +80,20 @@ iPhone はフルスクリーン表示の機能がありません。
 
 ### マルチスレッド
 
+OpenSiv3D for Web は、シングルスレッドで動作するように設計されています。
+そのため、**AsyncTask** や **std::thread** は期待した動作をしません。
+
+```cpp
+  AsyncTask task
+  {
+    [&]
+    {
+      std::this_thread::sleep_for(10s);
+      Console << U"Done.";
+    }
+  }
+```
+
 ### サポートされないテクスチャフォーマット
 
 モバイル環境では、ハードウェアの制約上、フォーマットが `TextureFormat::R32_Float` のテクスチャを生成することができません。
@@ -114,11 +132,11 @@ if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
 `s3d::Dialog::Save` は常に仮想デバイス "/dev/save" を返します。
 これはつまり、ユーザがどの形式でファイルを保存しようとしているかを問い合わせることはできないということを意味します。
 
-## AsyncTask を使う機能
+### AsyncTask を使う機能
 
 AudioDecoding やクリップボードなどの、一部の機能は、数秒の間メインループをブロックする可能性があります。
 
-### 音声ファイルのデコード
+#### 音声ファイルのデコード
 
 `s3d::Platform::Web::AudioProcessing::DecodeAudioFromFile` が `AsyncTask<Wave>` を返します。
 
@@ -139,7 +157,7 @@ AudioDecoding やクリップボードなどの、一部の機能は、数秒の
   }
 ```
 
-### ファイルを開くダイアログ
+#### ファイルを開くダイアログ
 
 `s3d::Platforms::Web::Dialog::Open**` が `AsyncTask<**>` を返します。
 
@@ -158,7 +176,7 @@ AudioDecoding やクリップボードなどの、一部の機能は、数秒の
   }
 ```
 
-### クリップボード
+#### クリップボード
 
 テキストのコピーと貼り付けのみサポートされています。
 (そして、FireFox ではこの機能は無効化されています。)

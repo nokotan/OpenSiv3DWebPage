@@ -23,8 +23,17 @@ msgstr ""
 "permalink: /ja/building/web-specific-notes\n"
 "---"
 
-msgid "## Supported Features"
-msgstr "## サポートされる機能"
+msgid "## Table of Contents"
+msgstr "## もくじ"
+
+msgid "{% include toc.html %}"
+msgstr ""
+
+msgid "## Known Limitations"
+msgstr "## 既知の制約"
+
+msgid "### Supported Features"
+msgstr "### サポートされる機能"
 
 msgid ""
 "With \"OpenSiv3D for Web,\" you can use the almost features which is supported i"
@@ -34,8 +43,8 @@ msgstr ""
 "OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専用の関数を除く) が使用できます。\n"
 "詳細は [実装状況](/ja/status) を確認してください。"
 
-msgid "## File Systems"
-msgstr "## ファイルシステム"
+msgid "### File Systems"
+msgstr "### ファイルシステム"
 
 msgid "Your WebGL apps **cannot access any files on users' file system**."
 msgstr "OpenSiv3D Web版では、**ユーザのファイルシステムにアクセスすることができません**。"
@@ -49,7 +58,7 @@ msgstr ""
 "実行時に必要なファイルは、emscirpten の `--preload` オプションを使って、**ビルド時にあらかじめバンドルする必要**があります。\n"
 "バンドルされたファイルは、起動時に仮想ファイルシステムに読み込まれ、通常のファイルアクセス関数で読み書きができるようになります。"
 
-msgid "### Visual Studio"
+msgid "#### Visual Studio"
 msgstr ""
 
 msgid ""
@@ -66,7 +75,7 @@ msgid ""
 "preload-files-on-visual-studio.png)"
 msgstr ""
 
-msgid "### VSCode"
+msgid "#### VSCode"
 msgstr ""
 
 msgid ""
@@ -80,9 +89,6 @@ msgid ""
 "![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload"
 "-files-on-vscode.png)"
 msgstr ""
-
-msgid "## Known Limitations"
-msgstr "## 既知の制約"
 
 msgid "### No Sounds before User Actions"
 msgstr "### 最初のユーザアクションがあるまで音が鳴らない"
@@ -165,6 +171,26 @@ msgstr ""
 msgid "### Multi-Threading"
 msgstr "### マルチスレッド"
 
+msgid ""
+"OpenSiv3D for Web is designed to be run single-threaded,\n"
+"so **AsyncTask** or **std::thread** will not work as you expected."
+msgstr ""
+"OpenSiv3D for Web は、シングルスレッドで動作するように設計されています。\n"
+"そのため、**AsyncTask** や **std::thread** は期待した動作をしません。"
+
+msgid ""
+"```cpp\n"
+"  AsyncTask task\n"
+"  {\n"
+"    [&]\n"
+"    {\n"
+"      std::this_thread::sleep_for(10s);\n"
+"      Console << U\"Done.\";\n"
+"    }\n"
+"  }\n"
+"```"
+msgstr ""
+
 msgid "### Unsupported Texture Format"
 msgstr "### サポートされないテクスチャフォーマット"
 
@@ -239,16 +265,16 @@ msgstr ""
 "`s3d::Dialog::Save` は常に仮想デバイス \"/dev/save\" を返します。\n"
 "これはつまり、ユーザがどの形式でファイルを保存しようとしているかを問い合わせることはできないということを意味します。"
 
-msgid "## Features that uses AsyncTask"
-msgstr "## AsyncTask を使う機能"
+msgid "### Features that uses AsyncTask"
+msgstr "### AsyncTask を使う機能"
 
 msgid ""
 "Some features, such as AudioDecoding or Clipboard, blocks the main loop for se"
 "veral seconds."
 msgstr "AudioDecoding やクリップボードなどの、一部の機能は、数秒の間メインループをブロックする可能性があります。"
 
-msgid "### Audio Decoding"
-msgstr "### 音声ファイルのデコード"
+msgid "#### Audio Decoding"
+msgstr "#### 音声ファイルのデコード"
 
 msgid ""
 "`s3d::Platform::Web::AudioProcessing::DecodeAudioFromFile` returns `AsyncTask<"
@@ -294,8 +320,8 @@ msgstr ""
 "  }\n"
 "```"
 
-msgid "### File Open Dialog"
-msgstr "### ファイルを開くダイアログ"
+msgid "#### File Open Dialog"
+msgstr "#### ファイルを開くダイアログ"
 
 msgid "`s3d::Platforms::Web::Dialog::Open**` returns `AsyncTask<**>`."
 msgstr "`s3d::Platforms::Web::Dialog::Open**` が `AsyncTask<**>` を返します。"
@@ -332,8 +358,8 @@ msgstr ""
 "  }\n"
 "```"
 
-msgid "### Clipboard"
-msgstr "### クリップボード"
+msgid "#### Clipboard"
+msgstr "#### クリップボード"
 
 msgid ""
 "Only test copying and pasting are supported.\n"
