@@ -135,6 +135,7 @@ which means that you cannot query users which file format they want to download.
 ### Features that uses AsyncTask
 
 Some features, such as AudioDecoding or Clipboard, blocks the main loop for several seconds.
+Using platform-specific functions that returns `AsyncTask` can keep the main thread from being blocked.
 
 #### Audio Decoding
 
