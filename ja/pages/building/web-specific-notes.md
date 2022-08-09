@@ -36,6 +36,25 @@ OpenSiv3D Web版では、**ユーザのファイルシステムにアクセス�
 
 ![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
 
+### ファイルを保存するダイアログ
+
+`s3d::Dialog::SaveFile` は常に無効値を返します。
+仮想ファイルシステムからファイルをダウンロードするには、`s3d::Platform::Web::Dialog::DownloadFile` を使います。
+
+```cpp
+  //
+  // Web 版ではサポートされない書き方
+  //
+  // if (auto path = Dialog::SaveFile())
+  // {
+  //   image.save(*path);
+  // }
+  //
+
+  image.save(U"a.png");
+  Platform::Web::Dialog::DownloadFile(U"a.png");
+```
+
 ### 最初のユーザアクションがあるまで音が鳴らない
 
 一部のブラウザにおいて、キーボードやマウス、タッチスクリーンの入力があるまで、WebGL アプリが音を出せないように制限をかける場合があります。
@@ -126,11 +145,6 @@ if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
 ```
 
 ## 他プラットフォームと異なる書き方ができる機能
-
-### ファイルを保存するダイアログ
-
-`s3d::Dialog::Save` は常に仮想デバイス "/dev/save" を返します。
-これはつまり、ユーザがどの形式でファイルを保存しようとしているかを問い合わせることはできないということを意味します。
 
 ### AsyncTask を使う機能
 

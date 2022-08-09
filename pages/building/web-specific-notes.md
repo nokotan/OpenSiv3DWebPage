@@ -36,6 +36,25 @@ Open `.vscode/Link.Debug.rsp` or `.vscode/Link.Release.rsp` and add linker prelo
 
 ![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
 
+### File Save Dialog
+
+`s3d::Dialog::SaveFile` always returns `None`.
+Please use `s3d::Platform::Web::Dialog::DownloadFile` to download files that stored in the virtual file system.
+
+```cpp
+  //
+  // Not Supported in Web. 
+  //
+  // if (auto path = Dialog::SaveFile())
+  // {
+  //   image.save(*path);
+  // }
+  //
+
+  image.save(U"a.png");
+  Platform::Web::Dialog::DownloadFile(U"a.png");
+```
+
 ### No Sounds before User Actions
 
 Some browser does not allow for WebGL apps to make any sounds before some user actions, such as typing keyboards, clicking, or tapping screen.
@@ -126,11 +145,6 @@ if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
 ```
 
 ## Features that can be Written Differently from Other Platforms
-
-### File Save Dialog
-
-`s3d::Dialog::Save` will always return "/dev/save" pseudo device,
-which means that you cannot query users which file format they want to download.
 
 ### Features that uses AsyncTask
 
