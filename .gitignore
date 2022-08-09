@@ -9,3 +9,8 @@ _po/*.po
 _po/**/*.edit.po
 _po/**/*.pot
 _po/**/*.time_stamp
+
+node_modules
+__kvs_version__
+proofdict
+proofdict-lastUpdated

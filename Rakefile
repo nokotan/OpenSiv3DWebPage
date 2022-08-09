@@ -8,6 +8,7 @@ Jekyll::Task::I18n.define do |task|
   task.files = Rake::FileList["**/*.md"]
   # Remove internal files from target contents.
   task.files -= Rake::FileList["_*/**/*.md"]
+  task.files -= Rake::FileList["node_modules/**/*.md"]
   # Remove translated files from target contents.
   task.locales.each do |locale|
     task.files -= Rake::FileList["#{locale}/**/*.md"]
