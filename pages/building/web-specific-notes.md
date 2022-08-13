@@ -39,7 +39,7 @@ Open `.vscode/Link.Debug.rsp` or `.vscode/Link.Release.rsp` and add linker prelo
 ### File Save Dialog
 
 `s3d::Dialog::SaveFile` always returns `None`.
-Please use `s3d::Platform::Web::Dialog::DownloadFile` to download files that stored in the virtual file system.
+Please use `s3d::Platform::Web::DownloadFile` to download files that stored in the virtual file system.
 
 ```cpp
   //

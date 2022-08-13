@@ -39,7 +39,7 @@ OpenSiv3D Web版では、**ユーザのファイルシステムにアクセス�
 ### ファイルを保存するダイアログ
 
 `s3d::Dialog::SaveFile` は常に無効値を返します。
-仮想ファイルシステムからファイルをダウンロードするには、`s3d::Platform::Web::Dialog::DownloadFile` を使います。
+仮想ファイルシステムからファイルをダウンロードするには、`s3d::Platform::Web::DownloadFile` を使います。
 
 ```cpp
   //
