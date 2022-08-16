@@ -17,6 +17,7 @@
     - url: /building/running-code-with-visualstudio
     - url: /building/trouble-shooting
     - url: /building/web-specific-notes
+    - url: /building/web-specific-functions
 
 - title: Building First Apps on VSCode
   url: /vscode

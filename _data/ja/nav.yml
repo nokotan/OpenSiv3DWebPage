@@ -17,6 +17,7 @@
     - url: /ja/building/running-code-with-visualstudio
     - url: /ja/building/trouble-shooting
     - url: /ja/building/web-specific-notes
+    - url: /ja/building/web-specific-functions
 
 - title: はじめての WebGL (Visual Studio Code)
   url: /ja/vscode
