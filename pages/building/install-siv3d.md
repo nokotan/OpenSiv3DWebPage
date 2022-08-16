@@ -27,16 +27,16 @@ After downloading the installer, double-click the installer to execute installat
 
 Click the **OK** button in the window that selecting the language used during setup.
 
-![OpenSiv3DforWebInstaller0.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller0.png)
+![OpenSiv3DforWebInstaller0.png](/assets/img/building/install-siv3d/OpenSiv3DForWebInstaller0.png)
 
 Select the destination folder as you like where assets are installed in, and click the **Next** button.
 
-![OpenSiv3DforWebInstaller1.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller1.png)
+![OpenSiv3DforWebInstaller1.png](/assets/img/building/install-siv3d/OpenSiv3DForWebInstaller1.png)
 
 Click the **Install** button in the window that confirms the installation options.
 
-![OpenSiv3DforWebInstaller2.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller2.png)
+![OpenSiv3DforWebInstaller2.png](/assets/img/building/install-siv3d/OpenSiv3DForWebInstaller2.png)
 
 The window will be shown when the installation has been completed, and click the **Finish** button to terminate the installation process.
 
-![OpenSiv3DforWebInstaller3.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller3.png)
+![OpenSiv3DforWebInstaller3.png](/assets/img/building/install-siv3d/OpenSiv3DForWebInstaller3.png)

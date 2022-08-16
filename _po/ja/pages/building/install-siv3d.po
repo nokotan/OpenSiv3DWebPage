@@ -69,7 +69,7 @@ msgid ""
 msgstr "セットアップに使用する言語を選択する画面では、そのまま **OK** をクリックします。"
 
 msgid ""
-"![OpenSiv3DforWebInstaller0.png](/assets/img/building/install-siv3d/OpenSiv3Df"
+"![OpenSiv3DforWebInstaller0.png](/assets/img/building/install-siv3d/OpenSiv3DF"
 "orWebInstaller0.png)"
 msgstr ""
 
@@ -79,7 +79,7 @@ msgid ""
 msgstr "インストール先を指定する画面では、そのまま **次へ** をクリックします。なお、インストールされる先のフォルダを変更しても構いません。"
 
 msgid ""
-"![OpenSiv3DforWebInstaller1.png](/assets/img/building/install-siv3d/OpenSiv3Df"
+"![OpenSiv3DforWebInstaller1.png](/assets/img/building/install-siv3d/OpenSiv3DF"
 "orWebInstaller1.png)"
 msgstr ""
 
@@ -89,7 +89,7 @@ msgid ""
 msgstr "インストール準備完了の画面では、**インストール** をクリックします。"
 
 msgid ""
-"![OpenSiv3DforWebInstaller2.png](/assets/img/building/install-siv3d/OpenSiv3Df"
+"![OpenSiv3DforWebInstaller2.png](/assets/img/building/install-siv3d/OpenSiv3DF"
 "orWebInstaller2.png)"
 msgstr ""
 
@@ -99,6 +99,6 @@ msgid ""
 msgstr "セットアップが完了したら、次の画面が出てくるので、**完了** をクリックして、インストーラを閉じます。"
 
 msgid ""
-"![OpenSiv3DforWebInstaller3.png](/assets/img/building/install-siv3d/OpenSiv3Df"
+"![OpenSiv3DforWebInstaller3.png](/assets/img/building/install-siv3d/OpenSiv3DF"
 "orWebInstaller3.png)"
 msgstr ""

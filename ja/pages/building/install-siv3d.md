@@ -27,16 +27,16 @@ OpenSiv3D for Web のインストーラは次の処理を行います。
 
 セットアップに使用する言語を選択する画面では、そのまま **OK** をクリックします。
 
-![OpenSiv3DforWebInstaller0.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller0.png)
+![OpenSiv3DforWebInstaller0.png](/assets/img/building/install-siv3d/OpenSiv3DForWebInstaller0.png)
 
 インストール先を指定する画面では、そのまま **次へ** をクリックします。なお、インストールされる先のフォルダを変更しても構いません。
 
-![OpenSiv3DforWebInstaller1.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller1.png)
+![OpenSiv3DforWebInstaller1.png](/assets/img/building/install-siv3d/OpenSiv3DForWebInstaller1.png)
 
 インストール準備完了の画面では、**インストール** をクリックします。
 
-![OpenSiv3DforWebInstaller2.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller2.png)
+![OpenSiv3DforWebInstaller2.png](/assets/img/building/install-siv3d/OpenSiv3DForWebInstaller2.png)
 
 セットアップが完了したら、次の画面が出てくるので、**完了** をクリックして、インストーラを閉じます。
 
-![OpenSiv3DforWebInstaller3.png](/assets/img/building/install-siv3d/OpenSiv3DforWebInstaller3.png)
+![OpenSiv3DforWebInstaller3.png](/assets/img/building/install-siv3d/OpenSiv3DForWebInstaller3.png)
