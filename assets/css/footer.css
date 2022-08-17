@@ -7,6 +7,22 @@ footer {
   display: flex;
 }
 
+@media (max-width: 48em) {
+  footer {
+    flex-flow: column;
+  }
+}
+
 footer span {
   flex-grow: 1;
+}
+
+@media (max-width: 48em) {
+  footer span {
+    margin: 0.2em 0px 0.2em 0px;
+  }
+
+  footer span .button {
+    margin-bottom: unset;
+  }
 }

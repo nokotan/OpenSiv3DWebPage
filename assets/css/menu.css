@@ -53,6 +53,24 @@ appears on the left side of the page.
     background: transparent;
   }
 
+  #menu .pure-menu {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+  }
+
+  #menu .pure-menu .pure-menu-heading {
+    flex: none;
+  }
+
+  #menu .pure-menu .pure-menu-list {
+    flex: auto;
+  }
+
+  #menu .pure-menu-item {
+    height: unset;
+  }
+
   /*
   Add that light border to separate items into groups.
   */
@@ -207,9 +225,9 @@ Hides the menu at `48em`, but modify this based on your app's needs.
   }
 }
 
-.menu-bottom {
-  position: absolute;
-  bottom: 0px;
+#menu .pure-menu .menu-bottom {
+  flex: none;
+  justify-content: flex-end; 
   width: 100%;
 }
 
