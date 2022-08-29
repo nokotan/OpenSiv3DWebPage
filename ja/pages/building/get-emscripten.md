@@ -55,7 +55,7 @@ Emscripten のインストールには 15 分から 1 時間かかります。
 ![EmscriptenInstaller4.png](/assets/img/building/install-emscripten/EmscriptenInstaller4.png)
 
 >
-> インストーラを閉じた後、「Windows セキュリティが、Microsoft Defender ウイルス対策で脅威が見つかりました。、
+> インストーラを閉じた後、「Windows セキュリティが、Microsoft Defender ウイルス対策で脅威が見つかりました。」
 > または「`Emscripten.exe` はセキュリティ上の脅威です。」と報告する場合があります。
 > この報告は無視してください。
 >

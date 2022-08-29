@@ -104,7 +104,7 @@ msgstr "### 音声ファイルのデコード"
 
 msgid ""
 "Decoding .mp3 and .aac with Audio constructor is not supported.\n"
-"Use `s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` that returns `"
+"Use `s3d::Platforms::Web::AudioDecoder::DecodeAudioFromFile` that returns `"
 "AsyncTask<Audio>`."
 msgstr ""
 "Audio コンストラクタを使った .mp3 と .aac ファイルのデコードはサポートされていません。\n"

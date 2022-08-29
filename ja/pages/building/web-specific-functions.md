@@ -62,15 +62,15 @@ AudioDecoding やクリップボードなどの、一部の機能は、数秒の
 
 ### 音声ファイルのデコード
 
-`s3d::Platform::Web::AudioProcessing::DecodeAudioFromFile` が `AsyncTask<Wave>` を返します。
+`s3d::Platform::Web::AudioDecoder::DecodeAudioFromFile` が `AsyncTask<Wave>` を返します。
 
 <!-- TODO: hungs with asyncify -->
 
 ```cpp
   // 
-  // 数秒間ブロックする可能性のある書き方
+  // Maybe blocks for several seconds
   //
-  // Audio audio { "/example/test.mp3" };
+  // Audio audio { U"/example/test.mp3" };
   Audio audio;
   AsyncTask<Wave> audioTask = s3d::Platform::Web::AudioDecoder::DecodeFromFile(U"/example/test.mp3");
 

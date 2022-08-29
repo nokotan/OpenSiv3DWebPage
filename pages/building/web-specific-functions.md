@@ -62,7 +62,7 @@ Using platform-specific functions that returns `AsyncTask` can keep the main thr
 
 ### Audio Decoding
 
-`s3d::Platform::Web::AudioProcessing::DecodeAudioFromFile` returns `AsyncTask<Wave>`.
+`s3d::Platform::Web::AudioDecoder::DecodeAudioFromFile` returns `AsyncTask<Wave>`.
 
 <!-- TODO: hungs with asyncify -->
 
@@ -70,7 +70,7 @@ Using platform-specific functions that returns `AsyncTask` can keep the main thr
   // 
   // Maybe blocks for several seconds
   //
-  // Audio audio { "/example/test.mp3" };
+  // Audio audio { U"/example/test.mp3" };
   Audio audio;
   AsyncTask<Wave> audioTask = s3d::Platform::Web::AudioDecoder::DecodeFromFile(U"/example/test.mp3");
 
