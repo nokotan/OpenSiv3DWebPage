@@ -8,12 +8,12 @@ permalink: /ja/download
 
 ### Windows
 
-{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.5/OpenSiv3D-Installer-wasm.exe" text="OpenSiv3D for Web インストーラをダウンロード" %}
-{% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.5/OpenSiv3D-wasm.zip" text="OpenSiv3D for Web.zip をダウンロード" %}
+{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.5.1/OpenSiv3D-Installer-wasm.exe" text="Download OpenSiv3D for Web Installer" %}
+{% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.5.1/OpenSiv3D-wasm.zip" text="Download OpenSiv3D for Web.zip" %}
 
 ### macOS, Linux
 
-{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.5/OpenSiv3D-wasm.tgz" text="OpenSiv3D for Web.tgz をダウンロード" %}
+{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.5.1/OpenSiv3D-wasm.tgz" text="Download OpenSiv3D for Web.tgz" %}
 
 ### 過去のバージョン
 

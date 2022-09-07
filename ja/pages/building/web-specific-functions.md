@@ -55,10 +55,34 @@ permalink: /ja/building/web-specific-functions
   Platform::Web::DownloadFile(U"a.png");
 ```
 
+## サーバから追加のアセットをダウンロードする
+
+```cpp
+  // Download 'a.png' into the virtual file system with the name 'windmill.png'
+  Platform::Web::FetchFileIfNotExists(U"example/windmill.png");
+```
+
 ## AsyncTask を使うことのできる機能
 
 AudioDecoding やクリップボードなどの、一部の機能は、数秒の間メインループをブロックする可能性があります。
 `AsyncTask` を返り値にもつ、プラットフォーム固有の関数を使うことで、メインループがブロックされないようにすることができます。
+
+### AsyncTask を待機する
+
+```cpp
+  // 
+  // 数秒間ブロックする可能性のある書き方
+  //
+  // Audio audio { U"/example/test.mp3" };
+  Audio audio;
+  AsyncTask<Wave> audioTask = s3d::Platform::Web::AudioDecoder::DecodeFromFile(U"/example/test.mp3");
+
+  // audioTask の準備ができるまで同期的に待機
+  if (auto resolvedAudio = s3d::Platform::Web::System::WaitForFutureResolved(audioTask))
+  {
+    audio = *resolvedAudio;
+  }
+```
 
 ### 音声ファイルのデコード
 
@@ -68,7 +92,7 @@ AudioDecoding やクリップボードなどの、一部の機能は、数秒の
 
 ```cpp
   // 
-  // Maybe blocks for several seconds
+  // 数秒間ブロックする可能性のある書き方
   //
   // Audio audio { U"/example/test.mp3" };
   Audio audio;

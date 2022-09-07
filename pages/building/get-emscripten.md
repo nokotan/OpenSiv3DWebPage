@@ -8,13 +8,13 @@ permalink: /building/get-emscripten
 
 ## Download Emscripten Installer
 
-Emscripten 3.1.8 Installer for Windows is available at [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest).
+Emscripten 3.1.20 Installer for Windows is available at [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest).
 
 <details markdown="block"><summary>What the installer will perform</summary>
 
 This Installer will download following tools in your develop environment.
 
-- Emscripten 3.1.8
+- Emscripten 3.1.20
 - Clang Compiler Front End
 - Node
 - Python
@@ -31,7 +31,7 @@ Please be patient.
 
 After downloading the installer, double-click the installer to execute installation process.
 
-> Smart Screen may prevents launching Emscripten 3.1.8 Installer, click \[detail\] and \[run\] button will be shown.
+> Smart Screen may prevents launching Emscripten 3.1.20 Installer, click \[detail\] and \[run\] button will be shown.
 >
 > ![SmartScreen1](/assets/img/building/install-siv3d/SmartScreenGuard1.png)
 > ![SmartScreen2](/assets/img/building/install-emscripten/smart-screen-guard-again.png)

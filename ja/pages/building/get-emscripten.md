@@ -8,13 +8,13 @@ permalink: /ja/building/get-emscripten
 
 ## Emscripten インストーラをダウンロードする
 
-Windows 向け Emscripten 3.1.8 インストーラが [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest) からダウンロードできます。
+Windows 向け Emscripten 3.1.20 インストーラが [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest) からダウンロードできます。
 
 <details markdown="block"><summary>OpenSiv3D for Web のインストーラが行う処理</summary>
 
 インストーラは次のツールをお使いの開発環境にダウンロードします。
 
-- Emscripten 3.1.8
+- Emscripten 3.1.20
 - Clang Compiler Front End
 - Node
 - Python

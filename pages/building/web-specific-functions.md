@@ -55,10 +55,34 @@ You can obtain url parameters as `HashTable<String, String>`.
   Platform::Web::DownloadFile(U"a.png");
 ```
 
+## Write Additional Assets into Virtual File System from Server
+
+```cpp
+  // Download 'a.png' into the virtual file system with the name 'windmill.png'
+  Platform::Web::FetchFileIfNotExists(U"example/windmill.png");
+```
+
 ## Features that uses AsyncTask
 
 Some features, such as AudioDecoding or Clipboard, blocks the main loop for several seconds.
 Using platform-specific functions that returns `AsyncTask` can keep the main thread from being blocked.
+
+### Awaiting AsyncTask
+
+```cpp
+  // 
+  // Maybe blocks for several seconds
+  //
+  // Audio audio { U"/example/test.mp3" };
+  Audio audio;
+  AsyncTask<Wave> audioTask = s3d::Platform::Web::AudioDecoder::DecodeFromFile(U"/example/test.mp3");
+
+  // Synchronously wait until the audioTask gets ready.
+  if (auto resolvedAudio = s3d::Platform::Web::System::WaitForFutureResolved(audioTask))
+  {
+    audio = *resolvedAudio;
+  }
+```
 
 ### Audio Decoding
 
