@@ -58,7 +58,7 @@ You can obtain url parameters as `HashTable<String, String>`.
 ## Write Additional Assets into Virtual File System from Server
 
 ```cpp
-  // Download 'a.png' into the virtual file system with the name 'windmill.png'
+  // Download 'windmill.png' into the virtual file system with the name 'windmill.png'
   Platform::Web::FetchFileIfNotExists(U"example/windmill.png");
 ```
 

@@ -58,7 +58,7 @@ permalink: /ja/building/web-specific-functions
 ## サーバから追加のアセットをダウンロードする
 
 ```cpp
-  // Download 'a.png' into the virtual file system with the name 'windmill.png'
+  // 'windmill.png' をサーバーから追加でダウンロードする'
   Platform::Web::FetchFileIfNotExists(U"example/windmill.png");
 ```
 
