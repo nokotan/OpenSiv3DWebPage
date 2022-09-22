@@ -63,7 +63,7 @@ jobs:
         continue-on-error: true
         run: |
           Start-Process -FilePath "$env:DevEnv_Path"
-          & ".\bin\Release\RunningCodeWithVisualStudio.exe"
+          & ".\running-code-with-visualstudio\bin\Release\RunningCodeWithVisualStudio.exe"
           Get-Process | Where-Object -FilterScript {$_.Name -eq "devenv"}  | Stop-Process
 
       - name: Save Screenshots

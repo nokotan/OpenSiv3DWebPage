@@ -96,6 +96,7 @@ exclude:
   - Ralefile
   - README.md
   - ja/README.md
+  - test
 
 plugins:
   - jekyll-seo-tag
