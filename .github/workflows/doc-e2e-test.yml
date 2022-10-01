@@ -50,7 +50,7 @@ jobs:
         working-directory: test/en
         run: |
           Set-Item Env:Path "$env:VSIXInstaller_Path;$env:Path"
-          curl -L https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.5r2/OpenSiv3D-Installer-wasm.exe -o "OpenSiv3D(0.6.5)Web.exe"
+          curl -L https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.5r3/OpenSiv3D-Installer-wasm.exe -o "OpenSiv3D(0.6.5)Web.exe"
           & ".\OpenSiv3D(0.6.5)Web.exe" /SILENT /SUPPRESSMSGBOXES /LOG="InstallLog.Log"
           Wait-Process -Name "OpenSiv3D(0.6.5)Web"
           cat InstallLog.Log
