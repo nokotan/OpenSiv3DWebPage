@@ -1,6 +1,6 @@
 ---
 title: ダウンロード
-permalink: "/download"
+permalink: "/ja/download"
 ---
 
 ## 最新バージョン
