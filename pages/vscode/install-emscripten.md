@@ -35,9 +35,9 @@ Open Explorer, and move directory to the folder you have downloaded emsdk, then 
 After launching command prompt, type these commands:
 
 ```bat
-emsdk install 3.1.8
-emsdk activate 3.1.8 --permanent
+emsdk install 3.1.20
+emsdk activate 3.1.20 --permanent
 ```
 
-`emsdk install 3.1.8` will install emscripten and its dependencies (clang, node.js, java) to your develop environment.
-`emsdk activate 3.1.8 --permanent` will perform setup for these tools.
+`emsdk install 3.1.20` will install emscripten and its dependencies (clang, node.js, java) to your develop environment.
+`emsdk activate 3.1.20 --permanent` will perform setup for these tools.

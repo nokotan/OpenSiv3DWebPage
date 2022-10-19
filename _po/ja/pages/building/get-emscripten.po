@@ -55,7 +55,7 @@ msgid ""
 "n your network environment.\n"
 "Please be patient."
 msgstr ""
-"Assets リスト中の `Emscripten.exe` をクリックしてダウンロードします。\n"
+"Assets リスト中の `EmscriptenOffline.exe` をクリックしてダウンロードします。\n"
 "お使いのネットワークによっては、ダウンロードに10分以上かかることがあります。"
 
 msgid ""

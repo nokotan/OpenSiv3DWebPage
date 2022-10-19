@@ -39,9 +39,9 @@ emscripten SDK (emsdk) 自体は python スクリプトで書かれています�
 コマンドプロンプトを開いたら、次のコマンドを実行します。
 
 ```bat
-emsdk install 3.1.8
-emsdk activate 3.1.8 --permanent
+emsdk install 3.1.20
+emsdk activate 3.1.20 --permanent
 ```
 
-`emsdk install 3.1.8` で、emscripten 本体と emscripten で使われる clang、node.js、javaがインストールされます。
-`emsdk activate 3.1.8 --permanent` で、インストールしたツールセットのセットアップが行われます。
+`emsdk install 3.1.20` で、emscripten 本体と emscripten で使われる clang、node.js、javaがインストールされます。
+`emsdk activate 3.1.20 --permanent` で、インストールしたツールセットのセットアップが行われます。

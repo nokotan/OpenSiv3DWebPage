@@ -21,7 +21,7 @@ Windows 向け Emscripten 3.1.20 インストーラが [GitHub Releases](https:/
 
 </details>
 
-Assets リスト中の `Emscripten.exe` をクリックしてダウンロードします。
+Assets リスト中の `EmscriptenOffline.exe` をクリックしてダウンロードします。
 お使いのネットワークによっては、ダウンロードに10分以上かかることがあります。
 
 ![EmscriptenInstallerGitHub](/assets/img/building/install-emscripten/EmscriptenInstallerGitHub.png)
