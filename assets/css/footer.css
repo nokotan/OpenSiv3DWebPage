@@ -3,26 +3,26 @@ footer {
   padding: 1.8em;
 }
 
-footer {
+#side-nav {
   display: flex;
 }
 
 @media (max-width: 48em) {
-  footer {
+  #side-nav {
     flex-flow: column;
   }
 }
 
-footer span {
+#side-nav span {
   flex-grow: 1;
 }
 
 @media (max-width: 48em) {
-  footer span {
+  #side-nav span {
     margin: 0.2em 0px 0.2em 0px;
   }
 
-  footer span .button {
+  #side-nav span .button {
     margin-bottom: unset;
   }
 }

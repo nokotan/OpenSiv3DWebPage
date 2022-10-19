@@ -22,6 +22,7 @@
 {% assign parentObj = include.nav[parentIdx] %}
 
 <footer>
+<div id="side-nav">
 
 {% if parentObj.children %}
   {% assign childIdx = childIdx | minus: 1 %}
@@ -88,5 +89,18 @@
     {% endif %}
   </span>
 {% endif %}
+
+</div>
+<div>
+  <h3>Found a problem with this page?</h3>
+  <ul>
+    <li>
+      <a href="{{ site.repository }}/blob/master/{{ page.path }}">Source on GitHub</a>
+    </li>
+    <li>
+      <a href="{{ site.repository }}/edit/master/{{ page.path }}">Edit on GitHub</a>
+    </li>
+  </ul>
+</div>
 
 </footer>
