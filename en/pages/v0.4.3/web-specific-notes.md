@@ -1,19 +1,15 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 title: Web Specific Notes
-permalink: /v0.4.3/web-specific-notes
+permalink: "/v0.4.3/web-specific-notes"
 ---
 
-> This page is targeted who uses the previous version of OpenSiv3D for Web and no longer maintained.
-{:.warn}
+> This page is targeted who uses the previous version of OpenSiv3D for Web and no longer maintained. {:.warn}
 
 ## GameLoop Design
 
-**Let a browser handle JavaScript events**, or the browser hangs up because of infinite loop.
-Therefore, **make a function that includes logics that should be processed regularly**,
-and **register the function as a callback** which is called at the start of an animation frame.
+<strong>Let a browser handle JavaScript events</strong>, or the browser hangs up because of infinite loop.
+
+Therefore, **make a function that includes logics that should be processed regularly**, and **register the function as a callback** which is called at the start of an animation frame.
 
 ```cpp
 # include <Siv3D.hpp>
@@ -34,23 +30,20 @@ void Main()
 
 Your WebGL apps **cannot access any files on users' file system**.
 
-Those files required on running your WebGL apps, **can be bundled on building** with emcc's `--preload` option.
-These bundled files are loaded into a virtual file system; then you can access these files on ordinal way.
+Those files required on running your WebGL apps, **can be bundled on building** with emcc's `--preload` option. These bundled files are loaded into a virtual file system; then you can access these files on ordinal way.
 
 ## Supported Features
 
-With "OpenSiv3D for Web," you can use the almost features which is supported in OpenSiv3D for Linux.
-For details, check out [Implementation Status](/status)
+With "OpenSiv3D for Web," you can use the almost features which is supported in OpenSiv3D for Linux. For details, check out [Implementation Status](/status)
 
 ## Features that Differs Other Platforms
 
 ### Audio Decoding
 
-Decoding .mp3 and .aac with Audio constructor is not supported.
-Use `s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` that returns `std::future<Audio>`.
+Decoding .mp3 and .aac with Audio constructor is not supported. Use `s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` that returns `std::future<Audio>`.
 
 ```cpp
-  // 
+  //
   // Not supported in Web.
   //
   // Audio audio { "/example/test.mp3" };
@@ -66,11 +59,10 @@ Use `s3d::Platforms::Web::AudioProcessing::DecodeAudioFromFile` that returns `st
 
 ### File Open Dialog
 
-`s3d::Dialog::Open**` will always return empty object.
-Use `s3d::Platforms::Web::Dialog::Open**` that returns `std::future<**>`.
+`s3d::Dialog::Open**` will always return empty object. Use `s3d::Platforms::Web::Dialog::Open**` that returns `std::future<**>`.
 
 ```cpp
-  // 
+  //
   // Not supported in Web.
   //
   // Audio audio = Dialog::OpenAudio();
@@ -86,23 +78,20 @@ Use `s3d::Platforms::Web::Dialog::Open**` that returns `std::future<**>`.
 
 ### File Save Dialog
 
-`s3d::Dialog::Save` will always return "/dev/save" pseudo device,
-which means that you cannot query users which file format they want to download.
+`s3d::Dialog::Save` will always return "/dev/save" pseudo device, which means that you cannot query users which file format they want to download.
 
 ### Clipboard
 
-Only test copying and pasting are supported.
-(and in FireFox, this feature is disallowed.)
+Only test copying and pasting are supported. (and in FireFox, this feature is disallowed.)
 
-Use `s3d::Platforms::Web::Clipboard::GetText` that returns `std::future<String>`.
-(You can use `s3d::Clipboard::SetText` in ordinal way.)
+Use `s3d::Platforms::Web::Clipboard::GetText` that returns `std::future<String>`. (You can use `s3d::Clipboard::SetText` in ordinal way.)
 
 ```cpp
-  // 
+  //
   // Not supported in Web.
   //
   // String text;
-  // 
+  //
   // if (Clibboard::GetText(text))
   // {
   //
