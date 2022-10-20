@@ -170,6 +170,6 @@ permalink: /ja/status
 | クリップボード | ⚠️ | テキストのコピー及び貼り付けのみ対応; `s3d::Platform::Web::Clipboard` も利用可能 |
 | Network | 🚧 | **WebSocket** に依存、P2P 通信は利用不可 |
 | Siv3D Scripts | ✅ | |
-| AsyncTask | ❌ | 招待のリリースで実装予定 |
+| AsyncTask | ❌ | 将来のリリースで実装予定 |
 | 子プロセス | ❌ | |
 | NLP | ❌ | 子プロセスサポートに依存 |

@@ -59,7 +59,7 @@ You can obtain url parameters as `HashTable<String, String>`.
 
 ```cpp
   // Download 'windmill.png' into the virtual file system with the name 'windmill.png'
-  Platform::Web::FetchFileIfNotExists(U"example/windmill.png");
+  Platform::Web::FetchFile(U"example/windmill.png");
 ```
 
 ## Features that uses AsyncTask

@@ -103,6 +103,9 @@ OpenSiv3D for Web は、シングルスレッドで動作するように設計�
 そのため、**AsyncTask** や **std::thread** は期待した動作をしません。
 
 ```cpp
+  //
+  // Web 版ではサポートされない書き方
+  //
   AsyncTask task
   {
     [&]
@@ -110,7 +113,7 @@ OpenSiv3D for Web は、シングルスレッドで動作するように設計�
       std::this_thread::sleep_for(10s);
       Console << U"Done.";
     }
-  }
+  };
 ```
 
 ### サポートされないテクスチャフォーマット

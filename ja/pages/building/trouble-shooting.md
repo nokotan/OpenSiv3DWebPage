@@ -96,18 +96,6 @@ FileTracker : error FTK1011: 新しいファイル追跡ログ ファイルを�
 - 再度プロジェクトをビルドする。
   - この現象は1回目のビルドで必ず発生します。
 
-### Undefined Symbol `__stack_chk_fail` という警告が出る
-
-#### 症例
-
-```log
-EMSCRIPTENLINK : warning: undefined symbol: __stack_chk_fail (referenced by top-level compiled C/C++ code)
-```
-
-#### 対処策
-
-- この警告は意図されたものです。(emscripten に `__stack_chk_fail` のサポートがありません。)
-
 ### Asyncify Addlist Contained a Non-matching Pattern という警告が出る
 
 #### 症例
@@ -133,19 +121,6 @@ Uncaught TypeError: GLFW.lastGamepadState is null
 #### 対処策
 
 - WebGL アプリをセキュアコンテキスト (https://) 上で配信する。
-
-### メッセージボックス [object XMLHttpRequestProgressEvent] が表示される
-
-#### 症例
-
-```log
-[object XMLHttpRequestProgressEvent]
-```
-
-#### 対処策
-
-- ローカルサーバ経由で、該当する HTML ファイルを開いてください
-  - HTML ファイルをダブルクリックして、WebGL アプリを起動しようとすると、このエラーが発生します。
 
 ### メッセージボックス -1 が表示される
 

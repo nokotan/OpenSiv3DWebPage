@@ -95,18 +95,6 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 - Rebuild your project.
   - This problems always occurs on the first time build.
 
-### Warning Undefined Symbol `__stack_chk_fail`
-
-#### Symptoms
-
-```log
-EMSCRIPTENLINK : warning: undefined symbol: __stack_chk_fail (referenced by top-level compiled C/C++ code)
-```
-
-#### Solution
-
-- This warning is intended. (emscripten has no support for `__stack_chk_fail`)
-
 ### Warning Asyncify Addlist Contained a Non-matching Pattern
 
 #### Symptoms
@@ -132,19 +120,6 @@ Uncaught TypeError: GLFW.lastGamepadState is null
 #### Solution
 
 - Serve WebGL app in the secure context (https://)
-
-### Messagebox [object XMLHttpRequestProgressEvent] is shown
-
-#### Symptoms
-
-```log
-[object XMLHttpRequestProgressEvent]
-```
-
-#### Solution
-
-- Use local server
-  - Double-clicking html file will cause this unexpected behavior.
 
 ### Messagebox -1 is shown
 

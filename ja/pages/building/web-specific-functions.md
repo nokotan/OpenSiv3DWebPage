@@ -59,7 +59,7 @@ permalink: /ja/building/web-specific-functions
 
 ```cpp
   // 'windmill.png' をサーバーから追加でダウンロードする'
-  Platform::Web::FetchFileIfNotExists(U"example/windmill.png");
+  Platform::Web::FetchFile(U"example/windmill.png");
 ```
 
 ## AsyncTask を使うことのできる機能

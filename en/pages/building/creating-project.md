@@ -14,7 +14,7 @@ and the list of available project templates will be shown.
 
 ![VisualStudio0.png](/assets/img/building/creating-project/VisualStudio0.png)
 
-Select the project template named as `OpenSiv3D(0.6.0)Web`, and click the **Next** button.
+Select the project template named as `OpenSiv3D(0.6.5)Web`, and click the **Next** button.
 
 ![VisualStudio1.png](/assets/img/building/creating-project/VisualStudio1.png)
 

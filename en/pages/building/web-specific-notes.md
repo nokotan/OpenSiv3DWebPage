@@ -110,7 +110,7 @@ so **AsyncTask** or **std::thread** will not work as you expected.
       std::this_thread::sleep_for(10s);
       Console << U"Done.";
     }
-  }
+  };
 ```
 
 ### Unsupported Texture Format
