@@ -1,14 +1,14 @@
 ---
 title: Download
-permalink: /download
+meta-title: Download
+permalink: "/download"
 ---
 
 ## Latest Version
 
 ### Windows
 
-{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.5r4/OpenSiv3D-Installer-wasm.exe" text="Download OpenSiv3D for Web Installer" %}
-{% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.5r4/OpenSiv3D-wasm.zip" text="Download OpenSiv3D for Web.zip" %}
+{% include button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.5r4/OpenSiv3D-Installer-wasm.exe" text="Download OpenSiv3D for Web Installer" %} {% include outline-button.html url="//github.com/nokotan/OpenSiv3D/releases/download/v0.6.5r4/OpenSiv3D-wasm.zip" text="Download OpenSiv3D for Web.zip" %}
 
 ### macOS, Linux
 
@@ -16,7 +16,7 @@ permalink: /download
 
 ### Older Versions
 
-Found in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases)
+You can find downloads in [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases).
 
 ## Change Logs
 
