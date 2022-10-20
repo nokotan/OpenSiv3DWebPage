@@ -1,0 +1,62 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=; plural=;\n"
+
+msgid ""
+"---\n"
+"title: Publish Your WebGL Apps\n"
+"permalink: /publishing/publish-your-webapp\n"
+"---"
+msgstr ""
+
+msgid ""
+"The files of WebGL apps are emitted in the `Emscripten/Release` folder, contai"
+"ning these files:"
+msgstr ""
+
+msgid ""
+"- (AppName).html\n"
+"- (AppName).js\n"
+"- (AppName).wasm\n"
+"- (AppName).data"
+msgstr ""
+
+msgid "![FolderImage](/assets/img/publishing/uploaded-files.png)"
+msgstr ""
+
+msgid ""
+"These files should be put into a Web Server in order to publish your WebGL app"
+"s."
+msgstr ""
+
+msgid "### Limitations"
+msgstr ""
+
+msgid "- OpenSiv3D for Web is designed to work with secure context (https://)."
+msgstr ""
+
+msgid "## GitHub Pages"
+msgstr ""
+
+msgid "Dedicated explaination is available in <https://prog-8.com/docs/github-pages>."
+msgstr ""
+
+msgid ""
+"- GitHub Pages cannot be used for commecial use\n"
+"- Each uploaded files cannot exceed 50MB and `git-lfs` cannot be used"
+msgstr ""
+
+msgid "Please check following official pages."
+msgstr ""
+
+msgid ""
+"- [About GitHub Pages](https://docs.github.com/pages/getting-started-with-gith"
+"ub-pages/about-github-pages).\n"
+"- [About large files on GitHub](https://docs.github.com/repositories/working-w"
+"ith-files/managing-large-files/about-large-files-on-github)."
+msgstr ""

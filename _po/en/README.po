@@ -1,0 +1,102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=; plural=;\n"
+
+msgid "# OpenSiv3D for Web Project Site"
+msgstr ""
+
+msgid "The project site is running on <https://siv3d.kamenokosoft.com>"
+msgstr ""
+
+msgid "## Building Site"
+msgstr ""
+
+msgid ""
+"[**jekyll**](https://jekyllrb.com) and [**jekyll-task-i18n**](https://github.c"
+"om/ruby-gettext/jekyll-task-i18n) are used as build infrastructure, [**milligr"
+"am**](https://milligram.io) and [**Pure.css**](https://purecss.io) are used as"
+" CSS frameworks."
+msgstr ""
+
+msgid ""
+"- [jekyll Installation Guild](https://jekyllrb.com/docs/)\n"
+"- [jekyll-task-i18n GitHub](https://github.com/ruby-gettext/jekyll-task-i18n)\n"
+"- [milligram Project Page](https://milligram.io)\n"
+"- [Pure.css Project Page](https://purecss.io)"
+msgstr ""
+
+msgid "### Installing Gem Dependencies"
+msgstr ""
+
+msgid ""
+"```sh\n"
+"% gem install bundler\n"
+"% bundle install\n"
+"```"
+msgstr ""
+
+msgid "### Create Translation Patch"
+msgstr ""
+
+msgid ""
+"```sh\n"
+"# Generate translation patch files\n"
+"% rake\n"
+"# Then, edit _po/**/*.edit.po\n"
+"# Command `rake` after editing *.edit.po will apply translation patch\n"
+"% rake\n"
+"```"
+msgstr ""
+
+msgid "### Generate Pages"
+msgstr ""
+
+msgid ""
+"```sh\n"
+"% jekyll build\n"
+"# or, `jekyll serve` will launch local server\n"
+"```"
+msgstr ""
+
+msgid "## Directories Structure"
+msgstr ""
+
+msgid "### \\_data, \\_layouts"
+msgstr ""
+
+msgid ""
+"- Localized versions of data files are located in `_data/[lang]` or `_layouts/"
+"[lang]`."
+msgstr ""
+
+msgid "### \\_includes"
+msgstr ""
+
+msgid ""
+"- `_includes` folder contains html components.\n"
+"- It is not recommended in this repository to locate localization specific fil"
+"es."
+msgstr ""
+
+msgid "### \\_po"
+msgstr ""
+
+msgid ""
+"- Translation patches are included in `_po` folder.\n"
+"- For further information, check out [jekyll-task-i18n GitHub](https://github."
+"com/ruby-gettext/jekyll-task-i18n)."
+msgstr ""
+
+msgid "### pages"
+msgstr ""
+
+msgid ""
+"- Main articles are placed in this folder.\n"
+"- Navigation menu is maintained by hand; Its contents definition are found in "
+"`_data/nav.yml`."
+msgstr ""

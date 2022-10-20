@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=; plural=;\n"
+
+msgid ""
+"---\n"
+"# Feel free to add content and custom Front Matter to this file.\n"
+"# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme"
+"-defaults"
+msgstr ""
+
+msgid ""
+"title: Setup Visual Studio Code\n"
+"permalink: /vscode/setup-vscode\n"
+"---"
+msgstr ""
+
+msgid "## Install Visual Studio Code"
+msgstr ""
+
+msgid ""
+"Follow instructions in [Visual Studio Codeのインストール](https://www.python.jp/pytho"
+"n_vscode/windows/setup/install_vscode.html)."
+msgstr ""
+
+msgid "## Install Extensions"
+msgstr ""
+
+msgid "Launch Visual Studio Code from Windows menu."
+msgstr ""
+
+msgid ""
+"![LaunchVisualStudio.png](/assets/img/building/creating-project/launch-vscode."
+"png)"
+msgstr ""
+
+msgid ""
+"After launched, open \"Extension Tab\" in left side, search and install these ex"
+"tensions:"
+msgstr ""
+
+msgid ""
+"- C/C++ VSCode Extension\n"
+"- Debugger for Firefox (Optional)\n"
+"- WebAssembly on Chrome Debugger (Optional)"
+msgstr ""
+
+msgid ""
+"![VSCodeExt1.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/"
+"158514/bf97ad48-9626-4898-d671-48b740ddaecc.png)"
+msgstr ""

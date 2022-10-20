@@ -1,0 +1,56 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=; plural=;\n"
+
+msgid ""
+"---\n"
+"title: Optimize Assets Size\n"
+"permalink: /publishing/optimize-asset-size\n"
+"---"
+msgstr ""
+
+msgid "## Shrinking Bundle Size"
+msgstr ""
+
+msgid "The Siv3D template project contains all files so that examples are got worked."
+msgstr ""
+
+msgid ""
+"Some files can be ommited to reduce the bundle size, please follow instruction"
+"s in <https://zenn.dev/reputeless/articles/article-minimum>."
+msgstr ""
+
+msgid "## Shrinking WebAssembly Size"
+msgstr ""
+
+msgid ""
+"`libSiv3DScript.a` can be omitted from linked files if your WebGL app don't us"
+"e **Siv3D Scripts** functionality."
+msgstr ""
+
+msgid "### Visual Studio"
+msgstr ""
+
+msgid ""
+"Open the project configuration window, and remove `Siv3DScript` from Additiona"
+"l Dependency Files (found in [Emscripten Linker] > [Input]) in the project con"
+"figuration."
+msgstr ""
+
+msgid ""
+"![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/"
+"preload-files-on-visual-studio.png)"
+msgstr ""
+
+msgid "### Visual Studio Code"
+msgstr ""
+
+msgid ""
+"Open `.vscode/Link.Debug.rsp` or `.vscode/Link.Release.rsp` and remove `-lSiv3"
+"DScript`."
+msgstr ""

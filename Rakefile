@@ -3,7 +3,7 @@ require "jekyll/task/i18n"
 
 Jekyll::Task::I18n.define do |task|
   # Set translate target locales.
-  task.locales = ["ja"]
+  task.locales = ["ja","en"]
   # Set all *.md texts as translate target contents.
   task.files = Rake::FileList["**/*.md"]
   # Remove internal files from target contents.
