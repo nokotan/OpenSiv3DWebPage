@@ -43,21 +43,21 @@ github:
 
 defaults:
   - scope:
-      path: "pages"
+      path: "en/pages"
     values:
       layout: "default"
       language: "en"
       description: OpenSiv3D for Web brings you to developing WebGL application with C++17/20!
   - scope:
-      path: "pages/building"
+      path: "en/pages/building"
     values:
       layout: "posts"
   - scope:
-      path: "pages/vscode"
+      path: "en/pages/vscode"
     values:
       layout: "posts"
   - scope:
-      path: "pages/publishing"
+      path: "en/pages/publishing"
     values:
       layout: "posts"
   - scope:
@@ -98,6 +98,7 @@ exclude:
   - README.md
   - ja/README.md
   - test
+  - pages/
 
 plugins:
   - jekyll-seo-tag
