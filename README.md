@@ -2,6 +2,10 @@
 
 The project site is running on <https://siv3d.kamenokosoft.com>
 
+## Translating Site
+
+* This site is translated with <https://gitlocalize.com/repo/8089>.
+
 ## Building Site
 
 [**jekyll**](https://jekyllrb.com) is used as build infrastructure, [**milligram**](https://milligram.io) and [**Pure.css**](https://purecss.io) are used as CSS frameworks.

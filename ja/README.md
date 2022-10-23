@@ -2,6 +2,10 @@
 
 プロジェクトサイトは <https://siv3d.kamenokosoft.com> で運用中です。
 
+## プロジェクトサイトの翻訳
+
+* このサイトは <https://gitlocalize.com/repo/8089> によって、他言語に翻訳しています。
+
 ## プロジェクトサイトのビルド
 
 このサイトでは、ビルド環境に [**jekyll**](https://jekyllrb.com) を、CSS フレームワークに [**milligram**](https://milligram.io) と [**Pure.css**](https://purecss.io) を使っています。
