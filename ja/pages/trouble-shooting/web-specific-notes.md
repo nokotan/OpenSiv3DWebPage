@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: Web 固有の注意点
-permalink: /ja/building/web-specific-notes
+permalink: /ja/trouble-shooting/web-specific-notes
 ---
 
 ## もくじ

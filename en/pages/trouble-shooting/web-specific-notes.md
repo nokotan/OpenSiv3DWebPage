@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: Web Specific Notes
-permalink: /building/web-specific-notes
+permalink: /trouble-shooting/web-specific-notes
 ---
 
 ## Table of Contents

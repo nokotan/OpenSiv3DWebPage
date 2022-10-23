@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: Web 版固有の関数
-permalink: /ja/building/web-specific-functions
+permalink: /ja/trouble-shooting/web-specific-functions
 ---
 
 ## URL パラメータの取得

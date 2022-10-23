@@ -1,6 +1,6 @@
 ---
 title: うまくいかないときは (Visual Studio)
-permalink: /ja/building/trouble-shooting
+permalink: /ja/trouble-shooting/trouble-shooting
 ---
 
 ## もくじ

@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: Web Specific Functions
-permalink: /building/web-specific-functions
+permalink: /trouble-shooting/web-specific-functions
 ---
 
 ## Obtaining URL parameters

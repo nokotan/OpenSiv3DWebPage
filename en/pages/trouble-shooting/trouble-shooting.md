@@ -1,6 +1,6 @@
 ---
 title: Trouble Shooting on Visual Studio
-permalink: /building/trouble-shooting
+permalink: /trouble-shooting/trouble-shooting
 ---
 
 ## Table of Contents

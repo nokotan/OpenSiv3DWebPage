@@ -15,9 +15,6 @@
     - url: /ja/building/install-siv3d
     - url: /ja/building/creating-project
     - url: /ja/building/running-code-with-visualstudio
-    - url: /ja/building/trouble-shooting
-    - url: /ja/building/web-specific-notes
-    - url: /ja/building/web-specific-functions
 
 - title: はじめての WebGL (Visual Studio Code)
   url: /ja/vscode
@@ -28,6 +25,14 @@
     - url: /ja/vscode/setup-vscode
     - url: /ja/vscode/creating-project
     - url: /ja/vscode/running-code-with-vscode
+
+- title: 困った時は
+  url: /ja/trouble-shooting
+  new-group: true
+  children:
+    - url: /ja/trouble-shooting/trouble-shooting
+    - url: /ja/trouble-shooting/web-specific-notes
+    - url: /ja/trouble-shooting/web-specific-functions
 
 - title: WebGL アプリの公開
   url: /ja/publishing
