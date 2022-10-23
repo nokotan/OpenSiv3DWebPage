@@ -59,7 +59,11 @@
     - title: Web 固有の注意点 (v0.4.3)
       url: /ja/v0.4.3/web-specific-notes
 
-- title: GitHub
-  url: https://github.com/nokotan/OpenSiv3D
+- title: 開発に参加する
+  url: /ja/contributing
   new-group: true
-  icon: /assets/img/GitHub-Mark-32px.png
+  children: 
+    - url: /ja/contributing/build-siv3d
+    - title: GitHub リポジトリ
+      url: https://github.com/nokotan/OpenSiv3D
+      icon: /assets/img/GitHub-Mark-32px.png

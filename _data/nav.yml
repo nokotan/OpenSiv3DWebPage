@@ -59,7 +59,11 @@
     - title: Web Specific Notes (v0.4.3)
       url: /v0.4.3/web-specific-notes
 
-- title: GitHub
-  url: https://github.com/nokotan/OpenSiv3D
+- title: Contributing
+  url: /contributing
   new-group: true
-  icon: /assets/img/GitHub-Mark-32px.png
+  children: 
+    - url: /contributing/build-siv3d
+    - title: GitHub Repository
+      url: https://github.com/nokotan/OpenSiv3D
+      icon: /assets/img/GitHub-Mark-32px.png
