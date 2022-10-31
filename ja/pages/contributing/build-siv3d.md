@@ -24,14 +24,14 @@ permalink: /ja/contributing/build-siv3d
   cd OpenSiv3D
   ```
 
-2. ビルドフォルダを作成します (以下の例では, `Web/Build` を作成します)
+1. ビルドフォルダを作成します (以下の例では, `Web/Build` を作成します)
   
   ```cmd
   mkdir Web/Build
   cd Web/Build
   ```
   
-3. OpenSiv3D for Web のビルドとインストールを行います
+1. OpenSiv3D for Web のビルドとインストールを行います
   
   ```cmd
   emcmake cmake -GNinja -DCMAKE_BUILD_TYPE=Release ..
@@ -60,14 +60,14 @@ permalink: /ja/contributing/build-siv3d
   cd OpenSiv3D
   ```
   
-2. ビルドフォルダを作成します (以下の例では, `Web/Build` を作成します)
+1. ビルドフォルダを作成します (以下の例では, `Web/Build` を作成します)
   
   ```sh
   mkdir Web/Build
   cd Web/Build
   ```
   
-3. OpenSiv3D for Web のビルドとインストールを行います
+1. OpenSiv3D for Web のビルドとインストールを行います
   
   ```sh
   emcmake cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -95,14 +95,14 @@ permalink: /ja/contributing/build-siv3d
   cd OpenSiv3D
   ```
   
-2. ビルドフォルダを作成します (以下の例では, `Web/Build` を作成します)
+1. ビルドフォルダを作成します (以下の例では, `Web/Build` を作成します)
   
   ```sh
   mkdir Web/Build
   cd Web/Build
   ```
   
-3. OpenSiv3D for Web のビルドとインストールを行います
+1. OpenSiv3D for Web のビルドとインストールを行います
 
   ```sh
   emcmake cmake -DCMAKE_BUILD_TYPE=Release ..

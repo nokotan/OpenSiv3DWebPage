@@ -24,14 +24,14 @@ permalink: /contributing/build-siv3d
   cd OpenSiv3D
   ```
 
-2. Make a directory to Build. (In this example, make `Web/Build`)
+1. Make a directory to Build. (In this example, make `Web/Build`)
   
   ```cmd
   mkdir Web/Build
   cd Web/Build
   ```
   
-3. Build & Install OpenSiv3D for Web
+1. Build & Install OpenSiv3D for Web
   
   ```cmd
   emcmake cmake -GNinja -DCMAKE_BUILD_TYPE=Release ..
@@ -60,14 +60,14 @@ permalink: /contributing/build-siv3d
   cd OpenSiv3D
   ```
   
-2. Make a directory to Build. (In this example, make `Web/Build`)
+1. Make a directory to Build. (In this example, make `Web/Build`)
   
   ```sh
   mkdir Web/Build
   cd Web/Build
   ```
   
-3. Build & Install OpenSiv3D for Web
+1. Build & Install OpenSiv3D for Web
   
   ```sh
   emcmake cmake -DCMAKE_BUILD_TYPE=Release ..
@@ -95,14 +95,14 @@ permalink: /contributing/build-siv3d
   cd OpenSiv3D
   ```
   
-2. Make a directory to Build. (In this example, make `Web/Build`)
+1. Make a directory to Build. (In this example, make `Web/Build`)
   
   ```sh
   mkdir Web/Build
   cd Web/Build
   ```
   
-3. Build & Install OpenSiv3D for Web
+1. Build & Install OpenSiv3D for Web
 
   ```sh
   emcmake cmake -DCMAKE_BUILD_TYPE=Release ..
