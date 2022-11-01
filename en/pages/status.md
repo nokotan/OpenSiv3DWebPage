@@ -166,6 +166,6 @@ MessageBox | ✅ | Just Calls `window.alert` or `window.confirm`
 ClipBoard | ⚠️ | Only Support Copy or Paste Texts; `s3d::Platform::Web::Clipboard` is also available
 Network | 🚧 | Depends on **WebSocket**, which not supports P2P communication.
 Siv3D Scripts | ✅ |
-AsyncTask | ❌ | Implemented in future release
+AsyncTask | ❌ | To be implemented in a future release
 ChildProcess | ❌ |
 NLP | ❌ | Depends ChildProcess Support
