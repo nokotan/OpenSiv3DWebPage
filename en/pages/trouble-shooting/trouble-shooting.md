@@ -1,6 +1,6 @@
 ---
-title: Trouble Shooting on Visual Studio
-permalink: /trouble-shooting/trouble-shooting
+title: Trouble Shooting
+permalink: "/trouble-shooting/trouble-shooting"
 ---
 
 ## Table of Contents
@@ -33,21 +33,21 @@ UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
 
 - Specify `PYTHONUTF8=1` in the environment variables.
 
-  <details markdown="block"><summary>Procedures</summary>
+    <details markdown="block"><summary>Procedures</summary> </details>
 
-  1. Open **Windows Settings** and type **environment variables** into the search box.
+    1. Open **Windows Settings** and type **environment variables** into the search box.
 
-      ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
+        ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
 
-  2. Environment Variable Window will be shown, click **New**.
+    2. Environment Variable Window will be shown, click **New**.
 
-      ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
+        ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
 
-  3. Edit User Environment Variable Window will be shown, type **PYTHON_UTF8** into Name, 1 into Value.
+    3. Edit User Environment Variable Window will be shown, type **PYTHON_UTF8** into Name, 1 into Value.
 
-      ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
+        ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
 
-  </details>
+    
 
 ### Build Failure of emscripten ports
 
@@ -68,7 +68,7 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 
     ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)
 
-    <details markdown="block"><summary>Procedures</summary>
+      <details markdown="block"><summary>Procedures</summary> </details>
 
     1. Right-click the template zip package and click **Extract All...**.
 
@@ -78,7 +78,8 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 
         ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)
 
-    </details>
+      
+    
 
 - Add `%EMSDK%/upstream/emscripten/cache` folder into the security check ingore list of your security software.
 
@@ -93,7 +94,7 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 #### Solution
 
 - Rebuild your project.
-  - This problems always occurs on the first time build.
+    - This problems always occurs on the first time build.
 
 ### Warning Asyncify Addlist Contained a Non-matching Pattern
 
@@ -132,4 +133,4 @@ Uncaught TypeError: GLFW.lastGamepadState is null
 #### Solution
 
 - Use debug build
-  - Diagnostic messages are optimized out in Release builds.
+    - Diagnostic messages are optimized out in Release builds.
