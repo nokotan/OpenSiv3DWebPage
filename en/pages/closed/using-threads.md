@@ -1,15 +1,15 @@
 ---
-title: マルチスレッド
+title: Multithread
 permalink: "/closed/using-threads"
 sitemap: 'false'
 ---
 
 ## Prerequisite Knowledge
 
-- サーバ上で Cross-Origin-Isolation を設定する
-    - [SharedArrayBuffer を使用するための必要要件](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
-    - [COOP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
-    - [COEP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
+- Configure Cross-Origin-Isolation on the Server
+    - [Requirements for using SharedArrayBuffer](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
+    - [COOP header](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
+    - [COEP header](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
 
 ## Visual Studio
 
@@ -19,15 +19,15 @@ Download `OpenSiv3D-Installer-wasm-mt.exe` from [GitHub Releases](https://github
 
 ### Add Build Options
 
-Visual Studio で開いたプロジェクト上で、プロジェクトオプションを開き、コンパイラオプションとリンカオプションに `-pthread` を追加します。
+On the project opened in Visual Studio, open project options and add `-pthread` to compiler and linker options.
 
 ## Visual Studio Code
 
 ### Download OpenSiv3D for Web Multithread-Compatible Version
 
-[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) から、`OpenSiv3D-wasm-mt.tgz` をダウンロードし、適切なフォルダに展開します。
+Download `OpenSiv3D-wasm-mt.tgz` from [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) and extract it to a suitable folder.
 
-展開して出てきたフォルダ `Package` 以下のフォルダ全てを、フォルダ `OpenSiv3D` にコピーして上書きします。
+Copy all the folders under the extracted folder `Package` to the folder `OpenSiv3D` and overwrite it.
 
 ### Add Build Options
 
