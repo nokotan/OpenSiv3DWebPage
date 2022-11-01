@@ -22,14 +22,14 @@ permalink: "/v0.4.3/download"
 
  | emscripten:2.0.4-upstream | emscripten:1.39.13-fastcomp
 :-: | :-: | :-:
-Installer version | [OpenSiv3D for Web Installer](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D.0.4.3.Web.exe) (36.99MB) | [OpenSiv3D for Web Installer](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D.0.4.3.Web-asmjs.exe) (64.65MB)
-zip version | [OpenSiv3D-wasm.zip](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-wasm.zip) (41.9MB) | [OpenSiv3D-asmjs](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-asmjs.zip) (82.5MB)
+Installer | [OpenSiv3D for Web installer](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D.0.4.3.Web.exe) (36.99MB) | [OpenSiv3D for Web installer](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.3-web/OpenSiv3D.0.4.3.Web-asmjs.exe) (64.65MB)
+Zip compression | [OpenSiv3D-wasm.zip](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-wasm.zip) (41.9MB) | [OpenSiv3D-asmjs](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-asmjs.zip) (82.5MB)
 
 #### macOS, Linux
 
  | emscripten:2.0.4-upstream | emscripten:1.39.13-fastcomp
 :-: | :-: | :-:
-tgz version | [OpenSiv3D-wasm.tgz](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-wasm.tgz) (41.6MB) | [OpenSiv3D-asmjs.tgz](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-asmjs.tgz) (82.3MB)
+tgz-compression | [OpenSiv3D-wasm.tgz](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-wasm.tgz) (41.6MB) | [OpenSiv3D-asmjs.tgz](https://github.com/nokotan/OpenSiv3D/releases/download/v0.4.3.5-web/OpenSiv3D-asmjs.tgz) (82.3MB)
 
 ## Older Versions
 
