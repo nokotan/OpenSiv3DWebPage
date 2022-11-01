@@ -1,5 +1,5 @@
 ---
-title: うまくいかないときは (Visual Studio)
+title: うまくいかないときは
 permalink: /ja/trouble-shooting/trouble-shooting
 ---
 
