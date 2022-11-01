@@ -13,9 +13,9 @@ sitemap: false
 
 ## Visual Studio
 
-### OpenSiv3D for Web マルチスレッド対応板のダウンロード
+### OpenSiv3D for Web マルチスレッド対応版のダウンロード
 
-[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) から、`OpenSiv3D-Installer-wasm-mt.exe` をインストールし、実行します。
+[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) から、`OpenSiv3D-Installer-wasm-mt.exe` をダウンロードし、実行します。
 
 ### ビルドオプションの追加
 
@@ -23,7 +23,7 @@ Visual Studio で開いたプロジェクト上で、プロジェクトオプシ
 
 ## Visual Studio Code
 
-### OpenSiv3D for Web マルチスレッド対応板のダウンロード
+### OpenSiv3D for Web マルチスレッド対応版のダウンロード
 
 [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) から、`OpenSiv3D-wasm-mt.tgz` をダウンロードし、適切なフォルダに展開します。
 
