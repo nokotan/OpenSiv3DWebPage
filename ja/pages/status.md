@@ -31,9 +31,9 @@ permalink: /ja/status
 | ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
 | Internet Explorer 11 | 🚫 | **WebGL2**, **WebAssembly** のサポートがありません |
-| Google Chrome | ✅ | |
+| Google Chrome | ✅ | ハードウェアアクセレーション有効な環境のみサポート |
 | Mozilla Firefox | ✅ | `Clipboard::ReadText` が機能しません |
-| Microsoft Edge | ✅ | |
+| Microsoft Edge | ✅ | ハードウェアアクセレーション有効な環境のみサポート |
 | Opera | ❔ | |
 
 ### macOS
@@ -41,14 +41,14 @@ permalink: /ja/status
 | ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
 | Safari | ⚠️ | Safari 15.0, macOS Monterey をサポート。WebAssembly SIMD は利用不可能です |
-| Google Chrome | ✅ | |
+| Google Chrome | ✅ | ハードウェアアクセレーション有効な環境のみサポート |
 | Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work |
 
 ### Linux
 
 | ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
-| Google Chrome | ❔ | |
+| Google Chrome | ❔ | ハードウェアアクセレーション有効な環境のみサポート |
 | Mozilla Firefox | ❔ | `Clipboard::ReadText` が機能しません |
 
 ### Android
@@ -64,7 +64,7 @@ permalink: /ja/status
 | ブラウザ名 | サポート状況 | 備考 |
 | :--: | :--: | :--: |
 | Android Browser | ❔ | |
-| Google Chrome | 🚧 | |
+| Google Chrome | 🚧 | ハードウェアアクセレーション有効な環境のみサポート |
 | Mozilla Firefox | 🚧 | `Clipboard::ReadText` が機能しません |
 | Opera Mobile | ❔ | |
 
