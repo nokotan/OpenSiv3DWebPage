@@ -45,10 +45,6 @@ Select the destination folder as you like where assets are installed in, and cli
 
 ![EmscriptenInstaller2.png](/assets/img/building/install-emscripten/EmscriptenInstaller2.png)
 
-Click the **Install** button in the window that confirms the installation options.
-
-![EmscriptenInstaller3.png](/assets/img/building/install-emscripten/EmscriptenInstaller3.png)
-
 Installing Emscripten will take 15~60 minutes, please be patient.
 
 The window will be shown when the installation has been completed, and click the **Finish** button to terminate the installation process.
