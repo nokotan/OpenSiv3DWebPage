@@ -44,6 +44,12 @@
 
 - url: /status
 
+- title: Experimental Features
+  url: /experimental
+  new-group: true
+  children: 
+    - url: /experimental/using-threads
+
 - title: OpenSiv3D v0.4.3
   url: /v0.4.3
   new-group: true

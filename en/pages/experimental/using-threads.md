@@ -1,15 +1,15 @@
 ---
 title: Multithread
-permalink: "/closed/using-threads"
+permalink: "/experimental/using-threads"
 sitemap: 'false'
 ---
 
 ## Prerequisite Knowledge
 
 - Configure Cross-Origin-Isolation on the Server
-    - [Requirements for using SharedArrayBuffer](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
-    - [COOP header](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
-    - [COEP header](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
+  - [Requirements for using SharedArrayBuffer](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
+  - [COOP header](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
+  - [COEP header](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
 
 ## Visual Studio
 

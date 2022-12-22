@@ -44,6 +44,12 @@
 - title: 実装状況
   url: /ja/status
 
+- title: 試験的機能
+  url: /ja/experimental
+  new-group: true
+  children: 
+    - url: /ja/experimental/using-threads
+
 - title: OpenSiv3D v0.4.3
   url: /ja/v0.4.3
   new-group: true
