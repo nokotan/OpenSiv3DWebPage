@@ -50,12 +50,12 @@ jobs:
         working-directory: test/en
         run: |
           Set-Item Env:Path "$env:VSIXInstaller_Path;$env:Path"
-          curl -L https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.5r3/OpenSiv3D-Installer-wasm.exe -o "OpenSiv3D(0.6.5)Web.exe"
-          & ".\OpenSiv3D(0.6.5)Web.exe" /SILENT /SUPPRESSMSGBOXES /LOG="InstallLog.Log"
-          Wait-Process -Name "OpenSiv3D(0.6.5)Web"
+          curl -L https://github.com/nokotan/OpenSiv3D/releases/download/v0.6.6r3/OpenSiv3D-Installer-wasm.exe -o "OpenSiv3D(0.6.6)Web.exe"
+          & ".\OpenSiv3D(0.6.6)Web.exe" /SILENT /SUPPRESSMSGBOXES /LOG="InstallLog.Log"
+          Wait-Process -Name "OpenSiv3D(0.6.6)Web"
           cat InstallLog.Log
-          $env:SIV3D_0_6_5_WEB = [System.Environment]::GetEnvironmentVariable("SIV3D_0_6_5_WEB","User")
-          echo "SIV3D_0_6_5_WEB=$env:SIV3D_0_6_5_WEB" >> $env:GITHUB_ENV
+          $env:SIV3D_0_6_6_WEB = [System.Environment]::GetEnvironmentVariable("SIV3D_0_6_6_WEB","User")
+          echo "SIV3D_0_6_6_WEB=$env:SIV3D_0_6_6_WEB" >> $env:GITHUB_ENV
           devenv /installvstemplates
 
       - name: Create Project

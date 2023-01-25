@@ -14,7 +14,7 @@ Visual Studio を起動したら、 画像のようなスタート画面が表�
 
 ![VisualStudio0.png](/assets/img/building/creating-project/VisualStudio0.png)
 
-`OpenSiv3D(0.6.5)Web` という名前のテンプレートを選択し、**次へ** をクリックします。
+`OpenSiv3D(0.6.6)Web` という名前のテンプレートを選択し、**次へ** をクリックします。
 
 ![VisualStudio1.png](/assets/img/building/creating-project/VisualStudio1.png)
 
