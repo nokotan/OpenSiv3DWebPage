@@ -1,9 +1,6 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 title: Web Specific Notes
-permalink: /trouble-shooting/web-specific-notes
+permalink: "/trouble-shooting/web-specific-notes"
 ---
 
 ## Table of Contents
@@ -14,19 +11,17 @@ permalink: /trouble-shooting/web-specific-notes
 
 ### Supported Features
 
-With "OpenSiv3D for Web," you can use the almost features which is supported in OpenSiv3D for Linux.
-For details, check out [Implementation Status](/status)
+With "OpenSiv3D for Web," you can use the almost features which is supported in OpenSiv3D for Linux. For details, check out [Implementation Status](/status)
 
 ### File Systems
 
 Your WebGL apps **cannot access any files on users' file system**.
 
-Those files required on running your WebGL apps, **can be bundled on building** with emcc's `--preload` option.
-These bundled files are loaded into a virtual file system; then you can access these files on ordinal way.
+Those files required on running your WebGL apps, **can be bundled on building** with emcc's `--preload` option. These bundled files are loaded into a virtual file system; then you can access these files on ordinal way.
 
 #### Visual Studio
 
-Open the project configuration window, and add preloaded file path into `Preloaded Files` (found in [Emscripten Linker] > [Input]) in the project configuration.
+Open the project configuration window, and add preloaded file path into `Preloaded Files` (found in [Emscripten Linker] &gt; [Input]) in the project configuration.
 
 ![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
 
@@ -38,12 +33,11 @@ Open `.vscode/Link.Debug.rsp` or `.vscode/Link.Release.rsp` and add linker prelo
 
 ### File Save Dialog
 
-`s3d::Dialog::SaveFile` always returns `None`.
-Please use `s3d::Platform::Web::DownloadFile` to download files that stored in the virtual file system.
+`s3d::Dialog::SaveFile` always returns `None`. Please use `s3d::Platform::Web::DownloadFile` to download files that stored in the virtual file system.
 
 ```cpp
   //
-  // Not Supported in Web. 
+  // Not Supported in Web.
   //
   // if (auto path = Dialog::SaveFile())
   // {
@@ -67,8 +61,7 @@ iOS devices have no fullscreen support.
 
 ### Network
 
-Only connecting to external websocket server is supported.
-Make sure to use secured websocket server in secured (https://) pages.
+Only connecting to external websocket server is supported. Make sure to use secured websocket server in secured (https://) pages.
 
 <!-- TODO: asyncify allows busy loop -->
 
@@ -88,7 +81,7 @@ Make sure to use secured websocket server in secured (https://) pages.
 
   //
   // Not Supported that polling with `client.read`.
-  // Polling will freeze the browser. 
+  // Polling will freeze the browser.
   //
   // while (client.read(serverPlayerPos));
   //
@@ -99,8 +92,7 @@ Make sure to use secured websocket server in secured (https://) pages.
 
 ### Multi-Threading
 
-OpenSiv3D for Web is designed to be run single-threaded,
-so **AsyncTask** or **std::thread** will not work as you expected.
+OpenSiv3D for Web is designed to be run single-threaded, so **AsyncTask** or **std::thread** will not work as you expected.
 
 ```cpp
   AsyncTask task
@@ -115,18 +107,17 @@ so **AsyncTask** or **std::thread** will not work as you expected.
 
 ### Unsupported Texture Format
 
-In mobile browsers, generating textures of format `TextureFormat::R32_Float` will be failed due to the mobile hardware limitation.
-Consider using `TextureFormat::R16G16_Float` formatted textures instead.
+In mobile browsers, generating textures of format `TextureFormat::R32_Float` will be failed due to the mobile hardware limitation. Consider using `TextureFormat::R16G16_Float` formatted textures instead.
 
 ### Features that Requires User Actions
 
 Some features are required to use on user actions.
 
-* Dialog::\*
-* ClipBoard::ReadText, SetText
-* Window::SetFullscreen
-* VideoReader (on Safari)
-* System::LaunchBrowser
+- Dialog::*
+- ClipBoard::ReadText, SetText
+- Window::SetFullscreen
+- VideoReader (on Safari)
+- System::LaunchBrowser
 
 ```cpp
 //
@@ -141,5 +132,24 @@ if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
   // invocation of `Window::SetFullscreen` will work expectedly.
   //
   Window::SetFullscreen(true);
+}
+```
+
+### Wire-frame Drawing
+
+Wire-frame Drawing is not available in the WebGL backend as WebGL 2.0 does not have wireframe drawing capabilities.
+
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	while (System::Update())
+	{
+    // Ignored in Web
+		const ScopedRenderStates2D rasterizer{ RasterizerState::WireframeCullNone };
+		
+		Shape2D::Heart(200, Scene::Center()).draw(Palette::Skyblue);
+	}
 }
 ```
