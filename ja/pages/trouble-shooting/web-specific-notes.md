@@ -146,3 +146,22 @@ if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
   Window::SetFullscreen(true);
 }
 ```
+
+### ワイヤーフレーム描画
+
+WebGL バックエンドでは、WebGL 2.0 にワイヤーフレーム描画の機能がないため、利用することができません。
+
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+	while (System::Update())
+	{
+    // Web 版では無視されます
+		const ScopedRenderStates2D rasterizer{ RasterizerState::WireframeCullNone };
+		
+		Shape2D::Heart(200, Scene::Center()).draw(Palette::Skyblue);
+	}
+}
+```
