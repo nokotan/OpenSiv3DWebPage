@@ -43,7 +43,7 @@ UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
 
       ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
 
-  3. 「ユーザ環境変数の編集」というタイトルのウィンドウが表示されるので、変数名に「PYTHON_UTF8」(半角英字、小文字不可)と、変数値に「1」(半角数字)と入力する。
+  3. 「ユーザ環境変数の編集」というタイトルのウィンドウが表示されるので、変数名に「PYTHONUTF8」(半角英字、小文字不可)と、変数値に「1」(半角数字)と入力する。
 
       ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
 
