@@ -15,7 +15,7 @@ With "OpenSiv3D for Web," you can use the almost features which is supported in 
 
 ### File Systems
 
-Your WebGL apps **cannot access any files on users' file system**.
+In OpenSiv3D Web version, <strong>it is not possible to freely access files on the user's file system</strong> , except for files that the user has explicitly permitted to read using functions such as <code>Dialog::OpenFile</code> .
 
 Those files required on running your WebGL apps, **can be bundled on building** with emcc's `--preload` option. These bundled files are loaded into a virtual file system; then you can access these files on ordinal way.
 
