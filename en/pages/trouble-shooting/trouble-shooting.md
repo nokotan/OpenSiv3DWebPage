@@ -33,7 +33,7 @@ UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
 
 - Specify `PYTHONUTF8=1` in the environment variables.
 
-    <details markdown="block"><summary>Procedures</summary> </details>
+      <details markdown="block"><summary>Procedures</summary> </details>
 
     1. Open **Windows Settings** and type **environment variables** into the search box.
 
@@ -43,7 +43,7 @@ UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
 
         ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
 
-    3. Edit User Environment Variable Window will be shown, type **PYTHON_UTF8** into Name, 1 into Value.
+    3. A window titled "Edit user environment variables" will be displayed. Enter "PYTHONUTF8" (capital case letters) for the variable name and "1" for the variable value.
 
         ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
 
@@ -68,7 +68,7 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 
     ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)
 
-      <details markdown="block"><summary>Procedures</summary> </details>
+    <summary>procedure</summary>
 
     1. Right-click the template zip package and click **Extract All...**.
 
