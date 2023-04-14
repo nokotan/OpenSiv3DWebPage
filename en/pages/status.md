@@ -28,9 +28,9 @@ Useful Links
 Browser | Supported | Remarks
 :-: | :-: | :-:
 Internet Explorer 11 | 🚫 | missing **WebGL2**, **WebAssembly** support
-Google Chrome | ✅ |
+Google Chrome | ✅ | with hardware acceleration enabled
 Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work
-Microsoft Edge | ✅ |
+Microsoft Edge | ✅ | with hardware acceleration enabled
 Opera | ❔ |
 
 ### macOS
@@ -38,14 +38,14 @@ Opera | ❔ |
 Browser | Supported | Remarks
 :-: | :-: | :-:
 Safari | ⚠️ | works on Safari 15.0 or later, macOS Monterey ; WebAssembly SIMD is not available
-Google Chrome | ✅ |
+Google Chrome | ✅ | with hardware acceleration enabled
 Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work
 
 ### Linux
 
 Browser | Supported | Remarks
 :-: | :-: | :-:
-Google Chrome | ❔ |
+Google Chrome | ❔ | with hardware acceleration enabled
 Mozilla Firefox | ❔ | `Clipboard::ReadText` does not work
 
 ### Android
@@ -61,7 +61,7 @@ Sharp Aquos | ❔
 Browser | Supported | Remarks
 :-: | :-: | :-:
 Android Browser | ❔ |
-Google Chrome | 🚧 |
+Google Chrome | 🚧 | with hardware acceleration enabled
 Mozilla Firefox | 🚧 | `Clipboard::ReadText` does not work
 Opera Mobile | ❔ |
 
