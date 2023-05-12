@@ -10,7 +10,7 @@ permalink: /ja/building/get-emscripten
 
 Windows 向け Emscripten 3.1.20 インストーラが [GitHub Releases](https://github.com/nokotan/EmscriptenInstaller/releases/latest) からダウンロードできます。
 
-<details markdown="block"><summary>OpenSiv3D for Web のインストーラが行う処理</summary>
+<details markdown="block"><summary>Emscripten 3.1.20 インストーラが行う処理</summary>
 
 インストーラは次のツールをお使いの開発環境にダウンロードします。
 

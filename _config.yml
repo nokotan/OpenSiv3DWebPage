@@ -43,62 +43,28 @@ github:
 
 defaults:
   - scope:
-      path: "en/pages"
+      path: "pages/en"
     values:
       layout: "default"
       language: "en"
       description: OpenSiv3D for Web brings you to developing WebGL application with C++17/20!
+      sitemap: false
   - scope:
-      path: "en/pages/building"
-    values:
-      layout: "posts"
-  - scope:
-      path: "en/pages/vscode"
-    values:
-      layout: "posts"
-  - scope:
-      path: "en/pages/publishing"
-    values:
-      layout: "posts"
-  - scope:
-      path: "ja/pages"
+      path: "pages/ja"
     values:
       layout: "ja/default"
       language: "ja"
       description: OpenSiv3D for Web は C++17/20 で WebGL アプリを開発するためのライブラリです
-      sitemap: false
-  - scope:
-      path: "ja/pages/building"
-    values:
-      layout: "ja/posts"
-  - scope:
-      path: "ja/pages/vscode"
-    values:
-      layout: "ja/posts"
-  - scope:
-      path: "ja/pages/publishing"
-    values:
-      layout: "ja/posts"
 
-alternative-languages: [ "ja" ]
+alternative-languages: [ "en" ]
 
 exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
   - Gemfile
   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
   - CNAME
-  - Ralefile
   - README.md
-  - ja/README.md
-  - test
-  - pages/
+  - test/
+  - docs/
 
 plugins:
   - jekyll-seo-tag

@@ -1,0 +1,5 @@
+site_name: OpenSiv3D for Web docs
+docs_dir: ja/pages
+site_dir: _site
+theme: 
+  name: material
