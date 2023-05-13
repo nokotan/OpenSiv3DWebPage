@@ -31,7 +31,10 @@ jobs:
           source: ./
           destination: ./_site
       - name: Build with mkdocs
-        run: mkdocs build
+        run: |
+          ls -al _site
+          chmod +w _site
+          mkdocs build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
