@@ -23,13 +23,15 @@ jobs:
         uses: actions/configure-pages@v2
       - name: Install dependencies
         run: |
-          bundle install
           pip install mkdocs
           pip install mkdocs-material
-      - name: Build site
-        run: |
-          bundle exec jekyll build
-          mkdocs build
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Build with mkdocs
+        run: mkdocs build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
