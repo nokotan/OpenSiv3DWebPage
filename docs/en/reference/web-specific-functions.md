@@ -2,17 +2,17 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-title: Web Specific Functions
-permalink: /trouble-shooting/web-specific-functions
+title: Web 版固有の関数
+permalink: /ja/trouble-shooting/web-specific-functions
 ---
 
-## Obtaining URL parameters
+## URL パラメータの取得
 
-You can obtain url parameters as `HashTable<String, String>`.
+`HashTable<String, String>` の形式で、URL パラメータを取得できます。
 
 ```cpp
   //
-  // if the app launched with the parameter `siv3d.app.com?launched_via=twitter` ...
+  // ページが `siv3d.app.com?launched_via=twitter` という URL で開かれたら...
   //
   auto params = Platform::Web::System::GetURLParameters();
 
@@ -22,7 +22,7 @@ You can obtain url parameters as `HashTable<String, String>`.
   }
 ```
 
-## Web Notification
+## Web 通知
 
 ```cpp
   AsyncTask<bool> requestResult;
@@ -46,95 +46,95 @@ You can obtain url parameters as `HashTable<String, String>`.
   }
 ```
 
-## Download Files from Virtual File System
+## 仮想ファイルシステムからファイルをダウンロードする
 
 ```cpp
   image.save(U"a.png");
 
-  // Download 'a.png' in the virtual file system with the name 'a.png'
+  // 仮想ファイルシステム中の 'a.png' ファイルを 'a.png' という名前でダウンロードする。
   Platform::Web::DownloadFile(U"a.png");
 ```
 
-## Write Additional Assets into Virtual File System from Server
+## サーバから追加のアセットをダウンロードする
 
 ```cpp
-  // Download 'windmill.png' into the virtual file system with the name 'windmill.png'
+  // 'windmill.png' をサーバーから追加でダウンロードする'
   Platform::Web::FetchFile(U"example/windmill.png");
 ```
 
-## Features that uses AsyncTask
+## AsyncTask を使うことのできる機能
 
-Some features, such as AudioDecoding or Clipboard, blocks the main loop for several seconds.
-Using platform-specific functions that returns `AsyncTask` can keep the main thread from being blocked.
+AudioDecoding やクリップボードなどの、一部の機能は、数秒の間メインループをブロックする可能性があります。
+`AsyncTask` を返り値にもつ、プラットフォーム固有の関数を使うことで、メインループがブロックされないようにすることができます。
 
-### Awaiting AsyncTask
+### AsyncTask を待機する
 
 ```cpp
   // 
-  // Maybe blocks for several seconds
+  // 数秒間ブロックする可能性のある書き方
   //
   // Audio audio { U"/example/test.mp3" };
   Audio audio;
   AsyncTask<Wave> audioTask = s3d::Platform::Web::AudioDecoder::DecodeFromFile(U"/example/test.mp3");
 
-  // Synchronously wait until the audioTask gets ready.
+  // audioTask の準備ができるまで同期的に待機
   if (auto resolvedAudio = s3d::Platform::Web::System::WaitForFutureResolved(audioTask))
   {
     audio = *resolvedAudio;
   }
 ```
 
-### Audio Decoding
+### 音声ファイルのデコード
 
-`s3d::Platform::Web::AudioDecoder::DecodeAudioFromFile` returns `AsyncTask<Wave>`.
+`s3d::Platform::Web::AudioDecoder::DecodeAudioFromFile` が `AsyncTask<Wave>` を返します。
 
 <!-- TODO: hungs with asyncify -->
 
 ```cpp
   // 
-  // Maybe blocks for several seconds
+  // 数秒間ブロックする可能性のある書き方
   //
   // Audio audio { U"/example/test.mp3" };
   Audio audio;
   AsyncTask<Wave> audioTask = s3d::Platform::Web::AudioDecoder::DecodeFromFile(U"/example/test.mp3");
 
-  // check if audio decoding has been finished
+  // デコードが終わったかチェック
   if (audioTask.isReady())
   {
     audio = Audio{ audioTask.get() };
   }
 ```
 
-### File Open Dialog
+### ファイルを開くダイアログ
 
-`s3d::Platforms::Web::Dialog::Open**` returns `AsyncTask<**>`.
+`s3d::Platforms::Web::Dialog::Open**` が `AsyncTask<**>` を返します。
 
 ```cpp
   // 
-  // Maybe blocks for several seconds
+  // 数秒間ブロックする可能性のある書き方
   //
   // Audio audio = Dialog::OpenAudio();
   Audio audio;
   AsyncTask<Audio> audioTask = s3d::Platforms::Web::Dialog::OpenAudio();
 
-  // check if user has been selected file and decoding audio is finished
+  // ユーザーがファイルを選択し、デコードが終わったかチェック
   if (audioTask.isReady())
   {
     audio = audioTask.get();
   }
 ```
 
-### Clipboard
+### クリップボード
 
-Only test copying and pasting are supported.
-(and in FireFox, this feature is disallowed.)
+テキストのコピーと貼り付けのみサポートされています。
+(そして、FireFox ではこの機能は無効化されています。)
 
-`s3d::Platforms::Web::Clipboard::GetText` returns `AsyncTask<String>`.
-(You can use `s3d::Clipboard::SetText` in ordinal way.)
+`s3d::Platforms::Web::Clipboard::GetText` が `AsyncTask<String>` を返します。
+(`s3d::Clipboard::SetText` は通常通り使えます。)
 
 ```cpp
   // 
-  // Maybe blocks for several seconds
+  // 数秒間ブロックする可能性のある書き方
   //
   // String text;
   // 
@@ -147,7 +147,7 @@ Only test copying and pasting are supported.
 
   textTask = Platforms::Web::Clipboard::GetText();
 
-  // check if text has been pasted from clipboard
+  // テキストが貼り付けられたか問い合わせる
   if (textTask.isReady())
   {
     text = textTask.get();

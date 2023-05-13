@@ -10,7 +10,7 @@ Visual Studio Code で OpenSiv3D v0.6.9 プログラミングをするのに必�
 
 |  |  |
 |--|--|
-| OS | Windows 10 (64-bit) /  Windows 11 |
+| OS | Windows 7 SP1 (64-bit) / Windows 8.1 (64-bit) / Windows 10 (64-bit) / macOS Monterey 以降 / Ubuntu 20.04 LTS / Ubuntu 22.04 LTS |
 | CPU | Intel または AMD 製の CPU |
 | 映像出力 | モニタなど、何らかの映像出力装置があること |
 | 音声出力 | 何らかの音声出力装置があること |
@@ -42,7 +42,7 @@ OpenSiv3D v0.6.6 Web 版を使って開発されたアプリケーションを�
     emsdk activate 3.1.20
     ```
 
-1. 2. のコマンド出力の最後の 1 行をコピーしてターミナルに貼り付けて、実行します。環境によって内容が異なりますが、次のような 1 行が表示されるはずです。
+1. コマンド出力の最後の 1 行をコピーしてターミナルに貼り付けて、実行します。環境によって内容が異なりますが、次のような 1 行が表示されるはずです。
 
     ```sh
     echo 'source "<emsdk のあるフォルダ>/emsdk/emsdk_env.sh"' >> $HOME/.bash_profile

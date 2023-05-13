@@ -1,56 +1,56 @@
 ---
-title: Publish Your WebGL Apps
+title: WebGL アプリの公開
 ---
 
-## Publish Your WebGL Apps
+## WebGL アプリの公開
 
-The files of WebGL apps are emitted in the `Emscripten/Release` folder, containing these files:
+WebGL アプリケーションを構成するファイルは、`Emscripten/Release` に出力されます。このフォルダには、次のファイルが含まれています。
 
-- (AppName).html
-- (AppName).js
-- (AppName).wasm
-- (AppName).data
+- (プロジェクト名).html
+- (プロジェクト名).js
+- (プロジェクト名).wasm
+- (プロジェクト名).data
 
 ![FolderImage](/assets/img/publishing/uploaded-files.png)
 
-These files should be put into a Web Server in order to publish your WebGL apps.
+これらのファイルを Web サーバに配置することで、WebGL アプリを公開することができます。
 
-### Limitations
+### 制限
 
-- OpenSiv3D for Web is designed to work with secure context (https://).
+- OpenSiv3D for Web はセキュアコンテクスト上で動作するように設計されています
 
 ### GitHub Pages
 
-Dedicated explaination is available in <https://prog-8.com/docs/github-pages>.
+詳しくは <https://prog-8.com/docs/github-pages> を参照してください。
 
-#### Limitations
+#### 制限
 
-- GitHub Pages cannot be used for commecial use
-- Each uploaded files cannot exceed 50MB and `git-lfs` cannot be used
+- GitHub Pages は商用目的で利用することはできません
+- また、アップロードされるファイルは 50MB を超えてはならず、 `git-lfs` は使用できません
 
-Please check following official pages.
+次のリンクも併せて確認してください。
 
-- [About GitHub Pages](https://docs.github.com/pages/getting-started-with-github-pages/about-github-pages).
-- [About large files on GitHub](https://docs.github.com/repositories/working-with-files/managing-large-files/about-large-files-on-github).
+- [About GitHub Pages](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages).
+- [About large files on GitHub](https://docs.github.com/ja/repositories/working-with-files/managing-large-files/about-large-files-on-github).
 
-## Optimize Assets Size
+## ビルドサイズの縮小
 
-### Shrinking Bundle Size
+### バンドルサイズの縮小
 
-The Siv3D template project contains all files so that examples are got worked.
+コードサンプルが正常に機能するようにするため、Siv3D プロジェクトテンプレートはすべてのファイルがバンドル対象に含まれています。
 
-Some files can be ommited to reduce the bundle size, please follow instructions in <https://zenn.dev/reputeless/articles/article-minimum>.
+いくつかのファイルは、バンドルサイズの縮小のため省略することができます。詳しくは <https://zenn.dev/reputeless/articles/article-minimum> を参照してください。
 
-### Shrinking WebAssembly Size
+### WebAssembly サイズの縮小
 
-`libSiv3DScript.a` can be omitted from linked files if your WebGL app don't use **Siv3D Scripts** functionality.
+Siv3D Script の機能を使わない場合、`libSiv3DScript.a` をリンクされるファイルから除外することができます。
 
 #### Visual Studio
 
-Open the project configuration window, and remove `Siv3DScript` from Additional Dependency Files (found in [Emscripten Linker] > [Input]) in the project configuration.
+[プロジェクト] > [プロパティ] から、プロジェクト設定を開きます。プロジェクト設定の、[Emscripten リンカ] > [入力] > [追加の依存ファイル] から、`Siv3DScript` を削除します。
 
 ![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
 
 #### Visual Studio Code
 
-Open `.vscode/Link.Debug.rsp` or `.vscode/Link.Release.rsp` and remove `-lSiv3DScript`.
+`.vscode/Link.Debug.rsp` または `.vscode/Link.Release.rsp` を開き、`-lSiv3DScript` の一行を削除します。

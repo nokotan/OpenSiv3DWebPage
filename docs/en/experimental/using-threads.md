@@ -1,37 +1,42 @@
 ---
-title: Multithread
-permalink: "/experimental/using-threads"
-sitemap: 'false'
+title: マルチスレッド
+permalink: /ja/experimental/using-threads
+sitemap: false
 ---
 
-## Overview
+## 概要
 
-OpenSiv3D for Web provides an experimental multi-threaded version using emscripten's pthread support. By using the multi-thread compatible version instead of the normal version, you will be able to use functions that are not available in the normal version, such as asynchronous processing using `AsyncTask` .
+OpenSiv3D for Web では、emscripten の pthread サポートを使ったマルチスレッド対応版を試験的に提供しています。
+通常版の代わりにマルチスレッド対応版を使用する事で、`AsyncTask` を使った非同期処理など、通常版では使えないの機能を使用することができるようになります。
 
-> In order to use multi-threading in WebGL apps built with OpenSiv3D for Web, server-side settings for delivering assets are required. Please refer to the link below to configure the server side. The following contents are not supported by OpenSiv3D for Web.
->
-> - [Requirements for using SharedArrayBuffer](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
-> - [COOP header](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
-> - [COEP header](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy) {:.warn}
+!!! サーバ側の設定
+
+    OpenSiv3D for Web でビルドした WebGL アプリでマルチスレッドを使うためには、アセットを配信するサーバ側の設定が必要です。
+    以下のリンクを参考にして、サーバ側の設定を行なってください。
+    なお、以下の内容に関しては、OpenSiv3D for Web のサポート外となります。
+
+    - [SharedArrayBuffer を使用するための必要要件](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
+    - [COOP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
+    - [COEP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
 
 ## Visual Studio
 
-### Download OpenSiv3D for Web multi-threaded version
+### OpenSiv3D for Web マルチスレッド対応版のダウンロード
 
-Download <code>OpenSiv3D-Installer-wasm-mt.exe</code> from <a>GitHub Releases</a> and execute it.
+[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) から、`OpenSiv3D-Installer-wasm-mt.exe` をダウンロードし、実行します。
 
-### Add Build Options
+### ビルドオプションの追加
 
-On the project opened in Visual Studio, open project options and add `-pthread` to compiler and linker options.
+Visual Studio で開いたプロジェクト上で、プロジェクトオプションを開き、コンパイラオプションとリンカオプションに `-pthread` を追加します。
 
 ## Visual Studio Code
 
-### Download OpenSiv3D for Web multi-threaded version
+### OpenSiv3D for Web マルチスレッド対応版のダウンロード
 
-Download `OpenSiv3D-wasm-mt.tgz` from [GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) and extract it to a suitable folder.
+[GitHub Releases](https://github.com/nokotan/OpenSiv3D/releases) から、`OpenSiv3D-wasm-mt.tgz` をダウンロードし、適切なフォルダに展開します。
 
-Copy all the folders under the extracted folder `Package` to the folder `OpenSiv3D` and overwrite it.
+展開して出てきたフォルダ `Package` 以下のフォルダ全てを、フォルダ `OpenSiv3D` にコピーして上書きします。
 
-### Add Build Options
+### ビルドオプションの追加
 
-Add `-pthread` to both `.vscode/Compile.rsp` and `.vscode/Link.rsp` .
+`.vscode/Compile.rsp`, `.vscode/Link.rsp` の両方に `-pthread` を追加します。

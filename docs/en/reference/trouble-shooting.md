@@ -1,57 +1,50 @@
 ---
-title: Trouble Shooting
-permalink: "/trouble-shooting/trouble-shooting"
+title: うまくいかないときは
 ---
 
-## Table of Contents
+## ビルドエラー
 
-{% include toc.html %}
+### インテリセンス上のエラー
 
-## Build Errors
-
-### Errors on Intellisense
-
-#### Symptoms
+#### 症例
 
 ```log
-Include <typeinfo> before using typeid
+typeid を使用する前に <typeinfo> をインクルードする必要があります
 ```
 
-#### Solution
+#### 対処策
 
-These errors can be ignored as long as the build with emcc is successful.
+emcc を使ったビルドが成功する限り、これらのエラーは無視できます。
 
 ### UnicodeDecodeError
 
-#### Symptoms
+#### 症例
 
 ```log
 UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
 ```
 
-#### Solution
+#### 対処策
 
-- Specify `PYTHONUTF8=1` in the environment variables.
+- 環境変数 `PYTHONUTF8=1` を設定する
 
-      <details markdown="block"><summary>Procedures</summary> </details>
+??? info "環境変数の設定"
 
-    1. Open **Windows Settings** and type **environment variables** into the search box.
+    1. 「Windows の設定」を開き、検索欄に「環境変数」と入力する。すると、「環境変数の編集」という検索結果が出るので、それをクリックする。
 
         ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
 
-    2. Environment Variable Window will be shown, click **New**.
+    1. 「環境変数」というタイトルのウィンドウが表示されるので、「新規(_N_)...」をクリックする。
 
         ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
 
-    3. A window titled "Edit user environment variables" will be displayed. Enter "PYTHONUTF8" (capital case letters) for the variable name and "1" for the variable value.
+    1. 「ユーザ環境変数の編集」というタイトルのウィンドウが表示されるので、変数名に「PYTHONUTF8」(半角英字、小文字不可)と、変数値に「1」(半角数字)と入力する。
 
         ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
 
-    
+### Emscripten ports に関するビルドエラー
 
-### Build Failure of emscripten ports
-
-#### Symptoms
+#### 症例
 
 ```log
 cache:INFO: generating port: libz.a... (this will be cached in "C:\...\cache\sysroot\lib\wasm32-emscripten\libz.a" for subsequent builds)
@@ -62,75 +55,72 @@ shared : error : C:\...\cache\wasm\ports-builds\zlib\deflate.c: No such file or 
 system_libs : error : a problem occurred when using an emscripten-ports library.  try to run `emcc --clear-ports` and then run this command again
 ```
 
-#### Solutions
+#### 対処策
 
-- Extract zlib.zip (located in `%EMSDK%/upstream/emscripten/cache/ports`) into the same folder.
+- フォルダ `%EMSDK%/upstream/emscripten/cache/ports` をエクスプローラで開き、 zlib.zip をその場で展開する。
 
     ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)
 
-    <summary>procedure</summary>
+    ??? info "Zip ファイルの展開"
 
-    1. Right-click the template zip package and click **Extract All...**.
+        1. Zip ファイルを右クリックして、**すべて展開(T)...** をクリックします。
 
-        ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all.png)
+            ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all.png)
 
-    2. A detailed extraction window will be shown, click **Extract**.
+        1. 圧縮 (ZIP 形式) フォルダーの展開という名前のウィンドウが表示されるので、**展開** をクリックします。
 
-        ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)
+            ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)
 
-      
-    
+- フォルダ `%EMSDK%/upstream/emscripten/cache` を、お使いのウイルス対策ソフトウェアのスキャン除外フォルダに追加する。
 
-- Add `%EMSDK%/upstream/emscripten/cache` folder into the security check ingore list of your security software.
+### .tlog 生成時のビルドエラー
 
-### Build Failure on .tlog creation
-
-#### Symptoms
+#### 症例
 
 ```log
-1> FileTracker : error FTK1011: could not create the new file tracking log file: C:\..\..\(some file).tlog. The file exists.
+FileTracker : error FTK1011: 新しいファイル追跡ログ ファイルを作成できませんでした: C:\..\..\(何らかのファイル).tlog。ファイルがあります。
 ```
 
-#### Solution
+#### 対処策
 
-- Rebuild your project.
-    - This problems always occurs on the first time build.
+- 再度プロジェクトをビルドする。
+  - この現象は1回目のビルドで必ず発生します。
 
-### Warning Asyncify Addlist Contained a Non-matching Pattern
+### Asyncify Addlist Contained a Non-matching Pattern という警告が出る
 
-#### Symptoms
+#### 症例
 
 ```log
 EMSCRIPTENLINK : warning : Asyncify addlist contained a non-matching pattern: s3d::Clipboard::GetText(\*) (s3d::Clipboard::GetText\28\*\29)
 ```
 
-#### Solution
+#### 対処策
 
-- This warning is intended.
+- この警告は意図されたものです。
 
-## Runtime Error
+## 実行時エラー
 
 ### Gamepad State is null
 
-#### Symptoms
+#### 症例
 
 ```log
 Uncaught TypeError: GLFW.lastGamepadState is null
 ```
 
-#### Solution
+#### 対処策
 
-- Serve WebGL app in the secure context (https://)
+- WebGL アプリをセキュアコンテキスト (https://) 上で配信する。
 
-### Messagebox -1 is shown
+### メッセージボックス -1 が表示される
 
-#### Symptoms
+#### 症例
 
 ```log
 -1
 ```
 
-#### Solution
+#### 対処策
 
-- Use debug build
-    - Diagnostic messages are optimized out in Release builds.
+- デバッグビルドを有効にしてください
+  - エラーメッセージはリリースビルドでは最適化によって省略されてしまいます。
