@@ -9,8 +9,6 @@ css:
   - /assets/css/gallary.css
 ---
 
-![play ground alternative](https://raw.githubusercontent.com/Siv3D/File/master/v6/screenshot/hello-siv3d.gif)
-
 OpenSiv3D for Web はインタラクティブな WebGL アプリケーションを C++20 で開発するためのライブラリです。
 
 ## はじめる

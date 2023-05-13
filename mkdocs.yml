@@ -30,3 +30,33 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
+
+nav:
+  - English: 
+    - Download:
+      - en/download/web-vs.md
+      - en/download/web-vscode.md
+    - Publishing:
+      - en/publishing/publishing.md
+    - Reference:
+      - en/reference/trouble-shooting.md
+      - en/reference/web-specific-functions.md
+      - en/reference/web-specific-notes.md
+    - Experimental Feature:
+      - en/experimental/using-threads.md
+    - Join Development:
+      - en/develop/build-siv3d-web.md
+  - 日本語: 
+    - ダウンロード:
+      - ja/download/web-vs.md
+      - ja/download/web-vscode.md
+    - WebGL アプリの公開:
+      - ja/publishing/publishing.md
+    - リファレンス:
+      - ja/reference/trouble-shooting.md
+      - ja/reference/web-specific-functions.md
+      - ja/reference/web-specific-notes.md
+    - 試験的機能:
+      - ja/experimental/using-threads.md
+    - 開発に参加する:
+      - ja/develop/build-siv3d-web.md
