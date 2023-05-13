@@ -20,17 +20,17 @@ OpenSiv3D Web版では、`Dialog::OpenFile` などの関数を使って、ユー
 実行時に必要なファイルは、emscirpten の `--preload` オプションを使って、**ビルド時にあらかじめバンドルする必要**があります。
 バンドルされたファイルは、起動時に仮想ファイルシステムに読み込まれ、通常のファイルアクセス関数で読み書きができるようになります。
 
-    ??? info "Visual Studio での手順"
+??? info "Visual Studio での手順"
 
-        [プロジェクト] > [プロパティ] から、プロジェクト設定を開きます。プロジェクト設定の、[Emscripten リンカ] > [入力] > [プリロードされるリソースファイル] に、仮想ファイルシステムに追加したいファイルまたはフォルダのパスを、`(パス)@(仮想ファイルシステム上でのフルパス)` の形式で追加します。
+    [プロジェクト] > [プロパティ] から、プロジェクト設定を開きます。プロジェクト設定の、[Emscripten リンカ] > [入力] > [プリロードされるリソースファイル] に、仮想ファイルシステムに追加したいファイルまたはフォルダのパスを、`(パス)@(仮想ファイルシステム上でのフルパス)` の形式で追加します。
 
-        ![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
+    ![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
 
-    ??? info "VSCode での手順"
+??? info "VSCode での手順"
 
-        `.vscode/Link.Debug.rsp` または `.vscode/Link.Release.rsp` を開き、プリロードされるファイルまたはフォルダのパスを、`--preload-file (パス)@(仮想ファイルシステム上でのフルパス)`の形式で追記します。
+    `.vscode/Link.Debug.rsp` または `.vscode/Link.Release.rsp` を開き、プリロードされるファイルまたはフォルダのパスを、`--preload-file (パス)@(仮想ファイルシステム上でのフルパス)`の形式で追記します。
 
-        ![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
+    ![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
 
 ### ファイルを保存するダイアログ
 
@@ -182,3 +182,33 @@ void Main()
     }
 }
 ```
+
+### Asyncify を使う上での制約
+
+OpenSiv3D Web版では、JavaScript での非同期処理を、C++ コード内では同期的処理として扱うために、[Asyncify](https://emscripten.org/docs/porting/asyncify.html) を使用しています。
+次の関数を呼び出す関数は、ビルドオプションで `ASYNCIFY_ADD` への登録が必要です。その関数を呼ぶ関数も再帰的に登録が必要です
+
+- s3d::System::Update()
+- s3d::AACDecoder::decode(*) const
+- s3d::MP3Decoder::decode(*) const
+- s3d::AudioDecoder::Decode(*)
+- s3d::Wave::Wave(*)
+- s3d::Audio::Audio(*)
+- s3d::GenericDecoder::decode(*) const
+- s3d::Image::Image(*)
+- s3d::Texture::Texture(*)
+- s3d::ImageDecoder::Decode(*)
+- s3d::ImageDecoder::GetImageInfo(*)
+- s3d::Model::Model(*)
+- s3d::Clipboard::GetText(*)
+
+次の関数を呼び出す関数が、関数ポインタや仮想関数によって間接的に呼び出される場合、関数ポインタや仮想関数の呼び出しをする関数は、ビルドオプションで `ASYNCIFY_ADD` への登録が必要です。その関数を呼ぶ関数も再帰的に登録が必要です
+
+- s3d::SimpleHTTP::Save(*)
+- s3d::SimpleHTTP::Load(*)
+- s3d::SimpleHTTP::Get(*)
+- s3d::SimpleHTTP::Post(*)
+- s3d::VideoReader::VideoReader(*)
+- s3d::VideoReader::open(*)
+- s3d::Platform::Web::FetchFile(*)
+- s3d::Platform::Web::AwaitAsyncTask(*)
