@@ -20,17 +20,17 @@ OpenSiv3D Web版では、`Dialog::OpenFile` などの関数を使って、ユー
 実行時に必要なファイルは、emscirpten の `--preload` オプションを使って、**ビルド時にあらかじめバンドルする必要**があります。
 バンドルされたファイルは、起動時に仮想ファイルシステムに読み込まれ、通常のファイルアクセス関数で読み書きができるようになります。
 
-#### Visual Studio
+    ??? info "Visual Studio での手順"
 
-[プロジェクト] > [プロパティ] から、プロジェクト設定を開きます。プロジェクト設定の、[Emscripten リンカ] > [入力] > [プリロードされるリソースファイル] に、仮想ファイルシステムに追加したいファイルまたはフォルダのパスを、`(パス)@(仮想ファイルシステム上でのフルパス)` の形式で追加します。
+        [プロジェクト] > [プロパティ] から、プロジェクト設定を開きます。プロジェクト設定の、[Emscripten リンカ] > [入力] > [プリロードされるリソースファイル] に、仮想ファイルシステムに追加したいファイルまたはフォルダのパスを、`(パス)@(仮想ファイルシステム上でのフルパス)` の形式で追加します。
 
-![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
+        ![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
 
-#### VSCode
+    ??? info "VSCode での手順"
 
-`.vscode/Link.Debug.rsp` または `.vscode/Link.Release.rsp` を開き、プリロードされるファイルまたはフォルダのパスを、`--preload-file (パス)@(仮想ファイルシステム上でのフルパス)`の形式で追記します。
+        `.vscode/Link.Debug.rsp` または `.vscode/Link.Release.rsp` を開き、プリロードされるファイルまたはフォルダのパスを、`--preload-file (パス)@(仮想ファイルシステム上でのフルパス)`の形式で追記します。
 
-![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
+        ![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
 
 ### ファイルを保存するダイアログ
 
@@ -38,17 +38,17 @@ OpenSiv3D Web版では、`Dialog::OpenFile` などの関数を使って、ユー
 仮想ファイルシステムからファイルをダウンロードするには、`s3d::Platform::Web::DownloadFile` を使います。
 
 ```cpp
-  //
-  // Web 版ではサポートされない書き方
-  //
-  // if (auto path = Dialog::SaveFile())
-  // {
-  //   image.save(*path);
-  // }
-  //
+//
+// Web 版ではサポートされない書き方
+//
+// if (auto path = Dialog::SaveFile())
+// {
+//   image.save(*path);
+// }
+//
 
-  image.save(U"a.png");
-  Platform::Web::DownloadFile(U"a.png");
+image.save(U"a.png");
+Platform::Web::DownloadFile(U"a.png");
 ```
 
 ### 最初のユーザアクションがあるまで音が鳴らない
@@ -69,28 +69,28 @@ iPhone はフルスクリーン表示の機能がありません。
 <!-- TODO: asyncify allows busy loop -->
 
 ```cpp
-  const IPv4Address ip = IPv4Address::Localhost();
-  constexpr uint16 port = 50000;
+const IPv4Address ip = IPv4Address::Localhost();
+constexpr uint16 port = 50000;
 
-  TCPClient client;
+TCPClient client;
 
-  client.connect(ip, port);
+client.connect(ip, port);
 
-  Point serverPlayerPos{ 0, 0 };
-  const Point clientPlayerPos = Cursor::Pos();
-  
-  // 送信
-  client.send(clientPlayerPos);
+Point serverPlayerPos{ 0, 0 };
+const Point clientPlayerPos = Cursor::Pos();
 
-  //
-  // Web 版では `client.read` を呼び出す無限ループはサポートされません。
-  // ブラウザがフリーズしてしまいます。
-  //
-  // while (client.read(serverPlayerPos));
-  //
+// 送信
+client.send(clientPlayerPos);
 
-  // 受信
-  client.read(serverPlayerPos);
+//
+// Web 版では `client.read` を呼び出す無限ループはサポートされません。
+// ブラウザがフリーズしてしまいます。
+//
+// while (client.read(serverPlayerPos));
+//
+
+// 受信
+client.read(serverPlayerPos);
 ```
 
 ### マルチスレッド
@@ -99,17 +99,17 @@ OpenSiv3D for Web は、シングルスレッドで動作するように設計�
 そのため、**AsyncTask** や **std::thread** は期待した動作をしません。
 
 ```cpp
-  //
-  // Web 版ではサポートされない書き方
-  //
-  AsyncTask task
-  {
+//
+// Web 版ではサポートされない書き方
+//
+AsyncTask task
+{
     [&]
     {
       std::this_thread::sleep_for(10s);
       Console << U"Done.";
     }
-  };
+};
 ```
 
 ### サポートされないテクスチャフォーマット
@@ -135,11 +135,11 @@ OpenSiv3D for Web は、シングルスレッドで動作するように設計�
 
 if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
 {
-  //
-  // SimpleGUI::Button()` はユーザーのクリック操作によって true を返すので、
-  // `Window::SetFullscreen` の呼び出しは期待通りのタイミングで動作します。
-  //
-  Window::SetFullscreen(true);
+    //
+    // SimpleGUI::Button()` はユーザーのクリック操作によって true を返すので、
+    // `Window::SetFullscreen` の呼び出しは期待通りのタイミングで動作します。
+    //
+    Window::SetFullscreen(true);
 }
 ```
 
@@ -152,12 +152,33 @@ WebGL バックエンドでは、WebGL 2.0 にワイヤーフレーム描画の�
 
 void Main()
 {
-	while (System::Update())
-	{
-    // Web 版では無視されます
-		const ScopedRenderStates2D rasterizer{ RasterizerState::WireframeCullNone };
+    while (System::Update())
+	  {
+        // Web 版では無視されます
+		    const ScopedRenderStates2D rasterizer{ RasterizerState::WireframeCullNone };
 		
-		Shape2D::Heart(200, Scene::Center()).draw(Palette::Skyblue);
-	}
+		    Shape2D::Heart(200, Scene::Center()).draw(Palette::Skyblue);
+	  }
+}
+```
+
+### 例外処理
+
+実行中に発生した例外を任意の個所でキャッチすることはできず、すべて Siv3D ライブラリコード内でキャッチされます。
+
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+    try
+    {
+        throw std::exception();
+    }
+    catch (std::exception e)
+    {
+        // Web 版では実行されない行
+        Console << U"Catched!";
+    }
 }
 ```
