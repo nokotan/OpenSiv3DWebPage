@@ -6,10 +6,6 @@ title: Web 固有の注意点
 permalink: /ja/trouble-shooting/web-specific-notes
 ---
 
-## もくじ
-
-{% include toc.html %}
-
 ## 既知の制約
 
 ### サポートされる機能

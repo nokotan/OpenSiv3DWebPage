@@ -35,7 +35,9 @@ nav:
   - English: 
     - Download:
       - en/download/web-vs.md
-      - en/download/web-vscode.md
+      - en/download/web-vscode-windows.md
+      - Start Siv3D for Web Programming with macOS + Visual Studio Code: en/download/web-vscode-unix.md
+      - Start Siv3D for Web Programming with Ubuntu + Visual Studio Code: en/download/web-vscode-unix.md
     - Publishing:
       - en/publishing/publishing.md
     - Reference:
@@ -49,7 +51,9 @@ nav:
   - 日本語: 
     - ダウンロード:
       - ja/download/web-vs.md
-      - ja/download/web-vscode.md
+      - ja/download/web-vscode-windows.md
+      - macOS + Visual Studio Code で Siv3D for Web プログラミングを始める: ja/download/web-vscode-unix.md
+      - Ubuntu + Visual Studio Code で Siv3D for Web プログラミングを始める: ja/download/web-vscode-unix.md
     - WebGL アプリの公開:
       - ja/publishing/publishing.md
     - リファレンス:

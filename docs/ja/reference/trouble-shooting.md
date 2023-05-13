@@ -1,11 +1,6 @@
 ---
 title: うまくいかないときは
-permalink: /ja/trouble-shooting/trouble-shooting
 ---
-
-## もくじ
-
-{% include toc.html %}
 
 ## ビルドエラー
 
@@ -33,21 +28,19 @@ UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
 
 - 環境変数 `PYTHONUTF8=1` を設定する
 
-  <details markdown="block"><summary>手順</summary>
+??? info "環境変数の設定"
 
-  1. 「Windows の設定」を開き、検索欄に「環境変数」と入力する。すると、「環境変数の編集」という検索結果が出るので、それをクリックする。
+    1. 「Windows の設定」を開き、検索欄に「環境変数」と入力する。すると、「環境変数の編集」という検索結果が出るので、それをクリックする。
 
-      ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
+        ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
 
-  2. 「環境変数」というタイトルのウィンドウが表示されるので、「新規(_N_)...」をクリックする。
+    1. 「環境変数」というタイトルのウィンドウが表示されるので、「新規(_N_)...」をクリックする。
 
-      ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
+        ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
 
-  3. 「ユーザ環境変数の編集」というタイトルのウィンドウが表示されるので、変数名に「PYTHONUTF8」(半角英字、小文字不可)と、変数値に「1」(半角数字)と入力する。
+    1. 「ユーザ環境変数の編集」というタイトルのウィンドウが表示されるので、変数名に「PYTHONUTF8」(半角英字、小文字不可)と、変数値に「1」(半角数字)と入力する。
 
-      ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
-
-  </details>
+        ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
 
 ### Emscripten ports に関するビルドエラー
 
@@ -66,20 +59,17 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 
 - フォルダ `%EMSDK%/upstream/emscripten/cache/ports` をエクスプローラで開き、 zlib.zip をその場で展開する。
 
-
     ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)
 
-    <details markdown="block"><summary>手順</summary>
+    ??? info "Zip ファイルの展開"
 
-    1. Zip ファイルを右クリックして、**すべて展開(T)...** をクリックします。
+        1. Zip ファイルを右クリックして、**すべて展開(T)...** をクリックします。
 
-        ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all.png)
+            ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all.png)
 
-    2. 圧縮 (ZIP 形式) フォルダーの展開という名前のウィンドウが表示されるので、**展開** をクリックします。
+        1. 圧縮 (ZIP 形式) フォルダーの展開という名前のウィンドウが表示されるので、**展開** をクリックします。
 
-        ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)
-
-    </details>
+            ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)
 
 - フォルダ `%EMSDK%/upstream/emscripten/cache` を、お使いのウイルス対策ソフトウェアのスキャン除外フォルダに追加する。
 

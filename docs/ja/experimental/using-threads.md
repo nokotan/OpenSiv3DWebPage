@@ -9,14 +9,15 @@ sitemap: false
 OpenSiv3D for Web では、emscripten の pthread サポートを使ったマルチスレッド対応版を試験的に提供しています。
 通常版の代わりにマルチスレッド対応版を使用する事で、`AsyncTask` を使った非同期処理など、通常版では使えないの機能を使用することができるようになります。
 
-> OpenSiv3D for Web でビルドした WebGL アプリでマルチスレッドを使うためには、アセットを配信するサーバ側の設定が必要です。
-> 以下のリンクを参考にして、サーバ側の設定を行なってください。
-> なお、以下の内容に関しては、OpenSiv3D for Web のサポート外となります。
->
-> - [SharedArrayBuffer を使用するための必要要件](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
-> - [COOP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
-> - [COEP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
-{:.warn}
+!!! サーバ側の設定
+
+    OpenSiv3D for Web でビルドした WebGL アプリでマルチスレッドを使うためには、アセットを配信するサーバ側の設定が必要です。
+    以下のリンクを参考にして、サーバ側の設定を行なってください。
+    なお、以下の内容に関しては、OpenSiv3D for Web のサポート外となります。
+
+    - [SharedArrayBuffer を使用するための必要要件](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer)
+    - [COOP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Opener-Policy)
+    - [COEP ヘッダ](https://developer.mozilla.org/ja-JP/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy)
 
 ## Visual Studio
 
