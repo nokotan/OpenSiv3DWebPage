@@ -1,42 +1,71 @@
----
-title: OpenSiv3D for Web のビルド
-permalink: /ja/contributing/build-siv3d
----
+# OpenSiv3D for Web のビルド
 
-以下の手順で OpenSiv3D for Web が emscripten の sysroot にインストールされます。
+自前でライブラリのソースコードをビルドする手順を説明します。このページは次のような特殊な利用者向けの説明です。
 
-## Windows
+- 開発中のバージョンの最新のコードを試したい
+- Siv3D の内部を理解したい
+- 内部のコードを改造したい
 
-### 必要要件
+## 1. Windows の場合
 
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
-  - C++ Build Tools コア機能
-  - C++ CMake tools for Windows
-- [Git for Windows](https://gitforwindows.org)
-- [emscripten](https://siv3d.kamenokosoft.com/building/get-emscripten)
+### 1.1 追加のサードパーティ・ライブラリをダウンロードする
 
-### 手順
+◆ OpenSiv3D のライブラリ本体のビルドに必要な C++ ライブラリ**「Boost」**を準備します。
 
-1. OpenSiv3D リポジトリをクローンします
-  
-  ```cmd
-  git clone https://github.com/Siv3D/OpenSiv3D.git
-  cd OpenSiv3D
-  ```
+[https://www.boost.org/users/history/version_1_74_0.html :material-open-in-new:](https://www.boost.org/users/history/version_1_74_0.html) から `boost_1_74_0` の圧縮されたソースコードをダウンロードし、展開します。配布されているファイル形式は `.7z` と `.zip` があります。使用しているコンピュータで `.7z` の展開ができるなら `.7z` を使ったほうが所用時間が短いです。Boost は大量のファイルから構成されるため、Windows OS 標準の ZIP 展開機能を使用すると展開の完了まで数分近く待たされます。
 
-1. ビルドフォルダを作成します (以下の例では, `Web/Build` を作成します)
-  
-  ```cmd
-  mkdir Web/Build
-  cd Web/Build
-  ```
-  
-1. OpenSiv3D for Web のビルドとインストールを行います
-  
-  ```cmd
-  emcmake cmake -GNinja -DCMAKE_BUILD_TYPE=Release ..
-  ninja -j4 install
-  ```
+??? info "Boost とは"
+    [Boost](https://www.boost.org/) は 20 年以上の歴史がある、C++ で最も有名なライブラリの 1 つです。様々な目的のために作られた大小さまざま、作者もさまざまなライブラリ群で構成されています。C++11 で標準ライブラリに入った `std::shared_ptr`, C++17 で標準ライブラリに入った `std::optional`, `<filesystem>` はそれぞれ Boost.SmartPtr, Boost.Optional, Boost.Fileystem ライブラリをベースに設計されました。Siv3D では、幾何問題の計算処理のために Boost.Geometry, C++17 をサポートしない環境におけるファイルシステム処理のために Boost.Filesystem, 子プロセスの作成・通信のために Boost.Process, 多倍長計算のために Boost.MultiPrecision, CSV パーサのために Boost.Tokenizer など、いくつかの Boost ライブラリの機能を使用しています。
+
+??? info ".7z の展開ソフト"
+    `.7z` の展開に使えるソフトウェアは [7-Zip :material-open-in-new:](https://sevenzip.osdn.jp/) が最も有名です。
+
+
+### 1.2 OpenSiv3D の開発ブランチからソースコードを入手する
+
+◆ OpenSiv3D の最新コードを OpenSiv3D 公式リポジトリから入手します。
+
+[OpenSiv3D 公式リポジトリの main ブランチ :material-open-in-new:](https://github.com/Siv3D/OpenSiv3D) が最新安定版です。「Code」からリポジトリをクローンするか、ZIP ファイルでソースコードをダウンロードします（「Download ZIP」）。
+
+![](https://raw.githubusercontent.com/Siv3D/siv3d.site.resource/main/v6/download/ubuntu/repo.png)
+
+### 1.3 追加のサードパーティ・ライブラリをコピーして追加する
+
+◆ ダウンロードしたプロジェクトのフォルダに Boost の一部をコピーします。
+
+1.2 で入手した OpenSiv3D プロジェクトのフォルダ内に、`Dependencies/boost_1_74_0/` フォルダがあります。この中へ 1.1 で準備した Boost ライブラリの一部である `boost_1_74_0/boost/` フォルダ (約 120 MB) をコピーします。つまりコピー後は `Dependencies/boost_1_74_0/boost/` となります。
+
+![](https://raw.githubusercontent.com/Siv3D/siv3d.site.resource/main/v6/develop/boost.png)
+
+### 1.4 開発環境のセットアップ
+
+1. Visual Studio インストーラを開き、既存の Visual Studio インストールの**変更**をクリックします。右側の **C++ によるデスクトップの開発** のタブを開き、**Windows 用 C++ CMake ツール** にチェックマークがついた状態にして、**変更**をクリックします。
+
+### 1.5 OpenSiv3D ライブラリをビルドする
+
+◆ CMake を使って OpenSiv3D ライブラリをビルドします。
+
+1.2 で入手した OpenSiv3D プロジェクトのフォルダ内の `Web` を Visual Studio 開発者コマンドプロンプトで開きます。開いたコマンドプロンプトで、次のコマンドを一行ずつ実行します。
+
+```bat
+mkdir Build
+cd Build
+emcmake cmake -GNinja -DCMAKE_BUILD_TYPE=Release ..
+ninja -j4 install
+```
+
+### 1.5 OpenSiv3D アプリをビルドする
+
+◆ CMake を使って OpenSiv3D アプリをビルドします。
+
+1.2 で入手した OpenSiv3D プロジェクトのフォルダ内の `Web/App` を Visual Studio 開発者コマンドプロンプトで開きます。開いたコマンドプロンプトで、次のコマンドを一行ずつ実行します。
+
+```
+mkdir Build
+cd Build
+emcmake cmake -GNinja -DCMAKE_BUILD_TYPE=Release ..
+ninja -j4
+```
 
 ## macOS
 
