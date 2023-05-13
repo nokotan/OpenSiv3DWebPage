@@ -91,7 +91,7 @@
           <li class="pure-menu-item">
             <a href="javascript:void 0;" class="pure-menu-link pure-menu-selected">{{ lang.friendlyName }}</a>
           </li>
-          {%- elsif page.language == "en" %}
+          {%- elsif page.language == site.default-language %}
           <li class="pure-menu-item">
             <a href="/{{ lang.name }}{{ page.url }}" class="pure-menu-link">{{ lang.friendlyName }}</a>
           </li>        

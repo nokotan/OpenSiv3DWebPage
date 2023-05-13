@@ -56,6 +56,7 @@ defaults:
       language: "ja"
       description: OpenSiv3D for Web は C++17/20 で WebGL アプリを開発するためのライブラリです
 
+default-language: ja
 alternative-languages: [ "en" ]
 
 exclude:
