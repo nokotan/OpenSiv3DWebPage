@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: OpenSiv3D for Web
-permalink: /index
+permalink: /en/index
 css: 
   - /assets/css/playground.css
   - /assets/css/gallary.css

@@ -1,7 +1,7 @@
 ---
 title: Download
 meta-title: Download
-permalink: "/download"
+permalink: "/en/download"
 ---
 
 ## Latest Version

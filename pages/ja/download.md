@@ -1,7 +1,7 @@
 ---
 title: ダウンロード
 meta-title: Download
-permalink: /ja/download
+permalink: /download
 ---
 
 ## 最新版

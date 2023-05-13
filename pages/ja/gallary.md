@@ -1,6 +1,6 @@
 ---
 title: ギャラリー
-permalink: /ja/gallary
+permalink: /gallary
 css: 
   - /assets/css/gallary.css
 ---

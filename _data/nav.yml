@@ -1,75 +1,9 @@
 - title: Home
-  url: /index
+  url: /en/index
 
-- url: /download
+- url: /en/download
 
-- url: /gallary
+- url: /en/gallary
 
-- title: Building First Apps on Visual Studio
-  url: /building
-  new-group: true
-  children: 
-    - url: /building/overview
-    - url: /building/get-emscripten
-    - url: /building/setup-visualstudio 
-    - url: /building/install-siv3d
-    - url: /building/creating-project
-    - url: /building/running-code-with-visualstudio
-
-
-- title: Building First Apps on VSCode
-  url: /vscode
-  new-group: true
-  children: 
-    - url: /vscode/overview
-    - url: /vscode/install-emscripten
-    - url: /vscode/setup-vscode
-    - url: /vscode/creating-project
-    - url: /vscode/running-code-with-vscode
-
-- title: Trouble Shooting
-  url: /trouble-shooting
-  new-group: true
-  children: 
-    - url: /trouble-shooting/trouble-shooting
-    - url: /trouble-shooting/web-specific-notes
-    - url: /trouble-shooting/web-specific-functions
-
-- title: Publishing First Apps
-  url: /publishing
-  new-group: true
-  children: 
-    - url: /publishing/publish-your-webapp
-    - url: /publishing/optimize-asset-size
-
-- url: /status
-
-- title: Experimental Features
-  url: /experimental
-  new-group: true
-  children: 
-    - url: /experimental/using-threads
-
-- title: OpenSiv3D v0.4.3
-  url: /v0.4.3
-  new-group: true
-  children: 
-    - title: Home (v0.4.3)
-      url: /v0.4.3/index
-    - title: Download (v0.4.3)
-      url: /v0.4.3/download
-    - title: Gallary (v0.4.3)
-      url: /v0.4.3/gallary
-    - title: Status (v0.4.3)
-      url: /v0.4.3/status
-    - title: Web Specific Notes (v0.4.3)
-      url: /v0.4.3/web-specific-notes
-
-- title: Contributing
-  url: /contributing
-  new-group: true
-  children: 
-    - url: /contributing/build-siv3d
-    - title: GitHub Repository
-      url: https://github.com/nokotan/OpenSiv3D
-      icon: /assets/img/GitHub-Mark-32px.png
+- title: User Guide
+  url: /en/building

@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 title: 実装状況
-permalink: /ja/status
+permalink: /status
 ---
 
 **[プロジェクト:機能](https://github.com/nokotan/OpenSiv3D/projects/1) も確認してください。**

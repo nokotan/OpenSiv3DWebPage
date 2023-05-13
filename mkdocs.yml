@@ -1,5 +1,32 @@
+# project information
 site_name: OpenSiv3D for Web docs
-docs_dir: ja/pages
-site_dir: _site
+docs_dir: docs
+site_dir: _site/docs
+
+# theme
 theme: 
   name: material
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+      toc_depth: 3
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      preserve_tabs: true
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
