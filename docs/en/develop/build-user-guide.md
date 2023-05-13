@@ -8,9 +8,10 @@
 
 ## プロジェクトサイトのビルド
 
-このサイトでは、ビルド環境に [**jekyll**](https://jekyllrb.com) を、CSS フレームワークに [**milligram**](https://milligram.io) と [**Pure.css**](https://purecss.io) を使っています。
+このサイトでは、ビルド環境に [**jekyll**](https://jekyllrb.com) と [**mkdocs**](https://www.mkdocs.org/) を、CSS フレームワークに [**milligram**](https://milligram.io) と [**Pure.css**](https://purecss.io) を使っています。
 
 - [jekyll インストールガイド](https://jekyllrb.com/docs/)
+- [mkdocs インストールガイド](https://www.mkdocs.org/getting-started/)
 - [milligram プロジェクトサイト](https://milligram.io)
 - [Pure.css プロジェクトサイト](https://purecss.io)
 
@@ -19,13 +20,15 @@
 ```sh
 % gem install bundler
 % bundle install
+% pip install mkdocs
+% pip install mkdocs-material
 ```
 
 ### プロジェクトサイトの生成
 
 ```sh
 % jekyll build
-# または、`jekyll serve` コマンドでローカルサーバを立ち上げます
+% mkdocs build
 ```
 
 ## ディレクトリ構造
@@ -43,3 +46,7 @@
 
 - `pages` フォルダに、主となる記事があります。
 - ナビゲーションメニューは、手動で更新しています。ナビゲーションメニューの内容の定義は `_data/ja/nav.yml` にあります。
+
+### docs
+
+- `docs` フォルダに、ユーザーガイドがあります。

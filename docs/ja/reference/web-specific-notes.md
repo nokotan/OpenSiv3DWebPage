@@ -11,7 +11,7 @@ permalink: /ja/trouble-shooting/web-specific-notes
 ### サポートされる機能
 
 OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専用の関数を除く) が使用できます。
-詳細は [実装状況](/ja/status) を確認してください。
+詳細は [実装状況](/status) を確認してください。
 
 ### ファイルシステム
 

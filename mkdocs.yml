@@ -33,6 +33,7 @@ markdown_extensions:
 
 nav:
   - English: 
+    - en/index.md
     - Download:
       - en/download/web-vs.md
       - en/download/web-vscode-windows.md
@@ -48,7 +49,9 @@ nav:
       - en/experimental/using-threads.md
     - Join Development:
       - en/develop/build-siv3d-web.md
+      - en/develop/build-user-guide.md
   - 日本語: 
+    - ja/index.md
     - ダウンロード:
       - ja/download/web-vs.md
       - ja/download/web-vscode-windows.md
@@ -64,3 +67,4 @@ nav:
       - ja/experimental/using-threads.md
     - 開発に参加する:
       - ja/develop/build-siv3d-web.md
+      - ja/develop/build-user-guide.md
