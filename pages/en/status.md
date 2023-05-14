@@ -1,5 +1,5 @@
 ---
-title: 実装状況
+title: Implementation status
 permalink: "/status"
 ---
 
@@ -12,7 +12,7 @@ badge | explanation
 ✅ | Implementation complete
 ⚠️ | Temporary implementation, some parts do not work or behave unexpectedly
 🚧 | Under implementation
-❔ | 不明
+❔ | Not clear
 ❌ | Not implemented (to be implemented in a future release)
 🚫 | No plans to implement
 
@@ -28,9 +28,9 @@ Useful links
 browser name | Support status | remarks
 :-: | :-: | :-:
 Internet Explorer 11 | 🚫 | No support for **WebGL2** , **WebAssembly**
-Google Chrome | ✅ | ハードウェアアクセレーション有効な環境のみサポート
+Google Chrome | ✅ | with hardware acceleration enabled
 Mozilla Firefox | ✅ | `Clipboard::ReadText` doesn't work
-Microsoft Edge | ✅ | ハードウェアアクセレーション有効な環境のみサポート
+Microsoft Edge | ✅ | with hardware acceleration enabled
 Opera | ❔ |
 
 ### macOS
@@ -38,14 +38,14 @@ Opera | ❔ |
 browser name | Support status | remarks
 :-: | :-: | :-:
 Safari | ⚠️ | Support Safari 15.0, macOS Monterey. WebAssembly SIMD not available
-Google Chrome | ✅ | ハードウェアアクセレーション有効な環境のみサポート
+Google Chrome | ✅ | with hardware acceleration enabled
 Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work
 
 ### Linux
 
 browser name | Support status | remarks
 :-: | :-: | :-:
-Google Chrome | ❔ | ハードウェアアクセレーション有効な環境のみサポート
+Google Chrome | ❔ | with hardware acceleration enabled
 Mozilla Firefox | ❔ | `Clipboard::ReadText` doesn't work
 
 ### Android
@@ -61,7 +61,7 @@ Sharp Aquos | ❔
 browser name | Support status | remarks
 :-: | :-: | :-:
 Android Browser | ❔ |
-Google Chrome | 🚧 | ハードウェアアクセレーション有効な環境のみサポート
+Google Chrome | 🚧 | with hardware acceleration enabled
 Mozilla Firefox | 🚧 | `Clipboard::ReadText` doesn't work
 Opera Mobile | ❔ |
 
@@ -134,7 +134,7 @@ ProCon | ❌ |
 
 Function name | situation | remarks
 :-: | :-: | :-:
-webcam | ✅ | 固定解像度のみ対応 (640x480)
+webcam | ✅ | Fixed Resolution (640x480)
 microphone | ✅ |
 CPU feature detection | 🚫 |
 power state | 🚫 | Relies on a deprecated API called [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API)
@@ -166,6 +166,6 @@ message-box | ✅ | call `window.alert` or `window.confirm`
 clipboard | ⚠️ | Only text copy/paste supported; `s3d::Platform::Web::Clipboard` is also available
 Network | 🚧 | Depends on **WebSocket** , P2P communication is not available
 Siv3D Scripts | ✅ |
-AsyncTask | ❌ | 将来のリリースで実装予定
+AsyncTask | ❌ | To be implemented in a future release
 child process | ❌ |
 NLP | ❌ | depends on child process support
