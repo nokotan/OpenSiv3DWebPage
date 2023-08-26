@@ -46,6 +46,7 @@ defaults:
       path: "pages/en"
     values:
       layout: "default"
+      lang: "en_US"
       language: "en"
       description: OpenSiv3D for Web brings you to developing WebGL application with C++17/20!
       sitemap: false
@@ -53,6 +54,7 @@ defaults:
       path: "pages/ja"
     values:
       layout: "ja/default"
+      lang: "ja_JP"
       language: "ja"
       description: OpenSiv3D for Web は C++17/20 で WebGL アプリを開発するためのライブラリです
 
