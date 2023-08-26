@@ -1,24 +1,24 @@
 ---
-title: うまくいかないときは
+title: When things go wrong
 ---
 
-## ビルドエラー
+## build error
 
-### インテリセンス上のエラー
+### intellisense error
 
-#### 症例
+#### case
 
 ```log
-typeid を使用する前に <typeinfo> をインクルードする必要があります
+You must include <typeinfo> before using typeid
 ```
 
-#### 対処策
+#### Countermeasure
 
-emcc を使ったビルドが成功する限り、これらのエラーは無視できます。
+These errors can be ignored as long as the build using emcc succeeds.
 
 ### UnicodeDecodeError
 
-#### 症例
+#### case
 
 ```log
 UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
@@ -26,25 +26,27 @@ UnicodeDecodeError: 'cp932' codec can't decode byte 0x83 in position 99080
 
 #### 対処策
 
-- 環境変数 `PYTHONUTF8=1` を設定する
+- Set environment variable `PYTHONUTF8=1`
 
-??? info "環境変数の設定"
+??? info "Set environment variables"
 
-    1. 「Windows の設定」を開き、検索欄に「環境変数」と入力する。すると、「環境変数の編集」という検索結果が出るので、それをクリックする。
+```
+1. Open "Windows Settings" and enter "environment variables" in the search field. Click on the search result for "Edit Environment Variables".
 
-        ![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
+![envvar0](/assets/img/building/trouble-shooting/envvar0.png)
 
-    1. 「環境変数」というタイトルのウィンドウが表示されるので、「新規(_N_)...」をクリックする。
+1. A window titled "Environment Variables" will appear. Click "New (_N_)...".
 
-        ![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
+![envvar1](/assets/img/building/trouble-shooting/envvar1.png)
 
-    1. 「ユーザ環境変数の編集」というタイトルのウィンドウが表示されるので、変数名に「PYTHONUTF8」(半角英字、小文字不可)と、変数値に「1」(半角数字)と入力する。
+1. A window titled "Edit user environment variables" will be displayed. Enter "PYTHONUTF8" (single-byte alphabetic characters, lowercase letters are not allowed) for the variable name and "1" (single-byte number) for the variable value.
 
-        ![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
+![envvar2](/assets/img/building/trouble-shooting/envvar2.png)
+```
 
-### Emscripten ports に関するビルドエラー
+### Build error with Emscripten ports
 
-#### 症例
+#### case
 
 ```log
 cache:INFO: generating port: libz.a... (this will be cached in "C:\...\cache\sysroot\lib\wasm32-emscripten\libz.a" for subsequent builds)
@@ -57,36 +59,38 @@ system_libs : error : a problem occurred when using an emscripten-ports library.
 
 #### 対処策
 
-- フォルダ `%EMSDK%/upstream/emscripten/cache/ports` をエクスプローラで開き、 zlib.zip をその場で展開する。
+- Open the folder `%EMSDK%/upstream/emscripten/cache/ports` in Explorer and expand zlib.zip on the spot.
 
     ![folder layout](/assets/img/building/trouble-shooting/emscripten-cache.png)
 
-    ??? info "Zip ファイルの展開"
+    ??? info "Extract Zip File"
 
-        1. Zip ファイルを右クリックして、**すべて展開(T)...** をクリックします。
+    ```
+      1. Right-click the zip file and click **Extract All...**.
 
-            ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all.png)
+    ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all.png)
 
-        1. 圧縮 (ZIP 形式) フォルダーの展開という名前のウィンドウが表示されるので、**展開** をクリックします。
+    1. A window titled Extract Compressed (ZIP Format) Folder will appear, click **Extract**.
 
-            ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)
+    ![ExtractZip](/assets/img/building/trouble-shooting/unzip-all2.png)
+    ```
 
-- フォルダ `%EMSDK%/upstream/emscripten/cache` を、お使いのウイルス対策ソフトウェアのスキャン除外フォルダに追加する。
+- Add the folder `%EMSDK%/upstream/emscripten/cache` to your antivirus software's scan exclusion folders.
 
-### .tlog 生成時のビルドエラー
+### Build error when generating .tlog
 
 #### 症例
 
 ```log
-FileTracker : error FTK1011: 新しいファイル追跡ログ ファイルを作成できませんでした: C:\..\..\(何らかのファイル).tlog。ファイルがあります。
+FileTracker : error FTK1011: Could not create new file tracking log file: C:\..\..\(some file).tlog. I have a file.
 ```
 
-#### 対処策
+#### Countermeasure
 
-- 再度プロジェクトをビルドする。
-  - この現象は1回目のビルドで必ず発生します。
+- Build the project again.
+    - This phenomenon always occurs on the first build.
 
-### Asyncify Addlist Contained a Non-matching Pattern という警告が出る
+### I get the warning Asyncify Addlist Contained a Non-matching Pattern
 
 #### 症例
 
@@ -94,11 +98,11 @@ FileTracker : error FTK1011: 新しいファイル追跡ログ ファイルを�
 EMSCRIPTENLINK : warning : Asyncify addlist contained a non-matching pattern: s3d::Clipboard::GetText(\*) (s3d::Clipboard::GetText\28\*\29)
 ```
 
-#### 対処策
+#### Countermeasure
 
-- この警告は意図されたものです。
+- This warning is intentional.
 
-## 実行時エラー
+## runtime error
 
 ### Gamepad State is null
 
@@ -110,9 +114,9 @@ Uncaught TypeError: GLFW.lastGamepadState is null
 
 #### 対処策
 
-- WebGL アプリをセキュアコンテキスト (https://) 上で配信する。
+- Serve WebGL apps over a secure context (https://).
 
-### メッセージボックス -1 が表示される
+### A message box of -1 is displayed
 
 #### 症例
 
@@ -122,5 +126,5 @@ Uncaught TypeError: GLFW.lastGamepadState is null
 
 #### 対処策
 
-- デバッグビルドを有効にしてください
-  - エラーメッセージはリリースビルドでは最適化によって省略されてしまいます。
+- Please enable debug build
+    - Error messages are optimized away in release builds.
