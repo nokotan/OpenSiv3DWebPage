@@ -85,6 +85,6 @@ This environment is required to run applications developed using OpenSiv3D v0.6.
 3. Execute the built program with **Start Debugging** in the **Debug** menu
 4. A running program ends when you press ++esc++ or close the browser tab
 
-## 5. その他の注意事項
+## 5. Other notes
 
 1. The web version of the scene resize mode defaults to `ResizeMode::Virtual` , so the scene resizes as the browser scales. To prevent this, fix the scene size with `Scene::SetResizeMode(ResizeMode::Keep);` and `Scene::Resize(width, height);`
