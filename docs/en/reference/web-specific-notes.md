@@ -7,15 +7,15 @@ permalink: "/ja/trouble-shooting/web-specific-notes"
 
 ### Features supported
 
-OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専用の関数を除く) が使用できます。 詳細は [実装状況](/status) を確認してください。
+In OpenSiv3D Web version, you can use the functions available in OpenSiv3D Linux version (excluding functions for Linux version). Please check [the implementation status](/status) for details.
 
 ### file system
 
-OpenSiv3D Web版では、`Dialog::OpenFile` などの関数を使って、ユーザが明示的に読み取りを許可したファイル以外の、**ユーザのファイルシステム上にあるファイルに対して自由にアクセスすることができません**。
+In OpenSiv3D Web version, **it is not possible to freely access files on the user's file system** , except for files that the user has explicitly permitted to read using functions such as `Dialog::OpenFile` .
 
 Files required at runtime <strong>must be pre-bundled at build time</strong> using the <code>--preload</code> option of emscirpten. The bundled files are loaded into the virtual file system at boot time and can be read and written with normal file access functions.
 
-??? info "Visual Studio での手順"
+??? info "Procedure in Visual Studio"
 
 ```
 Open the project settings from Project > Properties. In the project settings, [Emscripten Linker] > [Input] > [Preloaded resource files], specify the path of the file or folder you want to add to the virtual file system as `(path)@(full path on the virtual file system)` Add in the form of
@@ -23,7 +23,7 @@ Open the project settings from Project > Properties. In the project settings, [E
 ![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
 ```
 
-??? info "VSCode での手順"
+??? info "Instructions in VSCode"
 
 ```
 Open `.vscode/Link.Debug.rsp` or `.vscode/Link.Release.rsp` and change the path of the preloaded file or folder to `--preload-file (path)@(on the virtual file system full path)` format.
@@ -157,9 +157,9 @@ Shape2D::Heart(200, Scene::Center()).draw(Palette::Skyblue);
 }
 ```
 
-### 例外処理
+### Exception handling
 
-実行中に発生した例外を任意の個所でキャッチすることはできず、すべて Siv3D ライブラリコード内でキャッチされます。
+Exceptions that occur during execution cannot be caught anywhere, they are all caught within the Siv3D library code.
 
 ```cpp
 # include <Siv3D.hpp>
@@ -178,9 +178,9 @@ void Main()
 }
 ```
 
-### Asyncify を使う上での制約
+### Limitations of using Asyncify
 
-OpenSiv3D Web版では、JavaScript での非同期処理を、C++ コード内では同期的処理として扱うために、[Asyncify](https://emscripten.org/docs/porting/asyncify.html) を使用しています。 次の関数を呼び出す関数は、ビルドオプションで `ASYNCIFY_ADD` への登録が必要です。その関数を呼ぶ関数も再帰的に登録が必要です
+OpenSiv3D Web version uses [Asyncify](https://emscripten.org/docs/porting/asyncify.html) to handle asynchronous processing in JavaScript as synchronous processing in C++ code. Functions that call the following functions must be registered with `ASYNCIFY_ADD` in the build options. Functions that call that function also need to be registered recursively
 
 - s3d::System::Update()
 - s3d::AACDecoder::decode(*) const
@@ -196,7 +196,7 @@ OpenSiv3D Web版では、JavaScript での非同期処理を、C++ コード内�
 - s3d::Model::Model(*)
 - s3d::Clipboard::GetText(*)
 
-次の関数を呼び出す関数が、関数ポインタや仮想関数によって間接的に呼び出される場合、関数ポインタや仮想関数の呼び出しをする関数は、ビルドオプションで `ASYNCIFY_ADD` への登録が必要です。その関数を呼ぶ関数も再帰的に登録が必要です
+If the function that calls the next function is indirectly called by a function pointer or virtual function, the function that calls the function pointer or virtual function must be registered with `ASYNCIFY_ADD` in the build options. Functions that call that function also need to be registered recursively
 
 - s3d::SimpleHTTP::Save(*)
 - s3d::SimpleHTTP::Load(*)
