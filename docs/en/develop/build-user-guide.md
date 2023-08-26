@@ -1,52 +1,45 @@
-# OpenSiv3D for Web プロジェクトサイト
+# OpenSiv3D for Web project site
 
-プロジェクトサイトは <https://siv3d.kamenokosoft.com> で運用中です。
+The project site is in operation at [https://siv3d.kamenokosoft.com](https://siv3d.kamenokosoft.com) .
 
-## プロジェクトサイトの翻訳
+## Project site translation
 
-* このサイトは <https://gitlocalize.com/repo/8089> によって、他言語に翻訳しています。
+- This site is translated into other languages ​​by [https://gitlocalize.com/repo/8089](https://gitlocalize.com/repo/8089) .
 
-## プロジェクトサイトのビルド
+## Build the project site
 
-このサイトでは、ビルド環境に [**jekyll**](https://jekyllrb.com) と [**mkdocs**](https://www.mkdocs.org/) を、CSS フレームワークに [**milligram**](https://milligram.io) と [**Pure.css**](https://purecss.io) を使っています。
+This site uses [**jekyll**](https://jekyllrb.com) as the build environment and [**milligram**](https://milligram.io) and [**Pure.css**](https://purecss.io) as CSS frameworks.
 
-- [jekyll インストールガイド](https://jekyllrb.com/docs/)
-- [mkdocs インストールガイド](https://www.mkdocs.org/getting-started/)
-- [milligram プロジェクトサイト](https://milligram.io)
-- [Pure.css プロジェクトサイト](https://purecss.io)
+- [jekyll installation guide](https://jekyllrb.com/docs/)
+- [milligram project site](https://milligram.io)
+- [Pure.css project site](https://purecss.io)
 
-### 依存関係の解決
+### Dependency resolution
 
 ```sh
 % gem install bundler
 % bundle install
-% pip install mkdocs
-% pip install mkdocs-material
 ```
 
-### プロジェクトサイトの生成
+### Generate project site
 
 ```sh
 % jekyll build
-% mkdocs build
+# Or start a local server with the `jekyll serve` command
 ```
 
-## ディレクトリ構造
+## directory structure
 
-### \_data, \_layouts
+### _data, _layouts
 
-- `_data/[言語]` フォルダと `_layouts/[言語]` フォルダに、翻訳したデータファイルがあります。
+- `_data/[language]` and `_layouts/[language]` folders contain the translated data files.
 
-### \_includes
+### _includes
 
-- `_includes` フォルダに、HTML の構成要素があります。
-- このフォルダには、翻訳したファイルを配置しないでください。
+- In the `_includes` folder are the HTML constructs.
+- Do not place translated files in this folder.
 
 ### pages
 
-- `pages` フォルダに、主となる記事があります。
-- ナビゲーションメニューは、手動で更新しています。ナビゲーションメニューの内容の定義は `_data/ja/nav.yml` にあります。
-
-### docs
-
-- `docs` フォルダに、ユーザーガイドがあります。
+- `pages` folder contains the main articles.
+- The navigation menu is manually updated. The definition of the navigation menu content is in `_data/ja/nav.yml` .
