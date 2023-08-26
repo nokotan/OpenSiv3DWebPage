@@ -1,89 +1,90 @@
-# Windows + Visual Studio で Siv3D for Web プログラミングを始める
+# Start Siv3D for Web programming with Windows + Visual Studio
 
-Web 版 Siv3D を試験的な機能として提供しています。Web 版はいくつか注意点があるため、Siv3D の使用に慣れた中級者以上を対象としています。利用にあたって困ったことがあれば Siv3D Discord サーバの `#web` チャンネルで質問してください。
+We are offering Siv3D for web as an experimental feature. The web version has some caveats, so it is intended for intermediate and above users who are familiar with using Siv3D. If you have any trouble using it, please ask on the `#web` channel of the Siv3D Discord server.
 
-## 1. システム要件
+## 1. System requirements
 
-### 1.1 開発者システム要件
+### 1.1 Developer System Requirements
 
-Visual Studio で OpenSiv3D v0.6.9 プログラミングをするのに必要な開発環境です。
+It is a development environment necessary for OpenSiv3D v0.6.9 programming in Visual Studio Code.
 
-|  |  |
-|--|--|
-| OS | Windows 10 (64-bit) /  Windows 11 |
-| CPU | Intel または AMD 製の CPU |
-| 映像出力 | モニタなど、何らかの映像出力装置があること |
-| 音声出力 | 何らかの音声出力装置があること |
-| 開発環境 | emscripten compiler frontend 3.1.20 |
-| ブラウザ | <ul><li>Google Chrome 85.0 以降</li><li>Microsoft Edge 85.0 以降</li><li>Google Chrome 85.0 以降</li><li>Mozilla FireFox 78.0 以降</li><li>Safari 15.1 以降</li></ul> |
+|                         |                                                          |
+|-------------------------|----------------------------------------------------------|
+| OS                      | Windows 10 (64-bit) /  Windows 11                        |
+| CPU                     | Intel or AMD CPU                                         |
+| video output            | Have some sort of video output device, such as a monitor |
+| audio output            | have some kind of audio output device                    |
+| Development environment | emscripten compiler frontend 3.1.20                      |
+| browser                 | <ul>                                                     |
+|                         | <li>Google Chrome 85.0 or higher</li>                    |
+|                         | <li>Microsoft Edge 85.0 or later</li>                    |
+|                         | <li>Google Chrome 85.0 or higher</li>                    |
+|                         | <li>Mozilla FireFox 78.0 or higher</li>                  |
+|                         | <li>Safari 15.1 or later</li>                            |
+|                         | </ul>                                                    |
 
-??? summary "Visual Studio のエディションについて"
-	Windows 10, Windows 11 のパソコンで Siv3D プログラミングをする場合は**「Visual Studio Community 2022（ビジュアル・スタジオ・コミュニティ 2022）」**を使うのが便利です。これは世界中のプロフェッショナルのソフトウェア開発者が使う「Visual Studio」という統合開発環境の無料版です。学生、個人、少規模の開発であれば、Visual Studio の有料版と同じ機能を無料で使えます。
+??? summary "Visual Studio editions" When programming Siv3D on a Windows 10 or Windows 11 computer, it is convenient to use **"Visual Studio Community 2022"**. This is a free version of the integrated development environment called "Visual Studio" used by professional software developers around the world. If you're a student, individual, or small-scale developer, you get the same functionality as the paid version of Visual Studio for free.
 
-??? summary "Visual Studio のインストール手順について"
-	[Visual Studio ダウンロードページ :material-open-in-new:](https://visualstudio.microsoft.com/ja/downloads/) から**「Visual Studio 2022 コミュニティ」**のインストーラをダウンロードし実行します。
-	インストーラを実行すると、インストールするプログラミング言語や開発ツールを選択する次のような画面が出てきます。インストール項目の選択画面から**「C++ によるデスクトップ開発」**を選択します（右側の「インストールの詳細」に表示される項目は Visual Studio のバージョンによって異なるため、気にする必要はありません）。
-	![](https://raw.githubusercontent.com/Siv3D/siv3d.site.resource/main/v6/download/windows/vs_installer_desktop.png)
-	そのまま右下の 「インストール」 ボタンを押せば、C++ プログラミングに必要なツールのインストールがはじまります。
+??? summary "How to install Visual Studio" Download <strong>and run the "Visual Studio 2022 Community" installer</strong> from <a>the Visual Studio download page: material-open-in-new:.</a> <strong>When you run the installer, the following screen for selecting programming languages ​​and development tools to be installed appears.</strong> Select "Desktop development with C++"** <strong>from the installation selection screen</strong> (the items displayed in the "Installation details" on the right side vary depending on the version of Visual Studio, so don't worry about it). <img alt=""> If you press the "Install" button on the bottom right, the installation of the tools necessary for C++ programming will start.
 
-### 1.2 アプリ動作システム要件
+### 1.2 Application operating system requirements
 
-OpenSiv3D v0.6.6 Web 版を使って開発されたアプリケーションを実行するのに必要な環境です。ゲームやアプリを配布するときの説明書に記載すると良いでしょう。
+This environment is required to run applications developed using OpenSiv3D v0.6.6 Web version. It would be a good idea to include it in the instructions when distributing the game or application.
 
-|  |  |
-|--|--|
-| OS | Windows 7 SP1 (64-bit) / Windows 8.1 (64-bit) / Windows 10 (64-bit) / macOS Monterey 以降 / Ubuntu 20.04 LTS / Ubuntu 22.04 LTS |
-| CPU | Intel または AMD 製の CPU |
-| 映像出力 | モニタなど、何らかの映像出力装置があること |
-| 音声出力 | 何らかの音声出力装置があること |
-| ブラウザ | <ul><li>Google Chrome 85.0 以降</li><li>Microsoft Edge 85.0 以降</li><li>Mozilla FireFox 78.0 以降</li><li>Safari 15.1 以降</li></ul> |
+|              |                                                                                                                                     |
+|--------------|-------------------------------------------------------------------------------------------------------------------------------------|
+| OS           | Windows 7 SP1 (64-bit) / Windows 8.1 (64-bit) / Windows 10 (64-bit) / macOS Monterey or later / Ubuntu 20.04 LTS / Ubuntu 22.04 LTS |
+| CPU          | Intel or AMD CPU                                                                                                                    |
+| video output | Have some sort of video output device, such as a monitor                                                                            |
+| audio output | have some kind of audio output device                                                                                               |
+| browser      | <ul>                                                                                                                                |
+|              | <li>Google Chrome 85.0 or higher</li>                                                                                               |
+|              | <li>Microsoft Edge 85.0 or later</li>                                                                                               |
+|              | <li>Mozilla FireFox 78.0 or higher</li>                                                                                             |
+|              | <li>Safari 15.1 or later</li>                                                                                                       |
+|              | </ul>                                                                                                                               |
 
-## 2. 開発環境のセットアップ
+## 2. Setting up the development environment
 
-### 2.1 コンパイラのインストール
+### 2.1 Installing the compiler
 
-1. **[emscripten 3.1.20 Installer](//github.com/nokotan/EmscriptenInstaller/releases/download/v0.1.2/EmscriptenOffline.exe)** をダウンロードして実行します
+1. Download and run **[emscripten 3.1.20 Installer](//github.com/nokotan/EmscriptenInstaller/releases/download/v0.1.2/EmscriptenOffline.exe)**
 
-### 2.2 Visual Studio 拡張機能のインストール
+### 2.2 Installing the Visual Studio Code extension
 
-1. **[Visual Studio MarkerPlace :material-open-in-new:](//marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-build-support)** から .vsix パッケージをダウンロードして実行します
+1. Download the .vsix package from **[Visual Studio MarkerPlace: material-open-in-new:](//marketplace.visualstudio.com/items?itemName=KamenokoSoft.emscripten-build-support)** and run it
 
-### 2.3 SDK のインストール
+### 2.3 SDK installation
 
-1. **[OpenSiv3D v0.6.6 Installer for Web](//github.com/nokotan/OpenSiv3D/releases/download/v0.6.6r1/OpenSiv3D-Installer-wasm.exe)** をダウンロードして実行します
+1. Download and run **[OpenSiv3D v0.6.6 Installer for Web](//github.com/nokotan/OpenSiv3D/releases/download/v0.6.6r1/OpenSiv3D-Installer-wasm.exe)**
 
-1. 実行時に「Windows によって PC が保護されました」と表示された場合は、**詳細情報**を押して**実行**を押します
+2. If it says "Windows protected your PC" when running, press **More info** and press **Run**
 
-??? summary "インストーラが自動的に行うこと"
-	- SDK の配置（デフォルトではドキュメントフォルダ）
-	- SDK を配置したパスへのユーザ環境変数の設定
-	- Siv3D プロジェクト用の Visual Studio プロジェクトテンプレートのコピー (通常は `ドキュメント/Visual Studio 2022/Templates/ProjectTemplates/`)
-	- アンインストーラの登録
+??? summary "What the installer does automatically" - Locating the SDK (documentation folder by default) - Setting a user environment variable to the path where you have placed the SDK - Copying the Visual Studio project template for your Siv3D project (usually`ドキュメント/Visual Studio 2022/Templates/ProjectTemplates/` ) - register uninstaller
 
-??? summary "インストールした OpenSiv3D SDK を削除するには"
-	OpenSiv3D SDK は、通常のアプリケーションと同様、Windows の「設定」からアンインストールします。
+??? summary "How to remove the installed OpenSiv3D SDK" Uninstall the OpenSiv3D SDK from Windows "Settings" like any other application.
 
-	![](https://raw.githubusercontent.com/Siv3D/siv3d.site.resource/main/v6/download/windows/uninstall.png)
+```
+![](https://raw.githubusercontent.com/Siv3D/siv3d.site.resource/main/v6/download/windows/uninstall.png)
+```
 
-## 3. Siv3D プロジェクトの作成
+## 3. Create a Siv3D project
 
 <video src="https://github.com/Siv3D/siv3d.site.resource/blob/main/v6/download/windows/create_project.mp4?raw=true" autoplay loop muted></video>
 
-1. Visual Studio のスタート画面で **新しいプロジェクトの作成** をクリックします
-1. プロジェクト テンプレートの項目から **OpenSiv3D(0.6.6)Web** を選択し、**次へ** を押します
-1. プロジェクト名と保存場所を入力し（任意）、**作成** を押します
+1. Click **Create New Project** on the Visual Studio start screen
+2. Select **OpenSiv3D(0.6.6)Web** from the Project Templates item and press **Next**
+3. Enter a project name and save location (optional) and press **Create**
 
-
-## 4. Siv3D アプリのビルド
+## 4. Build the Siv3D App
 
 ![](https://raw.githubusercontent.com/Siv3D/siv3d.site.resource/main/v6/download/windows/hellosiv3d.png)
 
-1. プロジェクトを作成すると、サンプルプログラム (Main.cpp) が最初から用意されています
-1. **ビルド** メニューからプロジェクトをビルドします。初回のビルドではエラーメッセージが表示されることがありますが、もう一度ビルドすると正常にビルドできます。
-1. **デバッグ** メニューの **デバッグの開始** でビルドしたプログラムを実行します
-1. 実行中のプログラムは、++esc++ を押すか、ブラウザタブを閉じると終了します
+1. When you create a project, a sample program (Main.cpp) is prepared from the beginning
+2. Build the project from **the build** menu. You may get an error message when you build the first time, but you can build successfully when you build again.
+3. Execute the built program with **Start Debugging** in the **Debug** menu
+4. A running program ends when you press ++esc++ or close the browser tab
 
-## 5. Web 版の出力ファイルサイズの削減とその他の注意事項
+## 5. Other notes
 
-1. Web 版のビルドでは、デフォルトで `engine/` と `example/` のすべてのファイルを最終出力に同梱するため、最終出力ファイルのサイズは Release ビルドでも合計数十 MB と大きくなります。そうしたアプリケーションを Web で公開すると、アクセスした利用者がファイルのダウンロードに時間がかかってしまうため、実際にアプリケーションを公開する際は、不要なファイルを削除する必要があります（参考: [チュートリアル 41 | アプリの公開](https://zenn.dev/reputeless/books/siv3d-documentation/viewer/tutorial-release#41.9-%E5%90%8C%E6%A2%B1%E3%81%99%E3%82%8B%E5%BF%85%E8%A6%81%E3%81%8C%E7%84%A1%E3%81%84%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB))。また、Emscripten リンカの設定において「追加の依存ファイル」から不要なライブラリを削除することで、Web 版の出力ファイルのサイズは、**最小で数 MB 程度** までコンパクトにできます。詳しくは Siv3D Discord サーバの `#web` チャンネルでご相談ください
-1. Web 版のシーンのリサイズモードはデフォルトで `ResizeMode::Virtual` であるため、ブラウザの拡大縮小に応じてシーンのサイズが変化します。これを防ぐには `Scene::SetResizeMode(ResizeMode::Keep);` と `Scene::Resize(width, height);` でシーンサイズを固定します
+1. The web version of the scene resize mode defaults to `ResizeMode::Virtual` , so the scene resizes as the browser scales. To prevent this, fix the scene size with `Scene::SetResizeMode(ResizeMode::Keep);` and `Scene::Resize(width, height);`
