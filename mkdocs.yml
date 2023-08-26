@@ -2,6 +2,7 @@
 site_name: OpenSiv3D for Web docs
 docs_dir: docs
 site_dir: _site/docs
+site_url: https://siv3d.kamenokosoft.com/docs
 
 # theme
 theme: 
