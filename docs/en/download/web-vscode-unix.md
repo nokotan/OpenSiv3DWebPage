@@ -8,17 +8,17 @@ We are offering Siv3D for web as an experimental feature. The web version has so
 
 It is a development environment necessary for OpenSiv3D v0.6.9 programming in Visual Studio Code.
 
-|          |                                                                                                                                 |
-|----------|---------------------------------------------------------------------------------------------------------------------------------|
-| OS       | Windows 7 SP1 (64-bit) / Windows 8.1 (64-bit) / Windows 10 (64-bit) / macOS Monterey 以降 / Ubuntu 20.04 LTS / Ubuntu 22.04 LTS |
-| CPU      | Intel or AMD CPU                                                                                                                |
-| 映像出力 | Have some sort of video output device, such as a monitor                                                                        |
-| 音声出力 | have some kind of audio output device                                                                                           |
-| 開発環境 | emscripten compiler frontend 3.1.20                                                                                             |
-| ブラウザ | <ul>                                                                                                                            |
-|          | <li>Google Chrome 85.0 以降</li>                                                                                                |
-|          | <li>Mozilla FireFox 78.0 以降</li>                                                                                              |
-|          | </ul>                                                                                                                           |
+|          |                                                                                                                                     |
+|----------|-------------------------------------------------------------------------------------------------------------------------------------|
+| OS       | Windows 7 SP1 (64-bit) / Windows 8.1 (64-bit) / Windows 10 (64-bit) / macOS Monterey or later / Ubuntu 20.04 LTS / Ubuntu 22.04 LTS |
+| CPU      | Intel or AMD CPU                                                                                                                    |
+| 映像出力 | Have some sort of video output device, such as a monitor                                                                            |
+| 音声出力 | have some kind of audio output device                                                                                               |
+| 開発環境 | emscripten compiler frontend 3.1.20                                                                                                 |
+| ブラウザ | <ul>                                                                                                                                |
+|          | <li>Google Chrome 85.0 以降</li>                                                                                                    |
+|          | <li>Mozilla FireFox 78.0 以降</li>                                                                                                  |
+|          | </ul>                                                                                                                               |
 
 ### 1.2 Application operating system requirements
 
@@ -75,6 +75,6 @@ This environment is required to run applications developed using OpenSiv3D v0.6.
 3. Select `Launch Chrome against localhost` or `Launch Firefox against localhost` in the Run and Debug tab and press the Run button ▶️.
 4. A running program ends when you press ++esc++ or close the browser tab
 
-## 5. その他の注意事項
+## 5. Other notes
 
 1. The web version of the scene resize mode defaults to `ResizeMode::Virtual` , so the scene resizes as the browser scales. To prevent this, fix the scene size with `Scene::SetResizeMode(ResizeMode::Keep);` and `Scene::Resize(width, height);`
