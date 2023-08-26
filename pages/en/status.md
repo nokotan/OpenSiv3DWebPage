@@ -1,116 +1,116 @@
 ---
-title: Implementation Status
-permalink: "/en/status"
+title: Implementation status
+permalink: "/status"
 ---
 
-**Also Check [Project:Features](https://github.com/nokotan/OpenSiv3D/projects/1)**
+**Also check [Project:Features](https://github.com/nokotan/OpenSiv3D/projects/1) .**
 
-### Status Marks
+### state badge
 
-Marks | Explanations
+badge | explanation
 :-: | :-:
-✅ | Implemented &amp; Supported
-⚠️ | Implemented, maybe Broken or Feature Limited
-🚧 | Implementing
-❔ | Unknown
-❌ | Currently Not Implemented (will be Implemented in Future Releases)
-🚫 | Will Not Implemented
+✅ | Implementation complete
+⚠️ | Temporary implementation, some parts do not work or behave unexpectedly
+🚧 | Under implementation
+❔ | Not clear
+❌ | Not implemented (to be implemented in a future release)
+🚫 | No plans to implement
 
-## Browser Support
+## Support status by browser
 
-Useful Links
+Useful links
 
-- [Can I use: WebGL2](https://caniuse.com/webgl2)
+- [Can I use: WebGL2 (en)](https://caniuse.com/webgl2)
 - [WebAssembly Roadmap](https://webassembly.org/roadmap/)
 
 ### Windows
 
-Browser | Supported | Remarks
+browser name | Support status | remarks
 :-: | :-: | :-:
-Internet Explorer 11 | 🚫 | missing **WebGL2**, **WebAssembly** support
+Internet Explorer 11 | 🚫 | No support for **WebGL2** , **WebAssembly**
 Google Chrome | ✅ | with hardware acceleration enabled
-Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work
+Mozilla Firefox | ✅ | `Clipboard::ReadText` doesn't work
 Microsoft Edge | ✅ | with hardware acceleration enabled
 Opera | ❔ |
 
 ### macOS
 
-Browser | Supported | Remarks
+browser name | Support status | remarks
 :-: | :-: | :-:
-Safari | ⚠️ | works on Safari 15.0 or later, macOS Monterey ; WebAssembly SIMD is not available
+Safari | ⚠️ | Support Safari 15.0, macOS Monterey. WebAssembly SIMD not available
 Google Chrome | ✅ | with hardware acceleration enabled
 Mozilla Firefox | ✅ | `Clipboard::ReadText` does not work
 
 ### Linux
 
-Browser | Supported | Remarks
+browser name | Support status | remarks
 :-: | :-: | :-:
 Google Chrome | ❔ | with hardware acceleration enabled
-Mozilla Firefox | ❔ | `Clipboard::ReadText` does not work
+Mozilla Firefox | ❔ | `Clipboard::ReadText` doesn't work
 
 ### Android
 
-Device Name | Supported
+device name | Support status
 :-: | :-:
-Samsung Galaxy | ⚠️ Galaxy S9+ (2018, March) or later
+Samsung Galaxy | ⚠️ Galaxy S9+ (2018, March) and newer
 Google Pixel | ✅
 Google Nexus | 🚫
-Sony Xperia | ❔ works on Xperia Z5 (2015, October)
+Sony Xperia | ❔ Operation confirmed on Xperia Z5 (2015, October)
 Sharp Aquos | ❔
 
-Browser | Supported | Remarks
+browser name | Support status | remarks
 :-: | :-: | :-:
 Android Browser | ❔ |
 Google Chrome | 🚧 | with hardware acceleration enabled
-Mozilla Firefox | 🚧 | `Clipboard::ReadText` does not work
+Mozilla Firefox | 🚧 | `Clipboard::ReadText` doesn't work
 Opera Mobile | ❔ |
 
 ### iOS
 
-Device Name | Supported
+device name | Support status
 :-: | :-:
-iPhone | ⚠️ iPhone8 or later, requires iOS 15
-iPad | ⚠️ requires iOS 15
+iphone | ⚠️ iPhone8 or later, iOS 15 required
+iPad | ⚠️ Requires iOS 15
 
-Browser | Supported | Remarks
+browser name | Support status | remarks
 :-: | :-: | :-:
-Safari | 🚧 | WebAssembly SIMD is not available
+Safari | 🚧 | WebAssembly SIMD not available
 Google Chrome | ❔ |
 
-## Graphics
+## graphic
 
-### Image File Formats
+### image file format
 
-Format Name | Status | Remarks
+format name | situation | remarks
 :-: | :-: | :-:
 Bitmap | ✅ |
 PNG | ✅ |
-Jpeg | ✅ | Also supports **libturbojpeg**
-GIF | ✅ |
+Jpegs | ✅ | Also supports **libturbojpeg**
+GIFs | ✅ |
 TIFF | ✅ |
 WebP | ✅ |
 
-### Video Formats
+### video format
 
-Format Name | Status | Remarks
+format name | situation | remarks
 :-: | :-: | :-:
-AVI | ⚠️ | Depends browser capability
-MP4 | ⚠️ | Depends browser capability
-Ogv | ⚠️ | Depends browser capability
+AVI | ⚠️ | Depends on browser's video processing
+MP4 | ⚠️ | Depends on browser's video processing
+Ogv | ⚠️ | Depends on browser's video processing
 
-### Fonts
+### font
 
-Feature Name | Status | Remarks
+Function name | situation | remarks
 :-: | :-: | :-:
-Embedded Font | ✅ |
+built-in font | ✅ |
 Emoji | ✅ |
-System Fonts | ❌ |
+system font | ❌ |
 
-## Audio
+## sound
 
-### Audio Files Formats
+### sound file format
 
-Format Name | Status | Remarks
+format name | situation | remarks
 :-: | :-: | :-:
 Wave | ✅ |
 MP3 | ✅ |
@@ -118,54 +118,54 @@ AAC | ✅ |
 Ogg | ✅ |
 Opus | ✅ |
 
-## Input Devices
+## input device
 
-Device Name | Status | Remarks
+device name | situation | remarks
 :-: | :-: | :-:
-Keyboard | ✅ |
-Mouse | ✅ |
-Multi-touch | ✅ | Supports as Mouse Emulation
-GamePad | ✅ | No Support for POV
+keyboard | ✅ |
+mouse | ✅ |
+Multi-touch | ✅ | Acts as an emulation of mouse input
+game controller | ✅ | POV input not available
 XInput | 🚫 |
 JoyCon | ❌ |
 ProCon | ❌ |
 
-## HW Features
+## Hardware features
 
-Feature Name | Status | Remarks
+Function name | situation | remarks
 :-: | :-: | :-:
-WebCamera | ✅ | Fixed Resolution (640x480)
-Microphone | ✅ |
-CPU Feature Detection | 🚫 |
-Power-Status | 🚫 | Depends on Deprecated API: [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API)
+webcam | ✅ | Fixed Resolution (640x480)
+microphone | ✅ |
+CPU feature detection | 🚫 |
+power state | 🚫 | Relies on a deprecated API called [Battery Status API](https://developer.mozilla.org/ja/docs/Web/API/Battery_Status_API)
 
-## File System
+## file system
 
-Feature Name | Status | Remarks
+Function name | situation | remarks
 :-: | :-: | :-:
-On-Memory Files ([MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ✅ | Restricts: Flushed All Files on Reload (Web Extension)
-[Indexed DataBase](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ([IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs)) | ❌ |
-File Dialogs | ✅ | `s3d::Platform::Web::Dialog` is also available
-File Drag &amp; Drop | 🚧 |
+File in memory ( [MEMFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs) ) | ✅ | All files will be cleared on reload. (Extension of OpenSiv3D for Web)
+[Indexed file](https://developer.mozilla.org/ja/docs/Web/API/IndexedDB_API) ( [IDBFS](https://emscripten.org/docs/api_reference/Filesystem-API.html#filesystem-api-idbfs) ) | ❌ |
+dialog | ✅ | Functions for `s3d::Platform::Web::Dialog` name functions are also available
+Drag and Drop | 🚧 |
 
-## Text Input/Output
+## text input/output
 
-Feature Name | Status | Remarks
+Function name | situation | remarks
 :-: | :-: | :-:
-Text Input Basic Support | ✅ |
-IME Basic Support | ✅ | Uses Synchronization with `HTMLInputElement`
-IME Candidate | 🚫 |
-Text-To-Speech | ⚠️ | Chrome: not working, Edge: cannot Query Language List
+Basic text input support | ✅ |
+Basic IME support | ✅ | Synchronize with `HTMLInputElement`
+IME input suggestions | 🚫 |
+text-to-speech | ⚠️ | Chrome: doesn't work, Edge: can't get language list
 
-## Misc
+## others
 
-Feature Name | Status | Remarks
+Function name | situation | remarks
 :-: | :-: | :-:
-Notification | ✅ |
-MessageBox | ✅ | Just Calls `window.alert` or `window.confirm`
-ClipBoard | ⚠️ | Only Support Copy or Paste Texts; `s3d::Platform::Web::Clipboard` is also available
-Network | 🚧 | Depends on **WebSocket**, which not supports P2P communication.
+notification | ✅ |
+message-box | ✅ | call `window.alert` or `window.confirm`
+clipboard | ⚠️ | Only text copy/paste supported; `s3d::Platform::Web::Clipboard` is also available
+Network | 🚧 | Depends on **WebSocket** , P2P communication is not available
 Siv3D Scripts | ✅ |
 AsyncTask | ❌ | To be implemented in a future release
-ChildProcess | ❌ |
-NLP | ❌ | Depends ChildProcess Support
+child process | ❌ |
+NLP | ❌ | depends on child process support
