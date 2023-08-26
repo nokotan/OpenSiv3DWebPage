@@ -1,6 +1,6 @@
 ---
 title: Implementation status
-permalink: "/status"
+permalink: "/en/status"
 ---
 
 **Also check [Project:Features](https://github.com/nokotan/OpenSiv3D/projects/1) .**
