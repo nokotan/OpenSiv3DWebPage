@@ -1,163 +1,208 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-title: Web 固有の注意点
-permalink: /ja/trouble-shooting/web-specific-notes
+title: Web-specific notes
+permalink: "/ja/trouble-shooting/web-specific-notes"
 ---
 
-## 既知の制約
+## known limitations
 
-### サポートされる機能
+### Features supported
 
-OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専用の関数を除く) が使用できます。
-詳細は [実装状況](/ja/status) を確認してください。
+OpenSiv3D Web版では、OpenSiv3D Linux版で使用できる関数 (Linux版専用の関数を除く) が使用できます。 詳細は [実装状況](/status) を確認してください。
 
-### ファイルシステム
+### file system
 
 OpenSiv3D Web版では、`Dialog::OpenFile` などの関数を使って、ユーザが明示的に読み取りを許可したファイル以外の、**ユーザのファイルシステム上にあるファイルに対して自由にアクセスすることができません**。
 
-実行時に必要なファイルは、emscirpten の `--preload` オプションを使って、**ビルド時にあらかじめバンドルする必要**があります。
-バンドルされたファイルは、起動時に仮想ファイルシステムに読み込まれ、通常のファイルアクセス関数で読み書きができるようになります。
+Files required at runtime <strong>must be pre-bundled at build time</strong> using the <code>--preload</code> option of emscirpten. The bundled files are loaded into the virtual file system at boot time and can be read and written with normal file access functions.
 
-#### Visual Studio
+??? info "Visual Studio での手順"
 
-[プロジェクト] > [プロパティ] から、プロジェクト設定を開きます。プロジェクト設定の、[Emscripten リンカ] > [入力] > [プリロードされるリソースファイル] に、仮想ファイルシステムに追加したいファイルまたはフォルダのパスを、`(パス)@(仮想ファイルシステム上でのフルパス)` の形式で追加します。
+```
+Open the project settings from Project > Properties. In the project settings, [Emscripten Linker] > [Input] > [Preloaded resource files], specify the path of the file or folder you want to add to the virtual file system as `(path)@(full path on the virtual file system)` Add in the form of
 
 ![preload-files-on-visual-studio.png](/assets/img/building/web-specific-notes/preload-files-on-visual-studio.png)
-
-#### VSCode
-
-`.vscode/Link.Debug.rsp` または `.vscode/Link.Release.rsp` を開き、プリロードされるファイルまたはフォルダのパスを、`--preload-file (パス)@(仮想ファイルシステム上でのフルパス)`の形式で追記します。
-
-![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
-
-### ファイルを保存するダイアログ
-
-`s3d::Dialog::SaveFile` は常に無効値を返します。
-仮想ファイルシステムからファイルをダウンロードするには、`s3d::Platform::Web::DownloadFile` を使います。
-
-```cpp
-  //
-  // Web 版ではサポートされない書き方
-  //
-  // if (auto path = Dialog::SaveFile())
-  // {
-  //   image.save(*path);
-  // }
-  //
-
-  image.save(U"a.png");
-  Platform::Web::DownloadFile(U"a.png");
 ```
 
-### 最初のユーザアクションがあるまで音が鳴らない
+??? info "VSCode での手順"
 
-一部のブラウザにおいて、キーボードやマウス、タッチスクリーンの入力があるまで、WebGL アプリが音を出せないように制限をかける場合があります。
+```
+Open `.vscode/Link.Debug.rsp` or `.vscode/Link.Release.rsp` and change the path of the preloaded file or folder to `--preload-file (path)@(on the virtual file system full path)` format.
 
-### iPhone でフルスクリーンに移行できない
+![preload-files-on-vscode.png](/assets/img/building/web-specific-notes/preload-files-on-vscode.png)
+```
 
-iPhone はフルスクリーン表示の機能がありません。
+### dialog to save file
 
-## ほかプラットフォームとの差異
+`s3d::Dialog::SaveFile` always returns invalid value. To download a file from the virtual file system use `s3d::Platform::Web::DownloadFile` .
 
-### 通信
+```cpp
+//
+// Style not supported in web version
+//
+// if (auto path = Dialog::SaveFile())
+// {
+// image.save(*path);
+// }
+//
 
-外部 WebSocket サーバへの接続のみサポートされています。
-保護されたページ (URL が `https://` で始まる Web ページ) では、保護された WebSocket サーバにのみ接続可能です。
+image.save(U"a.png");
+Platform::Web::DownloadFile(U"a.png");
+```
+
+### No sound until first user action
+
+Some browsers may restrict WebGL apps from producing sound until there is keyboard, mouse, or touchscreen input.
+
+### Can't go full screen on iPhone
+
+iPhone does not have full screen display function.
+
+## Differences from other platforms
+
+### communication
+
+Only connections to external WebSocket servers are supported. A protected page (a web page whose URL starts with `https://` ) can only connect to a protected WebSocket server.
 
 <!-- TODO: asyncify allows busy loop -->
 
 ```cpp
-  const IPv4Address ip = IPv4Address::Localhost();
-  constexpr uint16 port = 50000;
+const IPv4Address ip = IPv4Address::Localhost();
+constexpr uint16 port = 50000;
 
-  TCPClient client;
+TCPClient client;
 
-  client.connect(ip, port);
+client.connect(ip, port);
 
-  Point serverPlayerPos{ 0, 0 };
-  const Point clientPlayerPos = Cursor::Pos();
-  
-  // 送信
-  client.send(clientPlayerPos);
+Point serverPlayerPos{ 0, 0 };
+const Point clientPlayerPos = Cursor::Pos();
 
-  //
-  // Web 版では `client.read` を呼び出す無限ループはサポートされません。
-  // ブラウザがフリーズしてしまいます。
-  //
-  // while (client.read(serverPlayerPos));
-  //
+// send
+client.send(clientPlayerPos);
 
-  // 受信
-  client.read(serverPlayerPos);
+//
+// The web version does not support infinite loops calling `client.read`.
+// My browser freezes.
+//
+// while (client.read(serverPlayerPos));
+//
+
+// receive
+client.read(serverPlayerPos);
 ```
 
-### マルチスレッド
+### Multithread
 
-OpenSiv3D for Web は、シングルスレッドで動作するように設計されています。
-そのため、**AsyncTask** や **std::thread** は期待した動作をしません。
-
-```cpp
-  //
-  // Web 版ではサポートされない書き方
-  //
-  AsyncTask task
-  {
-    [&]
-    {
-      std::this_thread::sleep_for(10s);
-      Console << U"Done.";
-    }
-  };
-```
-
-### サポートされないテクスチャフォーマット
-
-モバイル環境では、ハードウェアの制約上、フォーマットが `TextureFormat::R32_Float` のテクスチャを生成することができません。
-代わりに、フォーマットが `TextureFormat::R16G16_Float` のテクスチャを使用してください。
-
-### ユーザーアクションが必要な機能
-
-以下の機能は、ユーザーアクションと同時に使用する必要があります。
-
-* Dialog::\*
-* ClipBoard::ReadText, SetText
-* Window::SetFullscreen
-* VideoReader (on Safari)
-* System::LaunchBrowser
+OpenSiv3D for Web is designed to run single-threaded. Therefore, **AsyncTask** and **std::thread** do not work as expected.
 
 ```cpp
 //
-// `Window::SetFullscreen` の呼び出した後の、最初のユーザー操作があった時にフルスクリーンになります。
+// Style not supported in web version
+//
+AsyncTask tasks
+{
+[&]
+{
+std::this_thread::sleep_for(10s);
+Console << U"Done.";
+}
+};
+```
+
+### unsupported texture format
+
+In the mobile environment, due to hardware limitations, it is not possible to generate textures with the format `TextureFormat::R32_Float` . Use textures with format `TextureFormat::R16G16_Float` instead.
+
+### Features requiring user action
+
+The following functions must be used in conjunction with user actions.
+
+- Dialog::*
+- ClipBoard::ReadText, SetText
+- Window::SetFullscreen
+- VideoReader (on Safari)
+- System::LaunchBrowser
+
+```cpp
+//
+// Go fullscreen on first user interaction after calling `Window::SetFullscreen`.
 // Window::SetFullscreen(true);
 //
 
 if (SimpleGUI::Button(U"Full Screen", Point{ 20, 20 }))
 {
-  //
-  // SimpleGUI::Button()` はユーザーのクリック操作によって true を返すので、
-  // `Window::SetFullscreen` の呼び出しは期待通りのタイミングで動作します。
-  //
-  Window::SetFullscreen(true);
+//
+//Since SimpleGUI::Button()` returns true by user's click operation,
+// Calls to `Window::SetFullscreen` work as expected.
+//
+Window::SetFullscreen(true);
 }
 ```
 
-### ワイヤーフレーム描画
+### wireframe drawing
 
-WebGL バックエンドでは、WebGL 2.0 にワイヤーフレーム描画の機能がないため、利用することができません。
+The WebGL backend is not available as WebGL 2.0 does not have wireframe drawing capabilities.
 
 ```cpp
 # include <Siv3D.hpp>
 
 void Main()
 {
-	while (System::Update())
-	{
-    // Web 版では無視されます
-		const ScopedRenderStates2D rasterizer{ RasterizerState::WireframeCullNone };
-		
-		Shape2D::Heart(200, Scene::Center()).draw(Palette::Skyblue);
-	}
+while (System::Update())
+{
+// ignored in web version
+const ScopedRenderStates2D rasterizer{ RasterizerState::WireframeCullNone };
+
+Shape2D::Heart(200, Scene::Center()).draw(Palette::Skyblue);
+}
 }
 ```
+
+### 例外処理
+
+実行中に発生した例外を任意の個所でキャッチすることはできず、すべて Siv3D ライブラリコード内でキャッチされます。
+
+```cpp
+# include <Siv3D.hpp>
+
+void Main()
+{
+    try
+    {
+        throw std::exception();
+    }
+    catch (std::exception e)
+    {
+        // Web 版では実行されない行
+        Console << U"Catched!";
+    }
+}
+```
+
+### Asyncify を使う上での制約
+
+OpenSiv3D Web版では、JavaScript での非同期処理を、C++ コード内では同期的処理として扱うために、[Asyncify](https://emscripten.org/docs/porting/asyncify.html) を使用しています。 次の関数を呼び出す関数は、ビルドオプションで `ASYNCIFY_ADD` への登録が必要です。その関数を呼ぶ関数も再帰的に登録が必要です
+
+- s3d::System::Update()
+- s3d::AACDecoder::decode(*) const
+- s3d::MP3Decoder::decode(*) const
+- s3d::AudioDecoder::Decode(*)
+- s3d::Wave::Wave(*)
+- s3d::Audio::Audio(*)
+- s3d::GenericDecoder::decode(*) const
+- s3d::Image::Image(*)
+- s3d::Texture::Texture(*)
+- s3d::ImageDecoder::Decode(*)
+- s3d::ImageDecoder::GetImageInfo(*)
+- s3d::Model::Model(*)
+- s3d::Clipboard::GetText(*)
+
+次の関数を呼び出す関数が、関数ポインタや仮想関数によって間接的に呼び出される場合、関数ポインタや仮想関数の呼び出しをする関数は、ビルドオプションで `ASYNCIFY_ADD` への登録が必要です。その関数を呼ぶ関数も再帰的に登録が必要です
+
+- s3d::SimpleHTTP::Save(*)
+- s3d::SimpleHTTP::Load(*)
+- s3d::SimpleHTTP::Get(*)
+- s3d::SimpleHTTP::Post(*)
+- s3d::VideoReader::VideoReader(*)
+- s3d::VideoReader::open(*)
+- s3d::Platform::Web::FetchFile(*)
+- s3d::Platform::Web::AwaitAsyncTask(*)
