@@ -1,17 +1,16 @@
-# OpenSiv3D for Web プロジェクトサイト
+# OpenSiv3D for Web project site
 
-プロジェクトサイトは <https://siv3d.kamenokosoft.com> で運用中です。
+The project site is in operation at [https://siv3d.kamenokosoft.com](https://siv3d.kamenokosoft.com) .
 
-## プロジェクトサイトの翻訳
+## Project site translation
 
-* このサイトは <https://gitlocalize.com/repo/8089> によって、他言語に翻訳しています。
+- このサイトは [https://gitlocalize.com/repo/8089](https://gitlocalize.com/repo/8089) によって、他言語に翻訳しています。
 
 ## プロジェクトサイトのビルド
 
-このサイトでは、ビルド環境に [**jekyll**](https://jekyllrb.com) と [**mkdocs**](https://www.mkdocs.org/) を、CSS フレームワークに [**milligram**](https://milligram.io) と [**Pure.css**](https://purecss.io) を使っています。
+このサイトでは、ビルド環境に [**jekyll**](https://jekyllrb.com) を、CSS フレームワークに [**milligram**](https://milligram.io) と [**Pure.css**](https://purecss.io) を使っています。
 
 - [jekyll インストールガイド](https://jekyllrb.com/docs/)
-- [mkdocs インストールガイド](https://www.mkdocs.org/getting-started/)
 - [milligram プロジェクトサイト](https://milligram.io)
 - [Pure.css プロジェクトサイト](https://purecss.io)
 
@@ -20,24 +19,22 @@
 ```sh
 % gem install bundler
 % bundle install
-% pip install mkdocs
-% pip install mkdocs-material
 ```
 
 ### プロジェクトサイトの生成
 
 ```sh
 % jekyll build
-% mkdocs build
+# Or start a local server with the `jekyll serve` command
 ```
 
 ## ディレクトリ構造
 
-### \_data, \_layouts
+### _data, _layouts
 
-- `_data/[言語]` フォルダと `_layouts/[言語]` フォルダに、翻訳したデータファイルがあります。
+- `_data/[language]` and `_layouts/[language]` folders contain the translated data files.
 
-### \_includes
+### _includes
 
 - `_includes` フォルダに、HTML の構成要素があります。
 - このフォルダには、翻訳したファイルを配置しないでください。
@@ -46,7 +43,3 @@
 
 - `pages` フォルダに、主となる記事があります。
 - ナビゲーションメニューは、手動で更新しています。ナビゲーションメニューの内容の定義は `_data/ja/nav.yml` にあります。
-
-### docs
-
-- `docs` フォルダに、ユーザーガイドがあります。
