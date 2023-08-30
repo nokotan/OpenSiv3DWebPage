@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for file in pages -%}
+    {% if not file.page.is_link and (file.page.abs_url or file.page.canonical_url) and (file.page.abs_url.find("ja") is ge(0) ) %}
+    <url>
+        <loc>{% if file.page.canonical_url %}{{ file.page.canonical_url|e }}{% else %}{{ file.page.abs_url|e }}{% endif %}</loc>
+        {% if file.page.update_date %}<lastmod>{{file.page.update_date}}</lastmod>{% endif %}
+        <xhtml:link
+          rel="alternate"
+          hreflang="en"
+          href="{{ file.page.canonical_url|replace("ja", "en")|e }}"/>
+    </url>
+    {%- endif -%}
+{% endfor %}
+</urlset>

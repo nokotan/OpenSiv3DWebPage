@@ -4,6 +4,7 @@
 
 title: OpenSiv3D for Web
 permalink: /index
+canonical_url: https://siv3d.kamenokosoft.com/
 css: 
   - /assets/css/playground.css
   - /assets/css/gallary.css

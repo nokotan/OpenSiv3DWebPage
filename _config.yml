@@ -57,6 +57,16 @@ defaults:
       lang: "ja_JP"
       language: "ja"
       description: OpenSiv3D for Web は C++17/20 で WebGL アプリを開発するためのライブラリです
+  - scope:
+      path: "pages/obsolate/en"
+    values:
+      lang: "en_US"
+      sitemap: false
+  - scope:
+      path: "pages/obsolate/ja"
+    values:
+      lang: "ja_JP"
+      sitemap: false
 
 default-language: ja
 alternative-languages: [ "en" ]
@@ -68,6 +78,7 @@ exclude:
   - README.md
   - test/
   - docs/
+  - mkdocs_override
 
 plugins:
   - jekyll-seo-tag
