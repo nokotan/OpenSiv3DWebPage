@@ -6,7 +6,8 @@
 
     var layout   = document.getElementById('layout'),
         menu     = document.getElementById('menu'),
-        menuLink = document.getElementById('menuLink');
+        menuLink = document.getElementById('menuLink'),
+        menuLinkHamburger = document.getElementById('menuLinkHamburger');
 
     function toggleClass(element, className) {
         var classes = element.className.split(/\s+/),
@@ -37,7 +38,7 @@
     }
     
     function handleEvent(e) {
-        if (e.target.id === menuLink.id) {
+        if (e.target.id === menuLink.id || e.target.id === menuLinkHamburger.id) {
             return toggleAll(e);
         }
         
